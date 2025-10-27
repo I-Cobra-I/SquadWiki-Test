@@ -1,0 +1,46 @@
+name: Build & Deploy Lua data to Fandom
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [ main ]
+    paths:
+      - weaponInfo.json
+      - roles.json
+      - .github/workflows/deploy.yml
+      - scripts/**
+      - json_to_lua_*.py
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate Lua data modules
+        run: |
+          mkdir -p out_lua
+          python json_to_lua_weaponinfo.py weaponInfo.json out_lua
+          python json_to_lua_roles.py roles.json out_lua/KitsData.lua
+
+      - name: Upload to Fandom (Modules)
+        env:
+          WIKI_API: ${{ secrets.WIKI_API }}
+          WIKI_USER: ${{ secrets.WIKI_USER }}
+          WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+          SUMMARY: 'Sync Lua data from GitHub'
+        run: |
+          python scripts/upload_to_fandom.py \
+            out_lua/WeaponInfo_A_C.lua   'Module:Game/WeaponInfo_A_C' \
+            out_lua/WeaponInfo_D_F.lua   'Module:Game/WeaponInfo_D_F' \
+            out_lua/WeaponInfo_G_K.lua   'Module:Game/WeaponInfo_G_K' \
+            out_lua/WeaponInfo_L_N.lua   'Module:Game/WeaponInfo_L_N' \
+            out_lua/WeaponInfo_O_R.lua   'Module:Game/WeaponInfo_O_R' \
+            out_lua/WeaponInfo_S_U.lua   'Module:Game/WeaponInfo_S_U' \
+            out_lua/WeaponInfo_V_Z.lua   'Module:Game/WeaponInfo_V_Z' \
+            out_lua/WeaponInfo_misc.lua  'Module:Game/WeaponInfo_misc' \
+            out_lua/WeaponInfo_index.lua 'Module:Game/WeaponInfo' \
+            out_lua/KitsData.lua         'Module:Game/KitsData'
