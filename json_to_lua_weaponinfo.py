@@ -8,9 +8,24 @@ BUCKETS = [
   ("V_Z", set("VWXYZ")), ("misc", set())
 ]
 
-def load_json(path):
-  with open(path, "r", encoding="utf-8") as f:
-    return json.load(f)
+def load_json_robust(path):
+  with open(path, "rb") as f:
+    raw = f.read()
+  if raw.startswith(b"\xef\xbb\xbf"): encs = ["utf-8-sig"]
+  elif raw.startswith(b"\xff\xfe\x00\x00"): encs = ["utf-32le"]
+  elif raw.startswith(b"\x00\x00\xfe\xff"): encs = ["utf-32be"]
+  elif raw.startswith(b"\xff\xfe"): encs = ["utf-16"]
+  elif raw.startswith(b"\xfe\xff"): encs = ["utf-16"]
+  else:
+    encs = ["utf-8", "utf-8-sig", "utf-16", "utf-16le", "utf-16be", "utf-32", "utf-32le", "utf-32be"]
+  last_err = None
+  for enc in encs:
+    try:
+      return json.loads(raw.decode(enc))
+    except Exception as e:
+      last_err = e
+      continue
+  raise SystemExit(f"{path}: konnte JSON nicht dekodieren (letzter Fehler: {last_err})")
 
 def flatten(obj):
   out = {}
@@ -46,8 +61,7 @@ def flatten(obj):
         if isinstance(v, (dict, list)):
           visit(v)
     elif isinstance(n, list):
-      for x in n:
-        visit(x)
+      for x in n: visit(x)
 
   visit(obj)
   return out
@@ -66,7 +80,6 @@ def to_lua(o, ind=0):
   sp = "  " * ind
   if isinstance(o, dict):
     parts = []
-    # stabile Reihenfolge
     for k, v in sorted(o.items(), key=lambda kv: str(kv[0])):
       key_escaped = lua_escape(str(k))
       parts.append(f'{sp}  ["{key_escaped}"] = {to_lua(v, ind+1)}')
@@ -121,14 +134,13 @@ def main():
   src, outdir = sys.argv[1], sys.argv[2]
   os.makedirs(outdir, exist_ok=True)
 
-  flat = flatten(load_json(src))
+  flat = flatten(load_json_robust(src))
 
-  # Buckets befüllen
+  from collections import defaultdict
   buckets = defaultdict(dict)
   for k, v in flat.items():
     buckets[bucket_of(k)][k] = v
 
-  # Dateien schreiben
   module_names = {}
   for name, _letters in BUCKETS + [("misc", set())]:
     lua_table = "return " + to_lua(buckets.get(name, {})) + "\n"
@@ -137,7 +149,6 @@ def main():
       f.write("-- auto-generated\n" + lua_table)
     module_names[name] = f"Module:Game/WeaponInfo_{name}"
 
-  # Index bauen
   lines = []
   for name, letters in BUCKETS:
     for ch in sorted(letters):
