@@ -9,7 +9,7 @@ USAGE = "Usage: json_to_lua_roles.py roles.json out_dir"
 def load_json_robust_ordered(path):
   with open(path, "rb") as f:
     raw = f.read()
-  if raw.startswith(b"\xef\xbb\xbf"):  # UTF-8 BOM strip
+  if raw.startswith(b"\xef\xbb\xbf"):  # UTF-8 BOM
     raw = raw[3:]
   encs = ("utf-8","utf-8-sig","utf-16","utf-16le","utf-16be","utf-32","utf-32le","utf-32be")
   last_err = None
@@ -21,8 +21,8 @@ def load_json_robust_ordered(path):
       last_err = e
   raise SystemExit(f"{path}: konnte JSON nicht dekodieren (letzter Fehler: {last_err})")
 
-# ---------- nach Fraktion splitten (Prefix vor erstem "_") ----------
-_PREFIX = re.compile(r"^([A-Za-z0-9]+)_")
+# ---------- nach Fraktion splitten (alles vor erstem "_") ----------
+_PREFIX = re.compile(r"^([^_]+)_")
 
 def split_by_faction(top: OrderedDict):
   per = defaultdict(OrderedDict)
@@ -31,39 +31,47 @@ def split_by_faction(top: OrderedDict):
       continue
     m = _PREFIX.match(k)
     if not m:
-      continue  # Keys ohne Präfix ignorieren (optional: 'misc' sammeln)
+      continue
     fac = m.group(1).upper()
     per[fac][k] = v  # unverändert übernehmen
   return per
 
-# ---------- Lua Long-String Helfer ----------
-def choose_long_bracket_delim(payload: str) -> int:
-  n = 1
-  while True:
-    closing = "]" + ("=" * n) + "]"
-    if closing not in payload:
-      return n
-    n += 1
+# ---------- Lua-Emitter (ohne Sortierung) ----------
+def lua_escape(s: str) -> str:
+  return s.replace("\\", "\\\\").replace('"', '\\"')
 
-def emit_faction_module(json_text: str, faction: str) -> str:
-  # LF-Zeilenenden für saubere Diffs
-  json_text = json_text.replace("\r\n","\n").replace("\r","\n")
-  n_eq = choose_long_bracket_delim(json_text)
-  eqs = "=" * n_eq
+def to_lua(o, ind=0):
+  sp = "  " * ind
+  if isinstance(o, dict):
+    parts = []
+    for k, v in o.items():  # Einfüge-Reihenfolge beibehalten
+      key_escaped = lua_escape(str(k))
+      parts.append(f'{sp}  ["{key_escaped}"] = {to_lua(v, ind+1)}')
+    return "{\n" + (",\n".join(parts)) + ("\n" + sp if parts else "") + "}"
+  if isinstance(o, list):
+    return "{ " + ", ".join(to_lua(x, ind+1) for x in o) + " }"
+  if isinstance(o, str):
+    return '"' + lua_escape(o) + '"'
+  if o is True:  return "true"
+  if o is False: return "false"
+  if o is None:  return "nil"
+  return str(o)
+
+def emit_faction_module(obj: OrderedDict, faction: str) -> str:
+  # obj ist bereits das fraktionierte Subset (unverändert)
+  body = to_lua(obj, 0)
   return f"""-- auto-generated – DO NOT EDIT
 -- KitsData_{faction}: Rohdaten aus roles.json (unverändert; fraktioniertes Subset)
--- Wird auf der Wiki via mw.text.jsonDecode(JSON) geparst (Reihenfolgen bleiben erhalten).
-
-local JSON = [{eqs}[{json_text}]{eqs}]
-return mw.text.jsonDecode(JSON)
+return {body}
 """
 
 def loader_content() -> str:
   return """-- auto-generated – DO NOT EDIT
--- KitsData_index: Loader für fraktions-spezifische Rollen/Kits (roh aus roles.json).
--- Wiki-Ziel: Module:Game/KitsData
+-- Loader für fraktions-spezifische Rollen/Kits (roh aus roles.json).
 -- API:
---   getFaction(faction), hasFaction(faction), get(kitKey)
+--   getFaction(faction) -> Tabelle der Kits für diese Fraktion (roh)
+--   get(kitKey)         -> einzelnes Kit anhand des Präfixes vor "_"
+--   hasFaction(faction) -> true/false
 
 local M = {}
 local _cache = {}
@@ -120,14 +128,13 @@ def main():
   if not per:
     raise SystemExit("Keine Fraktionen gefunden (erwarte Keys wie 'USMC_...').")
 
-  # Loader wie bei WeaponInfo_index
+  # Loader
   with open(os.path.join(outdir, "KitsData_index.lua"), "w", encoding="utf-8", newline="\n") as f:
     f.write(loader_content())
 
-  # Pro Fraktion eine Datei im Root des out_dir (kein Unterordner)
-  for fac, od in per.items():
-    json_text = json.dumps(od, ensure_ascii=False, separators=(",", ":"), allow_nan=False)
-    lua_code  = emit_faction_module(json_text, fac)
+  # Fraktionsdateien
+  for fac, subset in per.items():
+    lua_code  = emit_faction_module(subset, fac)
     with open(os.path.join(outdir, f"KitsData_{fac}.lua"), "w", encoding="utf-8", newline="\n") as f:
       f.write(lua_code)
 
