@@ -29,14 +29,15 @@ jobs:
         run: |
           mkdir -p out_lua
           python json_to_lua_weaponinfo.py weaponInfo.json out_lua
-          python json_to_lua_roles.py roles.json out_lua/KitsData.lua
+          # WICHTIG: hier ein ORDNER, kein Dateiname
+          python json_to_lua_roles.py roles.json out_lua
 
-      - name: Upload to Fandom (Modules)
+      - name: Upload to Fandom (WeaponInfo + KitsData Loader)
         env:
           WIKI_API: ${{ secrets.WIKI_API }}
           WIKI_USER: ${{ secrets.WIKI_USER }}
           WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
-          SUMMARY: 'Sync Lua data from GitHub'
+          SUMMARY: "Sync Lua data from GitHub"
         run: |
           python scripts/upload_to_fandom.py \
             out_lua/WeaponInfo_A_C.lua   'Module:Game/WeaponInfo_A_C' \
@@ -48,4 +49,24 @@ jobs:
             out_lua/WeaponInfo_V_Z.lua   'Module:Game/WeaponInfo_V_Z' \
             out_lua/WeaponInfo_misc.lua  'Module:Game/WeaponInfo_misc' \
             out_lua/WeaponInfo_index.lua 'Module:Game/WeaponInfo' \
-            out_lua/KitsData.lua         'Module:Game/KitsData'
+            out_lua/KitsData_index.lua   'Module:Game/KitsData'
+
+      - name: Upload KitsData (per faction)
+        env:
+          WIKI_API: ${{ secrets.WIKI_API }}
+          WIKI_USER: ${{ secrets.WIKI_USER }}
+          WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+          SUMMARY: "Sync Lua data from GitHub"
+        run: |
+          set -e
+          ARGS=""
+          for f in out_lua/KitsData_*.lua; do
+            [ "$(basename "$f")" = "KitsData_index.lua" ] && continue
+            fac="${f##*/}"; fac="${fac%.lua}"; fac="${fac#KitsData_}"
+            ARGS="$ARGS $f Module:Game/KitsData/$fac"
+          done
+          if [ -n "$ARGS" ]; then
+            python scripts/upload_to_fandom.py $ARGS
+          else
+            echo "No KitsData faction files to upload."
+          fi
