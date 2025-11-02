@@ -1,4 +1,5 @@
 name: Build & Deploy Lua data to Fandom
+
 on:
   workflow_dispatch: {}
   push:
@@ -29,16 +30,16 @@ jobs:
         run: |
           mkdir -p out_lua
           python json_to_lua_weaponinfo.py weaponInfo.json out_lua
-          # WICHTIG: hier ein ORDNER, kein Dateiname
           python json_to_lua_roles.py roles.json out_lua
 
-      - name: Upload to Fandom (WeaponInfo + KitsData Loader)
+      - name: Upload WeaponInfo & KitsData loader
         env:
           WIKI_API: ${{ secrets.WIKI_API }}
           WIKI_USER: ${{ secrets.WIKI_USER }}
           WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
           SUMMARY: "Sync Lua data from GitHub"
         run: |
+          set -e
           python scripts/upload_to_fandom.py \
             out_lua/WeaponInfo_A_C.lua   'Module:Game/WeaponInfo_A_C' \
             out_lua/WeaponInfo_D_F.lua   'Module:Game/WeaponInfo_D_F' \
@@ -51,7 +52,7 @@ jobs:
             out_lua/WeaponInfo_index.lua 'Module:Game/WeaponInfo' \
             out_lua/KitsData_index.lua   'Module:Game/KitsData'
 
-      - name: Upload KitsData (per faction)
+      - name: Upload KitsData factions (serialized)
         env:
           WIKI_API: ${{ secrets.WIKI_API }}
           WIKI_USER: ${{ secrets.WIKI_USER }}
@@ -59,14 +60,15 @@ jobs:
           SUMMARY: "Sync Lua data from GitHub"
         run: |
           set -e
-          ARGS=""
+          shopt -s nullglob
           for f in out_lua/KitsData_*.lua; do
-            [ "$(basename "$f")" = "KitsData_index.lua" ] && continue
-            fac="${f##*/}"; fac="${fac%.lua}"; fac="${fac#KitsData_}"
-            ARGS="$ARGS $f Module:Game/KitsData/$fac"
+            base="$(basename "$f")"
+            if [ "$base" = "KitsData_index.lua" ]; then
+              continue
+            fi
+            fac="${base#KitsData_}"
+            fac="${fac%.lua}"
+            echo "Uploading $base → Module:Game/KitsData/$fac"
+            python scripts/upload_to_fandom.py "$f" "Module:Game/KitsData/$fac"
+            sleep 2
           done
-          if [ -n "$ARGS" ]; then
-            python scripts/upload_to_fandom.py $ARGS
-          else
-            echo "No KitsData faction files to upload."
-          fi
