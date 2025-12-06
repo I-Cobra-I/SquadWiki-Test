@@ -1,4 +1,63 @@
 {
+    "WPMC_Rifleman_04": {
+        "displayName": "RIFLEMAN",
+        "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
+        "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
+        "uiIcon": "T_role_rifleman",
+        "uiWeapon": "T_M16_Wormpool_EXPS_Foregrip",
+        "baseTeamAvailability": -1,
+        "capability": "Light",
+        "items": {
+            "BP_M16_Wormpool_EXPS": {
+                "maxAllowed": 1,
+                "minOnSpawn": 2,
+                "canRearm": true
+            },
+            "BP_BrowningHP": {
+                "maxAllowed": 1,
+                "minOnSpawn": 0,
+                "canRearm": true
+            },
+            "BP_M9Bayonet": {
+                "maxAllowed": 1,
+                "minOnSpawn": 1,
+                "canRearm": false
+            },
+            "BP_M67Frag": {
+                "maxAllowed": 2,
+                "minOnSpawn": 0,
+                "canRearm": true
+            },
+            "BP_M18Smoke_Parent": {
+                "maxAllowed": 2,
+                "minOnSpawn": 0,
+                "canRearm": true
+            },
+            "BP_Generic_FieldDressing": {
+                "maxAllowed": 2,
+                "minOnSpawn": 1,
+                "canRearm": true
+            },
+            "BP_EntrenchingTool": {
+                "maxAllowed": 1,
+                "minOnSpawn": 1,
+                "canRearm": false
+            },
+            "BP_Infantry_Ammobag_WPMC": {
+                "maxAllowed": 1,
+                "minOnSpawn": 0,
+                "canRearm": true
+            },
+            "BP_US_Binoculars": {
+                "maxAllowed": 1,
+                "minOnSpawn": 1,
+                "canRearm": false
+            }
+        },
+        "factions": [
+            "WPMC"
+        ]
+    },
     "WPMC_Recruit_01": {
         "displayName": "RECRUIT",
         "details": "A stripped down role capable of only self-defence.",
@@ -707,65 +766,6 @@
                 "canRearm": true
             },
             "BP_G17": {
-                "maxAllowed": 1,
-                "minOnSpawn": 0,
-                "canRearm": true
-            },
-            "BP_M9Bayonet": {
-                "maxAllowed": 1,
-                "minOnSpawn": 1,
-                "canRearm": false
-            },
-            "BP_M67Frag": {
-                "maxAllowed": 2,
-                "minOnSpawn": 0,
-                "canRearm": true
-            },
-            "BP_M18Smoke_Parent": {
-                "maxAllowed": 2,
-                "minOnSpawn": 0,
-                "canRearm": true
-            },
-            "BP_Generic_FieldDressing": {
-                "maxAllowed": 2,
-                "minOnSpawn": 1,
-                "canRearm": true
-            },
-            "BP_EntrenchingTool": {
-                "maxAllowed": 1,
-                "minOnSpawn": 1,
-                "canRearm": false
-            },
-            "BP_Infantry_Ammobag_WPMC": {
-                "maxAllowed": 1,
-                "minOnSpawn": 0,
-                "canRearm": true
-            },
-            "BP_US_Binoculars": {
-                "maxAllowed": 1,
-                "minOnSpawn": 1,
-                "canRearm": false
-            }
-        },
-        "factions": [
-            "WPMC"
-        ]
-    },
-    "WPMC_Rifleman_04": {
-        "displayName": "RIFLEMAN",
-        "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
-        "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
-        "uiIcon": "T_role_rifleman",
-        "uiWeapon": "T_M16_Wormpool_EXPS_Foregrip",
-        "baseTeamAvailability": -1,
-        "capability": "Light",
-        "items": {
-            "BP_M16_Wormpool_EXPS": {
-                "maxAllowed": 1,
-                "minOnSpawn": 2,
-                "canRearm": true
-            },
-            "BP_BrowningHP": {
                 "maxAllowed": 1,
                 "minOnSpawn": 0,
                 "canRearm": true
@@ -24946,11 +24946,11 @@
         "details": "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
         "specifics": "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
         "uiIcon": "T_role_squadleader",
-        "uiWeapon": "ak74_okp7",
+        "uiWeapon": "ak74_exps",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_AK74_OKP7_Pro": {
+            "BP_AK74_EXPS_Pro": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25010,11 +25010,11 @@
         "details": "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
         "specifics": "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
         "uiIcon": "T_role_squadleader",
-        "uiWeapon": "aks74m_1p78",
+        "uiWeapon": "aks74_PSO1",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_AKS74_1P78_Pro": {
+            "BP_AKS74_PSO-1_Pro": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25074,11 +25074,11 @@
         "details": "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
         "specifics": "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
         "uiIcon": "T_role_squadleader",
-        "uiWeapon": "malyuk_545_m68_foregrip",
+        "uiWeapon": "malyuk_545_foregrip_exps",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_545_M68_Foregrip": {
+            "BP_Malyuk_545_EXPS_Foregrip": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25138,11 +25138,11 @@
         "details": "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
         "specifics": "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
         "uiIcon": "T_role_squadleader",
-        "uiWeapon": "malyuk_545_foregrip_1p78",
+        "uiWeapon": "malyuk_545_foregrip_m150",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_545_1p78_Foregrip": {
+            "BP_Malyuk_545_M150_Foregrip": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25158,7 +25158,7 @@
                 "canRearm": false
             },
             "BP_RGD5Frag_Brown": {
-                "maxAllowed": 2,
+                "maxAllowed": 1,
                 "minOnSpawn": 0,
                 "canRearm": true
             },
@@ -25374,11 +25374,11 @@
         "details": "Critical to the survivability of a squad, Medics are capable of quickly reviving and healing incapacitated/wounded teammates.",
         "specifics": "Use your Medic Bag ({Key0}) to heal others, and Field Dressings to revive and stop their bleeding.",
         "uiIcon": "T_role_medic",
-        "uiWeapon": "malyuk_545_1p78",
+        "uiWeapon": "malyuk_545_m150",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_545_1p78": {
+            "BP_Malyuk_545_M150": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25422,11 +25422,6 @@
                 "maxAllowed": 1,
                 "minOnSpawn": 1,
                 "canRearm": false
-            },
-            "BP_Soviet_Binoculars": {
-                "maxAllowed": 1,
-                "minOnSpawn": 1,
-                "canRearm": false
             }
         },
         "factions": [
@@ -25447,7 +25442,7 @@
                 "minOnSpawn": 2,
                 "canRearm": true
             },
-            "BP_Vz61_3mags": {
+            "BP_Vz61_5mags": {
                 "maxAllowed": 1,
                 "minOnSpawn": 0,
                 "canRearm": true
@@ -25502,11 +25497,11 @@
         "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
         "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
         "uiIcon": "T_role_raider",
-        "uiWeapon": "aks74u_okp7",
+        "uiWeapon": "aks74u_Yoloson",
         "baseTeamAvailability": 8,
         "capability": "Light",
         "items": {
-            "BP_AKS74U_OKP7": {
+            "BP_AKS74U_Yoloson": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25620,11 +25615,11 @@
         "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
         "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
         "uiIcon": "T_role_rifleman",
-        "uiWeapon": "ak74_okp7",
+        "uiWeapon": "ak74_Yoloson",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_AK74_OKP7_Pro": {
+            "BP_AK74_Yoloson_Pro": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25674,11 +25669,11 @@
         "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
         "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
         "uiIcon": "T_role_rifleman",
-        "uiWeapon": "aks74_1p63",
+        "uiWeapon": "ak74_exps",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_AKS74_1P63_Pro": {
+            "BP_AK74_EXPS_Pro": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25728,11 +25723,11 @@
         "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
         "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
         "uiIcon": "T_role_rifleman",
-        "uiWeapon": "aks74m_1p78",
+        "uiWeapon": "aks74_PSO1",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_AKS74_1P78_Pro": {
+            "BP_AKS74_PSO-1_Pro": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25836,11 +25831,11 @@
         "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
         "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
         "uiIcon": "T_role_rifleman",
-        "uiWeapon": "malyuk_545_m68_foregrip",
+        "uiWeapon": "malyuk_545_foregrip_exps",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_545_M68_Foregrip": {
+            "BP_Malyuk_545_EXPS_Foregrip": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25890,11 +25885,11 @@
         "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
         "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
         "uiIcon": "T_role_rifleman",
-        "uiWeapon": "malyuk_545_foregrip_1p78",
+        "uiWeapon": "malyuk_545_foregrip_m150",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_545_1p78_Foregrip": {
+            "BP_Malyuk_545_M150_Foregrip": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -25944,11 +25939,11 @@
         "details": "Provides sustained direct fire support and suppression for the Squad. ",
         "specifics": "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
         "uiIcon": "T_role_automaticrifleman",
-        "uiWeapon": "rpk_okp7",
+        "uiWeapon": "rpk_Yoloson",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_RPK_OKP7": {
+            "BP_RPK_Yoloson": {
                 "maxAllowed": 1,
                 "minOnSpawn": 1,
                 "canRearm": true
@@ -26106,11 +26101,11 @@
         "details": "Provides sustained direct fire support and suppression for the Squad. ",
         "specifics": "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
         "uiIcon": "T_role_automaticrifleman",
-        "uiWeapon": "rpk74m_1p78",
+        "uiWeapon": "rpk74_m150",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_RPK74_1P78_Pro": {
+            "BP_RPK74_M150_Pro": {
                 "maxAllowed": 1,
                 "minOnSpawn": 1,
                 "canRearm": true
@@ -26214,11 +26209,11 @@
         "details": "Provides indirect fire support with launched grenades, also can mark targets with launched smoke markers.",
         "specifics": "You can adjust your sights with (Default) X, to aid shooting at range.",
         "uiIcon": "T_role_grenadier",
-        "uiWeapon": "ak74mgp25_1p63",
+        "uiWeapon": "ak74gp25_exps",
         "baseTeamAvailability": 4,
         "capability": "Light",
         "items": {
-            "BP_AK74GP25_Rifle_1P63_Pro": {
+            "BP_AK74GP25_Rifle_EXPS_Pro": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -26228,22 +26223,22 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             },
-            "BP_AK74GP25_1P63_UGL_HE_10Rnds": {
+            "BP_AK74GP25_EXPS_UGL_HE_10Rnds": {
                 "maxAllowed": 1,
                 "minOnSpawn": 0,
                 "canRearm": true
             },
-            "BP_AK74GP25_1P63_UGL_Smoke": {
+            "BP_AK74GP25_EXPS_UGL_Smoke": {
                 "maxAllowed": 1,
                 "minOnSpawn": 0,
                 "canRearm": true
             },
-            "BP_AK74GP25_1P63_UGL_Smoke_Red": {
+            "BP_AK74GP25_EXPS_UGL_Smoke_Red": {
                 "maxAllowed": 1,
                 "minOnSpawn": 0,
                 "canRearm": true
             },
-            "BP_AK74GP25_1P63_UGL_Smoke_Blue": {
+            "BP_AK74GP25_EXPS_UGL_Smoke_Blue": {
                 "maxAllowed": 1,
                 "minOnSpawn": 0,
                 "canRearm": true
@@ -26277,7 +26272,7 @@
         "baseTeamAvailability": 4,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_545_1p78": {
+            "BP_Malyuk_545_M150": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -26380,7 +26375,7 @@
         "baseTeamAvailability": 8,
         "capability": "Light",
         "items": {
-            "BP_AK74_OKP7_Pro": {
+            "BP_AK74_Yoloson_Pro": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -26439,7 +26434,7 @@
         "baseTeamAvailability": 8,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_545_1p78": {
+            "BP_Malyuk_545_M150": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -26493,7 +26488,7 @@
                 "minOnSpawn": 2,
                 "canRearm": true
             },
-            "BP_Vz61_3mags": {
+            "BP_Vz61_5mags": {
                 "maxAllowed": 1,
                 "minOnSpawn": 0,
                 "canRearm": true
@@ -26646,11 +26641,11 @@
         "details": "Capable of sustained medium to long range direct fire support and suppression.",
         "specifics": "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
         "uiIcon": "T_role_machinegunner",
-        "uiWeapon": "pkm_1p29",
+        "uiWeapon": "pkm_M150",
         "baseTeamAvailability": 2,
         "capability": "Light",
         "items": {
-            "BP_PKM_1P29_Tracer": {
+            "BP_PKM_M150_Tracer": {
                 "maxAllowed": 1,
                 "minOnSpawn": 1,
                 "canRearm": true
@@ -26989,7 +26984,7 @@
                 "minOnSpawn": 2,
                 "canRearm": true
             },
-            "BP_Vz61_3mags": {
+            "BP_Vz61_5mags": {
                 "maxAllowed": 1,
                 "minOnSpawn": 0,
                 "canRearm": true
@@ -27108,11 +27103,11 @@
         "details": "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
         "specifics": "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
         "uiIcon": "T_role_squadleader",
-        "uiWeapon": "malyuk_762_foregrip_1p78",
+        "uiWeapon": "malyuk_762_foregrip_m150",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_762_1p78_Foregrip": {
+            "BP_Malyuk_762_M150_Foregrip": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -27128,7 +27123,7 @@
                 "canRearm": false
             },
             "BP_RGD5Frag_Brown": {
-                "maxAllowed": 2,
+                "maxAllowed": 1,
                 "minOnSpawn": 0,
                 "canRearm": true
             },
@@ -27280,11 +27275,11 @@
         "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
         "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
         "uiIcon": "T_role_rifleman",
-        "uiWeapon": "malyuk_762_foregrip_1p78",
+        "uiWeapon": "malyuk_762_foregrip_m150",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_762_1p78_Foregrip": {
+            "BP_Malyuk_762_M150_Foregrip": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -27334,11 +27329,11 @@
         "details": "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
         "specifics": "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
         "uiIcon": "T_role_squadleader",
-        "uiWeapon": "malyuk_545_m68_foregrip",
+        "uiWeapon": "malyuk_556_foregrip_Yoloson",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_556_M68_Foregrip": {
+            "BP_Malyuk_556_Yoloson_Foregrip": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -27398,11 +27393,11 @@
         "details": "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
         "specifics": "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
         "uiIcon": "T_role_squadleader",
-        "uiWeapon": "malyuk_545_foregrip_1p78",
+        "uiWeapon": "malyuk_545_foregrip_m150",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_556_1p78_Foregrip": {
+            "BP_Malyuk_556_M150_Foregrip": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -27516,11 +27511,11 @@
         "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
         "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
         "uiIcon": "T_role_rifleman",
-        "uiWeapon": "malyuk_545_m68_foregrip",
+        "uiWeapon": "malyuk_556_foregrip_Yoloson",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_556_M68_Foregrip": {
+            "BP_Malyuk_556_Yoloson_Foregrip": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true
@@ -27570,11 +27565,11 @@
         "details": "Equipped with a standard loadout, this role is perfect for general purpose combat.",
         "specifics": "Riflemen have ammo bags which can be used to resupply your team.",
         "uiIcon": "T_role_rifleman",
-        "uiWeapon": "malyuk_545_foregrip_1p78",
+        "uiWeapon": "malyuk_545_foregrip_m150",
         "baseTeamAvailability": -1,
         "capability": "Light",
         "items": {
-            "BP_Malyuk_556_1p78_Foregrip": {
+            "BP_Malyuk_556_M150_Foregrip": {
                 "maxAllowed": 1,
                 "minOnSpawn": 2,
                 "canRearm": true

@@ -1,5 +1,50 @@
 {
     "factionSetups": {
+        "WPMC_LobbyFactionSetup": {
+            "Faction": "Western Private Military Contractors",
+            "cmndrActionNearVeh": true,
+            "hasBuddyRally": false,
+            "type": "Combined Arms",
+            "shortName": "WPMC",
+            "displayName": "Manticore Security Task Force",
+            "description": "Manticore Security Task Force, a private military corporation, operates a formidable Task Force known for its combined arms capabilities. This unit integrates infantry, armor, and support elements, equipped with cutting-edge weaponry and technology to handle diverse military operations. The Task Force excels in coordinated responses, displaying versatility in missions ranging from conventional warfare to counterinsurgency. With efficiency and effectiveness at its core, MSTF stands as a powerful and adaptable entity in the realm of private military operations.",
+            "uiUnitBadge": "T_WPMC_ManticoreSecurityTaskForce_CombinedArms",
+            "vehicles": {},
+            "roles": {
+                "WPMC_Rifleman_04": {
+                    "baseTeamAvailability": -1
+                }
+            },
+            "characteristics": [
+                "+2 extra HAT kit roles",
+                "GMG Emplacements avaliable",
+                "Commander can use vehicles to enable commander abilities"
+            ],
+            "commanderActions": [
+                {
+                    "displayName": "Heavy Mortar Barrage",
+                    "description": "A heavy mortar barrage that deals significant chaos and suppression to anyone caught in its area of effect.",
+                    "icon": "T_tactical_mortarbarrage",
+                    "minDistance": 75,
+                    "maxDistance": 75,
+                    "enrouteDurationS": 30,
+                    "activeDurationS": 60,
+                    "cooldownDurationS": 1200
+                },
+                {
+                    "displayName": "F-16 Falcon Rocket Strike",
+                    "description": "A precise rocket strike from a F-16 Falcon multirole aircraft.",
+                    "icon": "T_tactical_f18gunrun",
+                    "minDistance": 20,
+                    "maxDistance": 60,
+                    "enrouteDurationS": 15,
+                    "activeDurationS": 32,
+                    "cooldownDurationS": 900
+                }
+            ],
+            "deployables": {},
+            "mapLayers": []
+        },
         "WPMC_S_CombinedArms_Skirmish": {
             "Faction": "Western Private Military Contractors",
             "cmndrActionNearVeh": true,
@@ -224,9 +269,9 @@
                 "Narva Skirmish v1",
                 "Mutaha Skirmish v1",
                 "Mestia Skirmish v1",
+                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v3",
                 "Manicouagan Skirmish v2",
-                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v1",
                 "Logar Skirmish v1",
                 "Lashkar Skirmish v1",
@@ -695,6 +740,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
                 "Sumari Bala Invasion v1",
@@ -1623,8 +1669,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -2032,8 +2078,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -2442,8 +2488,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -3384,9 +3430,9 @@
                 "Narva Skirmish v1",
                 "Mutaha Skirmish v1",
                 "Mestia Skirmish v1",
+                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v3",
                 "Manicouagan Skirmish v2",
-                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v1",
                 "Logar Skirmish v1",
                 "Lashkar Skirmish v1",
@@ -3836,6 +3882,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sanxian Seed v1",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
@@ -4677,8 +4724,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -5055,8 +5102,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -5433,8 +5480,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -5801,8 +5848,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -6461,8 +6508,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -7930,9 +7977,9 @@
                 "Narva Skirmish v1",
                 "Mutaha Skirmish v1",
                 "Mestia Skirmish v1",
+                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v3",
                 "Manicouagan Skirmish v2",
-                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v1",
                 "Logar Skirmish v1",
                 "Lashkar Skirmish v1",
@@ -8348,6 +8395,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
                 "Sumari Bala Invasion v1",
@@ -9148,8 +9196,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -9496,8 +9544,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -9861,8 +9909,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -10216,8 +10264,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -10551,8 +10599,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -12432,9 +12480,9 @@
                 "Narva Skirmish v1",
                 "Mutaha Skirmish v1",
                 "Mestia Skirmish v1",
+                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v3",
                 "Manicouagan Skirmish v2",
-                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v1",
                 "Logar Skirmish v1",
                 "Lashkar Skirmish v1",
@@ -12839,6 +12887,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
                 "Sumari Bala Invasion v1",
@@ -13607,8 +13656,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Manicouagan RAAS v2",
@@ -13953,8 +14002,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -14302,8 +14351,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Manicouagan RAAS v2",
@@ -14672,8 +14721,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -15024,8 +15073,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -15361,8 +15410,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Manicouagan RAAS v2",
@@ -15728,8 +15777,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -18065,6 +18114,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
                 "Sumari Bala Invasion v1",
@@ -18854,8 +18904,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -19190,8 +19240,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -19523,8 +19573,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -19859,8 +19909,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -20185,8 +20235,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -20523,8 +20573,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -21942,1124 +21992,6 @@
                 "Belaya Invasion v1"
             ]
         },
-        "TLF_FSTemplate": {
-            "Faction": "Turkish Land Forces",
-            "cmndrActionNearVeh": false,
-            "hasBuddyRally": false,
-            "type": "Combined Arms",
-            "shortName": "TLF",
-            "displayName": "Turkish Land Forces",
-            "description": "The Turkish Land Forces (TLF) is the ground combat branch of the Turkish Armed Forces. It was founded after the dissolution of the Ottoman Empire. Turkey has been a member of NATO since 1952. The TLF has recently been modernising and strengthening its numbers due to various conflicts in the region.",
-            "uiUnitBadge": "Unit_TLF",
-            "vehicles": {
-                "BP_TLF_Util_Truck": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_TLF_Util_Truck_Logi": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_M113A3_Logistics_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_Cobra2_MG3": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_Cobra2_RWS_MG3": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_Cobra2_M2": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_Cobra2_RWS_M2": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_M113A2T_M2_TLF": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_M113A2T_MK19_TLF": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_M1064_M121_TLF": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_ACV-15_MG3": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_ACV-15_M2": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_PARS3_MG3": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_PARS3_MK19": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_PARS3_M2": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_PARS3": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_ACV-15": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_M60T": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_UH60_TLF_PKM": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                }
-            },
-            "roles": {
-                "TLF_Recruit_01": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_SL_01": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_SL_02": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_SL_03": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_SL_04": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_SLCrewman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_SLPilot_01": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_Medic_01": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_Medic_02": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_Rifleman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_Rifleman_02": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_Rifleman_03": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_Rifleman_04": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_MachineGunner_01": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_Raider_01": {
-                    "baseTeamAvailability": 8
-                },
-                "TLF_Grenadier_01": {
-                    "baseTeamAvailability": 4
-                },
-                "TLF_Grenadier_02": {
-                    "baseTeamAvailability": 4
-                },
-                "TLF_Grenadier_03": {
-                    "baseTeamAvailability": 1
-                },
-                "TLF_LAT_01": {
-                    "baseTeamAvailability": 8
-                },
-                "TLF_LAT_02": {
-                    "baseTeamAvailability": 8
-                },
-                "TLF_LAT_03": {
-                    "baseTeamAvailability": 8
-                },
-                "TLF_Marksman_01": {
-                    "baseTeamAvailability": 4
-                },
-                "TLF_Marksman_02": {
-                    "baseTeamAvailability": 4
-                },
-                "TLF_MachineGunner_02": {
-                    "baseTeamAvailability": 2
-                },
-                "TLF_MachineGunner_03": {
-                    "baseTeamAvailability": 2
-                },
-                "TLF_HAT_01": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_HAT_02": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_Engineer_01": {
-                    "baseTeamAvailability": 2
-                },
-                "TLF_Crewman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "TLF_Pilot_01": {
-                    "baseTeamAvailability": -1
-                }
-            },
-            "characteristics": [
-                "No Special Characterics"
-            ],
-            "commanderActions": [
-                {
-                    "displayName": "155mm Artillery Static Barrage",
-                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
-                    "icon": "T_tactical_artillery",
-                    "minDistance": 50,
-                    "maxDistance": 150,
-                    "enrouteDurationS": 60,
-                    "activeDurationS": 60,
-                    "cooldownDurationS": 1800
-                },
-                {
-                    "displayName": "155mm Artillery Creeping Barrage",
-                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
-                    "icon": "T_tactical_artillery",
-                    "minDistance": 175,
-                    "maxDistance": 450,
-                    "enrouteDurationS": 60,
-                    "activeDurationS": 60,
-                    "cooldownDurationS": 1800
-                },
-                {
-                    "displayName": "TB-2 UAV Recon",
-                    "description": "A flyby from a TB-2 UAV, allowing for live aerial reconnaissance.",
-                    "icon": "T_strategic_uav",
-                    "minDistance": 100,
-                    "maxDistance": 250,
-                    "enrouteDurationS": 30,
-                    "activeDurationS": 300,
-                    "cooldownDurationS": 600
-                },
-                {
-                    "displayName": "F-16 Falcon Rocket Strike",
-                    "description": "A precise rocket strike from a F-16 Falcon multirole aircraft.",
-                    "icon": "T_tactical_f18gunrun",
-                    "minDistance": 20,
-                    "maxDistance": 60,
-                    "enrouteDurationS": 15,
-                    "activeDurationS": 32,
-                    "cooldownDurationS": 900
-                }
-            ],
-            "deployables": {
-                "Bunker_Hesco_NATO": {
-                    "availability": -1
-                },
-                "Hesco_NATO": {
-                    "availability": -1
-                },
-                "Wall_Hesco_NATO": {
-                    "availability": -1
-                },
-                "IndirectFireShelter": {
-                    "availability": 3
-                },
-                "Wall_Sandbag": {
-                    "availability": -1
-                },
-                "Wall_Sandbag_MurderHole": {
-                    "availability": -1
-                },
-                "Crescent_Sandbag": {
-                    "availability": -1
-                },
-                "Ladder_Metal": {
-                    "availability": 5
-                },
-                "RazorWire": {
-                    "availability": -1
-                },
-                "HAB_NATO": {
-                    "availability": 1
-                },
-                "AmmoCrate_TLF": {
-                    "availability": -1
-                },
-                "RepairStation_NATO": {
-                    "availability": 1
-                },
-                "Milan_TLF": {
-                    "availability": 1
-                },
-                "M2HB_Tripod_Ironsight": {
-                    "availability": 2
-                },
-                "Mk19_Tripod": {
-                    "availability": 2
-                },
-                "M2HB_Bunker": {
-                    "availability": 2
-                },
-                "M252_Mortar": {
-                    "availability": 2
-                },
-                "Radio_TLF": {
-                    "availability": -1
-                },
-                "ObservationTower_NATO": {
-                    "availability": 2
-                }
-            },
-            "mapLayers": []
-        },
-        "CAF_FSTemplate": {
-            "Faction": "Canadian Armed Forces",
-            "cmndrActionNearVeh": false,
-            "hasBuddyRally": false,
-            "type": "Combined Arms",
-            "shortName": "CAF",
-            "displayName": "Canadian Armed Forces",
-            "description": "The Canadian Armed Forces is a collective of the military branches of Canada.",
-            "uiUnitBadge": "Unit_CAF",
-            "vehicles": {
-                "BP_M-Gator_Transport_ARID": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_M-Gator_Logistics_ARID": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_LUVW_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_LUVW_Logi_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_CAF_Util_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_CAF_Util_Desert_Logi": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_LUVW_C6_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_LUVW_M2_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_TAPV_C16_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_M113A3_Logistics_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_M113A3_CAF_C6_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_M113A3_CAF_M2_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_M113A3_CAF_TLAV_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_LAV_RWS_C6_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_LAV_RWS_M2_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_LAV2_Coyote": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_LAV6_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_2A6_Desert": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_2A6_Desert_Cage": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_CH146": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_CH178": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                }
-            },
-            "roles": {
-                "CAF_Recruit": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_SL_02": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_SL_03": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_SL_04": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_SL_05": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_SL_06": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_SLCrewman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_SLPilot_01": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_Medic_01": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_Medic_02": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_Rifleman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_Rifleman_02": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_Rifleman_03": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_Raider_01": {
-                    "baseTeamAvailability": 8
-                },
-                "CAF_AR_01": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_AR_02": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_AR_03": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_Grenadier_01": {
-                    "baseTeamAvailability": 4
-                },
-                "CAF_Grenadier_02": {
-                    "baseTeamAvailability": 4
-                },
-                "CAF_LAT_01": {
-                    "baseTeamAvailability": 8
-                },
-                "CAF_LAT_02": {
-                    "baseTeamAvailability": 8
-                },
-                "CAF_Sniper_01": {
-                    "baseTeamAvailability": 2
-                },
-                "CAF_MachineGunner_02": {
-                    "baseTeamAvailability": 2
-                },
-                "CAF_HAT_01": {
-                    "baseTeamAvailability": 1
-                },
-                "CAF_HAT_02": {
-                    "baseTeamAvailability": 1
-                },
-                "CAF_Engineer_01": {
-                    "baseTeamAvailability": 2
-                },
-                "CAF_Engineer_02": {
-                    "baseTeamAvailability": 2
-                },
-                "CAF_Crewman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "CAF_Pilot_01": {
-                    "baseTeamAvailability": -1
-                }
-            },
-            "characteristics": [
-                "No Special Characterics"
-            ],
-            "commanderActions": [
-                {
-                    "displayName": "155mm Artillery Static Barrage",
-                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
-                    "icon": "T_tactical_artillery",
-                    "minDistance": 50,
-                    "maxDistance": 150,
-                    "enrouteDurationS": 60,
-                    "activeDurationS": 60,
-                    "cooldownDurationS": 1800
-                },
-                {
-                    "displayName": "155mm Artillery Creeping Barrage",
-                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
-                    "icon": "T_tactical_artillery",
-                    "minDistance": 175,
-                    "maxDistance": 450,
-                    "enrouteDurationS": 60,
-                    "activeDurationS": 60,
-                    "cooldownDurationS": 1800
-                },
-                {
-                    "displayName": "CF-18 Rocket Strike",
-                    "description": "A precise rocket strike from a CF-18 multirole aircraft.",
-                    "icon": "T_tactical_f18gunrun",
-                    "minDistance": 20,
-                    "maxDistance": 60,
-                    "enrouteDurationS": 15,
-                    "activeDurationS": 32,
-                    "cooldownDurationS": 900
-                },
-                {
-                    "displayName": "MQ-9 UAV Recon",
-                    "description": "A flyby from a MQ-9 UAV, allowing for live aerial reconnaissance.",
-                    "icon": "T_strategic_uav",
-                    "minDistance": 100,
-                    "maxDistance": 250,
-                    "enrouteDurationS": 30,
-                    "activeDurationS": 300,
-                    "cooldownDurationS": 600
-                }
-            ],
-            "deployables": {
-                "Bunker_Hesco_NATO": {
-                    "availability": -1
-                },
-                "Hesco_NATO": {
-                    "availability": -1
-                },
-                "Wall_Hesco_NATO": {
-                    "availability": -1
-                },
-                "IndirectFireShelter": {
-                    "availability": 3
-                },
-                "Wall_Sandbag": {
-                    "availability": -1
-                },
-                "Wall_Sandbag_MurderHole": {
-                    "availability": -1
-                },
-                "Crescent_Sandbag": {
-                    "availability": -1
-                },
-                "Ladder_Metal": {
-                    "availability": 5
-                },
-                "RazorWire": {
-                    "availability": -1
-                },
-                "HAB_NATO": {
-                    "availability": 1
-                },
-                "AmmoCrate_CAF": {
-                    "availability": -1
-                },
-                "RepairStation_NATO": {
-                    "availability": 1
-                },
-                "TOW": {
-                    "availability": 1
-                },
-                "M2_Tripod_Ironsight": {
-                    "availability": 2
-                },
-                "C16_Tripod": {
-                    "availability": 2
-                },
-                "M2_Bunker_Ironsight": {
-                    "availability": 2
-                },
-                "81mmMortar": {
-                    "availability": 2
-                },
-                "Radio_NATO": {
-                    "availability": -1
-                },
-                "ObservationTower_CAF": {
-                    "availability": 2
-                }
-            },
-            "mapLayers": []
-        },
-        "BAF_FSTemplate": {
-            "Faction": "British Armed Forces",
-            "cmndrActionNearVeh": false,
-            "hasBuddyRally": false,
-            "type": "Combined Arms",
-            "shortName": "BAF",
-            "displayName": "British Armed Forces",
-            "description": "The British Armed Forces represents the combined arms elements of Britain.",
-            "uiUnitBadge": "Unit_BAF",
-            "vehicles": {
-                "BP_Brit_Util_Truck": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_Brit_Util_Truck_Logi": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_LPPV": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_LPPV_M2RWS": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_FV107": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_FV432": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_FV432_M2_RWS": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_FV510": {
-                    "delay": 10,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_FV510UA": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_FV510UA_CTAS40": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_FV4034": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_SA330": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                }
-            },
-            "roles": {
-                "BAF_Recruit": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_SL_01": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_SL_02": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_SL_03": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_SL_04": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_SLCrewman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_SLPilot_01": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_Medic_01": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_Medic_02": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_Rifleman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_Rifleman_02": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_Rifleman_03": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_Rifleman_04": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_Raider_01": {
-                    "baseTeamAvailability": 8
-                },
-                "BAF_AR_01": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_AR_02": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_Grenadier_01": {
-                    "baseTeamAvailability": 4
-                },
-                "BAF_LAT_01": {
-                    "baseTeamAvailability": 8
-                },
-                "BAF_LAT_02": {
-                    "baseTeamAvailability": 8
-                },
-                "BAF_Marksman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_Marksman_02": {
-                    "baseTeamAvailability": 4
-                },
-                "BAF_MachineGunner_01": {
-                    "baseTeamAvailability": 2
-                },
-                "BAF_HAT_01": {
-                    "baseTeamAvailability": 1
-                },
-                "BAF_HAT_02": {
-                    "baseTeamAvailability": 1
-                },
-                "BAF_Engineer_01": {
-                    "baseTeamAvailability": 2
-                },
-                "BAF_Crewman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "BAF_Pilot_01": {
-                    "baseTeamAvailability": -1
-                }
-            },
-            "characteristics": [
-                "No Special Characterics"
-            ],
-            "commanderActions": [
-                {
-                    "displayName": "155mm Artillery Static Barrage",
-                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
-                    "icon": "T_tactical_artillery",
-                    "minDistance": 50,
-                    "maxDistance": 150,
-                    "enrouteDurationS": 60,
-                    "activeDurationS": 60,
-                    "cooldownDurationS": 1800
-                },
-                {
-                    "displayName": "155mm Artillery Creeping Barrage",
-                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
-                    "icon": "T_tactical_artillery",
-                    "minDistance": 175,
-                    "maxDistance": 450,
-                    "enrouteDurationS": 60,
-                    "activeDurationS": 60,
-                    "cooldownDurationS": 1800
-                },
-                {
-                    "displayName": "A-10 Warthog Airstrike",
-                    "description": "A 30mm anti-armor cannon strafing run from an A-10 Warthog ground attack aircraft.",
-                    "icon": "T_tactical_a10gunrun",
-                    "minDistance": 20,
-                    "maxDistance": 60,
-                    "enrouteDurationS": 15,
-                    "activeDurationS": 32,
-                    "cooldownDurationS": 900
-                },
-                {
-                    "displayName": "MQ-9 UAV Recon",
-                    "description": "A flyby from a MQ-9 UAV, allowing for live aerial reconnaissance.",
-                    "icon": "T_strategic_uav",
-                    "minDistance": 100,
-                    "maxDistance": 250,
-                    "enrouteDurationS": 30,
-                    "activeDurationS": 300,
-                    "cooldownDurationS": 600
-                }
-            ],
-            "deployables": {
-                "Bunker_Hesco_NATO": {
-                    "availability": -1
-                },
-                "Hesco_NATO": {
-                    "availability": -1
-                },
-                "Wall_Hesco_NATO": {
-                    "availability": -1
-                },
-                "IndirectFireShelter": {
-                    "availability": 3
-                },
-                "Wall_Sandbag": {
-                    "availability": -1
-                },
-                "Wall_Sandbag_MurderHole": {
-                    "availability": -1
-                },
-                "Crescent_Sandbag": {
-                    "availability": -1
-                },
-                "Ladder_Metal": {
-                    "availability": 5
-                },
-                "RazorWire": {
-                    "availability": -1
-                },
-                "HAB_NATO": {
-                    "availability": 1
-                },
-                "AmmoCrate_BAF": {
-                    "availability": -1
-                },
-                "RepairStation_NATO": {
-                    "availability": 1
-                },
-                "TOW": {
-                    "availability": 1
-                },
-                "M2_Tripod": {
-                    "availability": 2
-                },
-                "L134A1_Tripod": {
-                    "availability": 2
-                },
-                "M2_Bunker": {
-                    "availability": 2
-                },
-                "L16_Mortar": {
-                    "availability": 2
-                },
-                "Radio_NATO": {
-                    "availability": -1
-                },
-                "ObservationTower_NATO": {
-                    "availability": 2
-                }
-            },
-            "mapLayers": []
-        },
-        "ADF_FSTemplate": {
-            "Faction": "Australian Defence Force",
-            "cmndrActionNearVeh": false,
-            "hasBuddyRally": false,
-            "type": "Combined Arms",
-            "shortName": "ADF",
-            "displayName": "Australian Defence Force",
-            "description": "The Australian Defence Force represents the combined military forces of Australia.",
-            "uiUnitBadge": "Unit_ADF",
-            "vehicles": {
-                "BP_Aussie_Util_Truck": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_Aussie_Util_Truck_Logi": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_PMV_Mag58": {
-                    "delay": 0,
-                    "count": 2,
-                    "isUnique": false
-                },
-                "BP_PMV_RWS": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_ASLAV": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_AUS_M1A1": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_MRH90_Mag58": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                },
-                "BP_UH60_AUS": {
-                    "delay": 0,
-                    "count": 1,
-                    "isUnique": false
-                }
-            },
-            "roles": {
-                "ADF_Recruit": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_SL_01": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_SL_02": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_SL_03": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_SLCrewman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_SLPilot_01": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_Medic_01": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_Medic_02": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_Raider_01": {
-                    "baseTeamAvailability": 8
-                },
-                "ADF_Rifleman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_Rifleman_02": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_Rifleman_03": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_AR_01": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_AR_02": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_Grenadier_01": {
-                    "baseTeamAvailability": 4
-                },
-                "ADF_LAT_01": {
-                    "baseTeamAvailability": 8
-                },
-                "ADF_LAT_02": {
-                    "baseTeamAvailability": 8
-                },
-                "ADF_Marksman_01": {
-                    "baseTeamAvailability": 4
-                },
-                "ADF_MachineGunner_01": {
-                    "baseTeamAvailability": 2
-                },
-                "ADF_MachineGunner_02": {
-                    "baseTeamAvailability": 2
-                },
-                "ADF_MachineGunner_03": {
-                    "baseTeamAvailability": 2
-                },
-                "ADF_MachineGunner_04": {
-                    "baseTeamAvailability": 2
-                },
-                "ADF_HAT_01": {
-                    "baseTeamAvailability": 1
-                },
-                "ADF_HAT_02": {
-                    "baseTeamAvailability": 1
-                },
-                "ADF_Engineer_01": {
-                    "baseTeamAvailability": 2
-                },
-                "ADF_Engineer_02": {
-                    "baseTeamAvailability": 2
-                },
-                "ADF_Crewman_01": {
-                    "baseTeamAvailability": -1
-                },
-                "ADF_Pilot_01": {
-                    "baseTeamAvailability": -1
-                }
-            },
-            "characteristics": [
-                "No Special Characterics"
-            ],
-            "commanderActions": [
-                {
-                    "displayName": "F/A-18 Hornet Rocket Strike",
-                    "description": "A precise rocket strike from an F/A-18 multirole aircraft.",
-                    "icon": "T_tactical_f18gunrun",
-                    "minDistance": 20,
-                    "maxDistance": 60,
-                    "enrouteDurationS": 15,
-                    "activeDurationS": 32,
-                    "cooldownDurationS": 900
-                },
-                {
-                    "displayName": "155mm Artillery Static Barrage",
-                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
-                    "icon": "T_tactical_artillery",
-                    "minDistance": 50,
-                    "maxDistance": 150,
-                    "enrouteDurationS": 60,
-                    "activeDurationS": 60,
-                    "cooldownDurationS": 1800
-                },
-                {
-                    "displayName": "155mm Artillery Creeping Barrage",
-                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
-                    "icon": "T_tactical_artillery",
-                    "minDistance": 175,
-                    "maxDistance": 450,
-                    "enrouteDurationS": 60,
-                    "activeDurationS": 60,
-                    "cooldownDurationS": 1800
-                },
-                {
-                    "displayName": "MQ-9 UAV Recon",
-                    "description": "A flyby from a MQ-9 UAV, allowing for live aerial reconnaissance.",
-                    "icon": "T_strategic_uav",
-                    "minDistance": 100,
-                    "maxDistance": 250,
-                    "enrouteDurationS": 30,
-                    "activeDurationS": 300,
-                    "cooldownDurationS": 600
-                }
-            ],
-            "deployables": {
-                "Bunker_Hesco_ADF": {
-                    "availability": -1
-                },
-                "Hesco_ADF": {
-                    "availability": -1
-                },
-                "Wall_Hesco_ADF": {
-                    "availability": -1
-                },
-                "IndirectFireShelter": {
-                    "availability": 3
-                },
-                "Wall_Sandbag": {
-                    "availability": -1
-                },
-                "Wall_Sandbag_MurderHole": {
-                    "availability": -1
-                },
-                "Crescent_Sandbag": {
-                    "availability": -1
-                },
-                "Ladder_Metal": {
-                    "availability": 5
-                },
-                "RazorWire": {
-                    "availability": -1
-                },
-                "HAB_ADF": {
-                    "availability": -1
-                },
-                "AmmoCrate_ADF": {
-                    "availability": -1
-                },
-                "RepairStation_ADF": {
-                    "availability": 1
-                },
-                "TOW": {
-                    "availability": -1
-                },
-                "M2_Tripod_Ironsight": {
-                    "availability": 2
-                },
-                "Mk19_Tripod": {
-                    "availability": 2
-                },
-                "M2_Bunker_Ironsight": {
-                    "availability": 2
-                },
-                "M252_Mortar": {
-                    "availability": -1
-                },
-                "Radio_NATO": {
-                    "availability": -1
-                },
-                "ObservationTower_ADF": {
-                    "availability": 2
-                }
-            },
-            "mapLayers": []
-        },
         "WPMC_FSTemplate": {
             "Faction": "Western Private Military Contractors",
             "cmndrActionNearVeh": true,
@@ -23663,7 +22595,9 @@
                     "availability": 2
                 }
             },
-            "mapLayers": []
+            "mapLayers": [
+                "Extraction"
+            ]
         },
         "USMC_FSTemplate": {
             "Faction": "United States Marine Corps",
@@ -23981,7 +22915,9 @@
                     "availability": 2
                 }
             },
-            "mapLayers": []
+            "mapLayers": [
+                "Extraction"
+            ]
         },
         "USA_FSTemplate": {
             "Faction": "United States Army",
@@ -24292,6 +23228,310 @@
                     "availability": 2
                 },
                 "Radio_NATO": {
+                    "availability": -1
+                },
+                "ObservationTower_NATO": {
+                    "availability": 2
+                }
+            },
+            "mapLayers": []
+        },
+        "TLF_FSTemplate": {
+            "Faction": "Turkish Land Forces",
+            "cmndrActionNearVeh": false,
+            "hasBuddyRally": false,
+            "type": "Combined Arms",
+            "shortName": "TLF",
+            "displayName": "Turkish Land Forces",
+            "description": "The Turkish Land Forces (TLF) is the ground combat branch of the Turkish Armed Forces. It was founded after the dissolution of the Ottoman Empire. Turkey has been a member of NATO since 1952. The TLF has recently been modernising and strengthening its numbers due to various conflicts in the region.",
+            "uiUnitBadge": "Unit_TLF",
+            "vehicles": {
+                "BP_TLF_Util_Truck": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_TLF_Util_Truck_Logi": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_M113A3_Logistics_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_Cobra2_MG3": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_Cobra2_RWS_MG3": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_Cobra2_M2": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_Cobra2_RWS_M2": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_M113A2T_M2_TLF": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_M113A2T_MK19_TLF": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_M1064_M121_TLF": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_ACV-15_MG3": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_ACV-15_M2": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_PARS3_MG3": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_PARS3_MK19": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_PARS3_M2": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_PARS3": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_ACV-15": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_M60T": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_UH60_TLF_PKM": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                }
+            },
+            "roles": {
+                "TLF_Recruit_01": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_SL_01": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_SL_02": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_SL_03": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_SL_04": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_SLCrewman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_SLPilot_01": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_Medic_01": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_Medic_02": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_Rifleman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_Rifleman_02": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_Rifleman_03": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_Rifleman_04": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_MachineGunner_01": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_Raider_01": {
+                    "baseTeamAvailability": 8
+                },
+                "TLF_Grenadier_01": {
+                    "baseTeamAvailability": 4
+                },
+                "TLF_Grenadier_02": {
+                    "baseTeamAvailability": 4
+                },
+                "TLF_Grenadier_03": {
+                    "baseTeamAvailability": 1
+                },
+                "TLF_LAT_01": {
+                    "baseTeamAvailability": 8
+                },
+                "TLF_LAT_02": {
+                    "baseTeamAvailability": 8
+                },
+                "TLF_LAT_03": {
+                    "baseTeamAvailability": 8
+                },
+                "TLF_Marksman_01": {
+                    "baseTeamAvailability": 4
+                },
+                "TLF_Marksman_02": {
+                    "baseTeamAvailability": 4
+                },
+                "TLF_MachineGunner_02": {
+                    "baseTeamAvailability": 2
+                },
+                "TLF_MachineGunner_03": {
+                    "baseTeamAvailability": 2
+                },
+                "TLF_HAT_01": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_HAT_02": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_Engineer_01": {
+                    "baseTeamAvailability": 2
+                },
+                "TLF_Crewman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "TLF_Pilot_01": {
+                    "baseTeamAvailability": -1
+                }
+            },
+            "characteristics": [
+                "No Special Characterics"
+            ],
+            "commanderActions": [
+                {
+                    "displayName": "155mm Artillery Static Barrage",
+                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
+                    "icon": "T_tactical_artillery",
+                    "minDistance": 50,
+                    "maxDistance": 150,
+                    "enrouteDurationS": 60,
+                    "activeDurationS": 60,
+                    "cooldownDurationS": 1800
+                },
+                {
+                    "displayName": "155mm Artillery Creeping Barrage",
+                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
+                    "icon": "T_tactical_artillery",
+                    "minDistance": 175,
+                    "maxDistance": 450,
+                    "enrouteDurationS": 60,
+                    "activeDurationS": 60,
+                    "cooldownDurationS": 1800
+                },
+                {
+                    "displayName": "TB-2 UAV Recon",
+                    "description": "A flyby from a TB-2 UAV, allowing for live aerial reconnaissance.",
+                    "icon": "T_strategic_uav",
+                    "minDistance": 100,
+                    "maxDistance": 250,
+                    "enrouteDurationS": 30,
+                    "activeDurationS": 300,
+                    "cooldownDurationS": 600
+                },
+                {
+                    "displayName": "F-16 Falcon Rocket Strike",
+                    "description": "A precise rocket strike from a F-16 Falcon multirole aircraft.",
+                    "icon": "T_tactical_f18gunrun",
+                    "minDistance": 20,
+                    "maxDistance": 60,
+                    "enrouteDurationS": 15,
+                    "activeDurationS": 32,
+                    "cooldownDurationS": 900
+                }
+            ],
+            "deployables": {
+                "Bunker_Hesco_NATO": {
+                    "availability": -1
+                },
+                "Hesco_NATO": {
+                    "availability": -1
+                },
+                "Wall_Hesco_NATO": {
+                    "availability": -1
+                },
+                "IndirectFireShelter": {
+                    "availability": 3
+                },
+                "Wall_Sandbag": {
+                    "availability": -1
+                },
+                "Wall_Sandbag_MurderHole": {
+                    "availability": -1
+                },
+                "Crescent_Sandbag": {
+                    "availability": -1
+                },
+                "Ladder_Metal": {
+                    "availability": 5
+                },
+                "RazorWire": {
+                    "availability": -1
+                },
+                "HAB_NATO": {
+                    "availability": 1
+                },
+                "AmmoCrate_TLF": {
+                    "availability": -1
+                },
+                "RepairStation_NATO": {
+                    "availability": 1
+                },
+                "Milan_TLF": {
+                    "availability": 1
+                },
+                "M2HB_Tripod_Ironsight": {
+                    "availability": 2
+                },
+                "Mk19_Tripod": {
+                    "availability": 2
+                },
+                "M2HB_Bunker": {
+                    "availability": 2
+                },
+                "M252_Mortar": {
+                    "availability": 2
+                },
+                "Radio_TLF": {
                     "availability": -1
                 },
                 "ObservationTower_NATO": {
@@ -25804,7 +25044,9 @@
                     "availability": 2
                 }
             },
-            "mapLayers": []
+            "mapLayers": [
+                "Extraction"
+            ]
         },
         "GFI_FSTemplate": {
             "Faction": "Ground Forces of Iran",
@@ -26316,6 +25558,577 @@
             },
             "mapLayers": []
         },
+        "CAF_FSTemplate": {
+            "Faction": "Canadian Armed Forces",
+            "cmndrActionNearVeh": false,
+            "hasBuddyRally": false,
+            "type": "Combined Arms",
+            "shortName": "CAF",
+            "displayName": "Canadian Armed Forces",
+            "description": "The Canadian Armed Forces is a collective of the military branches of Canada.",
+            "uiUnitBadge": "Unit_CAF",
+            "vehicles": {
+                "BP_M-Gator_Transport_ARID": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_M-Gator_Logistics_ARID": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_LUVW_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_LUVW_Logi_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_CAF_Util_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_CAF_Util_Desert_Logi": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_LUVW_C6_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_LUVW_M2_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_TAPV_C16_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_M113A3_Logistics_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_M113A3_CAF_C6_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_M113A3_CAF_M2_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_M113A3_CAF_TLAV_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_LAV_RWS_C6_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_LAV_RWS_M2_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_LAV2_Coyote": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_LAV6_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_2A6_Desert": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_2A6_Desert_Cage": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_CH146": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_CH178": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                }
+            },
+            "roles": {
+                "CAF_Recruit": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_SL_02": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_SL_03": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_SL_04": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_SL_05": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_SL_06": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_SLCrewman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_SLPilot_01": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_Medic_01": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_Medic_02": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_Rifleman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_Rifleman_02": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_Rifleman_03": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_Raider_01": {
+                    "baseTeamAvailability": 8
+                },
+                "CAF_AR_01": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_AR_02": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_AR_03": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_Grenadier_01": {
+                    "baseTeamAvailability": 4
+                },
+                "CAF_Grenadier_02": {
+                    "baseTeamAvailability": 4
+                },
+                "CAF_LAT_01": {
+                    "baseTeamAvailability": 8
+                },
+                "CAF_LAT_02": {
+                    "baseTeamAvailability": 8
+                },
+                "CAF_Sniper_01": {
+                    "baseTeamAvailability": 2
+                },
+                "CAF_MachineGunner_02": {
+                    "baseTeamAvailability": 2
+                },
+                "CAF_HAT_01": {
+                    "baseTeamAvailability": 1
+                },
+                "CAF_HAT_02": {
+                    "baseTeamAvailability": 1
+                },
+                "CAF_Engineer_01": {
+                    "baseTeamAvailability": 2
+                },
+                "CAF_Engineer_02": {
+                    "baseTeamAvailability": 2
+                },
+                "CAF_Crewman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "CAF_Pilot_01": {
+                    "baseTeamAvailability": -1
+                }
+            },
+            "characteristics": [
+                "No Special Characterics"
+            ],
+            "commanderActions": [
+                {
+                    "displayName": "155mm Artillery Static Barrage",
+                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
+                    "icon": "T_tactical_artillery",
+                    "minDistance": 50,
+                    "maxDistance": 150,
+                    "enrouteDurationS": 60,
+                    "activeDurationS": 60,
+                    "cooldownDurationS": 1800
+                },
+                {
+                    "displayName": "155mm Artillery Creeping Barrage",
+                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
+                    "icon": "T_tactical_artillery",
+                    "minDistance": 175,
+                    "maxDistance": 450,
+                    "enrouteDurationS": 60,
+                    "activeDurationS": 60,
+                    "cooldownDurationS": 1800
+                },
+                {
+                    "displayName": "CF-18 Rocket Strike",
+                    "description": "A precise rocket strike from a CF-18 multirole aircraft.",
+                    "icon": "T_tactical_f18gunrun",
+                    "minDistance": 20,
+                    "maxDistance": 60,
+                    "enrouteDurationS": 15,
+                    "activeDurationS": 32,
+                    "cooldownDurationS": 900
+                },
+                {
+                    "displayName": "MQ-9 UAV Recon",
+                    "description": "A flyby from a MQ-9 UAV, allowing for live aerial reconnaissance.",
+                    "icon": "T_strategic_uav",
+                    "minDistance": 100,
+                    "maxDistance": 250,
+                    "enrouteDurationS": 30,
+                    "activeDurationS": 300,
+                    "cooldownDurationS": 600
+                }
+            ],
+            "deployables": {
+                "Bunker_Hesco_NATO": {
+                    "availability": -1
+                },
+                "Hesco_NATO": {
+                    "availability": -1
+                },
+                "Wall_Hesco_NATO": {
+                    "availability": -1
+                },
+                "IndirectFireShelter": {
+                    "availability": 3
+                },
+                "Wall_Sandbag": {
+                    "availability": -1
+                },
+                "Wall_Sandbag_MurderHole": {
+                    "availability": -1
+                },
+                "Crescent_Sandbag": {
+                    "availability": -1
+                },
+                "Ladder_Metal": {
+                    "availability": 5
+                },
+                "RazorWire": {
+                    "availability": -1
+                },
+                "HAB_NATO": {
+                    "availability": 1
+                },
+                "AmmoCrate_CAF": {
+                    "availability": -1
+                },
+                "RepairStation_NATO": {
+                    "availability": 1
+                },
+                "TOW": {
+                    "availability": 1
+                },
+                "M2_Tripod_Ironsight": {
+                    "availability": 2
+                },
+                "C16_Tripod": {
+                    "availability": 2
+                },
+                "M2_Bunker_Ironsight": {
+                    "availability": 2
+                },
+                "81mmMortar": {
+                    "availability": 2
+                },
+                "Radio_NATO": {
+                    "availability": -1
+                },
+                "ObservationTower_CAF": {
+                    "availability": 2
+                }
+            },
+            "mapLayers": []
+        },
+        "BAF_FSTemplate": {
+            "Faction": "British Armed Forces",
+            "cmndrActionNearVeh": false,
+            "hasBuddyRally": false,
+            "type": "Combined Arms",
+            "shortName": "BAF",
+            "displayName": "British Armed Forces",
+            "description": "The British Armed Forces represents the combined arms elements of Britain.",
+            "uiUnitBadge": "Unit_BAF",
+            "vehicles": {
+                "BP_Brit_Util_Truck": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_Brit_Util_Truck_Logi": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_LPPV": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_LPPV_M2RWS": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_FV107": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_FV432": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_FV432_M2_RWS": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_FV510": {
+                    "delay": 10,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_FV510UA": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_FV510UA_CTAS40": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_FV4034": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_SA330": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                }
+            },
+            "roles": {
+                "BAF_Recruit": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_SL_01": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_SL_02": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_SL_03": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_SL_04": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_SLCrewman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_SLPilot_01": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_Medic_01": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_Medic_02": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_Rifleman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_Rifleman_02": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_Rifleman_03": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_Rifleman_04": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_Raider_01": {
+                    "baseTeamAvailability": 8
+                },
+                "BAF_AR_01": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_AR_02": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_Grenadier_01": {
+                    "baseTeamAvailability": 4
+                },
+                "BAF_LAT_01": {
+                    "baseTeamAvailability": 8
+                },
+                "BAF_LAT_02": {
+                    "baseTeamAvailability": 8
+                },
+                "BAF_Marksman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_Marksman_02": {
+                    "baseTeamAvailability": 4
+                },
+                "BAF_MachineGunner_01": {
+                    "baseTeamAvailability": 2
+                },
+                "BAF_HAT_01": {
+                    "baseTeamAvailability": 1
+                },
+                "BAF_HAT_02": {
+                    "baseTeamAvailability": 1
+                },
+                "BAF_Engineer_01": {
+                    "baseTeamAvailability": 2
+                },
+                "BAF_Crewman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "BAF_Pilot_01": {
+                    "baseTeamAvailability": -1
+                }
+            },
+            "characteristics": [
+                "No Special Characterics"
+            ],
+            "commanderActions": [
+                {
+                    "displayName": "155mm Artillery Static Barrage",
+                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
+                    "icon": "T_tactical_artillery",
+                    "minDistance": 50,
+                    "maxDistance": 150,
+                    "enrouteDurationS": 60,
+                    "activeDurationS": 60,
+                    "cooldownDurationS": 1800
+                },
+                {
+                    "displayName": "155mm Artillery Creeping Barrage",
+                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
+                    "icon": "T_tactical_artillery",
+                    "minDistance": 175,
+                    "maxDistance": 450,
+                    "enrouteDurationS": 60,
+                    "activeDurationS": 60,
+                    "cooldownDurationS": 1800
+                },
+                {
+                    "displayName": "A-10 Warthog Airstrike",
+                    "description": "A 30mm anti-armor cannon strafing run from an A-10 Warthog ground attack aircraft.",
+                    "icon": "T_tactical_a10gunrun",
+                    "minDistance": 20,
+                    "maxDistance": 60,
+                    "enrouteDurationS": 15,
+                    "activeDurationS": 32,
+                    "cooldownDurationS": 900
+                },
+                {
+                    "displayName": "MQ-9 UAV Recon",
+                    "description": "A flyby from a MQ-9 UAV, allowing for live aerial reconnaissance.",
+                    "icon": "T_strategic_uav",
+                    "minDistance": 100,
+                    "maxDistance": 250,
+                    "enrouteDurationS": 30,
+                    "activeDurationS": 300,
+                    "cooldownDurationS": 600
+                }
+            ],
+            "deployables": {
+                "Bunker_Hesco_NATO": {
+                    "availability": -1
+                },
+                "Hesco_NATO": {
+                    "availability": -1
+                },
+                "Wall_Hesco_NATO": {
+                    "availability": -1
+                },
+                "IndirectFireShelter": {
+                    "availability": 3
+                },
+                "Wall_Sandbag": {
+                    "availability": -1
+                },
+                "Wall_Sandbag_MurderHole": {
+                    "availability": -1
+                },
+                "Crescent_Sandbag": {
+                    "availability": -1
+                },
+                "Ladder_Metal": {
+                    "availability": 5
+                },
+                "RazorWire": {
+                    "availability": -1
+                },
+                "HAB_NATO": {
+                    "availability": 1
+                },
+                "AmmoCrate_BAF": {
+                    "availability": -1
+                },
+                "RepairStation_NATO": {
+                    "availability": 1
+                },
+                "TOW": {
+                    "availability": 1
+                },
+                "M2_Tripod": {
+                    "availability": 2
+                },
+                "L134A1_Tripod": {
+                    "availability": 2
+                },
+                "M2_Bunker": {
+                    "availability": 2
+                },
+                "L16_Mortar": {
+                    "availability": 2
+                },
+                "Radio_NATO": {
+                    "availability": -1
+                },
+                "ObservationTower_NATO": {
+                    "availability": 2
+                }
+            },
+            "mapLayers": []
+        },
         "AFU_FSTemplate": {
             "Faction": "Armed Forces of Ukraine",
             "cmndrActionNearVeh": false,
@@ -26625,7 +26438,7 @@
                     "availability": -1
                 },
                 "HAB_AFU": {
-                    "availability": 2
+                    "availability": 1
                 },
                 "AmmoCrate_AFU": {
                     "availability": -1
@@ -26642,19 +26455,262 @@
                 "DShk_Tripod": {
                     "availability": 2
                 },
-                "AGS17_Bunker": {
-                    "availability": 2
-                },
                 "AGS17_Tripod": {
                     "availability": 2
                 },
                 "NSV_Bunker_AFU": {
                     "availability": 2
                 },
+                "AGS17_Bunker": {
+                    "availability": 2
+                },
                 "Radio_AFU": {
                     "availability": -1
                 },
                 "ObservationTower_AFU": {
+                    "availability": 2
+                }
+            },
+            "mapLayers": []
+        },
+        "ADF_FSTemplate": {
+            "Faction": "Australian Defence Force",
+            "cmndrActionNearVeh": false,
+            "hasBuddyRally": false,
+            "type": "Combined Arms",
+            "shortName": "ADF",
+            "displayName": "Australian Defence Force",
+            "description": "The Australian Defence Force represents the combined military forces of Australia.",
+            "uiUnitBadge": "Unit_ADF",
+            "vehicles": {
+                "BP_Aussie_Util_Truck": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_Aussie_Util_Truck_Logi": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_PMV_Mag58": {
+                    "delay": 0,
+                    "count": 2,
+                    "isUnique": false
+                },
+                "BP_PMV_RWS": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_ASLAV": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_AUS_M1A1": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_MRH90_Mag58": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                },
+                "BP_UH60_AUS": {
+                    "delay": 0,
+                    "count": 1,
+                    "isUnique": false
+                }
+            },
+            "roles": {
+                "ADF_Recruit": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_SL_01": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_SL_02": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_SL_03": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_SLCrewman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_SLPilot_01": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_Medic_01": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_Medic_02": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_Raider_01": {
+                    "baseTeamAvailability": 8
+                },
+                "ADF_Rifleman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_Rifleman_02": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_Rifleman_03": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_AR_01": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_AR_02": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_Grenadier_01": {
+                    "baseTeamAvailability": 4
+                },
+                "ADF_LAT_01": {
+                    "baseTeamAvailability": 8
+                },
+                "ADF_LAT_02": {
+                    "baseTeamAvailability": 8
+                },
+                "ADF_Marksman_01": {
+                    "baseTeamAvailability": 4
+                },
+                "ADF_MachineGunner_01": {
+                    "baseTeamAvailability": 2
+                },
+                "ADF_MachineGunner_02": {
+                    "baseTeamAvailability": 2
+                },
+                "ADF_MachineGunner_03": {
+                    "baseTeamAvailability": 2
+                },
+                "ADF_MachineGunner_04": {
+                    "baseTeamAvailability": 2
+                },
+                "ADF_HAT_01": {
+                    "baseTeamAvailability": 1
+                },
+                "ADF_HAT_02": {
+                    "baseTeamAvailability": 1
+                },
+                "ADF_Engineer_01": {
+                    "baseTeamAvailability": 2
+                },
+                "ADF_Engineer_02": {
+                    "baseTeamAvailability": 2
+                },
+                "ADF_Crewman_01": {
+                    "baseTeamAvailability": -1
+                },
+                "ADF_Pilot_01": {
+                    "baseTeamAvailability": -1
+                }
+            },
+            "characteristics": [
+                "No Special Characterics"
+            ],
+            "commanderActions": [
+                {
+                    "displayName": "F/A-18 Hornet Rocket Strike",
+                    "description": "A precise rocket strike from an F/A-18 multirole aircraft.",
+                    "icon": "T_tactical_f18gunrun",
+                    "minDistance": 20,
+                    "maxDistance": 60,
+                    "enrouteDurationS": 15,
+                    "activeDurationS": 32,
+                    "cooldownDurationS": 900
+                },
+                {
+                    "displayName": "155mm Artillery Static Barrage",
+                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
+                    "icon": "T_tactical_artillery",
+                    "minDistance": 50,
+                    "maxDistance": 150,
+                    "enrouteDurationS": 60,
+                    "activeDurationS": 60,
+                    "cooldownDurationS": 1800
+                },
+                {
+                    "displayName": "155mm Artillery Creeping Barrage",
+                    "description": "A 155mm heavy artillery strike that deals significant damage to anything that stands in its path.",
+                    "icon": "T_tactical_artillery",
+                    "minDistance": 175,
+                    "maxDistance": 450,
+                    "enrouteDurationS": 60,
+                    "activeDurationS": 60,
+                    "cooldownDurationS": 1800
+                },
+                {
+                    "displayName": "MQ-9 UAV Recon",
+                    "description": "A flyby from a MQ-9 UAV, allowing for live aerial reconnaissance.",
+                    "icon": "T_strategic_uav",
+                    "minDistance": 100,
+                    "maxDistance": 250,
+                    "enrouteDurationS": 30,
+                    "activeDurationS": 300,
+                    "cooldownDurationS": 600
+                }
+            ],
+            "deployables": {
+                "Bunker_Hesco_ADF": {
+                    "availability": -1
+                },
+                "Hesco_ADF": {
+                    "availability": -1
+                },
+                "Wall_Hesco_ADF": {
+                    "availability": -1
+                },
+                "IndirectFireShelter": {
+                    "availability": 3
+                },
+                "Wall_Sandbag": {
+                    "availability": -1
+                },
+                "Wall_Sandbag_MurderHole": {
+                    "availability": -1
+                },
+                "Crescent_Sandbag": {
+                    "availability": -1
+                },
+                "Ladder_Metal": {
+                    "availability": 5
+                },
+                "RazorWire": {
+                    "availability": -1
+                },
+                "HAB_ADF": {
+                    "availability": -1
+                },
+                "AmmoCrate_ADF": {
+                    "availability": -1
+                },
+                "RepairStation_ADF": {
+                    "availability": 1
+                },
+                "TOW": {
+                    "availability": -1
+                },
+                "M2_Tripod_Ironsight": {
+                    "availability": 2
+                },
+                "Mk19_Tripod": {
+                    "availability": 2
+                },
+                "M2_Bunker_Ironsight": {
+                    "availability": 2
+                },
+                "M252_Mortar": {
+                    "availability": -1
+                },
+                "Radio_NATO": {
+                    "availability": -1
+                },
+                "ObservationTower_ADF": {
                     "availability": 2
                 }
             },
@@ -26874,9 +26930,9 @@
                 "Narva Skirmish v1",
                 "Mutaha Skirmish v1",
                 "Mestia Skirmish v1",
+                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v3",
                 "Manicouagan Skirmish v2",
-                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v1",
                 "Logar Skirmish v1",
                 "Lashkar Skirmish v1",
@@ -27303,6 +27359,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sanxian Seed v1",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
@@ -28110,8 +28167,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -28469,8 +28526,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -28831,8 +28888,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -29209,8 +29266,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -29571,8 +29628,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -29925,8 +29982,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -39011,9 +39068,9 @@
                 "Sumari Bala Skirmish v1",
                 "Mutaha Skirmish v1",
                 "Mestia Skirmish v1",
+                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v3",
                 "Manicouagan Skirmish v2",
-                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v1",
                 "Logar Skirmish v1",
                 "Lashkar Skirmish v1",
@@ -39418,6 +39475,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
                 "Sumari Bala Invasion v1",
@@ -40177,8 +40235,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -40507,8 +40565,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -40851,8 +40909,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -41191,8 +41249,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -41511,8 +41569,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -41857,8 +41915,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -43867,6 +43925,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
                 "Sumari Bala Invasion v1",
@@ -44662,8 +44721,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -44981,8 +45040,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -45276,8 +45335,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -45602,8 +45661,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -45921,8 +45980,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -46220,8 +46279,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -53830,6 +53889,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
                 "Sumari Bala Invasion v1",
@@ -54604,8 +54664,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -54905,8 +54965,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -55217,8 +55277,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -55528,8 +55588,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -55824,8 +55884,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -56142,8 +56202,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -58929,9 +58989,9 @@
                 "Narva Skirmish v1",
                 "Mutaha Skirmish v1",
                 "Mestia Skirmish v1",
+                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v3",
                 "Manicouagan Skirmish v2",
-                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v1",
                 "Logar Skirmish v1",
                 "Lashkar Skirmish v1",
@@ -59365,6 +59425,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
                 "Sumari Bala Invasion v1",
@@ -60174,8 +60235,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -60538,8 +60599,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -60892,8 +60953,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -61251,8 +61312,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -61600,8 +61661,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -61980,8 +62041,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -63668,9 +63729,9 @@
                 "Narva Skirmish v1",
                 "Mutaha Skirmish v1",
                 "Mestia Skirmish v1",
+                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v3",
                 "Manicouagan Skirmish v2",
-                "Anvil Skirmish v1",
                 "Manicouagan Skirmish v1",
                 "Logar Skirmish v1",
                 "Lashkar Skirmish v1",
@@ -64087,6 +64148,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
                 "Sumari Bala Invasion v1",
@@ -64873,8 +64935,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -65236,8 +65298,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -65594,8 +65656,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -65942,8 +66004,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -66306,8 +66368,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -67715,9 +67777,13 @@
                 }
             },
             "mapLayers": [
+                "Harju Skirmish v2",
+                "Harju Skirmish v1",
                 "Black Coast Skirmish v1",
                 "Yehorivka Skirmish v2",
                 "Yehorivka Skirmish v1",
+                "Skorpo Skirmish v1",
+                "Narva Skirmish v1",
                 "Mestia Skirmish v1",
                 "Gorodok Skirmish v1",
                 "Fool's Road Skirmish v2",
@@ -67961,6 +68027,7 @@
                 }
             },
             "mapLayers": [
+                "Harju Seed v1",
                 "Black Coast Seed v1"
             ]
         },
@@ -68477,6 +68544,9 @@
                 }
             },
             "mapLayers": [
+                "Harju TC v1",
+                "Harju AAS v3",
+                "Harju AAS v2",
                 "Mestia TC v1",
                 "Mestia RAAS v1",
                 "Mestia Invasion v1",
@@ -68744,12 +68814,6 @@
                     "availability": 1
                 },
                 "DShk_Tripod": {
-                    "availability": 2
-                },
-                "AGS17_Bunker": {
-                    "availability": 2
-                },
-                "AGS17_Tripod": {
                     "availability": 2
                 },
                 "NSV_Bunker_AFU": {
@@ -69049,7 +69113,13 @@
                 "DShk_Tripod": {
                     "availability": 2
                 },
+                "AGS17_Tripod": {
+                    "availability": 2
+                },
                 "NSV_Bunker_AFU": {
+                    "availability": 2
+                },
+                "AGS17_Bunker": {
                     "availability": 2
                 },
                 "Radio_AFU": {
@@ -69060,6 +69130,11 @@
                 }
             },
             "mapLayers": [
+                "Harju RAAS v2",
+                "Harju RAAS v1",
+                "Harju Invasion v3",
+                "Harju Invasion v2",
+                "Harju AAS v1",
                 "Black Coast RAAS v2",
                 "Black Coast RAAS v1",
                 "Black Coast Invasion v2",
@@ -69074,6 +69149,16 @@
                 "Yehorivka Destruction v1",
                 "Yehorivka AAS v2",
                 "Yehorivka AAS v1",
+                "Skorpo RAAS v1",
+                "Skorpo Invasion v1",
+                "Narva TC v1",
+                "Narva RAAS v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
+                "Narva AAS v3",
+                "Narva AAS v2",
+                "Narva AAS v1",
                 "Gorodok TC v1",
                 "Gorodok RAAS v2",
                 "Gorodok RAAS v1",
@@ -69377,6 +69462,11 @@
                 }
             },
             "mapLayers": [
+                "Harju RAAS v2",
+                "Harju RAAS v1",
+                "Harju Invasion v3",
+                "Harju Invasion v2",
+                "Harju AAS v1",
                 "Black Coast RAAS v2",
                 "Black Coast RAAS v1",
                 "Black Coast Invasion v2",
@@ -69391,6 +69481,16 @@
                 "Yehorivka Destruction v1",
                 "Yehorivka AAS v2",
                 "Yehorivka AAS v1",
+                "Skorpo RAAS v1",
+                "Skorpo Invasion v1",
+                "Narva TC v1",
+                "Narva RAAS v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
+                "Narva AAS v3",
+                "Narva AAS v2",
+                "Narva AAS v1",
                 "Gorodok TC v1",
                 "Gorodok RAAS v2",
                 "Gorodok RAAS v1",
@@ -69694,6 +69794,11 @@
                 }
             },
             "mapLayers": [
+                "Harju RAAS v2",
+                "Harju RAAS v1",
+                "Harju Invasion v3",
+                "Harju Invasion v2",
+                "Harju AAS v1",
                 "Black Coast RAAS v2",
                 "Black Coast RAAS v1",
                 "Black Coast Invasion v2",
@@ -69708,6 +69813,16 @@
                 "Yehorivka Destruction v1",
                 "Yehorivka AAS v2",
                 "Yehorivka AAS v1",
+                "Skorpo RAAS v1",
+                "Skorpo Invasion v1",
+                "Narva TC v1",
+                "Narva RAAS v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
+                "Narva AAS v3",
+                "Narva AAS v2",
+                "Narva AAS v1",
                 "Gorodok TC v1",
                 "Gorodok RAAS v2",
                 "Gorodok RAAS v1",
@@ -70015,10 +70130,16 @@
                 "81mmMortar": {
                     "availability": 2
                 },
+                "DShk_Tripod": {
+                    "availability": 2
+                },
                 "AGS17_Tripod": {
                     "availability": 2
                 },
                 "NSV_Bunker_AFU": {
+                    "availability": 2
+                },
+                "AGS17_Bunker": {
                     "availability": 2
                 },
                 "Radio_AFU": {
@@ -70029,6 +70150,11 @@
                 }
             },
             "mapLayers": [
+                "Harju RAAS v2",
+                "Harju RAAS v1",
+                "Harju Invasion v3",
+                "Harju Invasion v2",
+                "Harju AAS v1",
                 "Black Coast RAAS v2",
                 "Black Coast RAAS v1",
                 "Black Coast Invasion v2",
@@ -70043,6 +70169,16 @@
                 "Yehorivka Destruction v1",
                 "Yehorivka AAS v2",
                 "Yehorivka AAS v1",
+                "Skorpo RAAS v1",
+                "Skorpo Invasion v1",
+                "Narva TC v1",
+                "Narva RAAS v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
+                "Narva AAS v3",
+                "Narva AAS v2",
+                "Narva AAS v1",
                 "Gorodok TC v1",
                 "Gorodok RAAS v2",
                 "Gorodok RAAS v1",
@@ -70356,6 +70492,11 @@
                 }
             },
             "mapLayers": [
+                "Harju RAAS v2",
+                "Harju RAAS v1",
+                "Harju Invasion v3",
+                "Harju Invasion v2",
+                "Harju AAS v1",
                 "Black Coast RAAS v2",
                 "Black Coast RAAS v1",
                 "Black Coast Invasion v2",
@@ -70370,6 +70511,16 @@
                 "Yehorivka Destruction v1",
                 "Yehorivka AAS v2",
                 "Yehorivka AAS v1",
+                "Skorpo RAAS v1",
+                "Skorpo Invasion v1",
+                "Narva TC v1",
+                "Narva RAAS v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
+                "Narva AAS v3",
+                "Narva AAS v2",
+                "Narva AAS v1",
                 "Gorodok TC v1",
                 "Gorodok RAAS v2",
                 "Gorodok RAAS v1",
@@ -70668,6 +70819,11 @@
                 }
             },
             "mapLayers": [
+                "Harju RAAS v2",
+                "Harju RAAS v1",
+                "Harju Invasion v3",
+                "Harju Invasion v2",
+                "Harju AAS v1",
                 "Black Coast RAAS v2",
                 "Black Coast RAAS v1",
                 "Black Coast Invasion v2",
@@ -70682,6 +70838,16 @@
                 "Yehorivka Destruction v1",
                 "Yehorivka AAS v2",
                 "Yehorivka AAS v1",
+                "Skorpo RAAS v1",
+                "Skorpo Invasion v1",
+                "Narva TC v1",
+                "Narva RAAS v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
+                "Narva AAS v3",
+                "Narva AAS v2",
+                "Narva AAS v1",
                 "Gorodok TC v1",
                 "Gorodok RAAS v2",
                 "Gorodok RAAS v1",
@@ -70979,13 +71145,13 @@
                 "DShk_Tripod": {
                     "availability": 2
                 },
-                "AGS17_Bunker": {
-                    "availability": 2
-                },
                 "AGS17_Tripod": {
                     "availability": 2
                 },
                 "NSV_Bunker_AFU": {
+                    "availability": 2
+                },
+                "AGS17_Bunker": {
                     "availability": 2
                 },
                 "Radio_AFU": {
@@ -70996,7 +71162,8 @@
                 }
             },
             "mapLayers": [
-                "Black Coast Invasion v3"
+                "Black Coast Invasion v3",
+                "Skorpo Invasion v2"
             ]
         },
         "AFU_LO_AirAssault": {
@@ -71291,10 +71458,16 @@
                 "81mmMortar": {
                     "availability": 2
                 },
+                "DShk_Tripod": {
+                    "availability": 2
+                },
                 "AGS17_Tripod": {
                     "availability": 2
                 },
                 "NSV_Bunker_AFU": {
+                    "availability": 2
+                },
+                "AGS17_Bunker": {
                     "availability": 2
                 },
                 "Radio_AFU": {
@@ -71305,6 +71478,11 @@
                 }
             },
             "mapLayers": [
+                "Harju RAAS v2",
+                "Harju RAAS v1",
+                "Harju Invasion v3",
+                "Harju Invasion v2",
+                "Harju AAS v1",
                 "Black Coast RAAS v2",
                 "Black Coast RAAS v1",
                 "Black Coast Invasion v2",
@@ -71319,6 +71497,16 @@
                 "Yehorivka Destruction v1",
                 "Yehorivka AAS v2",
                 "Yehorivka AAS v1",
+                "Skorpo RAAS v1",
+                "Skorpo Invasion v1",
+                "Narva TC v1",
+                "Narva RAAS v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
+                "Narva AAS v3",
+                "Narva AAS v2",
+                "Narva AAS v1",
                 "Gorodok TC v1",
                 "Gorodok RAAS v2",
                 "Gorodok RAAS v1",
@@ -71615,7 +71803,13 @@
                 "DShk_Tripod": {
                     "availability": 2
                 },
+                "AGS17_Tripod": {
+                    "availability": 2
+                },
                 "NSV_Bunker_AFU": {
+                    "availability": 2
+                },
+                "AGS17_Bunker": {
                     "availability": 2
                 },
                 "Radio_AFU": {
@@ -71626,11 +71820,18 @@
                 }
             },
             "mapLayers": [
+                "Harju Invasion v3",
+                "Harju Invasion v2",
                 "Black Coast Invasion v3",
                 "Black Coast Invasion v2",
                 "Yehorivka Invasion v2",
                 "Yehorivka Invasion v1",
                 "Yehorivka Destruction v1",
+                "Skorpo Invasion v2",
+                "Skorpo Invasion v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
                 "Gorodok Invasion v3",
                 "Gorodok Invasion v2",
                 "Gorodok Invasion v1",
@@ -71921,11 +72122,18 @@
                 }
             },
             "mapLayers": [
+                "Harju Invasion v3",
+                "Harju Invasion v2",
                 "Black Coast Invasion v3",
                 "Black Coast Invasion v2",
                 "Yehorivka Invasion v2",
                 "Yehorivka Invasion v1",
                 "Yehorivka Destruction v1",
+                "Skorpo Invasion v2",
+                "Skorpo Invasion v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
                 "Gorodok Invasion v3",
                 "Gorodok Invasion v2",
                 "Gorodok Invasion v1",
@@ -72216,11 +72424,18 @@
                 }
             },
             "mapLayers": [
+                "Harju Invasion v3",
+                "Harju Invasion v2",
                 "Black Coast Invasion v3",
                 "Black Coast Invasion v2",
                 "Yehorivka Invasion v2",
                 "Yehorivka Invasion v1",
                 "Yehorivka Destruction v1",
+                "Skorpo Invasion v2",
+                "Skorpo Invasion v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
                 "Gorodok Invasion v3",
                 "Gorodok Invasion v2",
                 "Gorodok Invasion v1",
@@ -72518,10 +72733,16 @@
                 "81mmMortar": {
                     "availability": 2
                 },
+                "DShk_Tripod": {
+                    "availability": 2
+                },
                 "AGS17_Tripod": {
                     "availability": 2
                 },
                 "NSV_Bunker_AFU": {
+                    "availability": 2
+                },
+                "AGS17_Bunker": {
                     "availability": 2
                 },
                 "Radio_AFU": {
@@ -72532,11 +72753,18 @@
                 }
             },
             "mapLayers": [
+                "Harju Invasion v3",
+                "Harju Invasion v2",
                 "Black Coast Invasion v3",
                 "Black Coast Invasion v2",
                 "Yehorivka Invasion v2",
                 "Yehorivka Invasion v1",
                 "Yehorivka Destruction v1",
+                "Skorpo Invasion v2",
+                "Skorpo Invasion v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
                 "Gorodok Invasion v3",
                 "Gorodok Invasion v2",
                 "Gorodok Invasion v1",
@@ -72837,11 +73065,18 @@
                 }
             },
             "mapLayers": [
+                "Harju Invasion v3",
+                "Harju Invasion v2",
                 "Black Coast Invasion v3",
                 "Black Coast Invasion v2",
                 "Yehorivka Invasion v2",
                 "Yehorivka Invasion v1",
                 "Yehorivka Destruction v1",
+                "Skorpo Invasion v2",
+                "Skorpo Invasion v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
                 "Gorodok Invasion v3",
                 "Gorodok Invasion v2",
                 "Gorodok Invasion v1",
@@ -73127,11 +73362,18 @@
                 }
             },
             "mapLayers": [
+                "Harju Invasion v3",
+                "Harju Invasion v2",
                 "Black Coast Invasion v3",
                 "Black Coast Invasion v2",
                 "Yehorivka Invasion v2",
                 "Yehorivka Invasion v1",
                 "Yehorivka Destruction v1",
+                "Skorpo Invasion v2",
+                "Skorpo Invasion v1",
+                "Narva Invasion v2",
+                "Narva Invasion v1",
+                "Narva Destruction v1",
                 "Gorodok Invasion v3",
                 "Gorodok Invasion v2",
                 "Gorodok Invasion v1",
@@ -73777,6 +74019,7 @@
                 }
             },
             "mapLayers": [
+                "Search and Destroy",
                 "Sumari Bala TC v1",
                 "Sumari Bala RAAS v1",
                 "Sumari Bala Invasion v1",
@@ -74570,8 +74813,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -74918,8 +75161,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",
@@ -75278,8 +75521,8 @@
                 "Mutaha Invasion v1",
                 "Mutaha AAS v2",
                 "Mutaha AAS v1",
-                "Anvil Invasion v1",
                 "Anvil AAS v1",
+                "Anvil Invasion v1",
                 "Anvil RAAS v1",
                 "Anvil RAAS v2",
                 "Anvil TC v1",

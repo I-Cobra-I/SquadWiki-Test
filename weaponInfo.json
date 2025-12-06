@@ -1,4 +1,901 @@
 {
+    "BP_M16_Wormpool_EXPS": {
+        "factions": [
+            "WPMC",
+            "WPMC_CoOp"
+        ],
+        "displayName": "M16 Wormpool + EXPS + Foregrip",
+        "inventoryInfo": {
+            "description": "Magazine Capacity: 30+1/Caliber: 5.56x45mm NATO/Rate of Fire: 850 RPM/Fire Mode: Semi, Auto",
+            "HUDTexture": "inventory_category_rifle",
+            "inventoryTexture": "T_M16_Wormpool_EXPS_Foregrip",
+            "ammoPerRearm": 2,
+            "showItemCount": false,
+            "showMagCount": true
+        },
+        "physicalInfo": {
+            "attachments": [
+                "BP_attachment_foregrip_wormpool_C",
+                "BP_Attachment_EXPS_C"
+            ],
+            "skeletalMesh": "SK_M16_Wormpool_30rnd_NoSight"
+        },
+        "weaponInfo": {
+            "numberOfMags": 7,
+            "magSize": 30,
+            "allowRoundInChamber": true,
+            "allowSingleLoad": false,
+            "fireModes": [
+                1,
+                -1
+            ],
+            "equipDuration": 0.75,
+            "unEquipDuration": 1,
+            "timeBetweenShots": 0.07199999690055847,
+            "timeBetweenSingleShots": 0.125,
+            "tacticalReloadDuration": 4.610000133514404,
+            "dryReloadDuration": 5.070000171661377,
+            "tacticalReloadBipodDuration": 1,
+            "dryReloadBipodDuration": 1,
+            "projectile": "BP_Projectile_C",
+            "roundsBetweenTracer": 0,
+            "tracerProjectile": "",
+            "muzzleVelocity": 88000,
+            "maxDamageToApply": 60,
+            "timeToStartDamageFallOff": 0.3400000035762787,
+            "distanceToStartDamageFallOff": 9000,
+            "damageFallOffRate": 44,
+            "minDamageToApply": 35,
+            "damageFallOffType": "M4A1_DamageCurve",
+            "moa": 3,
+            "maxTraceDistance": 5000,
+            "magEmptyForNewMagRearm": false,
+            "rearmOnlyIfCurrMagEmpty": false,
+            "rearmFillCurMag": false,
+            "minTimeBetweenRearm": 0,
+            "rearmOnlyOneMagAtTime": false,
+            "rearmXRounds": false,
+            "xRoundsToRearm": 1,
+            "armorPenMM": 5,
+            "armorPenType": "",
+            "traceDistanceAfterPen": 10,
+            "projectileInfo": {
+                "impactDamage": -1,
+                "damageType": "BP_SmallArms_DamageType_C",
+                "appliesSuppression": true,
+                "isExplosiveProj": false,
+                "explosiveBaseDmg": 115,
+                "explosiveMinDmg": 0,
+                "explosiveKillZoneRad": 0,
+                "explosiveDmgOuterRad": 500,
+                "explosiveDmgInnerRad": 1500,
+                "explosiveDmgFalloff": 1,
+                "armorPenMM": 0,
+                "traceDistanceAfterPen": 0,
+                "explodeDistBefore": 20
+            }
+        },
+        "staticInfo": {
+            "hasAdjustableSight": false,
+            "hasBipod": false,
+            "emptyEquipDuration": 0,
+            "emptyUnequipDuration": 0,
+            "standingADSTime": 0.4000000059604645,
+            "crouchADSTime": 0.3499999940395355,
+            "proneADSTime": 0.30000001192092896,
+            "bipodADSTime": 0.30000001192092896,
+            "restrictions": {
+                "requireADSToShoot": false,
+                "limitLeanAngle": false,
+                "preventShootUseWhileCrawl": true,
+                "preventADSWhileCrawl": true,
+                "walkSpeedMultiplier": 0.699999988079071
+            },
+            "recoil": {
+                "camera": {
+                    "recoilCameraOffsetFactor": 0.800000011920929,
+                    "recoilCameraOffsetInterpSpeed": 5,
+                    "recoilLofCameraOffsetLimit": 50,
+                    "recoilLofAttackInterpSpeed": 45,
+                    "recoilCanReleaseInterpSpeed": 30,
+                    "recoilLofReleaseInterpSpeed": 10,
+                    "recoilAdsCameraShotInterpSpeed": 200
+                },
+                "dynamic": {
+                    "movement": {
+                        "moveRecoilFactorRelease": 9.5,
+                        "addMoveRecoil": 1,
+                        "maxMoveRecoilFactor": 0.699999988079071,
+                        "minMoveRecoilFactor": 0.07000000029802322,
+                        "recoilAlignmentMovementAddative": 0.10000000149011612,
+                        "recoilAlignmentMovementExponent": 1
+                    },
+                    "stamina": {
+                        "lowStaminaRecoilFactor": 0.20000000298023224,
+                        "fullStaminaRecoilFactor": 0,
+                        "recoilAlignmentStaminaAddative": 0.10000000149011612,
+                        "recoilAlignmentStaminaExponent": 0.5
+                    },
+                    "shoulder": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 3,
+                            "y": 2
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 6,
+                            "y": 4
+                        }
+                    },
+                    "grip": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 2,
+                            "y": 2
+                        }
+                    },
+                    "recoilAlignmentMultiplierMax": 1.5
+                }
+            },
+            "swayAlignment": {
+                "dynamic": {
+                    "addMoveSway": 9.500000305706635e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 4.5,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6600000262260437,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.30000001192092896,
+                    "proneSwayMin": 0.6200000047683716,
+                    "crouchADSSwayMin": 0.4000000059604645,
+                    "crouchSwayMin": 0.7099999785423279,
+                    "standingADSSwayMin": 0.7200000286102295,
+                    "standingSwayMin": 1.2000000476837158,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 5
+            },
+            "sway": {
+                "dynamic": {
+                    "addMoveSway": 4.999999873689376e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 6,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6000000238418579,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.20000000298023224,
+                    "proneSwayMin": 0.5,
+                    "crouchADSSwayMin": 0.4000000059604645,
+                    "crouchSwayMin": 0.949999988079071,
+                    "standingADSSwayMin": 1,
+                    "standingSwayMin": 1.350000023841858,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 6
+            }
+        }
+    },
+    "BP_BrowningHP": {
+        "factions": [
+            "WPMC",
+            "WPMC_CoOp",
+            "CRF",
+            "CAF"
+        ],
+        "displayName": "Hi-Power",
+        "inventoryInfo": {
+            "description": "Magazine Capacity: 12+1/Caliber: 9mm/Fire Mode: Semi Automatic",
+            "HUDTexture": "inventory_category_pistol",
+            "inventoryTexture": "browningHP_CAF",
+            "ammoPerRearm": 1,
+            "showItemCount": false,
+            "showMagCount": true
+        },
+        "physicalInfo": {
+            "attachments": [],
+            "skeletalMesh": "BrowningHP"
+        },
+        "weaponInfo": {
+            "numberOfMags": 4,
+            "magSize": 13,
+            "allowRoundInChamber": true,
+            "allowSingleLoad": false,
+            "fireModes": [
+                1
+            ],
+            "equipDuration": 0.44999998807907104,
+            "unEquipDuration": 1.0829999446868896,
+            "timeBetweenShots": 0.09200000017881393,
+            "timeBetweenSingleShots": 0.125,
+            "tacticalReloadDuration": 3.2300000190734863,
+            "dryReloadDuration": 3.430000066757202,
+            "tacticalReloadBipodDuration": 1,
+            "dryReloadBipodDuration": 1,
+            "projectile": "BP_Projectile_9mm_C",
+            "roundsBetweenTracer": 0,
+            "tracerProjectile": "",
+            "muzzleVelocity": 35000,
+            "maxDamageToApply": 45,
+            "timeToStartDamageFallOff": 0.06499999761581421,
+            "distanceToStartDamageFallOff": 9000,
+            "damageFallOffRate": 100,
+            "minDamageToApply": 8,
+            "damageFallOffType": "Pistol_DamageCurve",
+            "moa": 4,
+            "maxTraceDistance": 1000,
+            "magEmptyForNewMagRearm": false,
+            "rearmOnlyIfCurrMagEmpty": false,
+            "rearmFillCurMag": false,
+            "minTimeBetweenRearm": 0,
+            "rearmOnlyOneMagAtTime": false,
+            "rearmXRounds": false,
+            "xRoundsToRearm": 1,
+            "armorPenMM": 1,
+            "armorPenType": "",
+            "traceDistanceAfterPen": 5,
+            "projectileInfo": {
+                "impactDamage": -1,
+                "damageType": "SQDamageType",
+                "appliesSuppression": true,
+                "isExplosiveProj": false,
+                "explosiveBaseDmg": 115,
+                "explosiveMinDmg": 0,
+                "explosiveKillZoneRad": 0,
+                "explosiveDmgOuterRad": 500,
+                "explosiveDmgInnerRad": 1500,
+                "explosiveDmgFalloff": 1,
+                "armorPenMM": 0,
+                "traceDistanceAfterPen": 0,
+                "explodeDistBefore": 20
+            }
+        },
+        "staticInfo": {
+            "hasAdjustableSight": false,
+            "hasBipod": false,
+            "emptyEquipDuration": 0.6000000238418579,
+            "emptyUnequipDuration": 0.5,
+            "standingADSTime": 0.20000000298023224,
+            "crouchADSTime": 0.20000000298023224,
+            "proneADSTime": 0.20000000298023224,
+            "bipodADSTime": 0.30000001192092896,
+            "restrictions": {
+                "requireADSToShoot": false,
+                "limitLeanAngle": false,
+                "preventShootUseWhileCrawl": true,
+                "preventADSWhileCrawl": true,
+                "walkSpeedMultiplier": 1
+            },
+            "recoil": {
+                "camera": {
+                    "recoilCameraOffsetFactor": 0.25,
+                    "recoilCameraOffsetInterpSpeed": 2,
+                    "recoilLofCameraOffsetLimit": 15,
+                    "recoilLofAttackInterpSpeed": 45,
+                    "recoilCanReleaseInterpSpeed": 20,
+                    "recoilLofReleaseInterpSpeed": 35,
+                    "recoilAdsCameraShotInterpSpeed": 5
+                },
+                "dynamic": {
+                    "movement": {
+                        "moveRecoilFactorRelease": 20,
+                        "addMoveRecoil": 1,
+                        "maxMoveRecoilFactor": 0.800000011920929,
+                        "minMoveRecoilFactor": 0.07000000029802322,
+                        "recoilAlignmentMovementAddative": 0.10000000149011612,
+                        "recoilAlignmentMovementExponent": 0.10000000149011612
+                    },
+                    "stamina": {
+                        "lowStaminaRecoilFactor": 0.20000000298023224,
+                        "fullStaminaRecoilFactor": 0,
+                        "recoilAlignmentStaminaAddative": 0.10000000149011612,
+                        "recoilAlignmentStaminaExponent": 0.5
+                    },
+                    "shoulder": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 2,
+                            "y": 2
+                        }
+                    },
+                    "grip": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 5,
+                            "y": 5
+                        }
+                    },
+                    "recoilAlignmentMultiplierMax": 2
+                }
+            },
+            "swayAlignment": {
+                "dynamic": {
+                    "addMoveSway": 9.500000305706635e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 8,
+                    "lowStaminaSwayFactor": 5,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.7799999713897705,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 1.350000023841858,
+                    "proneSwayMin": 1.7999999523162842,
+                    "crouchADSSwayMin": 1.7999999523162842,
+                    "crouchSwayMin": 2,
+                    "standingADSSwayMin": 2.200000047683716,
+                    "standingSwayMin": 2.200000047683716,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 5
+            },
+            "sway": {
+                "dynamic": {
+                    "addMoveSway": 9.500000305706635e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 8,
+                    "lowStaminaSwayFactor": 4,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.949999988079071,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 1.399999976158142,
+                    "proneSwayMin": 1.7999999523162842,
+                    "crouchADSSwayMin": 2,
+                    "crouchSwayMin": 2.299999952316284,
+                    "standingADSSwayMin": 2.200000047683716,
+                    "standingSwayMin": 2.5999999046325684,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 15
+            }
+        }
+    },
+    "BP_M9Bayonet": {
+        "factions": [
+            "WPMC",
+            "WPMC_CoOp",
+            "USA",
+            "CRF",
+            "AFU"
+        ],
+        "displayName": "M9 Bayonet",
+        "inventoryInfo": {
+            "description": "",
+            "HUDTexture": "inventory_category_knife",
+            "inventoryTexture": "m9_bayonet",
+            "ammoPerRearm": 10,
+            "showItemCount": false,
+            "showMagCount": false
+        },
+        "physicalInfo": {
+            "attachments": [],
+            "skeletalMesh": "M9_Bayonet"
+        },
+        "weaponInfo": {
+            "numberOfMags": 1,
+            "magSize": 0,
+            "allowRoundInChamber": true,
+            "allowSingleLoad": false,
+            "fireModes": [
+                -1
+            ],
+            "equipDuration": 0.550000011920929,
+            "unEquipDuration": 0.8159999847412109,
+            "timeBetweenShots": 0.6499999761581421,
+            "timeBetweenSingleShots": 0.125,
+            "tacticalReloadDuration": 4.400000095367432,
+            "dryReloadDuration": 4.75,
+            "tacticalReloadBipodDuration": 1,
+            "dryReloadBipodDuration": 1,
+            "projectile": "BP_Projectile_Melee_C",
+            "roundsBetweenTracer": 0,
+            "tracerProjectile": "",
+            "muzzleVelocity": 1,
+            "maxDamageToApply": 100,
+            "timeToStartDamageFallOff": 100,
+            "distanceToStartDamageFallOff": 9000,
+            "damageFallOffRate": 1,
+            "minDamageToApply": 100,
+            "damageFallOffType": "",
+            "moa": 1,
+            "maxTraceDistance": 125,
+            "magEmptyForNewMagRearm": false,
+            "rearmOnlyIfCurrMagEmpty": false,
+            "rearmFillCurMag": false,
+            "minTimeBetweenRearm": 0,
+            "rearmOnlyOneMagAtTime": false,
+            "rearmXRounds": false,
+            "xRoundsToRearm": 1,
+            "armorPenMM": 2,
+            "armorPenType": "",
+            "traceDistanceAfterPen": 0,
+            "projectileInfo": {
+                "impactDamage": -1,
+                "damageType": "BP_Melee_C",
+                "appliesSuppression": false,
+                "isExplosiveProj": false,
+                "explosiveBaseDmg": 115,
+                "explosiveMinDmg": 0,
+                "explosiveKillZoneRad": 0,
+                "explosiveDmgOuterRad": 500,
+                "explosiveDmgInnerRad": 1500,
+                "explosiveDmgFalloff": 1,
+                "armorPenMM": 0,
+                "traceDistanceAfterPen": 0,
+                "explodeDistBefore": 20
+            }
+        },
+        "staticInfo": {
+            "hasAdjustableSight": false,
+            "hasBipod": false,
+            "emptyEquipDuration": 0,
+            "emptyUnequipDuration": 0,
+            "standingADSTime": 0.4000000059604645,
+            "crouchADSTime": 0.3499999940395355,
+            "proneADSTime": 0.30000001192092896,
+            "bipodADSTime": 0.30000001192092896,
+            "restrictions": {
+                "requireADSToShoot": false,
+                "limitLeanAngle": false,
+                "preventShootUseWhileCrawl": false,
+                "preventADSWhileCrawl": false,
+                "walkSpeedMultiplier": 0.6000000238418579
+            },
+            "recoil": {
+                "camera": {
+                    "recoilCameraOffsetFactor": 0.4000000059604645,
+                    "recoilCameraOffsetInterpSpeed": 4,
+                    "recoilLofCameraOffsetLimit": 40,
+                    "recoilLofAttackInterpSpeed": 45,
+                    "recoilCanReleaseInterpSpeed": 10,
+                    "recoilLofReleaseInterpSpeed": 35,
+                    "recoilAdsCameraShotInterpSpeed": 0
+                },
+                "dynamic": {
+                    "movement": {
+                        "moveRecoilFactorRelease": 0,
+                        "addMoveRecoil": 0,
+                        "maxMoveRecoilFactor": 0,
+                        "minMoveRecoilFactor": 0,
+                        "recoilAlignmentMovementAddative": 0,
+                        "recoilAlignmentMovementExponent": 1
+                    },
+                    "stamina": {
+                        "lowStaminaRecoilFactor": 0.10000000149011612,
+                        "fullStaminaRecoilFactor": 0,
+                        "recoilAlignmentStaminaAddative": 0,
+                        "recoilAlignmentStaminaExponent": 1
+                    },
+                    "shoulder": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 0,
+                            "y": 0
+                        }
+                    },
+                    "grip": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 0,
+                            "y": 0
+                        }
+                    },
+                    "recoilAlignmentMultiplierMax": 2
+                }
+            },
+            "swayAlignment": {
+                "dynamic": {
+                    "addMoveSway": 9.999999747378752e-06,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 10,
+                    "lowStaminaSwayFactor": 10,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.75,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.4000000059604645,
+                    "proneSwayMin": 0.4000000059604645,
+                    "crouchADSSwayMin": 0.6000000238418579,
+                    "crouchSwayMin": 0.6000000238418579,
+                    "standingADSSwayMin": 1,
+                    "standingSwayMin": 1,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": -1
+            },
+            "sway": {
+                "dynamic": {
+                    "addMoveSway": 9.999999747378752e-06,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 10,
+                    "lowStaminaSwayFactor": 10,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.75,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.4000000059604645,
+                    "proneSwayMin": 0.4000000059604645,
+                    "crouchADSSwayMin": 0.6000000238418579,
+                    "crouchSwayMin": 0.6000000238418579,
+                    "standingADSSwayMin": 1,
+                    "standingSwayMin": 1,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": -1
+            }
+        }
+    },
+    "BP_M67Frag": {
+        "factions": [
+            "WPMC",
+            "WPMC_CoOp",
+            "USMC_Coop",
+            "USMC",
+            "USA",
+            "TLF",
+            "CRF"
+        ],
+        "displayName": "M67 Fragmentation",
+        "inventoryInfo": {
+            "description": "Explosion Radius: 15m",
+            "HUDTexture": "inventory_category_fraggrenade",
+            "inventoryTexture": "m67",
+            "ammoPerRearm": 10,
+            "showItemCount": true,
+            "showMagCount": false
+        },
+        "grenadeInfo": {
+            "initialAmmo": 2,
+            "maxAmmo": 2,
+            "equipDuration": 0.75,
+            "unEquipDuration": 0.8999999761581421,
+            "reloadTime": 0.75,
+            "projectile": "BP_Proj_M67Frag_C",
+            "overhandThrowVel": 2200,
+            "underhandThrowVel": 1200,
+            "throwReadyTime": 1.3669999837875366,
+            "overhandThrowTime": 0.5149999856948853,
+            "underhandThrowTime": 0.46000000834465027,
+            "overhandThrowDur": 1.1299999952316284,
+            "underhandThrowDur": 1.1299999952316284,
+            "fuseMin": 4,
+            "fuseMax": 5,
+            "projectileInfo": {
+                "impactDamage": 0,
+                "damageType": "BP_Fragmentation_DamageType_C",
+                "fuseTime": 4,
+                "explodeOnFuse": true,
+                "explodeOnImpact": false,
+                "explodeOnLifespan": true,
+                "isExplosiveProj": true,
+                "explosiveBaseDmg": 115,
+                "explosiveMinDmg": 0,
+                "explosiveKillZoneRad": 0,
+                "explosiveDmgOuterRad": 500,
+                "explosiveDmgInnerRad": 1500,
+                "explosiveDmgFalloff": 1,
+                "armorPenMM": 0,
+                "traceDistanceAfterPen": 0,
+                "explodeDistBefore": 8
+            }
+        }
+    },
+    "BP_M18Smoke_Parent": {
+        "factions": [
+            "WPMC",
+            "WPMC_CoOp",
+            "USMC_Coop",
+            "USMC",
+            "USA",
+            "TLF",
+            "GFI",
+            "CRF",
+            "ADF"
+        ],
+        "displayName": "M18 Smoke Grenade",
+        "inventoryInfo": {
+            "description": "",
+            "HUDTexture": "inventory_category_smokegrenade",
+            "inventoryTexture": "m18_smoke",
+            "ammoPerRearm": 10,
+            "showItemCount": true,
+            "showMagCount": false
+        }
+    },
+    "BP_Generic_FieldDressing": {
+        "factions": [
+            "WPMC",
+            "WPMC_CoOp",
+            "USMC_Coop",
+            "OpFor",
+            "VDV",
+            "USMC",
+            "USA",
+            "TLF",
+            "RGF",
+            "PLANMC",
+            "PLAAGF",
+            "PLA",
+            "MEI",
+            "IMF",
+            "GFI",
+            "CRF",
+            "CAF",
+            "BAF",
+            "AFU",
+            "ADF"
+        ],
+        "displayName": "Field Dressing",
+        "inventoryInfo": {
+            "description": "Left Mouse Button to bandage or revive another player. Right Mouse Button to bandage yourself.",
+            "HUDTexture": "inventory_category_fielddressing",
+            "inventoryTexture": "fielddressing",
+            "ammoPerRearm": 5,
+            "showItemCount": true,
+            "showMagCount": false
+        }
+    },
+    "BP_EntrenchingTool": {
+        "factions": [
+            "WPMC",
+            "WPMC_CoOp",
+            "USMC_Coop",
+            "USMC",
+            "USA",
+            "TLF",
+            "GFI",
+            "CRF",
+            "CAF",
+            "BAF",
+            "ADF"
+        ],
+        "displayName": "Entrenching Tool",
+        "inventoryInfo": {
+            "description": "Left Mouse Button constructs and Right Mouse Button deconstructs.",
+            "HUDTexture": "inventory_category_shovel",
+            "inventoryTexture": "entrenchingtool",
+            "ammoPerRearm": 10,
+            "showItemCount": false,
+            "showMagCount": false
+        }
+    },
+    "BP_Infantry_Ammobag_WPMC": {
+        "factions": [
+            "WPMC",
+            "WPMC_CoOp",
+            "CRF"
+        ],
+        "displayName": "Ammo Bag",
+        "inventoryInfo": {
+            "description": "Maximum Allowed: 1",
+            "HUDTexture": "inventory_category_resupply",
+            "inventoryTexture": "ammobag",
+            "ammoPerRearm": 1,
+            "showItemCount": true,
+            "showMagCount": false
+        }
+    },
+    "BP_US_Binoculars": {
+        "factions": [
+            "WPMC",
+            "WPMC_CoOp",
+            "USMC_Coop",
+            "USMC",
+            "USA",
+            "TLF",
+            "CRF",
+            "CAF",
+            "BAF",
+            "AFU"
+        ],
+        "displayName": "Field Binoculars",
+        "inventoryInfo": {
+            "description": "",
+            "HUDTexture": "inventory_category_binoculars",
+            "inventoryTexture": "usbinocs",
+            "ammoPerRearm": 10,
+            "showItemCount": false,
+            "showMagCount": false
+        },
+        "physicalInfo": {
+            "attachments": [
+                "BP_Attachment_USBinoculars_C"
+            ],
+            "skeletalMesh": "USBinoculars"
+        },
+        "weaponInfo": {
+            "numberOfMags": 1,
+            "magSize": 0,
+            "allowRoundInChamber": false,
+            "allowSingleLoad": false,
+            "fireModes": [
+                1
+            ],
+            "equipDuration": 0.8500000238418579,
+            "unEquipDuration": 1.0169999599456787,
+            "timeBetweenShots": 0.06669999659061432,
+            "timeBetweenSingleShots": 0.125,
+            "tacticalReloadDuration": 4.400000095367432,
+            "dryReloadDuration": 4.75,
+            "tacticalReloadBipodDuration": 1,
+            "dryReloadBipodDuration": 1,
+            "projectile": "",
+            "roundsBetweenTracer": 0,
+            "tracerProjectile": "",
+            "muzzleVelocity": 90000,
+            "maxDamageToApply": 60,
+            "timeToStartDamageFallOff": 0.10000000149011612,
+            "distanceToStartDamageFallOff": 9000,
+            "damageFallOffRate": 100,
+            "minDamageToApply": 10,
+            "damageFallOffType": "SimpleDamageFalloffCurve",
+            "moa": 4,
+            "maxTraceDistance": 5000,
+            "magEmptyForNewMagRearm": false,
+            "rearmOnlyIfCurrMagEmpty": false,
+            "rearmFillCurMag": false,
+            "minTimeBetweenRearm": 0,
+            "rearmOnlyOneMagAtTime": false,
+            "rearmXRounds": false,
+            "xRoundsToRearm": 1,
+            "armorPenMM": 0,
+            "armorPenType": "",
+            "traceDistanceAfterPen": 10,
+            "projectileInfo": {
+                "impactDamage": -1,
+                "damageType": "",
+                "appliesSuppression": false,
+                "isExplosiveProj": false,
+                "explosiveBaseDmg": 0,
+                "explosiveMinDmg": 0,
+                "explosiveKillZoneRad": 0,
+                "explosiveDmgOuterRad": 0,
+                "explosiveDmgInnerRad": 0,
+                "explosiveDmgFalloff": 0,
+                "armorPenMM": 0,
+                "traceDistanceAfterPen": 0,
+                "explodeDistBefore": 0
+            }
+        },
+        "staticInfo": {
+            "hasAdjustableSight": false,
+            "hasBipod": false,
+            "emptyEquipDuration": 0,
+            "emptyUnequipDuration": 0,
+            "standingADSTime": 0.4000000059604645,
+            "crouchADSTime": 0.3499999940395355,
+            "proneADSTime": 0.30000001192092896,
+            "bipodADSTime": 0.30000001192092896,
+            "restrictions": {
+                "requireADSToShoot": false,
+                "limitLeanAngle": false,
+                "preventShootUseWhileCrawl": true,
+                "preventADSWhileCrawl": true,
+                "walkSpeedMultiplier": 0.6000000238418579
+            },
+            "recoil": {
+                "camera": {
+                    "recoilCameraOffsetFactor": 0.4000000059604645,
+                    "recoilCameraOffsetInterpSpeed": 4,
+                    "recoilLofCameraOffsetLimit": 40,
+                    "recoilLofAttackInterpSpeed": 45,
+                    "recoilCanReleaseInterpSpeed": 10,
+                    "recoilLofReleaseInterpSpeed": 35,
+                    "recoilAdsCameraShotInterpSpeed": 0
+                },
+                "dynamic": {
+                    "movement": {
+                        "moveRecoilFactorRelease": 0,
+                        "addMoveRecoil": 0,
+                        "maxMoveRecoilFactor": 0,
+                        "minMoveRecoilFactor": 0,
+                        "recoilAlignmentMovementAddative": 0,
+                        "recoilAlignmentMovementExponent": 1
+                    },
+                    "stamina": {
+                        "lowStaminaRecoilFactor": 0.10000000149011612,
+                        "fullStaminaRecoilFactor": 0,
+                        "recoilAlignmentStaminaAddative": 0,
+                        "recoilAlignmentStaminaExponent": 1
+                    },
+                    "shoulder": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 0,
+                            "y": 0
+                        }
+                    },
+                    "grip": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 0,
+                            "y": 0
+                        }
+                    },
+                    "recoilAlignmentMultiplierMax": 2
+                }
+            },
+            "swayAlignment": {
+                "dynamic": {
+                    "addMoveSway": 0.00019999999494757503,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 5,
+                    "lowStaminaSwayFactor": 2,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.75,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.25,
+                    "proneSwayMin": 0.4000000059604645,
+                    "crouchADSSwayMin": 0.2750000059604645,
+                    "crouchSwayMin": 0.6000000238418579,
+                    "standingADSSwayMin": 0.30000001192092896,
+                    "standingSwayMin": 1,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": -1
+            },
+            "sway": {
+                "dynamic": {
+                    "addMoveSway": 0.00019999999494757503,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 5,
+                    "lowStaminaSwayFactor": 2,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6000000238418579,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.10000000149011612,
+                    "proneSwayMin": 0.4000000059604645,
+                    "crouchADSSwayMin": 0.20000000298023224,
+                    "crouchSwayMin": 0.6000000238418579,
+                    "standingADSSwayMin": 0.30000001192092896,
+                    "standingSwayMin": 1,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": -1
+            }
+        }
+    },
     "BP_M4_1Mag": {
         "factions": [
             "WPMC_CoOp",
@@ -183,39 +1080,6 @@
                 },
                 "maxSway": 5
             }
-        }
-    },
-    "BP_Generic_FieldDressing": {
-        "factions": [
-            "WPMC_CoOp",
-            "USMC_Coop",
-            "OpFor",
-            "WPMC",
-            "VDV",
-            "USMC",
-            "USA",
-            "TLF",
-            "RGF",
-            "PLANMC",
-            "PLAAGF",
-            "PLA",
-            "MEI",
-            "IMF",
-            "GFI",
-            "CRF",
-            "CAF",
-            "BAF",
-            "AFU",
-            "ADF"
-        ],
-        "displayName": "Field Dressing",
-        "inventoryInfo": {
-            "description": "Left Mouse Button to bandage or revive another player. Right Mouse Button to bandage yourself.",
-            "HUDTexture": "inventory_category_fielddressing",
-            "inventoryTexture": "fielddressing",
-            "ammoPerRearm": 5,
-            "showItemCount": true,
-            "showMagCount": false
         }
     },
     "BP_MP5A3": {
@@ -586,268 +1450,6 @@
             }
         }
     },
-    "BP_M9Bayonet": {
-        "factions": [
-            "WPMC_CoOp",
-            "WPMC",
-            "USA",
-            "CRF",
-            "AFU"
-        ],
-        "displayName": "M9 Bayonet",
-        "inventoryInfo": {
-            "description": "",
-            "HUDTexture": "inventory_category_knife",
-            "inventoryTexture": "m9_bayonet",
-            "ammoPerRearm": 10,
-            "showItemCount": false,
-            "showMagCount": false
-        },
-        "physicalInfo": {
-            "attachments": [],
-            "skeletalMesh": "M9_Bayonet"
-        },
-        "weaponInfo": {
-            "numberOfMags": 1,
-            "magSize": 0,
-            "allowRoundInChamber": true,
-            "allowSingleLoad": false,
-            "fireModes": [
-                -1
-            ],
-            "equipDuration": 0.550000011920929,
-            "unEquipDuration": 0.8159999847412109,
-            "timeBetweenShots": 0.6499999761581421,
-            "timeBetweenSingleShots": 0.125,
-            "tacticalReloadDuration": 4.400000095367432,
-            "dryReloadDuration": 4.75,
-            "tacticalReloadBipodDuration": 1,
-            "dryReloadBipodDuration": 1,
-            "projectile": "BP_Projectile_Melee_C",
-            "roundsBetweenTracer": 0,
-            "tracerProjectile": "",
-            "muzzleVelocity": 1,
-            "maxDamageToApply": 100,
-            "timeToStartDamageFallOff": 100,
-            "distanceToStartDamageFallOff": 9000,
-            "damageFallOffRate": 1,
-            "minDamageToApply": 100,
-            "damageFallOffType": "",
-            "moa": 1,
-            "maxTraceDistance": 125,
-            "magEmptyForNewMagRearm": false,
-            "rearmOnlyIfCurrMagEmpty": false,
-            "rearmFillCurMag": false,
-            "minTimeBetweenRearm": 0,
-            "rearmOnlyOneMagAtTime": false,
-            "rearmXRounds": false,
-            "xRoundsToRearm": 1,
-            "armorPenMM": 2,
-            "armorPenType": "",
-            "traceDistanceAfterPen": 0,
-            "projectileInfo": {
-                "impactDamage": -1,
-                "damageType": "BP_Melee_C",
-                "appliesSuppression": false,
-                "isExplosiveProj": false,
-                "explosiveBaseDmg": 115,
-                "explosiveMinDmg": 0,
-                "explosiveKillZoneRad": 0,
-                "explosiveDmgOuterRad": 500,
-                "explosiveDmgInnerRad": 1500,
-                "explosiveDmgFalloff": 1,
-                "armorPenMM": 0,
-                "traceDistanceAfterPen": 0,
-                "explodeDistBefore": 20
-            }
-        },
-        "staticInfo": {
-            "hasAdjustableSight": false,
-            "hasBipod": false,
-            "emptyEquipDuration": 0,
-            "emptyUnequipDuration": 0,
-            "standingADSTime": 0.4000000059604645,
-            "crouchADSTime": 0.3499999940395355,
-            "proneADSTime": 0.30000001192092896,
-            "bipodADSTime": 0.30000001192092896,
-            "restrictions": {
-                "requireADSToShoot": false,
-                "limitLeanAngle": false,
-                "preventShootUseWhileCrawl": false,
-                "preventADSWhileCrawl": false,
-                "walkSpeedMultiplier": 0.6000000238418579
-            },
-            "recoil": {
-                "camera": {
-                    "recoilCameraOffsetFactor": 0.4000000059604645,
-                    "recoilCameraOffsetInterpSpeed": 4,
-                    "recoilLofCameraOffsetLimit": 40,
-                    "recoilLofAttackInterpSpeed": 45,
-                    "recoilCanReleaseInterpSpeed": 10,
-                    "recoilLofReleaseInterpSpeed": 35,
-                    "recoilAdsCameraShotInterpSpeed": 0
-                },
-                "dynamic": {
-                    "movement": {
-                        "moveRecoilFactorRelease": 0,
-                        "addMoveRecoil": 0,
-                        "maxMoveRecoilFactor": 0,
-                        "minMoveRecoilFactor": 0,
-                        "recoilAlignmentMovementAddative": 0,
-                        "recoilAlignmentMovementExponent": 1
-                    },
-                    "stamina": {
-                        "lowStaminaRecoilFactor": 0.10000000149011612,
-                        "fullStaminaRecoilFactor": 0,
-                        "recoilAlignmentStaminaAddative": 0,
-                        "recoilAlignmentStaminaExponent": 1
-                    },
-                    "shoulder": {
-                        "recoilAlignmentShoulderMax": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "recoilAlignmentShoulderAngleLimits": {
-                            "x": 0,
-                            "y": 0
-                        }
-                    },
-                    "grip": {
-                        "recoilAlignmentShoulderMax": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "recoilAlignmentShoulderAngleLimits": {
-                            "x": 0,
-                            "y": 0
-                        }
-                    },
-                    "recoilAlignmentMultiplierMax": 2
-                }
-            },
-            "swayAlignment": {
-                "dynamic": {
-                    "addMoveSway": 9.999999747378752e-06,
-                    "minMoveSwayFactor": 0,
-                    "maxMoveSwayFactor": 10,
-                    "lowStaminaSwayFactor": 10,
-                    "fullStaminaSwayFactor": 0,
-                    "holdingBreathSwayFactor": 0.75,
-                    "holdingBreathSway": 0
-                },
-                "stance": {
-                    "proneADSSwayMin": 0.4000000059604645,
-                    "proneSwayMin": 0.4000000059604645,
-                    "crouchADSSwayMin": 0.6000000238418579,
-                    "crouchSwayMin": 0.6000000238418579,
-                    "standingADSSwayMin": 1,
-                    "standingSwayMin": 1,
-                    "bipodADSSwayMin": 0,
-                    "bipodSwayMin": 0
-                },
-                "maxSway": -1
-            },
-            "sway": {
-                "dynamic": {
-                    "addMoveSway": 9.999999747378752e-06,
-                    "minMoveSwayFactor": 0,
-                    "maxMoveSwayFactor": 10,
-                    "lowStaminaSwayFactor": 10,
-                    "fullStaminaSwayFactor": 0,
-                    "holdingBreathSwayFactor": 0.75,
-                    "holdingBreathSway": 0
-                },
-                "stance": {
-                    "proneADSSwayMin": 0.4000000059604645,
-                    "proneSwayMin": 0.4000000059604645,
-                    "crouchADSSwayMin": 0.6000000238418579,
-                    "crouchSwayMin": 0.6000000238418579,
-                    "standingADSSwayMin": 1,
-                    "standingSwayMin": 1,
-                    "bipodADSSwayMin": 0,
-                    "bipodSwayMin": 0
-                },
-                "maxSway": -1
-            }
-        }
-    },
-    "BP_M67Frag": {
-        "factions": [
-            "WPMC_CoOp",
-            "USMC_Coop",
-            "WPMC",
-            "USMC",
-            "USA",
-            "TLF",
-            "CRF"
-        ],
-        "displayName": "M67 Fragmentation",
-        "inventoryInfo": {
-            "description": "Explosion Radius: 15m",
-            "HUDTexture": "inventory_category_fraggrenade",
-            "inventoryTexture": "m67",
-            "ammoPerRearm": 10,
-            "showItemCount": true,
-            "showMagCount": false
-        },
-        "grenadeInfo": {
-            "initialAmmo": 2,
-            "maxAmmo": 2,
-            "equipDuration": 0.75,
-            "unEquipDuration": 0.8999999761581421,
-            "reloadTime": 0.75,
-            "projectile": "BP_Proj_M67Frag_C",
-            "overhandThrowVel": 2200,
-            "underhandThrowVel": 1200,
-            "throwReadyTime": 1.3669999837875366,
-            "overhandThrowTime": 0.5149999856948853,
-            "underhandThrowTime": 0.46000000834465027,
-            "overhandThrowDur": 1.1299999952316284,
-            "underhandThrowDur": 1.1299999952316284,
-            "fuseMin": 4,
-            "fuseMax": 5,
-            "projectileInfo": {
-                "impactDamage": 0,
-                "damageType": "BP_Fragmentation_DamageType_C",
-                "fuseTime": 4,
-                "explodeOnFuse": true,
-                "explodeOnImpact": false,
-                "explodeOnLifespan": true,
-                "isExplosiveProj": true,
-                "explosiveBaseDmg": 115,
-                "explosiveMinDmg": 0,
-                "explosiveKillZoneRad": 0,
-                "explosiveDmgOuterRad": 500,
-                "explosiveDmgInnerRad": 1500,
-                "explosiveDmgFalloff": 1,
-                "armorPenMM": 0,
-                "traceDistanceAfterPen": 0,
-                "explodeDistBefore": 8
-            }
-        }
-    },
-    "BP_M18Smoke_Parent": {
-        "factions": [
-            "WPMC_CoOp",
-            "USMC_Coop",
-            "WPMC",
-            "USMC",
-            "USA",
-            "TLF",
-            "GFI",
-            "CRF",
-            "ADF"
-        ],
-        "displayName": "M18 Smoke Grenade",
-        "inventoryInfo": {
-            "description": "",
-            "HUDTexture": "inventory_category_smokegrenade",
-            "inventoryTexture": "m18_smoke",
-            "ammoPerRearm": 10,
-            "showItemCount": true,
-            "showMagCount": false
-        }
-    },
     "BP_M18Smoke_Red": {
         "factions": [
             "WPMC_CoOp",
@@ -886,198 +1488,6 @@
             "ammoPerRearm": 10,
             "showItemCount": true,
             "showMagCount": false
-        }
-    },
-    "BP_US_Binoculars": {
-        "factions": [
-            "WPMC_CoOp",
-            "USMC_Coop",
-            "WPMC",
-            "USMC",
-            "USA",
-            "TLF",
-            "CRF",
-            "CAF",
-            "BAF",
-            "AFU"
-        ],
-        "displayName": "Field Binoculars",
-        "inventoryInfo": {
-            "description": "",
-            "HUDTexture": "inventory_category_binoculars",
-            "inventoryTexture": "usbinocs",
-            "ammoPerRearm": 10,
-            "showItemCount": false,
-            "showMagCount": false
-        },
-        "physicalInfo": {
-            "attachments": [
-                "BP_Attachment_USBinoculars_C"
-            ],
-            "skeletalMesh": "USBinoculars"
-        },
-        "weaponInfo": {
-            "numberOfMags": 1,
-            "magSize": 0,
-            "allowRoundInChamber": false,
-            "allowSingleLoad": false,
-            "fireModes": [
-                1
-            ],
-            "equipDuration": 0.8500000238418579,
-            "unEquipDuration": 1.0169999599456787,
-            "timeBetweenShots": 0.06669999659061432,
-            "timeBetweenSingleShots": 0.125,
-            "tacticalReloadDuration": 4.400000095367432,
-            "dryReloadDuration": 4.75,
-            "tacticalReloadBipodDuration": 1,
-            "dryReloadBipodDuration": 1,
-            "projectile": "",
-            "roundsBetweenTracer": 0,
-            "tracerProjectile": "",
-            "muzzleVelocity": 90000,
-            "maxDamageToApply": 60,
-            "timeToStartDamageFallOff": 0.10000000149011612,
-            "distanceToStartDamageFallOff": 9000,
-            "damageFallOffRate": 100,
-            "minDamageToApply": 10,
-            "damageFallOffType": "SimpleDamageFalloffCurve",
-            "moa": 4,
-            "maxTraceDistance": 5000,
-            "magEmptyForNewMagRearm": false,
-            "rearmOnlyIfCurrMagEmpty": false,
-            "rearmFillCurMag": false,
-            "minTimeBetweenRearm": 0,
-            "rearmOnlyOneMagAtTime": false,
-            "rearmXRounds": false,
-            "xRoundsToRearm": 1,
-            "armorPenMM": 0,
-            "armorPenType": "",
-            "traceDistanceAfterPen": 10,
-            "projectileInfo": {
-                "impactDamage": -1,
-                "damageType": "",
-                "appliesSuppression": false,
-                "isExplosiveProj": false,
-                "explosiveBaseDmg": 0,
-                "explosiveMinDmg": 0,
-                "explosiveKillZoneRad": 0,
-                "explosiveDmgOuterRad": 0,
-                "explosiveDmgInnerRad": 0,
-                "explosiveDmgFalloff": 0,
-                "armorPenMM": 0,
-                "traceDistanceAfterPen": 0,
-                "explodeDistBefore": 0
-            }
-        },
-        "staticInfo": {
-            "hasAdjustableSight": false,
-            "hasBipod": false,
-            "emptyEquipDuration": 0,
-            "emptyUnequipDuration": 0,
-            "standingADSTime": 0.4000000059604645,
-            "crouchADSTime": 0.3499999940395355,
-            "proneADSTime": 0.30000001192092896,
-            "bipodADSTime": 0.30000001192092896,
-            "restrictions": {
-                "requireADSToShoot": false,
-                "limitLeanAngle": false,
-                "preventShootUseWhileCrawl": true,
-                "preventADSWhileCrawl": true,
-                "walkSpeedMultiplier": 0.6000000238418579
-            },
-            "recoil": {
-                "camera": {
-                    "recoilCameraOffsetFactor": 0.4000000059604645,
-                    "recoilCameraOffsetInterpSpeed": 4,
-                    "recoilLofCameraOffsetLimit": 40,
-                    "recoilLofAttackInterpSpeed": 45,
-                    "recoilCanReleaseInterpSpeed": 10,
-                    "recoilLofReleaseInterpSpeed": 35,
-                    "recoilAdsCameraShotInterpSpeed": 0
-                },
-                "dynamic": {
-                    "movement": {
-                        "moveRecoilFactorRelease": 0,
-                        "addMoveRecoil": 0,
-                        "maxMoveRecoilFactor": 0,
-                        "minMoveRecoilFactor": 0,
-                        "recoilAlignmentMovementAddative": 0,
-                        "recoilAlignmentMovementExponent": 1
-                    },
-                    "stamina": {
-                        "lowStaminaRecoilFactor": 0.10000000149011612,
-                        "fullStaminaRecoilFactor": 0,
-                        "recoilAlignmentStaminaAddative": 0,
-                        "recoilAlignmentStaminaExponent": 1
-                    },
-                    "shoulder": {
-                        "recoilAlignmentShoulderMax": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "recoilAlignmentShoulderAngleLimits": {
-                            "x": 0,
-                            "y": 0
-                        }
-                    },
-                    "grip": {
-                        "recoilAlignmentShoulderMax": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "recoilAlignmentShoulderAngleLimits": {
-                            "x": 0,
-                            "y": 0
-                        }
-                    },
-                    "recoilAlignmentMultiplierMax": 2
-                }
-            },
-            "swayAlignment": {
-                "dynamic": {
-                    "addMoveSway": 0.00019999999494757503,
-                    "minMoveSwayFactor": 0,
-                    "maxMoveSwayFactor": 5,
-                    "lowStaminaSwayFactor": 2,
-                    "fullStaminaSwayFactor": 0,
-                    "holdingBreathSwayFactor": 0.75,
-                    "holdingBreathSway": 0
-                },
-                "stance": {
-                    "proneADSSwayMin": 0.25,
-                    "proneSwayMin": 0.4000000059604645,
-                    "crouchADSSwayMin": 0.2750000059604645,
-                    "crouchSwayMin": 0.6000000238418579,
-                    "standingADSSwayMin": 0.30000001192092896,
-                    "standingSwayMin": 1,
-                    "bipodADSSwayMin": 0,
-                    "bipodSwayMin": 0
-                },
-                "maxSway": -1
-            },
-            "sway": {
-                "dynamic": {
-                    "addMoveSway": 0.00019999999494757503,
-                    "minMoveSwayFactor": 0,
-                    "maxMoveSwayFactor": 5,
-                    "lowStaminaSwayFactor": 2,
-                    "fullStaminaSwayFactor": 0,
-                    "holdingBreathSwayFactor": 0.6000000238418579,
-                    "holdingBreathSway": 0
-                },
-                "stance": {
-                    "proneADSSwayMin": 0.10000000149011612,
-                    "proneSwayMin": 0.4000000059604645,
-                    "crouchADSSwayMin": 0.20000000298023224,
-                    "crouchSwayMin": 0.6000000238418579,
-                    "standingADSSwayMin": 0.30000001192092896,
-                    "standingSwayMin": 1,
-                    "bipodADSSwayMin": 0,
-                    "bipodSwayMin": 0
-                },
-                "maxSway": -1
-            }
         }
     },
     "BP_EquippableRallyPoint_WPMC": {
@@ -1839,190 +2249,6 @@
             }
         }
     },
-    "BP_BrowningHP": {
-        "factions": [
-            "WPMC_CoOp",
-            "WPMC",
-            "CRF",
-            "CAF"
-        ],
-        "displayName": "Hi-Power",
-        "inventoryInfo": {
-            "description": "Magazine Capacity: 12+1/Caliber: 9mm/Fire Mode: Semi Automatic",
-            "HUDTexture": "inventory_category_pistol",
-            "inventoryTexture": "browningHP_CAF",
-            "ammoPerRearm": 1,
-            "showItemCount": false,
-            "showMagCount": true
-        },
-        "physicalInfo": {
-            "attachments": [],
-            "skeletalMesh": "BrowningHP"
-        },
-        "weaponInfo": {
-            "numberOfMags": 4,
-            "magSize": 13,
-            "allowRoundInChamber": true,
-            "allowSingleLoad": false,
-            "fireModes": [
-                1
-            ],
-            "equipDuration": 0.44999998807907104,
-            "unEquipDuration": 1.0829999446868896,
-            "timeBetweenShots": 0.09200000017881393,
-            "timeBetweenSingleShots": 0.125,
-            "tacticalReloadDuration": 3.2300000190734863,
-            "dryReloadDuration": 3.430000066757202,
-            "tacticalReloadBipodDuration": 1,
-            "dryReloadBipodDuration": 1,
-            "projectile": "BP_Projectile_9mm_C",
-            "roundsBetweenTracer": 0,
-            "tracerProjectile": "",
-            "muzzleVelocity": 35000,
-            "maxDamageToApply": 45,
-            "timeToStartDamageFallOff": 0.06499999761581421,
-            "distanceToStartDamageFallOff": 9000,
-            "damageFallOffRate": 100,
-            "minDamageToApply": 8,
-            "damageFallOffType": "Pistol_DamageCurve",
-            "moa": 4,
-            "maxTraceDistance": 1000,
-            "magEmptyForNewMagRearm": false,
-            "rearmOnlyIfCurrMagEmpty": false,
-            "rearmFillCurMag": false,
-            "minTimeBetweenRearm": 0,
-            "rearmOnlyOneMagAtTime": false,
-            "rearmXRounds": false,
-            "xRoundsToRearm": 1,
-            "armorPenMM": 1,
-            "armorPenType": "",
-            "traceDistanceAfterPen": 5,
-            "projectileInfo": {
-                "impactDamage": -1,
-                "damageType": "SQDamageType",
-                "appliesSuppression": true,
-                "isExplosiveProj": false,
-                "explosiveBaseDmg": 115,
-                "explosiveMinDmg": 0,
-                "explosiveKillZoneRad": 0,
-                "explosiveDmgOuterRad": 500,
-                "explosiveDmgInnerRad": 1500,
-                "explosiveDmgFalloff": 1,
-                "armorPenMM": 0,
-                "traceDistanceAfterPen": 0,
-                "explodeDistBefore": 20
-            }
-        },
-        "staticInfo": {
-            "hasAdjustableSight": false,
-            "hasBipod": false,
-            "emptyEquipDuration": 0.6000000238418579,
-            "emptyUnequipDuration": 0.5,
-            "standingADSTime": 0.20000000298023224,
-            "crouchADSTime": 0.20000000298023224,
-            "proneADSTime": 0.20000000298023224,
-            "bipodADSTime": 0.30000001192092896,
-            "restrictions": {
-                "requireADSToShoot": false,
-                "limitLeanAngle": false,
-                "preventShootUseWhileCrawl": true,
-                "preventADSWhileCrawl": true,
-                "walkSpeedMultiplier": 1
-            },
-            "recoil": {
-                "camera": {
-                    "recoilCameraOffsetFactor": 0.25,
-                    "recoilCameraOffsetInterpSpeed": 2,
-                    "recoilLofCameraOffsetLimit": 15,
-                    "recoilLofAttackInterpSpeed": 45,
-                    "recoilCanReleaseInterpSpeed": 20,
-                    "recoilLofReleaseInterpSpeed": 35,
-                    "recoilAdsCameraShotInterpSpeed": 5
-                },
-                "dynamic": {
-                    "movement": {
-                        "moveRecoilFactorRelease": 20,
-                        "addMoveRecoil": 1,
-                        "maxMoveRecoilFactor": 0.800000011920929,
-                        "minMoveRecoilFactor": 0.07000000029802322,
-                        "recoilAlignmentMovementAddative": 0.10000000149011612,
-                        "recoilAlignmentMovementExponent": 0.10000000149011612
-                    },
-                    "stamina": {
-                        "lowStaminaRecoilFactor": 0.20000000298023224,
-                        "fullStaminaRecoilFactor": 0,
-                        "recoilAlignmentStaminaAddative": 0.10000000149011612,
-                        "recoilAlignmentStaminaExponent": 0.5
-                    },
-                    "shoulder": {
-                        "recoilAlignmentShoulderMax": {
-                            "x": 1,
-                            "y": 1
-                        },
-                        "recoilAlignmentShoulderAngleLimits": {
-                            "x": 2,
-                            "y": 2
-                        }
-                    },
-                    "grip": {
-                        "recoilAlignmentShoulderMax": {
-                            "x": 1,
-                            "y": 1
-                        },
-                        "recoilAlignmentShoulderAngleLimits": {
-                            "x": 5,
-                            "y": 5
-                        }
-                    },
-                    "recoilAlignmentMultiplierMax": 2
-                }
-            },
-            "swayAlignment": {
-                "dynamic": {
-                    "addMoveSway": 9.500000305706635e-05,
-                    "minMoveSwayFactor": 0,
-                    "maxMoveSwayFactor": 8,
-                    "lowStaminaSwayFactor": 5,
-                    "fullStaminaSwayFactor": 0,
-                    "holdingBreathSwayFactor": 0.7799999713897705,
-                    "holdingBreathSway": 0
-                },
-                "stance": {
-                    "proneADSSwayMin": 1.350000023841858,
-                    "proneSwayMin": 1.7999999523162842,
-                    "crouchADSSwayMin": 1.7999999523162842,
-                    "crouchSwayMin": 2,
-                    "standingADSSwayMin": 2.200000047683716,
-                    "standingSwayMin": 2.200000047683716,
-                    "bipodADSSwayMin": 0,
-                    "bipodSwayMin": 0
-                },
-                "maxSway": 5
-            },
-            "sway": {
-                "dynamic": {
-                    "addMoveSway": 9.500000305706635e-05,
-                    "minMoveSwayFactor": 0,
-                    "maxMoveSwayFactor": 8,
-                    "lowStaminaSwayFactor": 4,
-                    "fullStaminaSwayFactor": 0,
-                    "holdingBreathSwayFactor": 0.949999988079071,
-                    "holdingBreathSway": 0
-                },
-                "stance": {
-                    "proneADSSwayMin": 1.399999976158142,
-                    "proneSwayMin": 1.7999999523162842,
-                    "crouchADSSwayMin": 2,
-                    "crouchSwayMin": 2.299999952316284,
-                    "standingADSSwayMin": 2.200000047683716,
-                    "standingSwayMin": 2.5999999046325684,
-                    "bipodADSSwayMin": 0,
-                    "bipodSwayMin": 0
-                },
-                "maxSway": 15
-            }
-        }
-    },
     "BP_M4_Wormpool_M150": {
         "factions": [
             "WPMC_CoOp",
@@ -2663,30 +2889,6 @@
             "showMagCount": false
         }
     },
-    "BP_EntrenchingTool": {
-        "factions": [
-            "WPMC_CoOp",
-            "USMC_Coop",
-            "WPMC",
-            "USMC",
-            "USA",
-            "TLF",
-            "GFI",
-            "CRF",
-            "CAF",
-            "BAF",
-            "ADF"
-        ],
-        "displayName": "Entrenching Tool",
-        "inventoryInfo": {
-            "description": "Left Mouse Button constructs and Right Mouse Button deconstructs.",
-            "HUDTexture": "inventory_category_shovel",
-            "inventoryTexture": "entrenchingtool",
-            "ammoPerRearm": 10,
-            "showItemCount": false,
-            "showMagCount": false
-        }
-    },
     "BP_M16_Wormpool_M150": {
         "factions": [
             "WPMC_CoOp",
@@ -3060,22 +3262,6 @@
             }
         }
     },
-    "BP_Infantry_Ammobag_WPMC": {
-        "factions": [
-            "WPMC_CoOp",
-            "WPMC",
-            "CRF"
-        ],
-        "displayName": "Ammo Bag",
-        "inventoryInfo": {
-            "description": "Maximum Allowed: 1",
-            "HUDTexture": "inventory_category_resupply",
-            "inventoryTexture": "ammobag",
-            "ammoPerRearm": 1,
-            "showItemCount": true,
-            "showMagCount": false
-        }
-    },
     "BP_M4_SimonOffense_EXPS": {
         "factions": [
             "WPMC_CoOp",
@@ -3443,192 +3629,6 @@
                     "crouchSwayMin": 1,
                     "standingADSSwayMin": 0.949999988079071,
                     "standingSwayMin": 1.2999999523162842,
-                    "bipodADSSwayMin": 0,
-                    "bipodSwayMin": 0
-                },
-                "maxSway": 6
-            }
-        }
-    },
-    "BP_M16_Wormpool_EXPS": {
-        "factions": [
-            "WPMC_CoOp",
-            "WPMC"
-        ],
-        "displayName": "M16 Wormpool + EXPS + Foregrip",
-        "inventoryInfo": {
-            "description": "Magazine Capacity: 30+1/Caliber: 5.56x45mm NATO/Rate of Fire: 850 RPM/Fire Mode: Semi, Auto",
-            "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "T_M16_Wormpool_EXPS_Foregrip",
-            "ammoPerRearm": 2,
-            "showItemCount": false,
-            "showMagCount": true
-        },
-        "physicalInfo": {
-            "attachments": [
-                "BP_attachment_foregrip_wormpool_C",
-                "BP_Attachment_EXPS_C"
-            ],
-            "skeletalMesh": "SK_M16_Wormpool_30rnd_NoSight"
-        },
-        "weaponInfo": {
-            "numberOfMags": 7,
-            "magSize": 30,
-            "allowRoundInChamber": true,
-            "allowSingleLoad": false,
-            "fireModes": [
-                1,
-                -1
-            ],
-            "equipDuration": 0.75,
-            "unEquipDuration": 1,
-            "timeBetweenShots": 0.07199999690055847,
-            "timeBetweenSingleShots": 0.125,
-            "tacticalReloadDuration": 4.610000133514404,
-            "dryReloadDuration": 5.070000171661377,
-            "tacticalReloadBipodDuration": 1,
-            "dryReloadBipodDuration": 1,
-            "projectile": "BP_Projectile_C",
-            "roundsBetweenTracer": 0,
-            "tracerProjectile": "",
-            "muzzleVelocity": 88000,
-            "maxDamageToApply": 60,
-            "timeToStartDamageFallOff": 0.3400000035762787,
-            "distanceToStartDamageFallOff": 9000,
-            "damageFallOffRate": 44,
-            "minDamageToApply": 35,
-            "damageFallOffType": "M4A1_DamageCurve",
-            "moa": 3,
-            "maxTraceDistance": 5000,
-            "magEmptyForNewMagRearm": false,
-            "rearmOnlyIfCurrMagEmpty": false,
-            "rearmFillCurMag": false,
-            "minTimeBetweenRearm": 0,
-            "rearmOnlyOneMagAtTime": false,
-            "rearmXRounds": false,
-            "xRoundsToRearm": 1,
-            "armorPenMM": 5,
-            "armorPenType": "",
-            "traceDistanceAfterPen": 10,
-            "projectileInfo": {
-                "impactDamage": -1,
-                "damageType": "BP_SmallArms_DamageType_C",
-                "appliesSuppression": true,
-                "isExplosiveProj": false,
-                "explosiveBaseDmg": 115,
-                "explosiveMinDmg": 0,
-                "explosiveKillZoneRad": 0,
-                "explosiveDmgOuterRad": 500,
-                "explosiveDmgInnerRad": 1500,
-                "explosiveDmgFalloff": 1,
-                "armorPenMM": 0,
-                "traceDistanceAfterPen": 0,
-                "explodeDistBefore": 20
-            }
-        },
-        "staticInfo": {
-            "hasAdjustableSight": false,
-            "hasBipod": false,
-            "emptyEquipDuration": 0,
-            "emptyUnequipDuration": 0,
-            "standingADSTime": 0.4000000059604645,
-            "crouchADSTime": 0.3499999940395355,
-            "proneADSTime": 0.30000001192092896,
-            "bipodADSTime": 0.30000001192092896,
-            "restrictions": {
-                "requireADSToShoot": false,
-                "limitLeanAngle": false,
-                "preventShootUseWhileCrawl": true,
-                "preventADSWhileCrawl": true,
-                "walkSpeedMultiplier": 0.699999988079071
-            },
-            "recoil": {
-                "camera": {
-                    "recoilCameraOffsetFactor": 0.800000011920929,
-                    "recoilCameraOffsetInterpSpeed": 5,
-                    "recoilLofCameraOffsetLimit": 50,
-                    "recoilLofAttackInterpSpeed": 45,
-                    "recoilCanReleaseInterpSpeed": 30,
-                    "recoilLofReleaseInterpSpeed": 10,
-                    "recoilAdsCameraShotInterpSpeed": 200
-                },
-                "dynamic": {
-                    "movement": {
-                        "moveRecoilFactorRelease": 9.5,
-                        "addMoveRecoil": 1,
-                        "maxMoveRecoilFactor": 0.699999988079071,
-                        "minMoveRecoilFactor": 0.07000000029802322,
-                        "recoilAlignmentMovementAddative": 0.10000000149011612,
-                        "recoilAlignmentMovementExponent": 1
-                    },
-                    "stamina": {
-                        "lowStaminaRecoilFactor": 0.20000000298023224,
-                        "fullStaminaRecoilFactor": 0,
-                        "recoilAlignmentStaminaAddative": 0.10000000149011612,
-                        "recoilAlignmentStaminaExponent": 0.5
-                    },
-                    "shoulder": {
-                        "recoilAlignmentShoulderMax": {
-                            "x": 3,
-                            "y": 2
-                        },
-                        "recoilAlignmentShoulderAngleLimits": {
-                            "x": 6,
-                            "y": 4
-                        }
-                    },
-                    "grip": {
-                        "recoilAlignmentShoulderMax": {
-                            "x": 1,
-                            "y": 1
-                        },
-                        "recoilAlignmentShoulderAngleLimits": {
-                            "x": 2,
-                            "y": 2
-                        }
-                    },
-                    "recoilAlignmentMultiplierMax": 1.5
-                }
-            },
-            "swayAlignment": {
-                "dynamic": {
-                    "addMoveSway": 9.500000305706635e-05,
-                    "minMoveSwayFactor": 0,
-                    "maxMoveSwayFactor": 4.5,
-                    "lowStaminaSwayFactor": 5.400000095367432,
-                    "fullStaminaSwayFactor": 0,
-                    "holdingBreathSwayFactor": 0.6600000262260437,
-                    "holdingBreathSway": 0
-                },
-                "stance": {
-                    "proneADSSwayMin": 0.30000001192092896,
-                    "proneSwayMin": 0.6200000047683716,
-                    "crouchADSSwayMin": 0.4000000059604645,
-                    "crouchSwayMin": 0.7099999785423279,
-                    "standingADSSwayMin": 0.7200000286102295,
-                    "standingSwayMin": 1.2000000476837158,
-                    "bipodADSSwayMin": 0,
-                    "bipodSwayMin": 0
-                },
-                "maxSway": 5
-            },
-            "sway": {
-                "dynamic": {
-                    "addMoveSway": 4.999999873689376e-05,
-                    "minMoveSwayFactor": 0,
-                    "maxMoveSwayFactor": 6,
-                    "lowStaminaSwayFactor": 5.400000095367432,
-                    "fullStaminaSwayFactor": 0,
-                    "holdingBreathSwayFactor": 0.6000000238418579,
-                    "holdingBreathSway": 0
-                },
-                "stance": {
-                    "proneADSSwayMin": 0.20000000298023224,
-                    "proneSwayMin": 0.5,
-                    "crouchADSSwayMin": 0.4000000059604645,
-                    "crouchSwayMin": 0.949999988079071,
-                    "standingADSSwayMin": 1,
-                    "standingSwayMin": 1.350000023841858,
                     "bipodADSSwayMin": 0,
                     "bipodSwayMin": 0
                 },
@@ -52468,8 +52468,7 @@
     },
     "BP_AK74GP25_1P63_UGL_Smoke": {
         "factions": [
-            "IMF",
-            "AFU"
+            "IMF"
         ],
         "displayName": "GP-25 Smoke (White)",
         "inventoryInfo": {
@@ -52652,8 +52651,7 @@
     },
     "BP_AK74GP25_1P63_UGL_Smoke_Red": {
         "factions": [
-            "IMF",
-            "AFU"
+            "IMF"
         ],
         "displayName": "GP-25 Smoke (Red)",
         "inventoryInfo": {
@@ -52836,8 +52834,7 @@
     },
     "BP_AK74GP25_1P63_UGL_Smoke_Blue": {
         "factions": [
-            "IMF",
-            "AFU"
+            "IMF"
         ],
         "displayName": "GP-25 Smoke (Blue)",
         "inventoryInfo": {
@@ -53600,8 +53597,7 @@
     },
     "BP_AK74GP25_1P63_UGL_HE_10Rnds": {
         "factions": [
-            "IMF",
-            "AFU"
+            "IMF"
         ],
         "displayName": "GP-25 Fragmentation",
         "inventoryInfo": {
@@ -54149,7 +54145,7 @@
         "factions": [
             "IMF"
         ],
-        "displayName": "PKM- 1p29",
+        "displayName": "PKM + 1p29",
         "inventoryInfo": {
             "description": "Magazine Capacity: 100/Caliber: 7.62x54mmR/Rate of Fire: 650 RPM/Fire Mode: Auto",
             "HUDTexture": "inventory_category_machinegun",
@@ -73776,22 +73772,23 @@
             "showMagCount": false
         }
     },
-    "BP_AK74_OKP7_Pro": {
+    "BP_AK74_EXPS_Pro": {
         "factions": [
             "AFU"
         ],
-        "displayName": "AK-74 + OKP-7",
+        "displayName": "AK-74 + EXPS",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 5.45x39mm/Rate of Fire: 650 RPM/Fire Mode: Semi, Auto",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "ak74_okp7",
+            "inventoryTexture": "ak74_exps",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
         },
         "physicalInfo": {
             "attachments": [
-                "BP_Attachment_OKP-7_C"
+                "BP_Attachment_EXPS_C",
+                "BP_attachment_AK_Dovetail_Rail_C"
             ],
             "skeletalMesh": "AK74"
         },
@@ -73960,22 +73957,22 @@
             }
         }
     },
-    "BP_AKS74_1P78_Pro": {
+    "BP_AKS74_PSO-1_Pro": {
         "factions": [
             "AFU"
         ],
-        "displayName": "AKS-74 + 1P78",
+        "displayName": "AKS-74 + PSO-1",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 5.45x39mm/Rate of Fire: 650 RPM/Fire Mode: Semi, Auto",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "aks74m_1p78",
+            "inventoryTexture": "aks74_PSO1",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
         },
         "physicalInfo": {
             "attachments": [
-                "BP_Attachment_1p78_C"
+                "BP_Attachment_PSO-1_NoCap_C"
             ],
             "skeletalMesh": "AKS74"
         },
@@ -74035,7 +74032,7 @@
             }
         },
         "staticInfo": {
-            "hasAdjustableSight": false,
+            "hasAdjustableSight": true,
             "hasBipod": false,
             "emptyEquipDuration": 0,
             "emptyUnequipDuration": 0,
@@ -74144,15 +74141,15 @@
             }
         }
     },
-    "BP_Malyuk_545_M68_Foregrip": {
+    "BP_Malyuk_545_EXPS_Foregrip": {
         "factions": [
             "AFU"
         ],
-        "displayName": "Malyuk (5.45) + M68 + Foregrip",
+        "displayName": "Malyuk (5.45) + EXPS + Foregrip",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 5.45x39mm/Rate of Fire: 660 RPM/Fire Mode: Semi, Auto",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "malyuk_545_m68_foregrip",
+            "inventoryTexture": "malyuk_545_foregrip_exps",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
@@ -74160,7 +74157,8 @@
         "physicalInfo": {
             "attachments": [
                 "BP_Attachment_Malyuk_Foregrip_C",
-                "BP_Attachment_M68_C"
+                "BP_Attachment_EXPS-2_C",
+                "BP_attachment_ANPEQ-15-Black_C"
             ],
             "skeletalMesh": "SK_Malyuk_545_Irons"
         },
@@ -74266,7 +74264,7 @@
                             "y": 2.5999999046325684
                         },
                         "recoilAlignmentShoulderAngleLimits": {
-                            "x": 6,
+                            "x": 5,
                             "y": 5
                         }
                     },
@@ -74329,15 +74327,15 @@
             }
         }
     },
-    "BP_Malyuk_545_1p78_Foregrip": {
+    "BP_Malyuk_545_M150_Foregrip": {
         "factions": [
             "AFU"
         ],
-        "displayName": "Malyuk (5.45) + 1P78 + Foregrip",
+        "displayName": "Malyuk (5.45) + TA31 + Foregrip",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 5.45x39mm/Rate of Fire: 660 RPM/Fire Mode: Semi, Auto",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "malyuk_545_foregrip_1p78",
+            "inventoryTexture": "malyuk_545_foregrip_m150",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
@@ -74345,7 +74343,8 @@
         "physicalInfo": {
             "attachments": [
                 "BP_Attachment_Malyuk_Foregrip_C",
-                "BP_Attachment_1p78Picatinny_C"
+                "BP_Attachment_M150_C",
+                "BP_attachment_ANPEQ-15-Black_C"
             ],
             "skeletalMesh": "SK_Malyuk_545"
         },
@@ -74451,7 +74450,7 @@
                             "y": 2.5999999046325684
                         },
                         "recoilAlignmentShoulderAngleLimits": {
-                            "x": 6,
+                            "x": 5,
                             "y": 5
                         }
                     },
@@ -74878,22 +74877,23 @@
             }
         }
     },
-    "BP_Malyuk_545_1p78": {
+    "BP_Malyuk_545_M150": {
         "factions": [
             "AFU"
         ],
-        "displayName": "Malyuk (5.45) + 1P78",
+        "displayName": "Malyuk (5.45) + TA31",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 5.45x39mm/Rate of Fire: 660 RPM/Fire Mode: Semi, Auto",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "malyuk_545_1p78",
+            "inventoryTexture": "malyuk_545_m150",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
         },
         "physicalInfo": {
             "attachments": [
-                "BP_Attachment_1p78Picatinny_C"
+                "BP_Attachment_M150_C",
+                "BP_attachment_ANPEQ-15-Black_C"
             ],
             "skeletalMesh": "SK_Malyuk_545"
         },
@@ -75244,188 +75244,6 @@
             }
         }
     },
-    "BP_Vz61_3mags": {
-        "factions": [
-            "AFU"
-        ],
-        "displayName": "Vz. 61 \u0160korpion",
-        "inventoryInfo": {
-            "description": "Magazine Capacity: 20/Caliber: .32 ACP/Rate of Fire: 850 RPM/Fire Mode: Auto, Semi",
-            "HUDTexture": "inventory_category_pistol",
-            "inventoryTexture": "T_vz61",
-            "ammoPerRearm": 1,
-            "showItemCount": false,
-            "showMagCount": true
-        },
-        "physicalInfo": {
-            "attachments": [],
-            "skeletalMesh": "Vz61"
-        },
-        "weaponInfo": {
-            "numberOfMags": 8,
-            "magSize": 20,
-            "allowRoundInChamber": true,
-            "allowSingleLoad": false,
-            "fireModes": [
-                -1,
-                1
-            ],
-            "equipDuration": 1.3700000047683716,
-            "unEquipDuration": 1.315999984741211,
-            "timeBetweenShots": 0.07000000029802322,
-            "timeBetweenSingleShots": 0.125,
-            "tacticalReloadDuration": 3.9000000953674316,
-            "dryReloadDuration": 4.53000020980835,
-            "tacticalReloadBipodDuration": 1,
-            "dryReloadBipodDuration": 1,
-            "projectile": "BP_Projectile_9mm_C",
-            "roundsBetweenTracer": 0,
-            "tracerProjectile": "",
-            "muzzleVelocity": 32000,
-            "maxDamageToApply": 60,
-            "timeToStartDamageFallOff": 0.3400000035762787,
-            "distanceToStartDamageFallOff": 9000,
-            "damageFallOffRate": 88,
-            "minDamageToApply": 35,
-            "damageFallOffType": "SMG_DamageCurve",
-            "moa": 5,
-            "maxTraceDistance": 5000,
-            "magEmptyForNewMagRearm": false,
-            "rearmOnlyIfCurrMagEmpty": false,
-            "rearmFillCurMag": false,
-            "minTimeBetweenRearm": 0,
-            "rearmOnlyOneMagAtTime": false,
-            "rearmXRounds": false,
-            "xRoundsToRearm": 1,
-            "armorPenMM": 0,
-            "armorPenType": "",
-            "traceDistanceAfterPen": 10,
-            "projectileInfo": {
-                "impactDamage": -1,
-                "damageType": "SQDamageType",
-                "appliesSuppression": true,
-                "isExplosiveProj": false,
-                "explosiveBaseDmg": 115,
-                "explosiveMinDmg": 0,
-                "explosiveKillZoneRad": 0,
-                "explosiveDmgOuterRad": 500,
-                "explosiveDmgInnerRad": 1500,
-                "explosiveDmgFalloff": 1,
-                "armorPenMM": 0,
-                "traceDistanceAfterPen": 0,
-                "explodeDistBefore": 20
-            }
-        },
-        "staticInfo": {
-            "hasAdjustableSight": true,
-            "hasBipod": false,
-            "emptyEquipDuration": 0,
-            "emptyUnequipDuration": 0,
-            "standingADSTime": 0.30000001192092896,
-            "crouchADSTime": 0.30000001192092896,
-            "proneADSTime": 0.30000001192092896,
-            "bipodADSTime": 0.20000000298023224,
-            "restrictions": {
-                "requireADSToShoot": false,
-                "limitLeanAngle": false,
-                "preventShootUseWhileCrawl": true,
-                "preventADSWhileCrawl": true,
-                "walkSpeedMultiplier": 1
-            },
-            "recoil": {
-                "camera": {
-                    "recoilCameraOffsetFactor": 0.5,
-                    "recoilCameraOffsetInterpSpeed": 2.5,
-                    "recoilLofCameraOffsetLimit": 20,
-                    "recoilLofAttackInterpSpeed": 45,
-                    "recoilCanReleaseInterpSpeed": 30,
-                    "recoilLofReleaseInterpSpeed": 10,
-                    "recoilAdsCameraShotInterpSpeed": 200
-                },
-                "dynamic": {
-                    "movement": {
-                        "moveRecoilFactorRelease": 18,
-                        "addMoveRecoil": 1,
-                        "maxMoveRecoilFactor": 0.4000000059604645,
-                        "minMoveRecoilFactor": 0.4000000059604645,
-                        "recoilAlignmentMovementAddative": 0.4000000059604645,
-                        "recoilAlignmentMovementExponent": 1
-                    },
-                    "stamina": {
-                        "lowStaminaRecoilFactor": 0.20000000298023224,
-                        "fullStaminaRecoilFactor": 0,
-                        "recoilAlignmentStaminaAddative": 0.10000000149011612,
-                        "recoilAlignmentStaminaExponent": 1
-                    },
-                    "shoulder": {
-                        "recoilAlignmentShoulderMax": {
-                            "x": 6,
-                            "y": 6
-                        },
-                        "recoilAlignmentShoulderAngleLimits": {
-                            "x": 20,
-                            "y": 20
-                        }
-                    },
-                    "grip": {
-                        "recoilAlignmentShoulderMax": {
-                            "x": 4,
-                            "y": 4
-                        },
-                        "recoilAlignmentShoulderAngleLimits": {
-                            "x": 8,
-                            "y": 8
-                        }
-                    },
-                    "recoilAlignmentMultiplierMax": 1
-                }
-            },
-            "swayAlignment": {
-                "dynamic": {
-                    "addMoveSway": 9.500000305706635e-05,
-                    "minMoveSwayFactor": 0,
-                    "maxMoveSwayFactor": 1.5,
-                    "lowStaminaSwayFactor": 5.400000095367432,
-                    "fullStaminaSwayFactor": 0,
-                    "holdingBreathSwayFactor": 0.6600000262260437,
-                    "holdingBreathSway": 0
-                },
-                "stance": {
-                    "proneADSSwayMin": 0.4000000059604645,
-                    "proneSwayMin": 0.6499999761581421,
-                    "crouchADSSwayMin": 0.4699999988079071,
-                    "crouchSwayMin": 0.75,
-                    "standingADSSwayMin": 0.6499999761581421,
-                    "standingSwayMin": 1,
-                    "bipodADSSwayMin": 0,
-                    "bipodSwayMin": 0
-                },
-                "maxSway": 2
-            },
-            "sway": {
-                "dynamic": {
-                    "addMoveSway": 4.999999873689376e-05,
-                    "minMoveSwayFactor": 0,
-                    "maxMoveSwayFactor": 6,
-                    "lowStaminaSwayFactor": 5.400000095367432,
-                    "fullStaminaSwayFactor": 0,
-                    "holdingBreathSwayFactor": 0.6000000238418579,
-                    "holdingBreathSway": 0
-                },
-                "stance": {
-                    "proneADSSwayMin": 0.44999998807907104,
-                    "proneSwayMin": 0.5600000023841858,
-                    "crouchADSSwayMin": 0.6000000238418579,
-                    "crouchSwayMin": 1,
-                    "standingADSSwayMin": 0.949999988079071,
-                    "standingSwayMin": 1.2999999523162842,
-                    "bipodADSSwayMin": 0,
-                    "bipodSwayMin": 0
-                },
-                "maxSway": 4
-            }
-        }
-    },
     "BP_VOG17_UZRGM_Frag01": {
         "factions": [
             "AFU"
@@ -75475,22 +75293,23 @@
             }
         }
     },
-    "BP_AKS74U_OKP7": {
+    "BP_AKS74U_Yoloson": {
         "factions": [
             "AFU"
         ],
-        "displayName": "AKS-74U + OKP-7",
+        "displayName": "AKS-74U + Yoloson",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 5.45x39mm/Rate of Fire: 700 RPM/Fire Mode: Semi, Auto",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "aks74u_okp7",
+            "inventoryTexture": "aks74u_Yoloson",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
         },
         "physicalInfo": {
             "attachments": [
-                "BP_Attachment_OKP-7_C"
+                "BP_Attachment_Yoloson_Short_C",
+                "BP_attachment_AK_Dovetail_Rail_C"
             ],
             "skeletalMesh": "AKS74U"
         },
@@ -75659,25 +75478,25 @@
             }
         }
     },
-    "BP_AKS74_1P63_Pro": {
+    "BP_AK74_Yoloson_Pro": {
         "factions": [
             "AFU"
         ],
-        "displayName": "AKS-74 + 1P63",
+        "displayName": "AK-74 + Yoloson",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 5.45x39mm/Rate of Fire: 650 RPM/Fire Mode: Semi, Auto",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "aks74_1p63",
+            "inventoryTexture": "ak74_Yoloson",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
         },
         "physicalInfo": {
             "attachments": [
-                "BP_Attachment_1p63_C",
-                "BP_Attachment_1p63_Blur_C"
+                "BP_Attachment_Yoloson_Short_C",
+                "BP_attachment_AK_Dovetail_Rail_C"
             ],
-            "skeletalMesh": "AKS74"
+            "skeletalMesh": "AK74"
         },
         "weaponInfo": {
             "numberOfMags": 7,
@@ -75692,8 +75511,8 @@
             "unEquipDuration": 1.4329999685287476,
             "timeBetweenShots": 0.09200000017881393,
             "timeBetweenSingleShots": 0.125,
-            "tacticalReloadDuration": 3.9000000953674316,
-            "dryReloadDuration": 4.599999904632568,
+            "tacticalReloadDuration": 4.400000095367432,
+            "dryReloadDuration": 5,
             "tacticalReloadBipodDuration": 1,
             "dryReloadBipodDuration": 1,
             "projectile": "BP_Projectile_C",
@@ -75965,7 +75784,7 @@
                             "y": 2.5999999046325684
                         },
                         "recoilAlignmentShoulderAngleLimits": {
-                            "x": 6,
+                            "x": 5,
                             "y": 5
                         }
                     },
@@ -76028,22 +75847,23 @@
             }
         }
     },
-    "BP_RPK_OKP7": {
+    "BP_RPK_Yoloson": {
         "factions": [
             "AFU"
         ],
-        "displayName": "RPK + OKP-7",
+        "displayName": "RPK + Yoloson",
         "inventoryInfo": {
             "description": "Magazine Capacity: 75+1/Caliber: 7.62x39mm/Rate of Fire: 600 RPM/Fire Mode: Auto, Semi",
             "HUDTexture": "inventory_category_machinegun",
-            "inventoryTexture": "rpk_okp7",
+            "inventoryTexture": "rpk_Yoloson",
             "ammoPerRearm": 8,
             "showItemCount": false,
             "showMagCount": true
         },
         "physicalInfo": {
             "attachments": [
-                "BP_Attachment_OKP-7_C"
+                "BP_Attachment_Yoloson_Short_C",
+                "BP_attachment_AK_Dovetail_Rail_C"
             ],
             "skeletalMesh": "RPK"
         },
@@ -76394,22 +76214,23 @@
             }
         }
     },
-    "BP_RPK74_1P78_Pro": {
+    "BP_RPK74_M150_Pro": {
         "factions": [
             "AFU"
         ],
-        "displayName": "RPK-74 + 1P78",
+        "displayName": "RPK-74 + TA31",
         "inventoryInfo": {
             "description": "Magazine Capacity: 45+1/Caliber: 5.45x39mm/Rate of Fire: 650 RPM/Fire Mode: Auto",
             "HUDTexture": "inventory_category_machinegun",
-            "inventoryTexture": "rpk74m_1p78",
+            "inventoryTexture": "rpk74_m150",
             "ammoPerRearm": 5,
             "showItemCount": false,
             "showMagCount": true
         },
         "physicalInfo": {
             "attachments": [
-                "BP_Attachment_1p78_C"
+                "BP_Attachment_M150_C",
+                "BP_attachment_AK_Dovetail_Rail_C"
             ],
             "skeletalMesh": "RPK74"
         },
@@ -77484,23 +77305,23 @@
             }
         }
     },
-    "BP_AK74GP25_Rifle_1P63_Pro": {
+    "BP_AK74GP25_Rifle_EXPS_Pro": {
         "factions": [
             "AFU"
         ],
-        "displayName": "AK-74 GP-25 + 1P63",
+        "displayName": "AK-74 GP-25 + EXPS",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 5.45x39mm/Rate of Fire: 650 RPM/Fire Mode: Semi, Auto/Zeroing: 100m-1000m",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "ak74mgp25_1p63",
+            "inventoryTexture": "ak74gp25_exps",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
         },
         "physicalInfo": {
             "attachments": [
-                "BP_Attachment_1p63_C",
-                "BP_Attachment_1p63_Blur_C"
+                "BP_Attachment_EXPS_C",
+                "BP_attachment_AK_Dovetail_Rail_C"
             ],
             "skeletalMesh": "SK_AK74_GP25"
         },
@@ -77517,7 +77338,7 @@
             "unEquipDuration": 1.4329999685287476,
             "timeBetweenShots": 0.09200000017881393,
             "timeBetweenSingleShots": 0.125,
-            "tacticalReloadDuration": 4.400000095367432,
+            "tacticalReloadDuration": 3.799999952316284,
             "dryReloadDuration": 5,
             "tacticalReloadBipodDuration": 1,
             "dryReloadBipodDuration": 1,
@@ -77666,6 +77487,742 @@
                     "bipodSwayMin": 0
                 },
                 "maxSway": 6
+            }
+        }
+    },
+    "BP_AK74GP25_EXPS_UGL_HE_10Rnds": {
+        "factions": [
+            "AFU"
+        ],
+        "displayName": "GP-25 Fragmentation",
+        "inventoryInfo": {
+            "description": "Caliber: 40mm/Arming Distance: 10m/Explosion Radius: 15m (Frag) 0m (Smoke)",
+            "HUDTexture": "inventory_category_grenadelauncher",
+            "inventoryTexture": "gp25",
+            "ammoPerRearm": 10,
+            "showItemCount": false,
+            "showMagCount": true
+        },
+        "physicalInfo": {
+            "attachments": [
+                "BP_Attachment_EXPS_C",
+                "BP_attachment_AK_Dovetail_Rail_C"
+            ],
+            "skeletalMesh": "SK_AK74_GP25"
+        },
+        "weaponInfo": {
+            "numberOfMags": 10,
+            "magSize": 1,
+            "allowRoundInChamber": true,
+            "allowSingleLoad": false,
+            "fireModes": [
+                1
+            ],
+            "equipDuration": 1.7000000476837158,
+            "unEquipDuration": 1.9500000476837158,
+            "timeBetweenShots": 0.09200000017881393,
+            "timeBetweenSingleShots": 0.125,
+            "tacticalReloadDuration": 3.450000047683716,
+            "dryReloadDuration": 3.450000047683716,
+            "tacticalReloadBipodDuration": 1,
+            "dryReloadBipodDuration": 1,
+            "projectile": "BP_40MM_VOG_Proj2_C",
+            "roundsBetweenTracer": 0,
+            "tracerProjectile": "",
+            "muzzleVelocity": 7600,
+            "maxDamageToApply": 60,
+            "timeToStartDamageFallOff": 0.10000000149011612,
+            "distanceToStartDamageFallOff": 9000,
+            "damageFallOffRate": 100,
+            "minDamageToApply": 10,
+            "damageFallOffType": "SimpleDamageFalloffCurve",
+            "moa": 40,
+            "maxTraceDistance": 0,
+            "magEmptyForNewMagRearm": false,
+            "rearmOnlyIfCurrMagEmpty": false,
+            "rearmFillCurMag": false,
+            "minTimeBetweenRearm": 0,
+            "rearmOnlyOneMagAtTime": false,
+            "rearmXRounds": false,
+            "xRoundsToRearm": 1,
+            "armorPenMM": 0,
+            "armorPenType": "",
+            "traceDistanceAfterPen": 1,
+            "projectileInfo": {
+                "impactDamage": 10,
+                "damageType": "BP_Fragmentation_DamageType_C",
+                "appliesSuppression": true,
+                "isExplosiveProj": true,
+                "explosiveBaseDmg": 115,
+                "explosiveMinDmg": 0,
+                "explosiveKillZoneRad": 0,
+                "explosiveDmgOuterRad": 100,
+                "explosiveDmgInnerRad": 1500,
+                "explosiveDmgFalloff": 1,
+                "armorPenMM": 0,
+                "traceDistanceAfterPen": 1,
+                "explodeDistBefore": 8
+            }
+        },
+        "staticInfo": {
+            "hasAdjustableSight": true,
+            "hasBipod": false,
+            "emptyEquipDuration": 1.7000000476837158,
+            "emptyUnequipDuration": 1.9500000476837158,
+            "standingADSTime": 0.4000000059604645,
+            "crouchADSTime": 0.3499999940395355,
+            "proneADSTime": 0.30000001192092896,
+            "bipodADSTime": 0.30000001192092896,
+            "restrictions": {
+                "requireADSToShoot": false,
+                "limitLeanAngle": false,
+                "preventShootUseWhileCrawl": true,
+                "preventADSWhileCrawl": true,
+                "walkSpeedMultiplier": 0.6000000238418579
+            },
+            "recoil": {
+                "camera": {
+                    "recoilCameraOffsetFactor": 0.4000000059604645,
+                    "recoilCameraOffsetInterpSpeed": 4,
+                    "recoilLofCameraOffsetLimit": 40,
+                    "recoilLofAttackInterpSpeed": 45,
+                    "recoilCanReleaseInterpSpeed": 10,
+                    "recoilLofReleaseInterpSpeed": 35,
+                    "recoilAdsCameraShotInterpSpeed": 0
+                },
+                "dynamic": {
+                    "movement": {
+                        "moveRecoilFactorRelease": 0,
+                        "addMoveRecoil": 0,
+                        "maxMoveRecoilFactor": 0,
+                        "minMoveRecoilFactor": 0,
+                        "recoilAlignmentMovementAddative": 0,
+                        "recoilAlignmentMovementExponent": 1
+                    },
+                    "stamina": {
+                        "lowStaminaRecoilFactor": 0.10000000149011612,
+                        "fullStaminaRecoilFactor": 0,
+                        "recoilAlignmentStaminaAddative": 0,
+                        "recoilAlignmentStaminaExponent": 1
+                    },
+                    "shoulder": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 12,
+                            "y": 12
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 24,
+                            "y": 24
+                        }
+                    },
+                    "grip": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 2,
+                            "y": 2
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 4,
+                            "y": 4
+                        }
+                    },
+                    "recoilAlignmentMultiplierMax": 2
+                }
+            },
+            "swayAlignment": {
+                "dynamic": {
+                    "addMoveSway": 9.500000305706635e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 4.5,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6600000262260437,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.4000000059604645,
+                    "proneSwayMin": 0.6499999761581421,
+                    "crouchADSSwayMin": 0.4699999988079071,
+                    "crouchSwayMin": 0.75,
+                    "standingADSSwayMin": 0.6499999761581421,
+                    "standingSwayMin": 1,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 6
+            },
+            "sway": {
+                "dynamic": {
+                    "addMoveSway": 4.999999873689376e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 6,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6000000238418579,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.44999998807907104,
+                    "proneSwayMin": 0.5600000023841858,
+                    "crouchADSSwayMin": 0.6000000238418579,
+                    "crouchSwayMin": 1,
+                    "standingADSSwayMin": 0.949999988079071,
+                    "standingSwayMin": 1.2999999523162842,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 10
+            }
+        }
+    },
+    "BP_AK74GP25_EXPS_UGL_Smoke": {
+        "factions": [
+            "AFU"
+        ],
+        "displayName": "GP-25 Smoke (White)",
+        "inventoryInfo": {
+            "description": "Caliber: 40mm/Arming Distance: 10m/Explosion Radius: 15m (Frag) 0m (Smoke)",
+            "HUDTexture": "inventory_category_grenadelauncher",
+            "inventoryTexture": "gp25_whitesmoke",
+            "ammoPerRearm": 10,
+            "showItemCount": false,
+            "showMagCount": true
+        },
+        "physicalInfo": {
+            "attachments": [
+                "BP_Attachment_EXPS_C",
+                "BP_attachment_AK_Dovetail_Rail_C"
+            ],
+            "skeletalMesh": "SK_AK74_GP25_Smoke"
+        },
+        "weaponInfo": {
+            "numberOfMags": 2,
+            "magSize": 1,
+            "allowRoundInChamber": true,
+            "allowSingleLoad": false,
+            "fireModes": [
+                1
+            ],
+            "equipDuration": 3.5,
+            "unEquipDuration": 1.7330000400543213,
+            "timeBetweenShots": 0.09200000017881393,
+            "timeBetweenSingleShots": 0.125,
+            "tacticalReloadDuration": 3.450000047683716,
+            "dryReloadDuration": 3.450000047683716,
+            "tacticalReloadBipodDuration": 1,
+            "dryReloadBipodDuration": 1,
+            "projectile": "BP_40MM_VOG_Smoke_Proj2_C",
+            "roundsBetweenTracer": 0,
+            "tracerProjectile": "",
+            "muzzleVelocity": 7600,
+            "maxDamageToApply": 60,
+            "timeToStartDamageFallOff": 0.10000000149011612,
+            "distanceToStartDamageFallOff": 9000,
+            "damageFallOffRate": 100,
+            "minDamageToApply": 10,
+            "damageFallOffType": "SimpleDamageFalloffCurve",
+            "moa": 40,
+            "maxTraceDistance": 0,
+            "magEmptyForNewMagRearm": false,
+            "rearmOnlyIfCurrMagEmpty": false,
+            "rearmFillCurMag": false,
+            "minTimeBetweenRearm": 0,
+            "rearmOnlyOneMagAtTime": false,
+            "rearmXRounds": false,
+            "xRoundsToRearm": 1,
+            "armorPenMM": 0,
+            "armorPenType": "",
+            "traceDistanceAfterPen": 1,
+            "projectileInfo": {
+                "impactDamage": 10,
+                "damageType": "SQDamageType_Explosive",
+                "appliesSuppression": false,
+                "isExplosiveProj": true,
+                "explosiveBaseDmg": 0,
+                "explosiveMinDmg": 0,
+                "explosiveKillZoneRad": 0,
+                "explosiveDmgOuterRad": 0,
+                "explosiveDmgInnerRad": 0,
+                "explosiveDmgFalloff": 1,
+                "armorPenMM": 0,
+                "traceDistanceAfterPen": 1,
+                "explodeDistBefore": 8
+            }
+        },
+        "staticInfo": {
+            "hasAdjustableSight": true,
+            "hasBipod": false,
+            "emptyEquipDuration": 1.7000000476837158,
+            "emptyUnequipDuration": 1.9500000476837158,
+            "standingADSTime": 0.4000000059604645,
+            "crouchADSTime": 0.3499999940395355,
+            "proneADSTime": 0.30000001192092896,
+            "bipodADSTime": 0.30000001192092896,
+            "restrictions": {
+                "requireADSToShoot": false,
+                "limitLeanAngle": false,
+                "preventShootUseWhileCrawl": true,
+                "preventADSWhileCrawl": true,
+                "walkSpeedMultiplier": 0.6000000238418579
+            },
+            "recoil": {
+                "camera": {
+                    "recoilCameraOffsetFactor": 0.4000000059604645,
+                    "recoilCameraOffsetInterpSpeed": 4,
+                    "recoilLofCameraOffsetLimit": 40,
+                    "recoilLofAttackInterpSpeed": 45,
+                    "recoilCanReleaseInterpSpeed": 10,
+                    "recoilLofReleaseInterpSpeed": 35,
+                    "recoilAdsCameraShotInterpSpeed": 0
+                },
+                "dynamic": {
+                    "movement": {
+                        "moveRecoilFactorRelease": 0,
+                        "addMoveRecoil": 0,
+                        "maxMoveRecoilFactor": 0,
+                        "minMoveRecoilFactor": 0,
+                        "recoilAlignmentMovementAddative": 0,
+                        "recoilAlignmentMovementExponent": 1
+                    },
+                    "stamina": {
+                        "lowStaminaRecoilFactor": 0.10000000149011612,
+                        "fullStaminaRecoilFactor": 0,
+                        "recoilAlignmentStaminaAddative": 0,
+                        "recoilAlignmentStaminaExponent": 1
+                    },
+                    "shoulder": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 12,
+                            "y": 12
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 24,
+                            "y": 24
+                        }
+                    },
+                    "grip": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 2,
+                            "y": 2
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 4,
+                            "y": 4
+                        }
+                    },
+                    "recoilAlignmentMultiplierMax": 2
+                }
+            },
+            "swayAlignment": {
+                "dynamic": {
+                    "addMoveSway": 9.500000305706635e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 4.5,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6600000262260437,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.4000000059604645,
+                    "proneSwayMin": 0.6499999761581421,
+                    "crouchADSSwayMin": 0.4699999988079071,
+                    "crouchSwayMin": 0.75,
+                    "standingADSSwayMin": 0.6499999761581421,
+                    "standingSwayMin": 1,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 6
+            },
+            "sway": {
+                "dynamic": {
+                    "addMoveSway": 4.999999873689376e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 6,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6000000238418579,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.44999998807907104,
+                    "proneSwayMin": 0.5600000023841858,
+                    "crouchADSSwayMin": 0.6000000238418579,
+                    "crouchSwayMin": 1,
+                    "standingADSSwayMin": 0.949999988079071,
+                    "standingSwayMin": 1.2999999523162842,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 10
+            }
+        }
+    },
+    "BP_AK74GP25_EXPS_UGL_Smoke_Red": {
+        "factions": [
+            "AFU"
+        ],
+        "displayName": "GP-25 Smoke (Red)",
+        "inventoryInfo": {
+            "description": "Caliber: 40mm/Arming Distance: 10m/Explosion Radius: 15m (Frag) 0m (Smoke)",
+            "HUDTexture": "inventory_category_grenadelauncher",
+            "inventoryTexture": "gp25_redsmoke",
+            "ammoPerRearm": 10,
+            "showItemCount": false,
+            "showMagCount": true
+        },
+        "physicalInfo": {
+            "attachments": [
+                "BP_Attachment_EXPS_C",
+                "BP_attachment_AK_Dovetail_Rail_C"
+            ],
+            "skeletalMesh": "SK_AK74_GP25_Smoke"
+        },
+        "weaponInfo": {
+            "numberOfMags": 2,
+            "magSize": 1,
+            "allowRoundInChamber": true,
+            "allowSingleLoad": false,
+            "fireModes": [
+                1
+            ],
+            "equipDuration": 3.5,
+            "unEquipDuration": 1.7330000400543213,
+            "timeBetweenShots": 0.09200000017881393,
+            "timeBetweenSingleShots": 0.125,
+            "tacticalReloadDuration": 3.450000047683716,
+            "dryReloadDuration": 3.450000047683716,
+            "tacticalReloadBipodDuration": 1,
+            "dryReloadBipodDuration": 1,
+            "projectile": "BP_40MM_VOG_Smoke_Red_Proj2_C",
+            "roundsBetweenTracer": 0,
+            "tracerProjectile": "",
+            "muzzleVelocity": 7600,
+            "maxDamageToApply": 60,
+            "timeToStartDamageFallOff": 0.10000000149011612,
+            "distanceToStartDamageFallOff": 9000,
+            "damageFallOffRate": 100,
+            "minDamageToApply": 10,
+            "damageFallOffType": "SimpleDamageFalloffCurve",
+            "moa": 40,
+            "maxTraceDistance": 0,
+            "magEmptyForNewMagRearm": false,
+            "rearmOnlyIfCurrMagEmpty": false,
+            "rearmFillCurMag": false,
+            "minTimeBetweenRearm": 0,
+            "rearmOnlyOneMagAtTime": false,
+            "rearmXRounds": false,
+            "xRoundsToRearm": 1,
+            "armorPenMM": 0,
+            "armorPenType": "",
+            "traceDistanceAfterPen": 1,
+            "projectileInfo": {
+                "impactDamage": 10,
+                "damageType": "SQDamageType_Explosive",
+                "appliesSuppression": false,
+                "isExplosiveProj": true,
+                "explosiveBaseDmg": 0,
+                "explosiveMinDmg": 0,
+                "explosiveKillZoneRad": 0,
+                "explosiveDmgOuterRad": 0,
+                "explosiveDmgInnerRad": 0,
+                "explosiveDmgFalloff": 1,
+                "armorPenMM": 0,
+                "traceDistanceAfterPen": 1,
+                "explodeDistBefore": 8
+            }
+        },
+        "staticInfo": {
+            "hasAdjustableSight": true,
+            "hasBipod": false,
+            "emptyEquipDuration": 1.7000000476837158,
+            "emptyUnequipDuration": 1.9500000476837158,
+            "standingADSTime": 0.4000000059604645,
+            "crouchADSTime": 0.3499999940395355,
+            "proneADSTime": 0.30000001192092896,
+            "bipodADSTime": 0.30000001192092896,
+            "restrictions": {
+                "requireADSToShoot": false,
+                "limitLeanAngle": false,
+                "preventShootUseWhileCrawl": true,
+                "preventADSWhileCrawl": true,
+                "walkSpeedMultiplier": 0.6000000238418579
+            },
+            "recoil": {
+                "camera": {
+                    "recoilCameraOffsetFactor": 0.4000000059604645,
+                    "recoilCameraOffsetInterpSpeed": 4,
+                    "recoilLofCameraOffsetLimit": 40,
+                    "recoilLofAttackInterpSpeed": 45,
+                    "recoilCanReleaseInterpSpeed": 10,
+                    "recoilLofReleaseInterpSpeed": 35,
+                    "recoilAdsCameraShotInterpSpeed": 0
+                },
+                "dynamic": {
+                    "movement": {
+                        "moveRecoilFactorRelease": 0,
+                        "addMoveRecoil": 0,
+                        "maxMoveRecoilFactor": 0,
+                        "minMoveRecoilFactor": 0,
+                        "recoilAlignmentMovementAddative": 0,
+                        "recoilAlignmentMovementExponent": 1
+                    },
+                    "stamina": {
+                        "lowStaminaRecoilFactor": 0.10000000149011612,
+                        "fullStaminaRecoilFactor": 0,
+                        "recoilAlignmentStaminaAddative": 0,
+                        "recoilAlignmentStaminaExponent": 1
+                    },
+                    "shoulder": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 12,
+                            "y": 12
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 24,
+                            "y": 24
+                        }
+                    },
+                    "grip": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 2,
+                            "y": 2
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 4,
+                            "y": 4
+                        }
+                    },
+                    "recoilAlignmentMultiplierMax": 2
+                }
+            },
+            "swayAlignment": {
+                "dynamic": {
+                    "addMoveSway": 9.500000305706635e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 4.5,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6600000262260437,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.4000000059604645,
+                    "proneSwayMin": 0.6499999761581421,
+                    "crouchADSSwayMin": 0.4699999988079071,
+                    "crouchSwayMin": 0.75,
+                    "standingADSSwayMin": 0.6499999761581421,
+                    "standingSwayMin": 1,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 6
+            },
+            "sway": {
+                "dynamic": {
+                    "addMoveSway": 4.999999873689376e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 6,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6000000238418579,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.44999998807907104,
+                    "proneSwayMin": 0.5600000023841858,
+                    "crouchADSSwayMin": 0.6000000238418579,
+                    "crouchSwayMin": 1,
+                    "standingADSSwayMin": 0.949999988079071,
+                    "standingSwayMin": 1.2999999523162842,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 10
+            }
+        }
+    },
+    "BP_AK74GP25_EXPS_UGL_Smoke_Blue": {
+        "factions": [
+            "AFU"
+        ],
+        "displayName": "GP-25 Smoke (Blue)",
+        "inventoryInfo": {
+            "description": "Caliber: 40mm/Arming Distance: 10m/Explosion Radius: 15m (Frag) 0m (Smoke)",
+            "HUDTexture": "inventory_category_grenadelauncher",
+            "inventoryTexture": "gp25_bluesmoke",
+            "ammoPerRearm": 10,
+            "showItemCount": false,
+            "showMagCount": true
+        },
+        "physicalInfo": {
+            "attachments": [
+                "BP_Attachment_EXPS_C",
+                "BP_attachment_AK_Dovetail_Rail_C"
+            ],
+            "skeletalMesh": "SK_AK74_GP25_Smoke"
+        },
+        "weaponInfo": {
+            "numberOfMags": 2,
+            "magSize": 1,
+            "allowRoundInChamber": true,
+            "allowSingleLoad": false,
+            "fireModes": [
+                1
+            ],
+            "equipDuration": 3.5,
+            "unEquipDuration": 1.7330000400543213,
+            "timeBetweenShots": 0.09200000017881393,
+            "timeBetweenSingleShots": 0.125,
+            "tacticalReloadDuration": 3.450000047683716,
+            "dryReloadDuration": 3.450000047683716,
+            "tacticalReloadBipodDuration": 1,
+            "dryReloadBipodDuration": 1,
+            "projectile": "BP_40MM_VOG_Smoke_Blue_Proj2_C",
+            "roundsBetweenTracer": 0,
+            "tracerProjectile": "",
+            "muzzleVelocity": 7600,
+            "maxDamageToApply": 60,
+            "timeToStartDamageFallOff": 0.10000000149011612,
+            "distanceToStartDamageFallOff": 9000,
+            "damageFallOffRate": 100,
+            "minDamageToApply": 10,
+            "damageFallOffType": "SimpleDamageFalloffCurve",
+            "moa": 40,
+            "maxTraceDistance": 0,
+            "magEmptyForNewMagRearm": false,
+            "rearmOnlyIfCurrMagEmpty": false,
+            "rearmFillCurMag": false,
+            "minTimeBetweenRearm": 0,
+            "rearmOnlyOneMagAtTime": false,
+            "rearmXRounds": false,
+            "xRoundsToRearm": 1,
+            "armorPenMM": 0,
+            "armorPenType": "",
+            "traceDistanceAfterPen": 1,
+            "projectileInfo": {
+                "impactDamage": 10,
+                "damageType": "SQDamageType_Explosive",
+                "appliesSuppression": false,
+                "isExplosiveProj": true,
+                "explosiveBaseDmg": 0,
+                "explosiveMinDmg": 0,
+                "explosiveKillZoneRad": 0,
+                "explosiveDmgOuterRad": 0,
+                "explosiveDmgInnerRad": 0,
+                "explosiveDmgFalloff": 1,
+                "armorPenMM": 0,
+                "traceDistanceAfterPen": 1,
+                "explodeDistBefore": 8
+            }
+        },
+        "staticInfo": {
+            "hasAdjustableSight": true,
+            "hasBipod": false,
+            "emptyEquipDuration": 1.7000000476837158,
+            "emptyUnequipDuration": 1.9500000476837158,
+            "standingADSTime": 0.4000000059604645,
+            "crouchADSTime": 0.3499999940395355,
+            "proneADSTime": 0.30000001192092896,
+            "bipodADSTime": 0.30000001192092896,
+            "restrictions": {
+                "requireADSToShoot": false,
+                "limitLeanAngle": false,
+                "preventShootUseWhileCrawl": true,
+                "preventADSWhileCrawl": true,
+                "walkSpeedMultiplier": 0.6000000238418579
+            },
+            "recoil": {
+                "camera": {
+                    "recoilCameraOffsetFactor": 0.4000000059604645,
+                    "recoilCameraOffsetInterpSpeed": 4,
+                    "recoilLofCameraOffsetLimit": 40,
+                    "recoilLofAttackInterpSpeed": 45,
+                    "recoilCanReleaseInterpSpeed": 10,
+                    "recoilLofReleaseInterpSpeed": 35,
+                    "recoilAdsCameraShotInterpSpeed": 0
+                },
+                "dynamic": {
+                    "movement": {
+                        "moveRecoilFactorRelease": 0,
+                        "addMoveRecoil": 0,
+                        "maxMoveRecoilFactor": 0,
+                        "minMoveRecoilFactor": 0,
+                        "recoilAlignmentMovementAddative": 0,
+                        "recoilAlignmentMovementExponent": 1
+                    },
+                    "stamina": {
+                        "lowStaminaRecoilFactor": 0.10000000149011612,
+                        "fullStaminaRecoilFactor": 0,
+                        "recoilAlignmentStaminaAddative": 0,
+                        "recoilAlignmentStaminaExponent": 1
+                    },
+                    "shoulder": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 12,
+                            "y": 12
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 24,
+                            "y": 24
+                        }
+                    },
+                    "grip": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 2,
+                            "y": 2
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 4,
+                            "y": 4
+                        }
+                    },
+                    "recoilAlignmentMultiplierMax": 2
+                }
+            },
+            "swayAlignment": {
+                "dynamic": {
+                    "addMoveSway": 9.500000305706635e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 4.5,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6600000262260437,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.4000000059604645,
+                    "proneSwayMin": 0.6499999761581421,
+                    "crouchADSSwayMin": 0.4699999988079071,
+                    "crouchSwayMin": 0.75,
+                    "standingADSSwayMin": 0.6499999761581421,
+                    "standingSwayMin": 1,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 6
+            },
+            "sway": {
+                "dynamic": {
+                    "addMoveSway": 4.999999873689376e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 6,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6000000238418579,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.44999998807907104,
+                    "proneSwayMin": 0.5600000023841858,
+                    "crouchADSSwayMin": 0.6000000238418579,
+                    "crouchSwayMin": 1,
+                    "standingADSSwayMin": 0.949999988079071,
+                    "standingSwayMin": 1.2999999523162842,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 10
             }
         }
     },
@@ -78049,7 +78606,7 @@
             "skeletalMesh": "SK_RPGv1_PG-7VL"
         },
         "weaponInfo": {
-            "numberOfMags": 2,
+            "numberOfMags": 1,
             "magSize": 1,
             "allowRoundInChamber": true,
             "allowSingleLoad": false,
@@ -78589,7 +79146,8 @@
         },
         "physicalInfo": {
             "attachments": [
-                "BP_Attachment_MeupoldScope_UAR-10_C"
+                "BP_Attachment_MeupoldScope_UAR-10_C",
+                "BP_attachment_ANPEQ-15-Black_C"
             ],
             "skeletalMesh": "SK_UAR10"
         },
@@ -78757,22 +79315,23 @@
             }
         }
     },
-    "BP_PKM_1P29_Tracer": {
+    "BP_PKM_M150_Tracer": {
         "factions": [
             "AFU"
         ],
-        "displayName": "PKM- 1p29",
+        "displayName": "PKM + TA31 + Tracer",
         "inventoryInfo": {
             "description": "Magazine Capacity: 100/Caliber: 7.62x54mmR/Rate of Fire: 650 RPM/Fire Mode: Auto",
             "HUDTexture": "inventory_category_machinegun",
-            "inventoryTexture": "pkm_1p29",
+            "inventoryTexture": "pkm_M150",
             "ammoPerRearm": 15,
             "showItemCount": false,
             "showMagCount": true
         },
         "physicalInfo": {
             "attachments": [
-                "BP_Attachment_1p29_C"
+                "BP_attachment_AK_Dovetail_Rail_C",
+                "BP_Attachment_M150_C"
             ],
             "skeletalMesh": "SK_PKM"
         },
@@ -78940,16 +79499,200 @@
             }
         }
     },
+    "BP_AK74_OKP7_Pro": {
+        "factions": [
+            "AFU"
+        ],
+        "displayName": "AK-74 + OKP-7",
+        "inventoryInfo": {
+            "description": "Magazine Capacity: 30+1/Caliber: 5.45x39mm/Rate of Fire: 650 RPM/Fire Mode: Semi, Auto",
+            "HUDTexture": "inventory_category_rifle",
+            "inventoryTexture": "ak74_okp7",
+            "ammoPerRearm": 2,
+            "showItemCount": false,
+            "showMagCount": true
+        },
+        "physicalInfo": {
+            "attachments": [
+                "BP_Attachment_OKP-7_C"
+            ],
+            "skeletalMesh": "AK74"
+        },
+        "weaponInfo": {
+            "numberOfMags": 7,
+            "magSize": 30,
+            "allowRoundInChamber": true,
+            "allowSingleLoad": false,
+            "fireModes": [
+                1,
+                -1
+            ],
+            "equipDuration": 1.4299999475479126,
+            "unEquipDuration": 1.4329999685287476,
+            "timeBetweenShots": 0.09200000017881393,
+            "timeBetweenSingleShots": 0.125,
+            "tacticalReloadDuration": 4.400000095367432,
+            "dryReloadDuration": 5,
+            "tacticalReloadBipodDuration": 1,
+            "dryReloadBipodDuration": 1,
+            "projectile": "BP_Projectile_C",
+            "roundsBetweenTracer": 0,
+            "tracerProjectile": "",
+            "muzzleVelocity": 88000,
+            "maxDamageToApply": 60,
+            "timeToStartDamageFallOff": 0.3400000035762787,
+            "distanceToStartDamageFallOff": 9000,
+            "damageFallOffRate": 88,
+            "minDamageToApply": 35,
+            "damageFallOffType": "AK74_DamageCurve",
+            "moa": 4,
+            "maxTraceDistance": 5000,
+            "magEmptyForNewMagRearm": false,
+            "rearmOnlyIfCurrMagEmpty": false,
+            "rearmFillCurMag": false,
+            "minTimeBetweenRearm": 0,
+            "rearmOnlyOneMagAtTime": false,
+            "rearmXRounds": false,
+            "xRoundsToRearm": 1,
+            "armorPenMM": 5,
+            "armorPenType": "",
+            "traceDistanceAfterPen": 10,
+            "projectileInfo": {
+                "impactDamage": -1,
+                "damageType": "BP_SmallArms_DamageType_C",
+                "appliesSuppression": true,
+                "isExplosiveProj": false,
+                "explosiveBaseDmg": 115,
+                "explosiveMinDmg": 0,
+                "explosiveKillZoneRad": 0,
+                "explosiveDmgOuterRad": 500,
+                "explosiveDmgInnerRad": 1500,
+                "explosiveDmgFalloff": 1,
+                "armorPenMM": 0,
+                "traceDistanceAfterPen": 0,
+                "explodeDistBefore": 20
+            }
+        },
+        "staticInfo": {
+            "hasAdjustableSight": false,
+            "hasBipod": false,
+            "emptyEquipDuration": 0,
+            "emptyUnequipDuration": 0,
+            "standingADSTime": 0.4000000059604645,
+            "crouchADSTime": 0.3499999940395355,
+            "proneADSTime": 0.30000001192092896,
+            "bipodADSTime": 0.30000001192092896,
+            "restrictions": {
+                "requireADSToShoot": false,
+                "limitLeanAngle": false,
+                "preventShootUseWhileCrawl": true,
+                "preventADSWhileCrawl": true,
+                "walkSpeedMultiplier": 0.699999988079071
+            },
+            "recoil": {
+                "camera": {
+                    "recoilCameraOffsetFactor": 0.800000011920929,
+                    "recoilCameraOffsetInterpSpeed": 5,
+                    "recoilLofCameraOffsetLimit": 30,
+                    "recoilLofAttackInterpSpeed": 45,
+                    "recoilCanReleaseInterpSpeed": 30,
+                    "recoilLofReleaseInterpSpeed": 10,
+                    "recoilAdsCameraShotInterpSpeed": 200
+                },
+                "dynamic": {
+                    "movement": {
+                        "moveRecoilFactorRelease": 9.5,
+                        "addMoveRecoil": 1,
+                        "maxMoveRecoilFactor": 0.699999988079071,
+                        "minMoveRecoilFactor": 0.07000000029802322,
+                        "recoilAlignmentMovementAddative": 0.10000000149011612,
+                        "recoilAlignmentMovementExponent": 1
+                    },
+                    "stamina": {
+                        "lowStaminaRecoilFactor": 0.20000000298023224,
+                        "fullStaminaRecoilFactor": 0,
+                        "recoilAlignmentStaminaAddative": 0.10000000149011612,
+                        "recoilAlignmentStaminaExponent": 0.5
+                    },
+                    "shoulder": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 2,
+                            "y": 1.2000000476837158
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 5,
+                            "y": 3.5
+                        }
+                    },
+                    "grip": {
+                        "recoilAlignmentShoulderMax": {
+                            "x": 1,
+                            "y": 1
+                        },
+                        "recoilAlignmentShoulderAngleLimits": {
+                            "x": 2,
+                            "y": 2
+                        }
+                    },
+                    "recoilAlignmentMultiplierMax": 1.3300000429153442
+                }
+            },
+            "swayAlignment": {
+                "dynamic": {
+                    "addMoveSway": 9.500000305706635e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 4.5,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6600000262260437,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.4000000059604645,
+                    "proneSwayMin": 0.6499999761581421,
+                    "crouchADSSwayMin": 0.4699999988079071,
+                    "crouchSwayMin": 0.75,
+                    "standingADSSwayMin": 0.6499999761581421,
+                    "standingSwayMin": 1,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 5
+            },
+            "sway": {
+                "dynamic": {
+                    "addMoveSway": 4.999999873689376e-05,
+                    "minMoveSwayFactor": 0,
+                    "maxMoveSwayFactor": 6,
+                    "lowStaminaSwayFactor": 5.400000095367432,
+                    "fullStaminaSwayFactor": 0,
+                    "holdingBreathSwayFactor": 0.6000000238418579,
+                    "holdingBreathSway": 0
+                },
+                "stance": {
+                    "proneADSSwayMin": 0.44999998807907104,
+                    "proneSwayMin": 0.5600000023841858,
+                    "crouchADSSwayMin": 0.6000000238418579,
+                    "crouchSwayMin": 1,
+                    "standingADSSwayMin": 0.949999988079071,
+                    "standingSwayMin": 1.2999999523162842,
+                    "bipodADSSwayMin": 0,
+                    "bipodSwayMin": 0
+                },
+                "maxSway": 6
+            }
+        }
+    },
     "BP_RPG7V2_Tandem_2mag": {
         "factions": [
             "AFU"
         ],
-        "displayName": "RPG-7v2 (PG-7VR Tandem)",
+        "displayName": "RPG-7V2 (PG-7VR Tandem)",
         "inventoryInfo": {
             "description": "Warhead: 85mm High Explosive Anti-Tank/Guidance: Unguided/Explosion Radius: 8m/Penetration Capability: 250mm RHA",
             "HUDTexture": "inventory_category_lat",
             "inventoryTexture": "rpg7tandem",
-            "ammoPerRearm": 30,
+            "ammoPerRearm": 80,
             "showItemCount": false,
             "showMagCount": true
         },
@@ -79137,7 +79880,8 @@
         "physicalInfo": {
             "attachments": [
                 "BP_Attachment_Malyuk_Foregrip_C",
-                "BP_Attachment_M68_C"
+                "BP_Attachment_M68_C",
+                "BP_attachment_ANPEQ-15-Black_C"
             ],
             "skeletalMesh": "SK_Malyuk_762_Irons"
         },
@@ -79214,7 +79958,7 @@
             },
             "recoil": {
                 "camera": {
-                    "recoilCameraOffsetFactor": 0.2800000011920929,
+                    "recoilCameraOffsetFactor": 0.699999988079071,
                     "recoilCameraOffsetInterpSpeed": 5,
                     "recoilLofCameraOffsetLimit": 30,
                     "recoilLofAttackInterpSpeed": 45,
@@ -79306,15 +80050,15 @@
             }
         }
     },
-    "BP_Malyuk_762_1p78_Foregrip": {
+    "BP_Malyuk_762_M150_Foregrip": {
         "factions": [
             "AFU"
         ],
-        "displayName": "Malyuk (7.62) + 1P78 + Foregrip",
+        "displayName": "Malyuk (7.62) + TA31 + Foregrip",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 7.62x39mm/Rate of Fire: 660 RPM/Fire Mode: Semi, Auto",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "malyuk_762_foregrip_1p78",
+            "inventoryTexture": "malyuk_762_foregrip_m150",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
@@ -79322,7 +80066,8 @@
         "physicalInfo": {
             "attachments": [
                 "BP_Attachment_Malyuk_Foregrip_C",
-                "BP_Attachment_1p78Picatinny_C"
+                "BP_Attachment_M150_C",
+                "BP_attachment_ANPEQ-15-Black_C"
             ],
             "skeletalMesh": "SK_Malyuk_762"
         },
@@ -79399,7 +80144,7 @@
             },
             "recoil": {
                 "camera": {
-                    "recoilCameraOffsetFactor": 0.2800000011920929,
+                    "recoilCameraOffsetFactor": 0.699999988079071,
                     "recoilCameraOffsetInterpSpeed": 5,
                     "recoilLofCameraOffsetLimit": 30,
                     "recoilLofAttackInterpSpeed": 45,
@@ -79583,7 +80328,7 @@
             },
             "recoil": {
                 "camera": {
-                    "recoilCameraOffsetFactor": 0.2800000011920929,
+                    "recoilCameraOffsetFactor": 0.699999988079071,
                     "recoilCameraOffsetInterpSpeed": 5,
                     "recoilLofCameraOffsetLimit": 30,
                     "recoilLofAttackInterpSpeed": 45,
@@ -79675,15 +80420,15 @@
             }
         }
     },
-    "BP_Malyuk_556_M68_Foregrip": {
+    "BP_Malyuk_556_Yoloson_Foregrip": {
         "factions": [
             "AFU"
         ],
-        "displayName": "Malyuk (5.56) + M68 + Foregrip",
+        "displayName": "Malyuk (5.56) + Yoloson + Foregrip",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 5.56x45mm NATO/Rate of Fire: 660 RPM/Fire Mode: Semi, Auto",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "malyuk_545_m68_foregrip",
+            "inventoryTexture": "malyuk_556_foregrip_Yoloson",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
@@ -79691,7 +80436,8 @@
         "physicalInfo": {
             "attachments": [
                 "BP_Attachment_Malyuk_Foregrip_C",
-                "BP_Attachment_M68_C"
+                "BP_Attachment_Yoloson_C",
+                "BP_attachment_ANPEQ-15-Black_C"
             ],
             "skeletalMesh": "SK_Malyuk_545_Irons"
         },
@@ -79860,15 +80606,15 @@
             }
         }
     },
-    "BP_Malyuk_556_1p78_Foregrip": {
+    "BP_Malyuk_556_M150_Foregrip": {
         "factions": [
             "AFU"
         ],
-        "displayName": "Malyuk (5.56) + 1P78 + Foregrip",
+        "displayName": "Malyuk (5.56) + TA31 + Foregrip",
         "inventoryInfo": {
             "description": "Magazine Capacity: 30+1/Caliber: 5.56x45mm NATO/Rate of Fire: 660 RPM/Fire Mode: Semi, Auto",
             "HUDTexture": "inventory_category_rifle",
-            "inventoryTexture": "malyuk_545_foregrip_1p78",
+            "inventoryTexture": "malyuk_545_foregrip_m150",
             "ammoPerRearm": 2,
             "showItemCount": false,
             "showMagCount": true
@@ -79876,9 +80622,10 @@
         "physicalInfo": {
             "attachments": [
                 "BP_Attachment_Malyuk_Foregrip_C",
-                "BP_Attachment_1p78Picatinny_C"
+                "BP_Attachment_M150_C",
+                "BP_attachment_ANPEQ-15-Black_C"
             ],
-            "skeletalMesh": "SK_Malyuk_545_Irons"
+            "skeletalMesh": "SK_Malyuk_545"
         },
         "weaponInfo": {
             "numberOfMags": 6,
@@ -85344,9 +86091,219 @@
         }
     },
     "curves": {
+        "Mosin_DamageCurve": [
+            165.0,
+            165.0,
+            165.0,
+            165.0,
+            165.0,
+            165.0,
+            165.0,
+            165.0,
+            165.0,
+            164.66,
+            163.69,
+            162.12,
+            160.01,
+            157.42,
+            154.37,
+            150.94,
+            147.16,
+            143.08,
+            138.76,
+            134.24,
+            129.58,
+            124.81,
+            120.0,
+            115.19,
+            110.42,
+            105.76,
+            101.24,
+            96.92,
+            92.84,
+            89.06,
+            85.63,
+            82.58,
+            79.99,
+            77.88,
+            76.31,
+            75.34,
+            75.0
+        ],
+        "PKM_DamageCurve": [
+            97.0,
+            97.0,
+            97.0,
+            97.0,
+            97.0,
+            97.0,
+            97.0,
+            97.0,
+            97.0,
+            97.0,
+            92.06,
+            82.55,
+            73.04,
+            63.53,
+            54.02,
+            44.51,
+            35.0
+        ],
+        "AKM_DamageCurve": [
+            71.0,
+            71.0,
+            71.0,
+            71.0,
+            71.0,
+            60.35,
+            47.68,
+            35.0
+        ],
+        "SKS_DamageCurve": [
+            72.0,
+            72.0,
+            72.0,
+            72.0,
+            72.0,
+            65.83,
+            55.56,
+            45.28,
+            35.0
+        ],
+        "AK74_DamageCurve": [
+            60.0,
+            60.0,
+            60.0,
+            60.0,
+            60.0,
+            60.0,
+            60.0,
+            52.99,
+            43.99,
+            35.0
+        ],
+        "AKS74U_DamageCurve": [
+            55.0,
+            55.0,
+            55.0,
+            55.0,
+            55.0,
+            50.96,
+            45.64,
+            40.32,
+            35.0
+        ],
+        "L85A2_DamageCurve": [
+            64.0,
+            64.0,
+            64.0,
+            64.0,
+            64.0,
+            64.0,
+            64.0,
+            64.0,
+            60.22,
+            47.61,
+            35.0
+        ],
+        "M249_Long_DamageCurve": [
+            64.0,
+            64.0,
+            64.0,
+            64.0,
+            64.0,
+            64.0,
+            64.0,
+            64.0,
+            60.74,
+            52.16,
+            43.58,
+            35.0
+        ],
+        "SMG_DamageCurve": [
+            50.0,
+            46.63,
+            35.48,
+            30.0
+        ],
+        "RPK74_DamageCurve": [
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            54.57,
+            44.78,
+            35.0
+        ],
         "ASVAL_DamageCurve": [
             60.0,
             46.79,
+            35.0
+        ],
+        "Pistol_DamageCurve": [
+            41.0,
+            36.14,
+            24.0
+        ],
+        "M110_DamageCurve": [
+            87.0,
+            87.0,
+            87.0,
+            87.0,
+            87.0,
+            87.0,
+            87.0,
+            87.0,
+            82.38,
+            76.46,
+            70.54,
+            64.61,
+            58.69,
+            52.77,
+            46.85,
+            40.92,
+            35.0
+        ],
+        "SAR109_DamageCurve": [
+            60.0,
+            53.23,
+            34.41,
+            25.0
+        ],
+        "M249_DamageCurve": [
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            59.4,
+            51.27,
+            43.13,
+            35.0
+        ],
+        "SVD_DamageCurve": [
+            94.0,
+            94.0,
+            94.0,
+            94.0,
+            94.0,
+            94.0,
+            94.0,
+            94.0,
+            94.0,
+            93.5,
+            85.14,
+            76.78,
+            68.43,
+            60.07,
+            51.71,
+            43.36,
             35.0
         ],
         "G3_DamageCurve": [
@@ -85368,71 +86325,7 @@
             40.9,
             35.0
         ],
-        "M240_DamageCurve": [
-            86.0,
-            86.0,
-            86.0,
-            86.0,
-            86.0,
-            86.0,
-            86.0,
-            86.0,
-            83.57,
-            77.5,
-            71.43,
-            65.36,
-            59.29,
-            53.21,
-            47.14,
-            41.07,
-            35.0
-        ],
-        "SMG_DamageCurve": [
-            50.0,
-            46.63,
-            35.48,
-            30.0
-        ],
-        "SAR109_DamageCurve": [
-            60.0,
-            53.23,
-            34.41,
-            25.0
-        ],
-        "SKS_DamageCurve": [
-            72.0,
-            72.0,
-            72.0,
-            72.0,
-            72.0,
-            65.83,
-            55.56,
-            45.28,
-            35.0
-        ],
-        "RPK_DamageCurve": [
-            73.0,
-            73.0,
-            73.0,
-            73.0,
-            73.0,
-            67.76,
-            56.84,
-            45.92,
-            35.0
-        ],
-        "AKS74U_DamageCurve": [
-            55.0,
-            55.0,
-            55.0,
-            55.0,
-            55.0,
-            50.96,
-            45.64,
-            40.32,
-            35.0
-        ],
-        "QBZ95-1_DamageCurve": [
+        "M4A1_DamageCurve": [
             62.0,
             62.0,
             62.0,
@@ -85445,73 +86338,12 @@
             43.71,
             35.0
         ],
-        "M249_Long_DamageCurve": [
-            64.0,
-            64.0,
-            64.0,
-            64.0,
-            64.0,
-            64.0,
-            64.0,
-            64.0,
-            60.74,
-            52.16,
-            43.58,
-            35.0
-        ],
-        "L85A2_DamageCurve": [
-            64.0,
-            64.0,
-            64.0,
-            64.0,
-            64.0,
-            64.0,
-            64.0,
-            64.0,
-            60.22,
-            47.61,
-            35.0
-        ],
-        "AK74_DamageCurve": [
+        "SimpleDamageFalloffCurve": [
             60.0,
             60.0,
-            60.0,
-            60.0,
-            60.0,
-            60.0,
-            60.0,
-            52.99,
-            43.99,
-            35.0
-        ],
-        "AKM_DamageCurve": [
-            71.0,
-            71.0,
-            71.0,
-            71.0,
-            71.0,
-            60.35,
-            47.68,
-            35.0
-        ],
-        "PKM_DamageCurve": [
-            97.0,
-            97.0,
-            97.0,
-            97.0,
-            97.0,
-            97.0,
-            97.0,
-            97.0,
-            97.0,
-            97.0,
-            92.06,
-            82.55,
-            73.04,
-            63.53,
-            54.02,
-            44.51,
-            35.0
+            55.71,
+            34.29,
+            30.0
         ],
         "C14_DamageCurve": [
             165.0,
@@ -85552,137 +86384,23 @@
             89.0,
             85.0
         ],
-        "Mosin_DamageCurve": [
-            165.0,
-            165.0,
-            165.0,
-            165.0,
-            165.0,
-            165.0,
-            165.0,
-            165.0,
-            165.0,
-            164.66,
-            163.69,
-            162.12,
-            160.01,
-            157.42,
-            154.37,
-            150.94,
-            147.16,
-            143.08,
-            138.76,
-            134.24,
-            129.58,
-            124.81,
-            120.0,
-            115.19,
-            110.42,
-            105.76,
-            101.24,
-            96.92,
-            92.84,
-            89.06,
-            85.63,
-            82.58,
-            79.99,
-            77.88,
-            76.31,
-            75.34,
-            75.0
-        ],
-        "Pistol_DamageCurve": [
-            41.0,
-            36.14,
-            24.0
-        ],
-        "M4A1_DamageCurve": [
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            61.13,
-            52.42,
-            43.71,
-            35.0
-        ],
-        "M110_DamageCurve": [
-            87.0,
-            87.0,
-            87.0,
-            87.0,
-            87.0,
-            87.0,
-            87.0,
-            87.0,
-            82.38,
-            76.46,
-            70.54,
-            64.61,
-            58.69,
-            52.77,
-            46.85,
-            40.92,
-            35.0
-        ],
-        "RPK74_DamageCurve": [
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            54.57,
-            44.78,
-            35.0
-        ],
-        "Pistol_HighCaliber_DamageCurve": [
-            60.0,
-            51.67,
-            35.0
-        ],
-        "SimpleDamageFalloffCurve": [
-            60.0,
-            60.0,
-            55.71,
-            34.29,
-            30.0
-        ],
-        "M249_DamageCurve": [
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            62.0,
-            59.4,
-            51.27,
-            43.13,
-            35.0
-        ],
-        "SVD_DamageCurve": [
-            94.0,
-            94.0,
-            94.0,
-            94.0,
-            94.0,
-            94.0,
-            94.0,
-            94.0,
-            94.0,
-            93.5,
-            85.14,
-            76.78,
-            68.43,
-            60.07,
-            51.71,
-            43.36,
+        "M240_DamageCurve": [
+            86.0,
+            86.0,
+            86.0,
+            86.0,
+            86.0,
+            86.0,
+            86.0,
+            86.0,
+            83.57,
+            77.5,
+            71.43,
+            65.36,
+            59.29,
+            53.21,
+            47.14,
+            41.07,
             35.0
         ],
         "QBU-88_DamageCurve": [
@@ -85702,6 +86420,35 @@
             60.07,
             51.71,
             43.36,
+            35.0
+        ],
+        "QBZ95-1_DamageCurve": [
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            62.0,
+            61.13,
+            52.42,
+            43.71,
+            35.0
+        ],
+        "Pistol_HighCaliber_DamageCurve": [
+            60.0,
+            51.67,
+            35.0
+        ],
+        "RPK_DamageCurve": [
+            73.0,
+            73.0,
+            73.0,
+            73.0,
+            73.0,
+            67.76,
+            56.84,
+            45.92,
             35.0
         ]
     }
