@@ -53,7 +53,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Recruit_01": {
         "displayName": "RECRUIT",
@@ -74,7 +77,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -135,7 +141,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -196,7 +205,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -257,7 +269,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_SL_04": {
         "displayName": "SQUAD LEADER",
@@ -318,7 +333,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_SL_05": {
         "displayName": "SQUAD LEADER",
@@ -379,7 +397,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -430,7 +451,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -481,7 +505,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Medic_01": {
         "displayName": "MEDIC",
@@ -542,7 +569,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Medic_02": {
         "displayName": "MEDIC",
@@ -598,7 +628,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -654,7 +687,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -710,7 +746,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -766,7 +805,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Rifleman_05": {
         "displayName": "RIFLEMAN",
@@ -822,7 +864,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Rifleman_06": {
         "displayName": "RIFLEMAN",
@@ -873,7 +918,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Rifleman_07": {
         "displayName": "RIFLEMAN",
@@ -924,7 +972,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Rifleman_08": {
         "displayName": "RIFLEMAN",
@@ -975,7 +1026,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Rifleman_09": {
         "displayName": "RIFLEMAN",
@@ -1031,7 +1085,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Raider_01": {
         "displayName": "RAIDER",
@@ -1082,7 +1139,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Raider_02": {
         "displayName": "RAIDER",
@@ -1133,7 +1193,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -1184,7 +1247,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -1235,7 +1301,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_AR_03": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -1281,7 +1350,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -1332,7 +1404,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -1383,7 +1458,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -1439,7 +1517,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -1490,11 +1571,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_m21_scope",
@@ -1541,11 +1625,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "HK417",
@@ -1592,11 +1679,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Marksman_03": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_M16_Wormpool_Meupold_Bipod",
@@ -1643,7 +1733,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -1694,7 +1787,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -1755,7 +1851,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -1806,7 +1905,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Sapper_01": {
         "displayName": "SAPPER",
@@ -1867,7 +1969,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Sapper_02": {
         "displayName": "SAPPER",
@@ -1928,11 +2033,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Sniper_01": {
         "displayName": "SNIPER",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_sniper",
         "uiWeapon": "C14",
@@ -1979,7 +2087,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Crewman_01": {
         "displayName": "CREWMAN",
@@ -2030,7 +2141,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "WPMC_Pilot_01": {
         "displayName": "PILOT",
@@ -2076,7 +2190,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "WPMC"
+        ]
     },
     "USMC_Recruit_01": {
         "displayName": "RECRUIT",
@@ -2097,7 +2214,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -2158,7 +2278,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -2219,7 +2342,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -2280,7 +2406,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -2331,7 +2460,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -2382,7 +2514,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Medic_01": {
         "displayName": "CORPSMAN",
@@ -2443,7 +2578,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Medic_02": {
         "displayName": "CORPSMAN",
@@ -2499,7 +2637,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -2550,7 +2691,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -2601,7 +2745,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -2647,7 +2794,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -2698,7 +2848,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -2744,7 +2897,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -2805,7 +2961,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -2856,7 +3015,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -2902,11 +3064,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_M39",
@@ -2953,7 +3118,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -3004,7 +3172,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -3065,7 +3236,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -3126,7 +3300,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -3197,7 +3374,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Crewman_01": {
         "displayName": "CREWMAN",
@@ -3248,7 +3428,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Pilot_01": {
         "displayName": "PILOT",
@@ -3294,7 +3477,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "MEI_SL_01": {
         "displayName": "CELL LEADER",
@@ -3355,7 +3541,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Rifleman_01": {
         "displayName": "FIGHTER",
@@ -3411,7 +3600,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Raider_01": {
         "displayName": "RAIDER",
@@ -3462,7 +3654,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -3523,7 +3718,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -3569,7 +3767,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -3620,7 +3821,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -3671,11 +3875,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Sniper_01": {
         "displayName": "SNIPER",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_sniper",
         "uiWeapon": "mosin_sniper",
@@ -3727,7 +3934,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Recruit": {
         "displayName": "RECRUIT",
@@ -3748,7 +3958,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "VDV_Recruit": {
         "displayName": "RECRUIT",
@@ -3769,7 +3982,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_SL_01": {
         "displayName": "SENIOR RIFLEMAN",
@@ -3825,7 +4041,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_SL_02": {
         "displayName": "SENIOR RIFLEMAN",
@@ -3881,7 +4100,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_SL_03": {
         "displayName": "SENIOR RIFLEMAN",
@@ -3937,7 +4159,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_SL_04": {
         "displayName": "SENIOR RIFLEMAN",
@@ -3988,7 +4213,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -4039,7 +4267,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -4090,7 +4321,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Medic_01": {
         "displayName": "MEDIC",
@@ -4151,7 +4385,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Medic_02": {
         "displayName": "MEDIC",
@@ -4202,7 +4439,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -4253,7 +4493,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -4304,7 +4547,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -4355,7 +4601,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -4401,7 +4650,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Raider_01": {
         "displayName": "RAIDER",
@@ -4457,7 +4709,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -4508,7 +4763,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -4554,7 +4812,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -4600,7 +4861,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -4641,7 +4905,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -4697,7 +4964,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -4748,11 +5018,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "svd",
@@ -4799,11 +5072,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_asval_optic",
@@ -4850,11 +5126,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Marksman_03": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_VSS_Optic",
@@ -4901,7 +5180,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Scout_01": {
         "displayName": "SCOUT",
@@ -4962,7 +5244,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -5013,7 +5298,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -5069,7 +5357,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -5125,7 +5416,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -5196,11 +5490,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Sniper_01": {
         "displayName": "SNIPER",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_sniper",
         "uiWeapon": "T_sv98m",
@@ -5247,7 +5544,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Crewman_01": {
         "displayName": "CREWMAN",
@@ -5298,7 +5598,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "VDV_Pilot_01": {
         "displayName": "PILOT",
@@ -5344,7 +5647,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "VDV"
+        ]
     },
     "USMC_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -5400,7 +5706,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -5446,7 +5755,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_SL_04": {
         "displayName": "SQUAD LEADER",
@@ -5507,7 +5819,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_SL_05": {
         "displayName": "SQUAD LEADER",
@@ -5568,7 +5883,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_SL_06": {
         "displayName": "SQUAD LEADER",
@@ -5629,7 +5947,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Medic_03": {
         "displayName": "CORPSMAN",
@@ -5690,7 +6011,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Medic_04": {
         "displayName": "CORPSMAN",
@@ -5746,7 +6070,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -5797,7 +6124,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Rifleman_05": {
         "displayName": "RIFLEMAN",
@@ -5843,7 +6173,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_AR_03": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -5894,7 +6227,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_AR_04": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -5940,7 +6276,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Grenadier_03": {
         "displayName": "GRENADIER",
@@ -5991,7 +6330,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Grenadier_04": {
         "displayName": "GRENADIER",
@@ -6037,7 +6379,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Grenadier_05": {
         "displayName": "HEAVY GRENADIER",
@@ -6093,7 +6438,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_LAT_03": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -6144,7 +6492,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_LAT_04": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -6190,11 +6541,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "M38_DMR",
@@ -6241,7 +6595,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_HAT_03": {
         "displayName": "HEAVY ANTI-TANK",
@@ -6302,7 +6659,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USMC_HAT_04": {
         "displayName": "HEAVY ANTI-TANK",
@@ -6358,7 +6718,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USMC"
+        ]
     },
     "USA_Recruit": {
         "displayName": "RECRUIT",
@@ -6379,7 +6742,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -6440,7 +6806,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -6501,7 +6870,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -6562,7 +6934,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -6613,7 +6988,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -6664,7 +7042,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Medic_01": {
         "displayName": "MEDIC",
@@ -6725,7 +7106,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Medic_02": {
         "displayName": "MEDIC",
@@ -6781,7 +7165,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -6832,7 +7219,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -6883,7 +7273,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -6929,7 +7322,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Raider_01": {
         "displayName": "PATHFINDER",
@@ -6980,7 +7376,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -7031,7 +7430,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -7077,7 +7479,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -7128,7 +7533,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -7179,7 +7587,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -7225,11 +7636,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "m110_suppressor",
@@ -7276,7 +7690,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -7327,7 +7744,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -7373,7 +7793,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -7434,7 +7857,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -7490,7 +7916,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -7561,7 +7990,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Crewman_01": {
         "displayName": "CREWMAN",
@@ -7612,7 +8044,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Pilot_01": {
         "displayName": "PILOT",
@@ -7658,11 +8093,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "USA_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "m110",
@@ -7709,7 +8147,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "USA"
+        ]
     },
     "TLF_Recruit_01": {
         "displayName": "RECRUIT",
@@ -7730,7 +8171,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -7791,7 +8235,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -7852,7 +8299,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -7913,7 +8363,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_SL_04": {
         "displayName": "SQUAD LEADER",
@@ -7974,7 +8427,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -8025,7 +8481,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -8076,7 +8535,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Medic_01": {
         "displayName": "MEDIC",
@@ -8137,7 +8599,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Medic_02": {
         "displayName": "MEDIC",
@@ -8193,7 +8658,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -8244,7 +8712,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -8295,7 +8766,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -8346,7 +8820,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -8392,7 +8869,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -8443,7 +8923,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Raider_01": {
         "displayName": "JANDARMA",
@@ -8494,7 +8977,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -8550,7 +9036,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -8601,7 +9090,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Grenadier_03": {
         "displayName": "HEAVY GRENADIER",
@@ -8652,7 +9144,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -8708,7 +9203,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -8759,7 +9257,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_LAT_03": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -8805,11 +9306,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_knt76_keskin3-12x50",
@@ -8856,11 +9360,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "g3sg1",
@@ -8907,7 +9414,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -8958,7 +9468,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_MachineGunner_03": {
         "displayName": "MACHINE GUNNER",
@@ -9004,7 +9517,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -9060,7 +9576,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -9131,7 +9650,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Crewman_01": {
         "displayName": "CREWMAN",
@@ -9182,7 +9704,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_Pilot_01": {
         "displayName": "PILOT",
@@ -9228,7 +9753,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "TLF_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -9284,7 +9812,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "TLF"
+        ]
     },
     "RGF_Recruit": {
         "displayName": "RECRUIT",
@@ -9305,7 +9836,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -9366,7 +9900,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -9427,7 +9964,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -9488,7 +10028,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -9539,7 +10082,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -9590,7 +10136,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Medic_01": {
         "displayName": "MEDIC",
@@ -9651,7 +10200,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Medic_02": {
         "displayName": "MEDIC",
@@ -9707,7 +10259,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Raider_01": {
         "displayName": "RAIDER",
@@ -9763,7 +10318,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -9814,7 +10372,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -9865,7 +10426,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -9911,7 +10475,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -9962,7 +10529,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -10008,7 +10578,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -10064,7 +10637,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -10115,7 +10691,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -10171,7 +10750,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -10217,11 +10799,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "svd",
@@ -10268,11 +10853,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_SVDM",
@@ -10319,7 +10907,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -10370,7 +10961,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -10416,7 +11010,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -10467,7 +11064,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -10513,7 +11113,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -10584,7 +11187,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Crewman_01": {
         "displayName": "CREWMAN",
@@ -10635,7 +11241,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Pilot_01": {
         "displayName": "PILOT",
@@ -10681,7 +11290,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "RGF_Scout_01": {
         "displayName": "SCOUT",
@@ -10737,7 +11349,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "RGF"
+        ]
     },
     "PLANMC_Recruit_01": {
         "displayName": "RECRUIT",
@@ -10758,7 +11373,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -10819,7 +11437,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -10880,7 +11501,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -10941,7 +11565,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_SL_06": {
         "displayName": "SQUAD LEADER",
@@ -11002,7 +11629,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -11053,7 +11683,10 @@
                 "minOnSpawn": 0,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -11104,7 +11737,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Medic_01": {
         "displayName": "MEDIC",
@@ -11165,7 +11801,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Medic_02": {
         "displayName": "MEDIC",
@@ -11221,7 +11860,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Medic_03": {
         "displayName": "MEDIC",
@@ -11277,7 +11919,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -11328,7 +11973,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -11379,7 +12027,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -11425,7 +12076,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -11471,7 +12125,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Rifleman_05": {
         "displayName": "RIFLEMAN",
@@ -11517,7 +12174,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Rifleman_06": {
         "displayName": "RIFLEMAN",
@@ -11563,7 +12223,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -11614,7 +12277,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -11660,7 +12326,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Raider_01": {
         "displayName": "RAIDER",
@@ -11711,7 +12380,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Raider_02": {
         "displayName": "RAIDER",
@@ -11762,7 +12434,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_LAT_01": {
         "displayName": "LIGHT ANTI-TANK",
@@ -11813,7 +12488,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_LAT_02": {
         "displayName": "LIGHT ANTI-TANK",
@@ -11859,7 +12537,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_LAT_03": {
         "displayName": "LIGHT ANTI-TANK",
@@ -11905,11 +12586,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_QBU191_QMK191",
@@ -11956,11 +12640,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_QBU191_QMK191_Suppressor",
@@ -12007,7 +12694,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -12053,7 +12743,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -12094,7 +12787,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -12145,7 +12841,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -12191,7 +12890,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -12242,7 +12944,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -12293,7 +12998,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -12364,7 +13072,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Crewman_01": {
         "displayName": "CREWMAN",
@@ -12415,7 +13126,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Pilot_01": {
         "displayName": "PILOT",
@@ -12461,7 +13175,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_Scout_01": {
         "displayName": "SCOUT",
@@ -12512,7 +13229,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Recruit_01": {
         "displayName": "RECRUIT",
@@ -12533,7 +13253,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -12594,7 +13317,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -12655,7 +13381,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -12716,7 +13445,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_SL_04": {
         "displayName": "SQUAD LEADER",
@@ -12777,7 +13509,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -12828,7 +13563,10 @@
                 "minOnSpawn": 0,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -12879,7 +13617,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Medic_01": {
         "displayName": "MEDIC",
@@ -12935,7 +13676,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Medic_02": {
         "displayName": "MEDIC",
@@ -12991,7 +13735,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Medic_03": {
         "displayName": "MEDIC",
@@ -13052,7 +13799,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -13098,7 +13848,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -13144,7 +13897,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -13190,7 +13946,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -13236,7 +13995,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -13282,7 +14044,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -13333,7 +14098,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Raider_01": {
         "displayName": "RAIDER",
@@ -13384,7 +14152,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -13435,7 +14206,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -13491,7 +14265,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_LAT_01": {
         "displayName": "LIGHT ANTI-TANK",
@@ -13537,7 +14314,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_LAT_02": {
         "displayName": "LIGHT ANTI-TANK",
@@ -13583,7 +14363,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_LAT_03": {
         "displayName": "LIGHT ANTI-TANK",
@@ -13634,11 +14417,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "qbu88",
@@ -13685,7 +14471,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -13731,7 +14520,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -13782,7 +14574,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -13833,7 +14628,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -13884,7 +14682,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -13955,7 +14756,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Crewman_01": {
         "displayName": "CREWMAN",
@@ -14006,7 +14810,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Pilot_01": {
         "displayName": "PILOT",
@@ -14052,7 +14859,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLANMC_95_Scout_01": {
         "displayName": "SCOUT",
@@ -14103,7 +14913,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLANMC"
+        ]
     },
     "PLAAGF_Recruit_01": {
         "displayName": "RECRUIT",
@@ -14124,7 +14937,11 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -14185,7 +15002,11 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -14246,7 +15067,11 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -14307,7 +15132,11 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_SL_04": {
         "displayName": "SQUAD LEADER",
@@ -14368,7 +15197,11 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -14419,7 +15252,11 @@
                 "minOnSpawn": 0,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -14470,7 +15307,11 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Medic_01": {
         "displayName": "MEDIC",
@@ -14531,7 +15372,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Medic_02": {
         "displayName": "MEDIC",
@@ -14587,7 +15432,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Medic_03": {
         "displayName": "MEDIC",
@@ -14643,7 +15492,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -14694,7 +15547,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -14745,7 +15602,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -14791,7 +15652,11 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -14837,7 +15702,11 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -14888,7 +15757,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -14934,7 +15807,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Raider_01": {
         "displayName": "RAIDER",
@@ -14985,7 +15862,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -15041,7 +15922,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -15092,7 +15977,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_LAT_01": {
         "displayName": "LIGHT ANTI-TANK",
@@ -15143,7 +16032,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_LAT_02": {
         "displayName": "LIGHT ANTI-TANK",
@@ -15189,7 +16082,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_LAT_03": {
         "displayName": "LIGHT ANTI-TANK",
@@ -15235,11 +16132,15 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "qbu88",
@@ -15286,7 +16187,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Scout_01": {
         "displayName": "SCOUT",
@@ -15337,7 +16242,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -15388,7 +16297,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -15434,7 +16347,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -15485,7 +16402,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -15536,7 +16457,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -15607,7 +16532,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Crewman_01": {
         "displayName": "CREWMAN",
@@ -15658,7 +16587,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLAAGF_Pilot_01": {
         "displayName": "PILOT",
@@ -15704,7 +16637,11 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA",
+            "PLAAGF"
+        ]
     },
     "PLA_Recruit_01": {
         "displayName": "RECRUIT",
@@ -15725,7 +16662,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -15786,7 +16726,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -15847,7 +16790,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -15908,7 +16854,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_SL_06": {
         "displayName": "SQUAD LEADER",
@@ -15964,7 +16913,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -16015,7 +16967,10 @@
                 "minOnSpawn": 0,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -16066,7 +17021,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Medic_01": {
         "displayName": "MEDIC",
@@ -16127,7 +17085,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Medic_02": {
         "displayName": "MEDIC",
@@ -16183,7 +17144,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Medic_03": {
         "displayName": "MEDIC",
@@ -16239,7 +17203,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -16290,7 +17257,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -16341,7 +17311,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -16387,7 +17360,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -16433,7 +17409,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Rifleman_05": {
         "displayName": "RIFLEMAN",
@@ -16479,7 +17458,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Rifleman_06": {
         "displayName": "RIFLEMAN",
@@ -16525,7 +17507,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Raider_01": {
         "displayName": "RAIDER",
@@ -16576,7 +17561,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Raider_02": {
         "displayName": "RAIDER",
@@ -16627,7 +17615,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -16678,7 +17669,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -16724,7 +17718,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_LAT_01": {
         "displayName": "LIGHT ANTI-TANK",
@@ -16775,7 +17772,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_LAT_02": {
         "displayName": "LIGHT ANTI-TANK",
@@ -16821,7 +17821,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_LAT_03": {
         "displayName": "LIGHT ANTI-TANK",
@@ -16867,11 +17870,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_QBU191_QMK191",
@@ -16918,11 +17924,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_QBU191_QMK191_Suppressor",
@@ -16964,7 +17973,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -17010,7 +18022,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -17051,7 +18066,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -17102,7 +18120,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -17148,7 +18169,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -17199,7 +18223,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -17250,7 +18277,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -17321,7 +18351,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Crewman_01": {
         "displayName": "CREWMAN",
@@ -17372,7 +18405,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Pilot_01": {
         "displayName": "PILOT",
@@ -17418,7 +18454,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "PLA_Scout_01": {
         "displayName": "SCOUT",
@@ -17469,7 +18508,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "PLA"
+        ]
     },
     "MEI_SL_02": {
         "displayName": "CELL LEADER",
@@ -17530,7 +18572,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_SL_03": {
         "displayName": "CELL LEADER",
@@ -17591,7 +18636,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_SL_04": {
         "displayName": "CELL LEADER",
@@ -17652,7 +18700,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_SL_06": {
         "displayName": "CELL LEADER",
@@ -17713,7 +18764,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_SL_07": {
         "displayName": "CELL LEADER",
@@ -17774,7 +18828,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -17825,7 +18882,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Medic_01": {
         "displayName": "MEDIC",
@@ -17886,7 +18946,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Medic_02": {
         "displayName": "MEDIC",
@@ -17947,7 +19010,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Medic_03": {
         "displayName": "MEDIC",
@@ -18008,7 +19074,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Rifleman_03": {
         "displayName": "FIGHTER",
@@ -18064,7 +19133,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Rifleman_04": {
         "displayName": "FIGHTER",
@@ -18120,7 +19192,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Rifleman_05": {
         "displayName": "FIGHTER",
@@ -18176,7 +19251,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Rifleman_06": {
         "displayName": "FIGHTER",
@@ -18232,7 +19310,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Rifleman_07": {
         "displayName": "FIGHTER",
@@ -18283,7 +19364,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Rifleman_08": {
         "displayName": "FIGHTER",
@@ -18334,7 +19418,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Raider_02": {
         "displayName": "RAIDER",
@@ -18385,7 +19472,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Raider_04": {
         "displayName": "RAIDER",
@@ -18436,7 +19526,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -18487,7 +19580,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -18538,7 +19634,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -18589,7 +19688,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_LAT_03": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -18630,11 +19732,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_M16A2_3x20",
@@ -18686,11 +19791,14 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "svd",
@@ -18742,7 +19850,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -18793,7 +19904,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -18849,7 +19963,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -18895,7 +20012,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Sapper_01": {
         "displayName": "SAPPER",
@@ -18961,7 +20081,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Sapper_02": {
         "displayName": "SAPPER",
@@ -19027,7 +20150,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "MEI_Crewman_01": {
         "displayName": "CREWMAN",
@@ -19078,7 +20204,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "MEI"
+        ]
     },
     "IMF_Recruit": {
         "displayName": "RECRUIT",
@@ -19099,7 +20228,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -19160,7 +20292,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -19221,7 +20356,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -19282,7 +20420,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_SL_04": {
         "displayName": "SQUAD LEADER",
@@ -19343,7 +20484,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_SL_05": {
         "displayName": "SQUAD LEADER",
@@ -19404,7 +20548,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_SL_06": {
         "displayName": "SQUAD LEADER",
@@ -19465,7 +20612,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_SL_07": {
         "displayName": "SQUAD LEADER",
@@ -19526,7 +20676,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -19577,7 +20730,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Medic_02": {
         "displayName": "MEDIC",
@@ -19638,7 +20794,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Medic_03": {
         "displayName": "MEDIC",
@@ -19694,7 +20853,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -19750,7 +20912,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -19806,7 +20971,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -19862,7 +21030,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -19918,7 +21089,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Rifleman_05": {
         "displayName": "RIFLEMAN",
@@ -19974,7 +21148,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Rifleman_06": {
         "displayName": "RIFLEMAN",
@@ -20030,7 +21207,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Rifleman_07": {
         "displayName": "RIFLEMAN",
@@ -20081,7 +21261,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Rifleman_08": {
         "displayName": "RIFLEMAN",
@@ -20132,7 +21315,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Raider_01": {
         "displayName": "RAIDER",
@@ -20188,7 +21374,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Raider_02": {
         "displayName": "RAIDER",
@@ -20244,7 +21433,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -20295,7 +21487,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_AR_03": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -20346,7 +21541,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_AR_04": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -20392,7 +21590,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -20448,7 +21649,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -20504,7 +21708,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Grenadier_03": {
         "displayName": "GRENADIER",
@@ -20555,7 +21762,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_LAT_01": {
         "displayName": "LIGHT ANTI-TANK",
@@ -20606,7 +21816,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_LAT_02": {
         "displayName": "LIGHT ANTI-TANK",
@@ -20652,7 +21865,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_LAT_03": {
         "displayName": "LIGHT ANTI-TANK",
@@ -20693,11 +21909,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_VSS_Optic",
@@ -20749,11 +21968,14 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "svd",
@@ -20805,7 +22027,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -20856,7 +22081,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -20902,7 +22130,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -20953,7 +22184,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -20999,7 +22233,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Scout_01": {
         "displayName": "SCOUT",
@@ -21060,7 +22297,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Sapper_01": {
         "displayName": "SAPPER",
@@ -21116,11 +22356,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Sniper_01": {
         "displayName": "SNIPER",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_sniper",
         "uiWeapon": "T_sv98m",
@@ -21172,7 +22415,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "IMF_Crewman_01": {
         "displayName": "CREWMAN",
@@ -21223,7 +22469,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "IMF"
+        ]
     },
     "GFI_Recruit": {
         "displayName": "RECRUIT",
@@ -21244,7 +22493,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -21305,7 +22557,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -21366,7 +22621,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -21427,7 +22685,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_SL_04": {
         "displayName": "SQUAD LEADER",
@@ -21488,7 +22749,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -21539,7 +22803,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -21590,7 +22857,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Medic_01": {
         "displayName": "MEDIC",
@@ -21651,7 +22921,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Medic_02": {
         "displayName": "MEDIC",
@@ -21712,7 +22985,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -21763,7 +23039,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -21814,7 +23093,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -21865,7 +23147,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -21911,7 +23196,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Raider_01": {
         "displayName": "RAIDER",
@@ -21962,7 +23250,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -22013,7 +23304,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -22069,7 +23363,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -22115,7 +23412,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Grenadier_03": {
         "displayName": "GRENADIER",
@@ -22166,7 +23466,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -22217,7 +23520,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -22258,11 +23564,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "svd",
@@ -22309,7 +23618,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -22360,7 +23672,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -22406,7 +23721,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_MachineGunner_03": {
         "displayName": "MACHINE GUNNER",
@@ -22457,7 +23775,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -22513,7 +23834,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -22564,7 +23888,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -22635,7 +23962,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Crewman_01": {
         "displayName": "CREWMAN",
@@ -22686,7 +24016,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "GFI_Pilot_01": {
         "displayName": "PILOT",
@@ -22732,7 +24065,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "GFI"
+        ]
     },
     "CRF_Recruit_01": {
         "displayName": "RECRUIT",
@@ -22753,7 +24089,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -22814,7 +24153,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -22875,7 +24217,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -22926,7 +24271,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_SL_04": {
         "displayName": "SQUAD LEADER",
@@ -22987,7 +24335,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_SL_05": {
         "displayName": "SQUAD LEADER",
@@ -23048,7 +24399,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_SL_06": {
         "displayName": "SQUAD LEADER",
@@ -23109,7 +24463,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_SL_07": {
         "displayName": "SQUAD LEADER",
@@ -23170,7 +24527,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Crewman_01": {
         "displayName": "CREWMAN",
@@ -23216,7 +24576,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -23267,7 +24630,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Medic_01": {
         "displayName": "MEDIC",
@@ -23328,7 +24694,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Medic_02": {
         "displayName": "MEDIC",
@@ -23389,7 +24758,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -23445,7 +24817,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -23501,7 +24876,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -23557,7 +24935,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -23613,7 +24994,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Rifleman_05": {
         "displayName": "RIFLEMAN",
@@ -23669,7 +25053,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Rifleman_06": {
         "displayName": "RIFLEMAN",
@@ -23725,7 +25112,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Rifleman_07": {
         "displayName": "RIFLEMAN",
@@ -23776,7 +25166,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Rifleman_08": {
         "displayName": "RIFLEMAN",
@@ -23827,7 +25220,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Sapper_01": {
         "displayName": "SAPPER",
@@ -23883,7 +25279,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Sapper_02": {
         "displayName": "SAPPER",
@@ -23939,11 +25338,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Sniper_01": {
         "displayName": "SNIPER",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_sniper",
         "uiWeapon": "C14",
@@ -23990,7 +25392,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Raider_01": {
         "displayName": "RAIDER",
@@ -24041,7 +25446,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Raider_02": {
         "displayName": "RAIDER",
@@ -24092,7 +25500,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Scout_01": {
         "displayName": "SCOUT",
@@ -24153,7 +25564,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -24204,7 +25618,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -24255,7 +25672,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -24306,7 +25726,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -24362,7 +25785,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -24413,11 +25839,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_leeenfieldno4_sniper",
@@ -24464,11 +25893,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_M16_Wormpool_Meupold_Bipod",
@@ -24515,11 +25947,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_Marksman_03": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "T_m21_scope",
@@ -24566,7 +26001,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -24617,7 +26055,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -24673,7 +26114,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CRF_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -24724,7 +26168,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CRF"
+        ]
     },
     "CAF_Recruit": {
         "displayName": "RECRUIT",
@@ -24745,7 +26192,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_SL_02": {
         "displayName": "SECTION LEADER",
@@ -24806,7 +26256,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_SL_03": {
         "displayName": "SECTION LEADER",
@@ -24867,7 +26320,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_SL_04": {
         "displayName": "SECTION LEADER",
@@ -24928,7 +26384,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_SL_05": {
         "displayName": "SECTION LEADER",
@@ -24989,7 +26448,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_SL_06": {
         "displayName": "SECTION LEADER",
@@ -25050,7 +26512,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -25101,7 +26566,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -25152,7 +26620,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Medic_01": {
         "displayName": "MEDIC",
@@ -25213,7 +26684,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Medic_02": {
         "displayName": "MEDIC",
@@ -25269,7 +26743,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -25320,7 +26797,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -25371,7 +26851,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -25417,7 +26900,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Raider_01": {
         "displayName": "PATHFINDER",
@@ -25468,7 +26954,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -25519,7 +27008,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -25570,7 +27062,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_AR_03": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -25616,7 +27111,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -25672,7 +27170,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -25723,7 +27224,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -25774,7 +27278,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -25820,11 +27327,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Sniper_01": {
         "displayName": "SNIPER",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_sniper",
         "uiWeapon": "C14",
@@ -25871,7 +27381,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -25922,7 +27435,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -25978,7 +27494,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -26029,7 +27548,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -26100,7 +27622,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Engineer_02": {
         "displayName": "COMBAT ENGINEER",
@@ -26171,7 +27696,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Crewman_01": {
         "displayName": "CREWMAN",
@@ -26222,7 +27750,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "CAF_Pilot_01": {
         "displayName": "PILOT",
@@ -26268,7 +27799,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "CAF"
+        ]
     },
     "BAF_Recruit": {
         "displayName": "RECRUIT",
@@ -26289,7 +27823,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_SL_01": {
         "displayName": "SECTION LEADER",
@@ -26350,7 +27887,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_SL_02": {
         "displayName": "SECTION LEADER",
@@ -26411,7 +27951,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_SL_03": {
         "displayName": "SECTION LEADER",
@@ -26472,7 +28015,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_SL_04": {
         "displayName": "SECTION LEADER",
@@ -26533,7 +28079,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -26584,7 +28133,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -26635,7 +28187,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Medic_01": {
         "displayName": "MEDIC",
@@ -26691,7 +28246,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Medic_02": {
         "displayName": "MEDIC",
@@ -26747,7 +28305,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -26798,7 +28359,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -26844,7 +28408,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -26890,7 +28457,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -26936,7 +28506,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Raider_01": {
         "displayName": "PATHFINDER",
@@ -26987,7 +28560,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -27038,7 +28614,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -27084,7 +28663,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -27135,7 +28717,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -27181,7 +28766,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -27227,11 +28815,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "l86a2_susat",
@@ -27273,11 +28864,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "l129a1",
@@ -27324,7 +28918,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -27375,7 +28972,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -27426,7 +29026,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -27477,7 +29080,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -27548,7 +29154,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Crewman_01": {
         "displayName": "CREWMAN",
@@ -27599,7 +29208,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "BAF_Pilot_01": {
         "displayName": "PILOT",
@@ -27645,7 +29257,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "BAF"
+        ]
     },
     "AFU_Recruit": {
         "displayName": "RECRUIT",
@@ -27666,7 +29281,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SL_01": {
         "displayName": "SQUAD LEADER",
@@ -27727,7 +29345,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SL_02": {
         "displayName": "SQUAD LEADER",
@@ -27788,7 +29409,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SL_09": {
         "displayName": "SQUAD LEADER",
@@ -27849,7 +29473,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SL_03": {
         "displayName": "SQUAD LEADER",
@@ -27910,7 +29537,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SL_06": {
         "displayName": "SQUAD LEADER",
@@ -27971,7 +29601,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -28022,7 +29655,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -28073,7 +29709,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Medic_01": {
         "displayName": "MEDIC",
@@ -28134,7 +29773,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Medic_02": {
         "displayName": "MEDIC",
@@ -28190,7 +29832,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Raider_01": {
         "displayName": "RAIDER",
@@ -28251,7 +29896,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Raider_02": {
         "displayName": "RAIDER",
@@ -28312,7 +29960,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_13": {
         "displayName": "RIFLEMAN",
@@ -28363,7 +30014,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -28414,7 +30068,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_05": {
         "displayName": "RIFLEMAN",
@@ -28465,7 +30122,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_09": {
         "displayName": "RIFLEMAN",
@@ -28516,7 +30176,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -28567,7 +30230,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_06": {
         "displayName": "RIFLEMAN",
@@ -28618,7 +30284,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_10": {
         "displayName": "RIFLEMAN",
@@ -28669,7 +30338,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -28720,7 +30392,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -28771,7 +30446,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_AR_03": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -28822,7 +30500,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_AR_04": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -28868,7 +30549,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -28924,7 +30608,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Grenadier_02": {
         "displayName": "GRENADIER",
@@ -28980,7 +30667,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Grenadier_03": {
         "displayName": "GRENADIER",
@@ -29026,7 +30716,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -29077,7 +30770,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -29133,7 +30829,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_LAT_03": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -29179,11 +30878,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "svd",
@@ -29230,11 +30932,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Marksman_02": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "uar10",
@@ -29281,7 +30986,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -29332,7 +31040,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -29378,7 +31089,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -29429,7 +31143,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -29480,7 +31197,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -29551,7 +31271,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Crewman_01": {
         "displayName": "CREWMAN",
@@ -29602,7 +31325,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Pilot_01": {
         "displayName": "PILOT",
@@ -29648,7 +31374,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Scout_01": {
         "displayName": "SCOUT",
@@ -29709,7 +31438,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SL_04": {
         "displayName": "SQUAD LEADER",
@@ -29770,7 +31502,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SL_07": {
         "displayName": "SQUAD LEADER",
@@ -29831,7 +31566,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -29882,7 +31620,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_07": {
         "displayName": "RIFLEMAN",
@@ -29933,7 +31674,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_11": {
         "displayName": "RIFLEMAN",
@@ -29984,7 +31728,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SL_05": {
         "displayName": "SQUAD LEADER",
@@ -30045,7 +31792,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_SL_08": {
         "displayName": "SQUAD LEADER",
@@ -30106,7 +31856,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_04": {
         "displayName": "RIFLEMAN",
@@ -30157,7 +31910,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_08": {
         "displayName": "RIFLEMAN",
@@ -30208,7 +31964,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "AFU_Rifleman_12": {
         "displayName": "RIFLEMAN",
@@ -30259,7 +32018,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "AFU"
+        ]
     },
     "ADF_Recruit": {
         "displayName": "RECRUIT",
@@ -30280,7 +32042,10 @@
                 "minOnSpawn": 1,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_SL_01": {
         "displayName": "SECTION LEADER",
@@ -30341,7 +32106,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_SL_02": {
         "displayName": "SECTION LEADER",
@@ -30402,7 +32170,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_SL_03": {
         "displayName": "SECTION LEADER",
@@ -30463,7 +32234,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_SLCrewman_01": {
         "displayName": "LEAD CREWMAN",
@@ -30514,7 +32288,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_SLPilot_01": {
         "displayName": "LEAD PILOT",
@@ -30565,7 +32342,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Medic_01": {
         "displayName": "MEDIC",
@@ -30626,7 +32406,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Medic_02": {
         "displayName": "MEDIC",
@@ -30682,7 +32465,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Raider_01": {
         "displayName": "RAIDER",
@@ -30733,7 +32519,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Rifleman_01": {
         "displayName": "RIFLEMAN",
@@ -30784,7 +32573,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Rifleman_02": {
         "displayName": "RIFLEMAN",
@@ -30835,7 +32627,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Rifleman_03": {
         "displayName": "RIFLEMAN",
@@ -30881,7 +32676,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_AR_01": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -30932,7 +32730,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_AR_02": {
         "displayName": "AUTOMATIC RIFLEMAN",
@@ -30978,7 +32779,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Grenadier_01": {
         "displayName": "GRENADIER",
@@ -31029,7 +32833,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_LAT_01": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -31080,7 +32887,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_LAT_02": {
         "displayName": "RIFLEMAN ANTI-TANK",
@@ -31126,11 +32936,14 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Marksman_01": {
         "displayName": "MARKSMAN",
-        "details": "Capable of precision medium to long range direct fire support, this role\u2019s weapon comes equipped with a powerful optic.",
+        "details": "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
         "specifics": "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
         "uiIcon": "T_role_designatedmarksman",
         "uiWeapon": "HK417",
@@ -31177,7 +32990,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_MachineGunner_01": {
         "displayName": "MACHINE GUNNER",
@@ -31228,7 +33044,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_MachineGunner_02": {
         "displayName": "MACHINE GUNNER",
@@ -31279,7 +33098,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_MachineGunner_03": {
         "displayName": "MACHINE GUNNER",
@@ -31330,7 +33152,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_MachineGunner_04": {
         "displayName": "MACHINE GUNNER",
@@ -31376,7 +33201,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_HAT_01": {
         "displayName": "HEAVY ANTI-TANK",
@@ -31432,7 +33260,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_HAT_02": {
         "displayName": "HEAVY ANTI-TANK",
@@ -31478,7 +33309,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Engineer_01": {
         "displayName": "COMBAT ENGINEER",
@@ -31539,7 +33373,10 @@
                 "minOnSpawn": 0,
                 "canRearm": true
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Engineer_02": {
         "displayName": "COMBAT ENGINEER",
@@ -31600,7 +33437,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Crewman_01": {
         "displayName": "CREWMAN",
@@ -31651,7 +33491,10 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     },
     "ADF_Pilot_01": {
         "displayName": "PILOT",
@@ -31697,6 +33540,9 @@
                 "minOnSpawn": 1,
                 "canRearm": false
             }
-        }
+        },
+        "factions": [
+            "ADF"
+        ]
     }
 }
