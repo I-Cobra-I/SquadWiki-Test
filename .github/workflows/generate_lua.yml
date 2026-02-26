@@ -1,13 +1,12 @@
 name: Generate Lua Modules
 
 on:
+  workflow_dispatch: {}
   push:
-   branches: [ main ]
+    branches: [ main ]
     paths:
-      - 'Data/roles.json'  # Wird nur ausgeführt, wenn sich die JSON ändert
+      - Data/roles.json  # Wird nur ausgeführt, wenn sich die JSON ändert
       - .github/workflows/generate_lua.yml
-  workflow_dispatch:      # Erlaubt es dir, das Skript manuell zu starten
-
 
 jobs:
   deploy:
@@ -24,11 +23,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-    - name: Run json_to_lua.py
-      run: python Scripts/json_to_lua.py
+      - name: Run Converter Script
+        run: |
+          python Scripts/json_to_lua.py
 
-    - name: Commit and Push changes
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: "Auto-generated Lua modules from roles.json"
-        file_pattern: 'Modules/Game/KitsData/*.lua Modules/Game/KitsData_index.lua'
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-generated Lua modules from roles.json"
+          file_pattern: 'Modules/Game/KitsData/*.lua Modules/Game/KitsData_index.lua'
+  
