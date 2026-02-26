@@ -2,22 +2,26 @@ name: Generate Lua Modules
 
 on:
   push:
+   branches: [ main ]
     paths:
       - 'Data/roles.json'  # Wird nur ausgeführt, wenn sich die JSON ändert
+      - .github/workflows/generate_lua.yml
   workflow_dispatch:      # Erlaubt es dir, das Skript manuell zu starten
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.x'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
     - name: Run json_to_lua.py
       run: python Scripts/json_to_lua.py
