@@ -1,0 +1,29 @@
+name: Generate Lua Modules
+
+on:
+  push:
+    paths:
+      - 'Data/roles.json'  # Wird nur ausgeführt, wenn sich die JSON ändert
+  workflow_dispatch:      # Erlaubt es dir, das Skript manuell zu starten
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Run json_to_lua.py
+      run: python Scripts/json_to_lua.py
+
+    - name: Commit and Push changes
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "Auto-generated Lua modules from roles.json"
+        file_pattern: 'Modules/Game/KitsData/*.lua Modules/Game/KitsData_index.lua'
