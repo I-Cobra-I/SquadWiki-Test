@@ -27,7 +27,8 @@ jobs:
 
       - name: Run Converter Script
         run: |
-          python Scripts/json_to_lua.py
+          python Scripts/json_to_lua_roles.py
+          python Scripts/json_to_lua_weapons.py
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
