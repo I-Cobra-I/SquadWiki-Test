@@ -14,36 +14,76 @@ BUCKETS = [
     ("V_Z", set("VWXYZ")), ("misc", set())
 ]
 
+# --- VOLLSTÄNDIGES MAPPING BASIEREND AUF DEINEM DUMP ---
+HUD_MAP = {
+    # Spalte 1: Primary
+    "inventory_category_rifle": "Primary",
+    "inventory_category_machinegun": "Primary",
+    "inventory_category_dmr": "Primary",
+    
+    # Spalte 2: Secondary
+    "inventory_category_pistol": "Secondary",
+    "inventory_category_knife": "Secondary", # Meistens Slot 1/2
+
+    # Spalte 3: Explosive (Grenades & AT)
+    "inventory_category_fraggrenade": "Explosive",
+    "inventory_category_grenadelauncher": "Explosive",
+    "inventory_category_lat": "Explosive",
+    "inventory_category_explosives": "Explosive",
+    "inventory_category_detonator": "Explosive",
+
+    # Spalte 4: Smoke
+    "inventory_category_smokegrenade": "Smoke",
+
+    # Spalte 5: Medical
+    "inventory_category_fielddressing": "Medical",
+    "inventory_category_medkit": "Medical",
+
+    # Spalte 6: Equipment
+    "inventory_category_binoculars": "Equipment",
+    "inventory_category_shovel": "Equipment",
+    "inventory_category_repair": "Equipment",
+    "inventory_category_resupply": "Equipment",
+    "inventory_category_rally": "Equipment"
+}
+
 def assign_wiki_data(item_key, item_data):
     d_name = item_data.get("displayName", item_key)
     name_upper = d_name.upper()
     
-    # Wir ziehen uns den HUDTexture String
-    # Falls das Feld HUDTexture nicht existiert, nutzen wir einen leeren String
-    hud = str(item_data.get("HUDTexture", "")).lower()
+    # HUD-String suchen (wie gehabt)
+    hud = None
+    if "HUDTexture" in item_data:
+        hud = item_data["HUDTexture"]
+    elif "inventoryInfo" in item_data and isinstance(item_data["inventoryInfo"], dict):
+        hud = item_data["inventoryInfo"].get("HUDTexture")
+    elif "UIInfo" in item_data and isinstance(item_data["UIInfo"], dict):
+        hud = item_data["UIInfo"].get("HUDTexture")
+        
+    hud_str = str(hud).strip() if hud else ""
 
-    # 1. Wiki-Link extrahieren
+    # 1. Wiki-Seite (Link) extrahieren
     wiki_page = re.split(r'\s*[\+\(\[/]', d_name)[0].strip()
 
-    # 2. Kategorie-Logik basierend auf HUDTexture Strings
-    if "smokegrenade" in hud:
+    # 2. Kategorie-Logik mit Priorität für Rauch
+    # Zuerst prüfen wir auf Rauch - egal was der HUD-String sagt
+    if "SMOKE" in hud_str or "SMOKE" in name_upper:
         cat = "Smoke"
-    elif "medical" in hud or "bandage" in hud or "firstaid" in hud:
-        cat = "Medical"
-    elif any(x in hud for x in ["rifle", "machinegun", "carbine", "shotgun", "sniper"]):
-        cat = "Primary"
-    elif "pistol" in hud:
-        cat = "Secondary"
-    elif any(x in hud for x in ["grenade", "rocket", "explosive", "at_"]):
-        cat = "Explosive"
+    
+    # Danach das normale Mapping für den Rest
     else:
-        # Fallback auf Namen, falls HUDTexture mal nicht aussagekräftig ist
-        if "SMOKE" in name_upper: cat = "Smoke"
-        elif "BANDAGE" in name_upper: cat = "Medical"
-        else: cat = "Equipment"
+        cat = HUD_MAP.get(hud_str, "Equipment")
+        
+        # Zusätzlicher Check für Spezialfälle, falls das Mapping nicht greift
+        if cat == "Equipment":
+            if "BANDAGE" in name_upper or "FIELD DRESSING" in name_upper:
+                cat = "Medical"
+            elif "PISTOL" in name_upper:
+                cat = "Secondary"
+            elif "EXPLOSIVE" in name_upper or "GRENADE" in name_upper:
+                cat = "Explosive"
 
     return cat, wiki_page
-
 def to_lua(o, ind=0):
     sp = "  " * ind
     if isinstance(o, dict):
