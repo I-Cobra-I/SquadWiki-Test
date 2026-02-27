@@ -70,6 +70,21 @@ def main():
         if raw.startswith(b"\xef\xbb\xbf"): raw = raw[3:]
         raw_data = json.loads(raw.decode("utf-8"))
 
+        # --- HIER DER DUMP-TEIL ---
+    all_hud_values = set()
+    for item in raw_data.values():
+        hud = item.get("HUDTexture")
+        if hud:
+            all_hud_values.add(str(hud))
+    
+    # Speichert die Liste alphabetisch sortiert in eine Datei im Hauptverzeichnis
+    with open("hud_categories_dump.txt", "w", encoding="utf-8") as f:
+        f.write("Gefundene HUDTexture-Werte:\n")
+        for val in sorted(all_hud_values):
+            f.write(f"{val}\n")
+    print("[INFO] hud_categories_dump.txt wurde erstellt.")
+    # --- ENDE DUMP-TEIL ---
+
     buckets_content = defaultdict(dict)
     
     for k, v in raw_data.items():
