@@ -7,17 +7,17 @@ return {
   },
   ["BP_ADF_FieldDressing"] = {
     ["displayName"] = "Field Dressing",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Field Dressing"
   },
   ["BP_ADF_FieldDressing_Medic"] = {
     ["displayName"] = "Field Dressing",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Field Dressing"
   },
   ["BP_ADF_Generic_MedicalKit"] = {
     ["displayName"] = "Medical Kit",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Medical Kit"
   },
   ["BP_AK101_PushCO_EXPS"] = {

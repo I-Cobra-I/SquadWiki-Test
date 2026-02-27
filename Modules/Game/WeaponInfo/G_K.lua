@@ -112,52 +112,52 @@ return {
   },
   ["BP_Generic_FieldDressing"] = {
     ["displayName"] = "Field Dressing",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Field Dressing"
   },
   ["BP_Generic_FieldDressing_Medic"] = {
     ["displayName"] = "Field Dressing",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Field Dressing"
   },
   ["BP_Generic_MedicalKit"] = {
     ["displayName"] = "Medical Kit",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Medical Kit"
   },
   ["BP_Generic_MedicalKit_CAF"] = {
     ["displayName"] = "Medical Kit",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Medical Kit"
   },
   ["BP_Generic_MedicalKit_GFI"] = {
     ["displayName"] = "Medical Kit",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Medical Kit"
   },
   ["BP_Generic_MedicalKit_IMF"] = {
     ["displayName"] = "Medical Kit",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Medical Kit"
   },
   ["BP_Generic_MedicalKit_PLA"] = {
     ["displayName"] = "Medical Kit",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Medical Kit"
   },
   ["BP_Generic_MedicalKit_Russia"] = {
     ["displayName"] = "Medical Kit",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Medical Kit"
   },
   ["BP_Generic_MedicalKit_TLF"] = {
     ["displayName"] = "Medical Kit",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Medical Kit"
   },
   ["BP_Generic_MedicalKit_USMC"] = {
     ["displayName"] = "Medical Kit",
-    ["wikiCategory"] = "Medical",
+    ["wikiCategory"] = "Equipment",
     ["wikiPage"] = "Medical Kit"
   },
   ["BP_HAR66"] = {
