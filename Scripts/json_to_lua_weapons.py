@@ -16,19 +16,31 @@ BUCKETS = [
 
 def assign_wiki_data(item_key, item_data):
     d_name = item_data.get("displayName", item_key)
-    inv_cat = item_data.get("inventoryInfo", {}).get("inventory_category", "").upper()
     name_upper = d_name.upper()
+    
+    # Wir ziehen uns den HUDTexture String
+    # Falls das Feld HUDTexture nicht existiert, nutzen wir einen leeren String
+    hud = str(item_data.get("HUDTexture", "")).lower()
 
-    # Wiki-Link extrahieren (stoppt vor Sonderzeichen)
+    # 1. Wiki-Link extrahieren
     wiki_page = re.split(r'\s*[\+\(\[/]', d_name)[0].strip()
 
-    # Spalten-Logik (1-6)
-    if "SMOKE" in name_upper: cat = "Smoke"
-    elif any(x in name_upper for x in ["BANDAGE", "MEDIC", "FIELD DRESSING"]): cat = "Medical"
-    elif "PRIMARY" in inv_cat: cat = "Primary"
-    elif "SECONDARY" in inv_cat: cat = "Secondary"
-    elif any(x in inv_cat for x in ["GRENADE", "EXPLOSIVE"]) or "ROCKET" in name_upper: cat = "Explosive"
-    else: cat = "Equipment"
+    # 2. Kategorie-Logik basierend auf HUDTexture Strings
+    if "smokegrenade" in hud:
+        cat = "Smoke"
+    elif "medical" in hud or "bandage" in hud or "firstaid" in hud:
+        cat = "Medical"
+    elif any(x in hud for x in ["rifle", "machinegun", "carbine", "shotgun", "sniper"]):
+        cat = "Primary"
+    elif "pistol" in hud:
+        cat = "Secondary"
+    elif any(x in hud for x in ["grenade", "rocket", "explosive", "at_"]):
+        cat = "Explosive"
+    else:
+        # Fallback auf Namen, falls HUDTexture mal nicht aussagekräftig ist
+        if "SMOKE" in name_upper: cat = "Smoke"
+        elif "BANDAGE" in name_upper: cat = "Medical"
+        else: cat = "Equipment"
 
     return cat, wiki_page
 
