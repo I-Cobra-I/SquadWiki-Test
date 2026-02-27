@@ -36,27 +36,32 @@ HUD_MAP = {
 }
 
 def get_ammo_info(item_data, cat, hud_str):
-    w_info = item_data.get("weaponInfo", {})
-    if not w_info and "inventoryInfo" in item_data:
-        w_info = item_data.get("inventoryInfo", {}).get("weaponInfo", {})
-    
-    if not isinstance(w_info, dict): w_info = {}
-
-    # Diese Items erhalten KEINE Mengenanzeige (nil)
+    # 1. Sofort-Ausnahmen für Dinge ohne Zahlenwert
     no_count_huds = [
         "inventory_category_knife", "inventory_category_binoculars", 
         "inventory_category_shovel", "inventory_category_detonator",
         "inventory_category_rally", "inventory_category_repair",
-        "inventory_category_medkit"
+        "inventory_category_map", "inventory_category_medkit"
     ]
-
+    
     if hud_str in no_count_huds or cat == "Equipment":
         return None, None, None
+
+    # 2. Versuche Munitionsdaten zu finden
+    w_info = item_data.get("weaponInfo", {})
+    if not w_info and "inventoryInfo" in item_data:
+        # Manche Daten liegen direkt in inventoryInfo, manche in einem Unterobjekt
+        w_info = item_data.get("inventoryInfo", {}).get("weaponInfo", {})
+    
+    # 3. Fallback-Logik
+    if not w_info or not isinstance(w_info, dict):
+        # Wenn keine weaponInfo da ist (wie beim Field Dressing), 
+        # setzen wir totalAmmo auf 1 als Marker für "zählbares Item"
+        return None, None, 1
 
     mags = w_info.get("numberOfMags", 1)
     size = w_info.get("magSize", 1)
     
-    # Waffen liefern Mags + Total, andere nur Total
     if cat in ["Primary", "Secondary"]:
         return mags, size, (mags * size)
     else:
