@@ -2,22 +2,22 @@
 return {
   ["BP_VOG17_UZRGM_Frag01"] = {
     ["displayName"] = "VOG-17 Khattabka Fragmentation",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["wikiPage"] = "VOG-17 Khattabka Fragmentation"
   },
   ["BP_VSS_Optic"] = {
     ["displayName"] = "VSS "Vintorez" + PSO-1-1",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "VSS "Vintorez""
   },
   ["BP_Vz61"] = {
     ["displayName"] = "Vz. 61 Škorpion",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Secondary",
     ["wikiPage"] = "Vz. 61 Škorpion"
   },
   ["BP_Vz61_5mags"] = {
     ["displayName"] = "Vz. 61 Škorpion",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Secondary",
     ["wikiPage"] = "Vz. 61 Škorpion"
   },
   ["BP_WJQ308_Shovel"] = {

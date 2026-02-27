@@ -17,12 +17,12 @@ return {
   },
   ["BP_DZJ-08"] = {
     ["displayName"] = "DZJ-08",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["wikiPage"] = "DZJ-08"
   },
   ["BP_Decoy_Rock"] = {
     ["displayName"] = "Decoy Rock",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["wikiPage"] = "Decoy Rock"
   },
   ["BP_Deployable_DroneItem_Recoverable"] = {
@@ -32,47 +32,47 @@ return {
   },
   ["BP_EF88C_ET552_Foregrip"] = {
     ["displayName"] = "EF88C + ET552",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88C"
   },
   ["BP_EF88C_ET552_Foregrip_4Mags"] = {
     ["displayName"] = "EF88C + ET552",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88C"
   },
   ["BP_EF88C_Specter_Foregrip"] = {
     ["displayName"] = "EF88C + Specter",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88C"
   },
   ["BP_EF88_ET552_Foregrip"] = {
     ["displayName"] = "EF88 + ET552",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88"
   },
   ["BP_EF88_ET552_Grippod"] = {
     ["displayName"] = "EF88 + ET552 + Grippod",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88"
   },
   ["BP_EF88_Ironsight_Foregrip"] = {
     ["displayName"] = "EF88",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88"
   },
   ["BP_EF88_Ironsight_Foregrip_1mag"] = {
     ["displayName"] = "EF88",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88"
   },
   ["BP_EF88_Ironsight_Grippod"] = {
     ["displayName"] = "EF88 + Grippod",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88"
   },
   ["BP_EF88_SL40_UGL_HE"] = {
     ["displayName"] = "SL40 High Explosive",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["wikiPage"] = "SL40 High Explosive"
   },
   ["BP_EF88_SL40_UGL_Smoke"] = {
@@ -92,17 +92,17 @@ return {
   },
   ["BP_EF88_Specter_Foregrip"] = {
     ["displayName"] = "EF88 + Specter",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88"
   },
   ["BP_EF88_Specter_Grippod"] = {
     ["displayName"] = "EF88 + Specter + Grippod",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88"
   },
   ["BP_EF88_Specter_SL40"] = {
     ["displayName"] = "EF88 SL40 + Specter",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "EF88 SL40"
   },
   ["BP_EntrenchingTool"] = {
@@ -187,47 +187,47 @@ return {
   },
   ["BP_F1Frag"] = {
     ["displayName"] = "F1 Fragmentation",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["wikiPage"] = "F1 Fragmentation"
   },
   ["BP_F1Frag_au"] = {
     ["displayName"] = "F1 Fragmentation",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["wikiPage"] = "F1 Fragmentation"
   },
   ["BP_F89_ET552"] = {
     ["displayName"] = "F89 + ET552",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "F89"
   },
   ["BP_F89_Specter"] = {
     ["displayName"] = "F89 + Specter",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "F89"
   },
   ["BP_FNFAL"] = {
     ["displayName"] = "FN FAL",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "FN FAL"
   },
   ["BP_FNFAL_GL_Frag"] = {
     ["displayName"] = "Rifle Grenade (Fragmentation)",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["wikiPage"] = "Rifle Grenade"
   },
   ["BP_FNFAL_GL_HEAT"] = {
     ["displayName"] = "Rifle Grenade (HEAT)",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["wikiPage"] = "Rifle Grenade"
   },
   ["BP_FNFAL_GL_HEAT_Rifle"] = {
     ["displayName"] = "FN FAL",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "FN FAL"
   },
   ["BP_FNFAL_GL_Rifle"] = {
     ["displayName"] = "FN FAL",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Primary",
     ["wikiPage"] = "FN FAL"
   }
 }
