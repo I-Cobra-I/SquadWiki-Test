@@ -2,1433 +2,407 @@
 return {
   ["BAF_Recruit"] = {
     ["displayName"] = "RECRUIT",
-    ["details"] = "A stripped down role capable of only self-defence.",
-    ["specifics"] = "Use your bandage to stabilise your bleeding ({Key0}) or patch other players ({Key1})",
-    ["uiIcon"] = "T_role_recruit",
-    ["uiWeapon"] = "l85a2_classic",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "RECRUIT",
+    ["group"] = "Direct Combat",
     ["items"] = {
-      ["BP_L85A2_1mag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_1mag"] = 1,
+      ["BP_Generic_FieldDressing"] = 1
+    }
   },
   ["BAF_SL_01"] = {
     ["displayName"] = "SECTION LEADER",
-    ["details"] = "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
-    ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
-    ["uiIcon"] = "T_role_squadleader",
-    ["uiWeapon"] = "l85a2_grippod",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "SECTION LEADER",
+    ["group"] = "Command and Support",
     ["items"] = {
-      ["BP_L85A2_Grippod"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L69A1Smoke_Orange"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L100A1Smoke_Yellow"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_EquippableRallyPoint_BAF"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_Grippod"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 2,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_L69A1Smoke_Orange"] = 2,
+      ["BP_L100A1Smoke_Yellow"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_US_Binoculars"] = 1,
+      ["BP_EquippableRallyPoint_BAF"] = 1
+    }
   },
   ["BAF_SL_02"] = {
     ["displayName"] = "SECTION LEADER",
-    ["details"] = "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
-    ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
-    ["uiIcon"] = "T_role_squadleader",
-    ["uiWeapon"] = "l85a2_susat_grippod",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "SECTION LEADER",
+    ["group"] = "Command and Support",
     ["items"] = {
-      ["BP_L85A2_SUSAT_Grippod"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L69A1Smoke_Orange"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L100A1Smoke_Yellow"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_EquippableRallyPoint_BAF"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_SUSAT_Grippod"] = 1,
+      ["BP_L131A1"] = 2,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_L69A1Smoke_Orange"] = 2,
+      ["BP_L100A1Smoke_Yellow"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_US_Binoculars"] = 1,
+      ["BP_EquippableRallyPoint_BAF"] = 1
+    }
   },
   ["BAF_SL_03"] = {
     ["displayName"] = "SECTION LEADER",
-    ["details"] = "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
-    ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
-    ["uiIcon"] = "T_role_squadleader",
-    ["uiWeapon"] = "l85a2_elcanlds_grippod",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "SECTION LEADER",
+    ["group"] = "Command and Support",
     ["items"] = {
-      ["BP_L85A2_LDS_Grippod"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L69A1Smoke_Orange"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L100A1Smoke_Yellow"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_EquippableRallyPoint_BAF"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_LDS_Grippod"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_L69A1Smoke_Orange"] = 2,
+      ["BP_L100A1Smoke_Yellow"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_US_Binoculars"] = 1,
+      ["BP_EquippableRallyPoint_BAF"] = 1
+    }
   },
   ["BAF_SL_04"] = {
     ["displayName"] = "SECTION LEADER",
-    ["details"] = "The head of the squad, this role provides the user the ability to place Rally Points (RPs) and FOBs, as well as Deployables.",
-    ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
-    ["uiIcon"] = "T_role_squadleader",
-    ["uiWeapon"] = "l85a2_acog_grippod",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "SECTION LEADER",
+    ["group"] = "Command and Support",
     ["items"] = {
-      ["BP_L85A2_M150_Foregrip"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L69A1Smoke_Orange"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L100A1Smoke_Yellow"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_EquippableRallyPoint_BAF"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_M150_Foregrip"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_L69A1Smoke_Orange"] = 2,
+      ["BP_L100A1Smoke_Yellow"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_US_Binoculars"] = 1,
+      ["BP_EquippableRallyPoint_BAF"] = 1
+    }
   },
   ["BAF_SLCrewman_01"] = {
     ["displayName"] = "LEAD CREWMAN",
-    ["details"] = "Utilized to operate heavy vehicles like IFVs, APCs and tanks. This role comes with a stripped down kit for self-defense.",
-    ["specifics"] = "Crewmen are equipped with a repair kit to do hasty in-field repairs.",
-    ["uiIcon"] = "T_role_crewman_squadleader",
-    ["uiWeapon"] = "l22a2_susat",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Heavy",
+    ["role"] = "LEAD CREWMAN",
+    ["group"] = "Command and Support",
     ["items"] = {
-      ["BP_L22A2_SUSAT_Foregrip"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_RepairTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_EquippableRallyPoint_BAF"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L22A2_SUSAT_Foregrip"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_RepairTool"] = 1,
+      ["BP_US_Binoculars"] = 1,
+      ["BP_EquippableRallyPoint_BAF"] = 1
+    }
   },
   ["BAF_SLPilot_01"] = {
     ["displayName"] = "LEAD PILOT",
-    ["details"] = "Required to operate helicopters. This role comes with a stripped down kit for self-defense.",
-    ["specifics"] = "Pilot are equipped with smoke grenades to aid in signalling.",
-    ["uiIcon"] = "T_role_pilot_squadleader",
-    ["uiWeapon"] = "l22a2_susat",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Helicopter",
+    ["role"] = "LEAD PILOT",
+    ["group"] = "Command and Support",
     ["items"] = {
-      ["BP_L22A2_SUSAT_Foregrip"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L70A1Smoke_Red"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_RepairTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_EquippableRallyPoint_BAF"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L22A2_SUSAT_Foregrip"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L70A1Smoke_Red"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_RepairTool"] = 1,
+      ["BP_US_Binoculars"] = 1,
+      ["BP_EquippableRallyPoint_BAF"] = 1
+    }
   },
   ["BAF_Medic_01"] = {
     ["displayName"] = "MEDIC",
-    ["details"] = "Critical to the survivability of a squad, Medics are capable of quickly reviving and healing incapacitated/wounded teammates.",
-    ["specifics"] = "Use your Medic Bag ({Key0}) to heal others, and Field Dressings to revive and stop their bleeding.",
-    ["uiIcon"] = "T_role_medic",
-    ["uiWeapon"] = "l85a2_susat",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "MEDIC",
+    ["group"] = "Command and Support",
     ["items"] = {
-      ["BP_L85A2_SUSAT"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L69A1Smoke_Orange"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing_Medic"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_MedicalKit"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_SUSAT"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_L69A1Smoke_Orange"] = 2,
+      ["BP_Generic_FieldDressing_Medic"] = 9,
+      ["BP_Generic_MedicalKit"] = 1,
+      ["BP_EntrenchingTool"] = 1
+    }
   },
   ["BAF_Medic_02"] = {
     ["displayName"] = "MEDIC",
-    ["details"] = "Critical to the survivability of a squad, Medics are capable of quickly reviving and healing incapacitated/wounded teammates.",
-    ["specifics"] = "Use your Medic Bag ({Key0}) to heal others, and Field Dressings to revive and stop their bleeding.",
-    ["uiIcon"] = "T_role_medic",
-    ["uiWeapon"] = "l85a2_elcanlds",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "MEDIC",
+    ["group"] = "Command and Support",
     ["items"] = {
-      ["BP_L85A2_LDS"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L69A1Smoke_Orange"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing_Medic"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_MedicalKit"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_LDS"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_L69A1Smoke_Orange"] = 2,
+      ["BP_Generic_FieldDressing_Medic"] = 9,
+      ["BP_Generic_MedicalKit"] = 1,
+      ["BP_EntrenchingTool"] = 1
+    }
   },
   ["BAF_Rifleman_01"] = {
     ["displayName"] = "RIFLEMAN",
-    ["details"] = "Equipped with a standard loadout, this role is perfect for general purpose combat.",
-    ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
-    ["uiIcon"] = "T_role_rifleman",
-    ["uiWeapon"] = "l85a2_grippod",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "RIFLEMAN",
+    ["group"] = "Direct Combat",
     ["items"] = {
-      ["BP_L85A2_Grippod"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_Infantry_Ammobag_BAF"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_Grippod"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 2,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_Infantry_Ammobag_BAF"] = 1,
+      ["BP_US_Binoculars"] = 1
+    }
   },
   ["BAF_Rifleman_02"] = {
     ["displayName"] = "RIFLEMAN",
-    ["details"] = "Equipped with a standard loadout, this role is perfect for general purpose combat.",
-    ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
-    ["uiIcon"] = "T_role_rifleman",
-    ["uiWeapon"] = "l85a2_susat",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "RIFLEMAN",
+    ["group"] = "Direct Combat",
     ["items"] = {
-      ["BP_L85A2_SUSAT"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_Infantry_Ammobag_BAF"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_SUSAT"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_Infantry_Ammobag_BAF"] = 1
+    }
   },
   ["BAF_Rifleman_03"] = {
     ["displayName"] = "RIFLEMAN",
-    ["details"] = "Equipped with a standard loadout, this role is perfect for general purpose combat.",
-    ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
-    ["uiIcon"] = "T_role_rifleman",
-    ["uiWeapon"] = "l85a2_elcanlds",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "RIFLEMAN",
+    ["group"] = "Direct Combat",
     ["items"] = {
-      ["BP_L85A2_LDS"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_Infantry_Ammobag_BAF"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_LDS"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_Infantry_Ammobag_BAF"] = 1
+    }
   },
   ["BAF_Rifleman_04"] = {
     ["displayName"] = "RIFLEMAN",
-    ["details"] = "Equipped with a standard loadout, this role is perfect for general purpose combat.",
-    ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
-    ["uiIcon"] = "T_role_rifleman",
-    ["uiWeapon"] = "l85a2_acog",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "RIFLEMAN",
+    ["group"] = "Direct Combat",
     ["items"] = {
-      ["BP_L85A2_M150"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_Infantry_Ammobag_BAF"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_M150"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_Infantry_Ammobag_BAF"] = 1
+    }
   },
   ["BAF_Raider_01"] = {
     ["displayName"] = "PATHFINDER",
-    ["details"] = "Equipped with a CQB rifle and grenades, this role is perfect for close quarters combat and causing chaos.",
-    ["specifics"] = "Use your bandage to stabilise your bleeding ({Key0}) or patch other players ({Key1})",
-    ["uiIcon"] = "T_role_raider",
-    ["uiWeapon"] = "C8A3_Eotech_Foregrip",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "PATHFINDER",
+    ["group"] = "Direct Combat",
     ["items"] = {
-      ["BP_L119A1_ET552_Foregrip"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L119A1_ET552_Foregrip"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 3,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_US_Binoculars"] = 1
+    }
   },
   ["BAF_AR_01"] = {
     ["displayName"] = "AUTOMATIC RIFLEMAN",
-    ["details"] = "Provides sustained direct fire support and suppression for the Squad. ",
-    ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
-    ["uiIcon"] = "T_role_automaticrifleman",
-    ["uiWeapon"] = "l110a2",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "AUTOMATIC RIFLEMAN",
+    ["group"] = "Direct Combat",
     ["items"] = {
-      ["BP_L110A2"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Direct Combat"
+      ["BP_L110A2"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 2,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_US_Binoculars"] = 1
+    }
   },
   ["BAF_AR_02"] = {
     ["displayName"] = "AUTOMATIC RIFLEMAN",
-    ["details"] = "Provides sustained direct fire support and suppression for the Squad. ",
-    ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
-    ["uiIcon"] = "T_role_automaticrifleman",
-    ["uiWeapon"] = "l110a2_susat",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "AUTOMATIC RIFLEMAN",
+    ["group"] = "Fire Support",
     ["items"] = {
-      ["BP_L110A2_SUSAT"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Fire Support"
+      ["BP_L110A2_SUSAT"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1
+    }
   },
   ["BAF_Grenadier_01"] = {
     ["displayName"] = "GRENADIER",
-    ["details"] = "Provides indirect fire support with launched grenades, also can mark targets with launched smoke markers.",
-    ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
-    ["uiIcon"] = "T_role_grenadier",
-    ["uiWeapon"] = "l85a2ag36_elcanlds",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "GRENADIER",
+    ["group"] = "Fire Support",
     ["items"] = {
-      ["BP_L85A2AG36_LDS_Rifle"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L85A2AG36_LDS_UGL_HE"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L85A2AG36_LDS_UGL_Smoke"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L85A2AG36_LDS_UGL_Smoke_Blue"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L85A2AG36_LDS_UGL_Smoke_Red"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2AG36_LDS_Rifle"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L85A2AG36_LDS_UGL_HE"] = 1,
+      ["BP_L85A2AG36_LDS_UGL_Smoke"] = 1,
+      ["BP_L85A2AG36_LDS_UGL_Smoke_Blue"] = 1,
+      ["BP_L85A2AG36_LDS_UGL_Smoke_Red"] = 1,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1
+    }
   },
   ["BAF_LAT_01"] = {
     ["displayName"] = "RIFLEMAN ANTI-TANK",
-    ["details"] = "Capable of dealing with most light armour and vehicle threats, as well as entrenched enemies.",
-    ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
-    ["uiIcon"] = "T_role_lightantitank",
-    ["uiWeapon"] = "l85a2_susat",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "RIFLEMAN ANTI-TANK",
+    ["group"] = "Specialist",
     ["items"] = {
-      ["BP_L85A2_SUSAT"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_ILAWAT4"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_SUSAT"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_ILAWAT4"] = 1,
+      ["BP_L109A1Frag"] = 2,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1
+    }
   },
   ["BAF_LAT_02"] = {
     ["displayName"] = "RIFLEMAN ANTI-TANK",
-    ["details"] = "Capable of dealing with most light armour and vehicle threats, as well as entrenched enemies.",
-    ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
-    ["uiIcon"] = "T_role_lightantitank",
-    ["uiWeapon"] = "l85a2_elcanlds",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "RIFLEMAN ANTI-TANK",
+    ["group"] = "Specialist",
     ["items"] = {
-      ["BP_L85A2_LDS"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_M72A7_LASM"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_LDS"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_M72A7_LASM"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1
+    }
   },
   ["BAF_Marksman_01"] = {
     ["displayName"] = "MARKSMAN",
-    ["details"] = "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
-    ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
-    ["uiIcon"] = "T_role_designatedmarksman",
-    ["uiWeapon"] = "l86a2_susat",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "MARKSMAN",
+    ["group"] = "Fire Support",
     ["items"] = {
-      ["BP_L86A2LSW_SUSAT"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L86A2LSW_SUSAT"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_US_Binoculars"] = 1
+    }
   },
   ["BAF_Marksman_02"] = {
     ["displayName"] = "MARKSMAN",
-    ["details"] = "Capable of precision medium to long range direct fire support, this role’s weapon comes equipped with a powerful optic.",
-    ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
-    ["uiIcon"] = "T_role_designatedmarksman",
-    ["uiWeapon"] = "l129a1",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "MARKSMAN",
+    ["group"] = "Fire Support",
     ["items"] = {
-      ["BP_L129A1_Optic"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L129A1_Optic"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_US_Binoculars"] = 1
+    }
   },
   ["BAF_MachineGunner_01"] = {
     ["displayName"] = "MACHINE GUNNER",
-    ["details"] = "Capable of sustained medium to long range direct fire support and suppression.",
-    ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
-    ["uiIcon"] = "T_role_machinegunner",
-    ["uiWeapon"] = "mag58",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "MACHINE GUNNER",
+    ["group"] = "Specialist",
     ["items"] = {
-      ["BP_L7A2"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L7A2"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 2,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_US_Binoculars"] = 1
+    }
   },
   ["BAF_HAT_01"] = {
     ["displayName"] = "HEAVY ANTI-TANK",
-    ["details"] = "Equipped with a heavier Anti-Tank Rocket Launcher, this kit is suitable for engaging heavy armor.",
-    ["specifics"] = "Use 'x' to switch between Direct Attack and PLOS Guided fire modes.",
-    ["uiIcon"] = "T_role_heavyantitank",
-    ["uiWeapon"] = "nlaw",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "HEAVY ANTI-TANK",
+    ["group"] = "Specialist",
     ["items"] = {
-      ["BP_L85A2"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_NLAW_2mags"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_NLAW_2mags"] = 1,
+      ["BP_L109A1Frag"] = 2,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_US_Binoculars"] = 1
+    }
   },
   ["BAF_HAT_02"] = {
     ["displayName"] = "HEAVY ANTI-TANK",
-    ["details"] = "Equipped with a heavier Anti-Tank Rocket Launcher, this kit is suitable for engaging heavy armor.",
-    ["specifics"] = "Use 'x' to switch between Direct Attack and PLOS Guided fire modes.",
-    ["uiIcon"] = "T_role_heavyantitank",
-    ["uiWeapon"] = "nlaw",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "HEAVY ANTI-TANK",
+    ["group"] = "Specialist",
     ["items"] = {
-      ["BP_L85A2_LDS"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_NLAW"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_ILAWAT4"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2_LDS"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_NLAW"] = 1,
+      ["BP_ILAWAT4"] = 1,
+      ["BP_L109A1Frag"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1
+    }
   },
   ["BAF_Engineer_01"] = {
     ["displayName"] = "COMBAT ENGINEER",
-    ["details"] = "Equipped with Explosives and Mines, the Combat Engineer can deny the enemy area control. He can also assist in vehicle repairs, construct/destruct deployables faster and set up sandbags and wire independently.",
-    ["specifics"] = "You can deploy up to a maximum of 10 Demolition Charges, 10 Sandbags, 10 Razor Wire and 10 Anti-Tank Mines in the World at the same time.",
-    ["uiIcon"] = "T_role_engineer",
-    ["uiWeapon"] = "l85a2",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Light",
+    ["role"] = "COMBAT ENGINEER",
+    ["group"] = "Specialist",
     ["items"] = {
-      ["BP_L85A2"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L109A1Frag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_M112_C4Explosive_Timed"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L69A1Smoke_Orange"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool_Engineer"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_RepairTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_Infantry_Sandbag"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Infantry_Razorwire"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L85A2"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L109A1Frag"] = 2,
+      ["BP_M112_C4Explosive_Timed"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_L69A1Smoke_Orange"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool_Engineer"] = 1,
+      ["BP_RepairTool"] = 1,
+      ["BP_Infantry_Sandbag"] = 2,
+      ["BP_Infantry_Razorwire"] = 2,
+      ["BP_US_Binoculars"] = 1
+    }
   },
   ["BAF_Crewman_01"] = {
     ["displayName"] = "CREWMAN",
-    ["details"] = "Required for the operation of armored vehicles like IFVs, APCs and tanks. This role comes with a stripped down kit for self-defense.",
-    ["specifics"] = "Crewmen are equipped with a repair kit to do hasty in-field repairs.",
-    ["uiIcon"] = "T_role_crewman",
-    ["uiWeapon"] = "l22a2",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Heavy",
+    ["role"] = "CREWMAN",
+    ["group"] = "Command and Support",
     ["items"] = {
-      ["BP_L22A2_Foregrip"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L132A1Smoke_Parent"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_RepairTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L22A2_Foregrip"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L132A1Smoke_Parent"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_EntrenchingTool"] = 1,
+      ["BP_RepairTool"] = 1,
+      ["BP_US_Binoculars"] = 1
+    }
   },
   ["BAF_Pilot_01"] = {
     ["displayName"] = "PILOT",
-    ["details"] = "Required to operate helicopters. This role comes with a stripped down kit for self-defense.",
-    ["specifics"] = "Pilot are equipped with smoke grenades to aid in signalling.",
-    ["uiIcon"] = "T_role_pilot",
-    ["uiWeapon"] = "l22a2",
-    ["baseTeamAvailability"] = nil,
-    ["capability"] = "Helicopter",
+    ["role"] = "PILOT",
+    ["group"] = "Command and Support",
     ["items"] = {
-      ["BP_L22A2_Foregrip"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_L131A1"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_SA80Bayonet"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_L70A1Smoke_Red"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = true
-      },
-      ["BP_RepairTool"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      },
-      ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = nil,
-        ["minOnSpawn"] = nil,
-        ["canRearm"] = false
-      }
-    },
-    ["factions"] = { "BAF" },
-    ["group"] = "Specialist"
+      ["BP_L22A2_Foregrip"] = 1,
+      ["BP_L131A1"] = 1,
+      ["BP_SA80Bayonet"] = 1,
+      ["BP_L70A1Smoke_Red"] = 2,
+      ["BP_Generic_FieldDressing"] = 2,
+      ["BP_RepairTool"] = 1,
+      ["BP_US_Binoculars"] = 1
+    }
   }
 }
