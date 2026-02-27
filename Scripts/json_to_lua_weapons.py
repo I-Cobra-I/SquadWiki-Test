@@ -70,25 +70,34 @@ def main():
         if raw.startswith(b"\xef\xbb\xbf"): raw = raw[3:]
         raw_data = json.loads(raw.decode("utf-8"))
 
-       # --- VERBESSERTER DUMP-TEIL ---
-    all_hud_values = set()
-    for item in raw_data.values():
-        hud = item.get("HUDTexture")
-        if hud:
-            all_hud_values.add(str(hud))
+       # --- DEEP SEARCH DUMP ---
+    found_keys = set()
+    sample_values = set()
+
+    # Wir schauen uns das erste Item mal ganz genau an, um die Struktur zu verstehen
+    first_key = list(raw_data.keys())[0]
+    print(f"[DEBUG] Struktur von {first_key}: {json.dumps(raw_data[first_key], indent=2)[:500]}...")
+
+    def find_category_strings(d):
+        if isinstance(d, dict):
+            for k, v in d.items():
+                # Wir suchen nach Schlüsseln, die 'texture' oder 'category' enthalten
+                if any(x in k.lower() for x in ["texture", "category", "hud", "slot"]):
+                    if isinstance(v, str) and "category" in v.lower():
+                        sample_values.add(f"{k} -> {v}")
+                find_category_strings(v)
+        elif isinstance(d, list):
+            for item in d:
+                find_category_strings(item)
+
+    find_category_strings(raw_data)
     
     print("\n" + "="*50)
-    print("START HUD CATEGORY DUMP (Kopiere die Liste hier drunter):")
-    sorted_huds = sorted(list(all_hud_values))
-    for val in sorted_huds:
-        print(f"HUD_VAL: {val}")
-    print("END HUD CATEGORY DUMP")
+    print("DEEP SEARCH RESULTS:")
+    for val in sorted(sample_values):
+        print(f"FOUND: {val}")
     print("="*50 + "\n")
-    
-    # Datei trotzdem schreiben (falls lokal ausgeführt)
-    with open("hud_categories_dump.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(sorted_huds))
-    # --- ENDE DUMP-TEIL ---
+    # --- ENDE DEEP SEARCH ---
 
     buckets_content = defaultdict(dict)
     
