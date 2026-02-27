@@ -349,7 +349,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "QLG-10 Smoke"
   },
   ["BP_QBZ95-1_QLG-10_Optic_UGL_Smoke_Blue"] = {
@@ -357,7 +357,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "QLG-10 Smoke"
   },
   ["BP_QBZ95-1_QLG-10_Optic_UGL_Smoke_Red"] = {
@@ -365,7 +365,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "QLG-10 Smoke"
   },
   ["BP_QBZ95-1_QLG-10_Rifle"] = {
@@ -397,7 +397,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "QLG-10 Smoke"
   },
   ["BP_QBZ95-1_QLG-10_UGL_Smoke_Blue"] = {
@@ -405,7 +405,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "QLG-10 Smoke"
   },
   ["BP_QBZ95-1_QLG-10_UGL_Smoke_Red"] = {
@@ -413,7 +413,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "QLG-10 Smoke"
   },
   ["BP_QBZ95-1_Tracer"] = {

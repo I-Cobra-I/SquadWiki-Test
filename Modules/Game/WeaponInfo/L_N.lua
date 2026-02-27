@@ -149,7 +149,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "L123A2 Smoke"
   },
   ["BP_L85A2AG36_LDS_UGL_Smoke_Blue"] = {
@@ -157,7 +157,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "L123A2 Smoke"
   },
   ["BP_L85A2AG36_LDS_UGL_Smoke_Red"] = {
@@ -165,7 +165,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "L123A2 Smoke"
   },
   ["BP_L85A2_1mag"] = {
@@ -381,7 +381,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203 Smoke"
   },
   ["BP_M16A2_Optic"] = {
@@ -413,7 +413,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203 Smoke"
   },
   ["BP_M16A4M203_M150_UGL_Smoke_Blue"] = {
@@ -421,7 +421,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203 Smoke"
   },
   ["BP_M16A4M203_M150_UGL_Smoke_Red"] = {
@@ -429,7 +429,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203 Smoke"
   },
   ["BP_M16A4M203_Rifle"] = {
@@ -469,7 +469,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203 Smoke"
   },
   ["BP_M16A4M203_UGL_Smoke_Blue"] = {
@@ -477,7 +477,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203 Smoke"
   },
   ["BP_M16A4M203_UGL_Smoke_Red"] = {
@@ -485,7 +485,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203 Smoke"
   },
   ["BP_M16A4_1mag"] = {
@@ -765,7 +765,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 6,
     ["totalAmmo"] = 6,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M320 Smoke"
   },
   ["BP_M38_DMR_Optic"] = {
@@ -805,7 +805,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M3 MAAWS"
   },
   ["BP_M3MAAWS_Tandem"] = {
@@ -885,7 +885,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203 Smoke"
   },
   ["BP_M4M203_UGL_Smoke_Blue"] = {
@@ -893,7 +893,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203 Smoke"
   },
   ["BP_M4M203_UGL_Smoke_Red"] = {
@@ -901,7 +901,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203 Smoke"
   },
   ["BP_M4_1Mag"] = {
@@ -1173,7 +1173,7 @@ return {
     ["magSize"] = 6,
     ["mags"] = 2,
     ["totalAmmo"] = 12,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "MKE MGL White"
   },
   ["BP_MP443"] = {
@@ -1309,7 +1309,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "AK-40GL Smoke"
   },
   ["BP_MPT76_AK40GL_A940_UGL_Smoke_Blue"] = {
@@ -1317,7 +1317,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "AK-40GL Smoke"
   },
   ["BP_MPT76_AK40GL_A940_UGL_Smoke_Red"] = {
@@ -1325,7 +1325,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "AK-40GL Smoke"
   },
   ["BP_MPT76_AK40GL_Rifle"] = {
@@ -1349,7 +1349,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "AK-40GL Smoke"
   },
   ["BP_MPT76_AK40GL_UGL_Smoke_Blue"] = {
@@ -1357,7 +1357,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "AK-40GL Smoke"
   },
   ["BP_MPT76_AK40GL_UGL_Smoke_Red"] = {
@@ -1365,7 +1365,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "AK-40GL Smoke"
   },
   ["BP_MPT76_Foregrip"] = {

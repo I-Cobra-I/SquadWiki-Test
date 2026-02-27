@@ -125,7 +125,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "SL40 Smoke"
   },
   ["BP_EF88_SL40_UGL_Smoke_Blue"] = {
@@ -133,7 +133,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "SL40 Smoke"
   },
   ["BP_EF88_SL40_UGL_Smoke_Red"] = {
@@ -141,7 +141,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "SL40 Smoke"
   },
   ["BP_EF88_Specter_Foregrip"] = {

@@ -117,7 +117,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 6,
     ["totalAmmo"] = 6,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK12GP25_UGL_HE_2rnds"] = {
@@ -149,7 +149,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 6,
     ["totalAmmo"] = 6,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK12GP25_UGL_Smoke"] = {
@@ -157,7 +157,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 6,
     ["totalAmmo"] = 6,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke Marker White"
   },
   ["BP_AK12_1P78Picatinny"] = {
@@ -253,7 +253,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74GP25_1P63_UGL_Smoke_Blue"] = {
@@ -261,7 +261,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74GP25_1P63_UGL_Smoke_Red"] = {
@@ -269,7 +269,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74GP25_EXPS_UGL_HE_10Rnds"] = {
@@ -285,7 +285,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74GP25_EXPS_UGL_Smoke_Blue"] = {
@@ -293,7 +293,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74GP25_EXPS_UGL_Smoke_Red"] = {
@@ -301,7 +301,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74GP25_Pro_Rifle"] = {
@@ -341,7 +341,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74GP25_UGL_Smoke_Blue"] = {
@@ -349,7 +349,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74GP25_UGL_Smoke_Red"] = {
@@ -357,7 +357,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74M"] = {
@@ -381,7 +381,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74MGP25_1P63_UGL_Smoke_Blue"] = {
@@ -389,7 +389,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74MGP25_1P63_UGL_Smoke_Red"] = {
@@ -397,7 +397,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74MGP25_1P78_UGL_HE"] = {
@@ -413,7 +413,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74MGP25_1P78_UGL_Smoke_Blue"] = {
@@ -421,7 +421,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74MGP25_1P78_UGL_Smoke_Red"] = {
@@ -429,7 +429,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AK74MGP25_Rifle_1P63"] = {
@@ -565,7 +565,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AKMGP25_UGL_Smoke_Blue"] = {
@@ -573,7 +573,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AKMGP25_UGL_Smoke_Red"] = {
@@ -581,7 +581,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "GP-25 Smoke"
   },
   ["BP_AKMS"] = {
@@ -901,7 +901,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203A1 Smoke"
   },
   ["BP_C7A2_M203A1_C79A2_UGL_Smoke_Blue"] = {
@@ -909,7 +909,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203A1 Smoke"
   },
   ["BP_C7A2_M203A1_C79A2_UGL_Smoke_Red"] = {
@@ -917,7 +917,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203A1 Smoke"
   },
   ["BP_C8A3_C79A2"] = {
@@ -981,7 +981,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203A1 Smoke"
   },
   ["BP_C8A3_M203_ET_UGL_Smoke_Blue"] = {
@@ -989,7 +989,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203A1 Smoke"
   },
   ["BP_C8A3_M203_ET_UGL_Smoke_Red"] = {
@@ -997,7 +997,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "M203A1 Smoke"
   },
   ["BP_C90CR"] = {

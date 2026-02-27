@@ -69,7 +69,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "HK79 Smoke"
   },
   ["BP_G3A3HK79_Optic_UGL_Smoke_Blue"] = {
@@ -77,7 +77,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "HK79 Smoke"
   },
   ["BP_G3A3HK79_Optic_UGL_Smoke_Red"] = {
@@ -85,7 +85,7 @@ return {
     ["magSize"] = 1,
     ["mags"] = 2,
     ["totalAmmo"] = 2,
-    ["wikiCategory"] = "Explosive",
+    ["wikiCategory"] = "Smoke",
     ["wikiPage"] = "HK79 Smoke"
   },
   ["BP_G3A3_1mag"] = {
