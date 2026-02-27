@@ -221,7 +221,7 @@ return {
     ["hudTag"] = "inventory_category_medkit",
     ["magSize"] = nil,
     ["mags"] = nil,
-    ["totalAmmo"] = 1,
+    ["totalAmmo"] = nil,
     ["wikiCategory"] = "Medical",
     ["wikiPage"] = "Medical Kit"
   },
@@ -230,7 +230,7 @@ return {
     ["hudTag"] = "inventory_category_medkit",
     ["magSize"] = nil,
     ["mags"] = nil,
-    ["totalAmmo"] = 1,
+    ["totalAmmo"] = nil,
     ["wikiCategory"] = "Medical",
     ["wikiPage"] = "Medical Kit"
   },
@@ -239,7 +239,7 @@ return {
     ["hudTag"] = "inventory_category_medkit",
     ["magSize"] = nil,
     ["mags"] = nil,
-    ["totalAmmo"] = 1,
+    ["totalAmmo"] = nil,
     ["wikiCategory"] = "Medical",
     ["wikiPage"] = "Medical Kit"
   },
@@ -248,7 +248,7 @@ return {
     ["hudTag"] = "inventory_category_medkit",
     ["magSize"] = nil,
     ["mags"] = nil,
-    ["totalAmmo"] = 1,
+    ["totalAmmo"] = nil,
     ["wikiCategory"] = "Medical",
     ["wikiPage"] = "Medical Kit"
   },
@@ -257,7 +257,7 @@ return {
     ["hudTag"] = "inventory_category_medkit",
     ["magSize"] = nil,
     ["mags"] = nil,
-    ["totalAmmo"] = 1,
+    ["totalAmmo"] = nil,
     ["wikiCategory"] = "Medical",
     ["wikiPage"] = "Medical Kit"
   },
@@ -266,7 +266,7 @@ return {
     ["hudTag"] = "inventory_category_medkit",
     ["magSize"] = nil,
     ["mags"] = nil,
-    ["totalAmmo"] = 1,
+    ["totalAmmo"] = nil,
     ["wikiCategory"] = "Medical",
     ["wikiPage"] = "Medical Kit"
   },
@@ -275,7 +275,7 @@ return {
     ["hudTag"] = "inventory_category_medkit",
     ["magSize"] = nil,
     ["mags"] = nil,
-    ["totalAmmo"] = 1,
+    ["totalAmmo"] = nil,
     ["wikiCategory"] = "Medical",
     ["wikiPage"] = "Medical Kit"
   },
@@ -284,7 +284,7 @@ return {
     ["hudTag"] = "inventory_category_medkit",
     ["magSize"] = nil,
     ["mags"] = nil,
-    ["totalAmmo"] = 1,
+    ["totalAmmo"] = nil,
     ["wikiCategory"] = "Medical",
     ["wikiPage"] = "Medical Kit"
   },
