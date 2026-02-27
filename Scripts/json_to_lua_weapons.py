@@ -42,56 +42,48 @@ def get_ammo_info(item_data, cat, hud_str):
     
     if not isinstance(w_info, dict): w_info = {}
 
-    # Logik A: Waffen & Werfer (Magazine x Kapazität)
-    if cat in ["Primary", "Secondary"] or "grenadelauncher" in hud_str:
-        mags = w_info.get("numberOfMags", 0)
-        size = w_info.get("magSize", 0)
-    # Logik B: Wurfgegenstände & Equipment (Reine Stückzahl)
-    else:
-        # Hier ist 1 der sicherere Default, wenn das Feld fehlt
-        mags = w_info.get("numberOfMags", 1)
-        size = w_info.get("magSize", 1)
+    # Diese Items erhalten KEINE Mengenanzeige (nil)
+    no_count_huds = [
+        "inventory_category_knife", "inventory_category_binoculars", 
+        "inventory_category_shovel", "inventory_category_detonator",
+        "inventory_category_rally", "inventory_category_repair"
+    ]
 
-    return mags, size, (mags * size)
+    if hud_str in no_count_huds or cat == "Equipment":
+        return None, None, None
+
+    mags = w_info.get("numberOfMags", 1)
+    size = w_info.get("magSize", 1)
+    
+    # Waffen liefern Mags + Total, andere nur Total
+    if cat in ["Primary", "Secondary"]:
+        return mags, size, (mags * size)
+    else:
+        return None, None, (mags * size)
 
 def assign_wiki_data(item_key, item_data):
-    # 1. Namen und HUD-Texture holen
     d_name = item_data.get("displayName", item_key)
     name_upper = d_name.upper()
     
+    # HUD Texture Pfad finden
     hud = item_data.get("HUDTexture")
     if not hud and "inventoryInfo" in item_data:
         hud = item_data["inventoryInfo"].get("HUDTexture")
     hud_str = str(hud).strip().lower()
 
-    # 2. Kategorie-Logik mit "Smoke"-Priorität
-    # Wir prüfen hier ALLES: den HUD-String, den Display-Namen und den technischen Key
-    is_smoke = (
-        "smoke" in hud_str or 
-        "smoke" in name_upper or 
-        "smoke" in item_key.lower()
-    )
-
-    if is_smoke:
+    # Rauch-Priorität
+    if "smoke" in hud_str or "smoke" in name_upper or "smoke" in item_key.lower():
         cat = "Smoke"
     else:
-        # Falls kein Rauch, nutze das normale Mapping oder Default "Equipment"
         cat = HUD_MAP.get(hud_str, "Equipment")
-        
-        # Sicherheits-Check: Falls es als Explosive gemappt wurde, aber "Smoke" im Namen hat
-        # (doppelt hält besser für Fälle wie den MKE MGL)
-        if "SMOKE" in name_upper and cat == "Explosive":
-            cat = "Smoke"
 
-    # 3. Munition berechnen
     mags, size, total = get_ammo_info(item_data, cat, hud_str)
-    
-    # 4. Wiki-Seite (Link)
     wiki_page = re.split(r'\s*[\+\(\[/]', d_name)[0].strip()
 
     return {
         "displayName": d_name,
         "wikiCategory": cat,
+        "hudTag": hud_str,
         "wikiPage": wiki_page,
         "mags": mags,
         "magSize": size,
@@ -101,9 +93,7 @@ def assign_wiki_data(item_key, item_data):
 def to_lua(o, ind=0):
     sp = "  " * ind
     if isinstance(o, dict):
-        parts = []
-        for k, v in sorted(o.items()):
-            parts.append(f'{sp}  ["{k}"] = {to_lua(v, ind+1)}')
+        parts = [f'{sp}  ["{k}"] = {to_lua(v, ind+1)}' for k, v in sorted(o.items())]
         return "{\n" + ",\n".join(parts) + "\n" + sp + "}"
     if isinstance(o, str): return f'"{o}"'
     if o is None: return "nil"
@@ -119,26 +109,10 @@ def get_bucket(key):
 def main():
     if not os.path.exists(DATA_FILE): return
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    
     with open(DATA_FILE, "rb") as f:
         raw = f.read()
         if raw.startswith(b"\xef\xbb\xbf"): raw = raw[3:]
         raw_data = json.loads(raw.decode("utf-8"))
-
-    # Optionaler Deep Search zur Kontrolle in den Logs
-    sample_values = set()
-    def find_category_strings(d):
-        if isinstance(d, dict):
-            for k, v in d.items():
-                if any(x in k.lower() for x in ["texture", "category", "hud", "slot"]):
-                    if isinstance(v, str) and "category" in v.lower():
-                        sample_values.add(f"{k} -> {v}")
-                find_category_strings(v)
-        elif isinstance(d, list):
-            for item in d: find_category_strings(item)
-
-    find_category_strings(raw_data)
-    print("\nDEEP SEARCH RESULTS:\n" + "\n".join(sorted(sample_values)) + "\n")
 
     buckets_content = defaultdict(dict)
     for k, v in raw_data.items():

@@ -9,6 +9,19 @@ local GROUPS = {
     { id = "Specialist",          icon = "Icon_Specialist.png" }
 }
 
+-- Definition der Bezeichnungen basierend auf dem hudTag
+local suffixMap = {
+    ["inventory_category_rifle"] = "Mags",
+    ["inventory_category_machinegun"] = "Mags",
+    ["inventory_category_pistol"] = "Mags",
+    ["inventory_category_fraggrenade"] = "Grenades",
+    ["inventory_category_smokegrenade"] = "Smokes",
+    ["inventory_category_explosives"] = "Blocks",
+    ["inventory_category_at_rocket"] = "Rounds",
+    ["inventory_category_grenadelauncher"] = "Rounds",
+    ["inventory_category_fielddressing"] = "Bandages"
+}
+
 -- Hilfsfunktion: Teilt Items basierend auf der wikiCategory (vom Python-Skript) zu
 local function getItemColumn(itemKey, count)
     local WD = require('Module:Game/WeaponData')
@@ -129,6 +142,22 @@ function p.renderFaction(frame)
     end
 
     return fullHtml
+
+    function p.formatAmmo(item)
+        -- Wenn totalAmmo nil ist (Messer etc.), geben wir nichts aus
+        if not item.totalAmmo then return "" end
+
+        local suffix = suffixMap[item.hudTag] or ""
+    
+        -- Sonderfall für Waffen: Zeige "Mags (Total)"
+        if item.mags and item.mags > 0 then
+            return string.format("%d (%d) %s", item.mags, item.totalAmmo, suffix)
+        end
+    
+        -- Standardfall: "Anzahl Bezeichnung"
+        return string.format("%d %s", item.totalAmmo, suffix)
+    end
+
 end
 
 return p
