@@ -46,7 +46,8 @@ def get_ammo_info(item_data, cat, hud_str):
     no_count_huds = [
         "inventory_category_knife", "inventory_category_binoculars", 
         "inventory_category_shovel", "inventory_category_detonator",
-        "inventory_category_rally", "inventory_category_repair"
+        "inventory_category_rally", "inventory_category_repair",
+        "inventory_category_medkit"
     ]
 
     if hud_str in no_count_huds or cat == "Equipment":
