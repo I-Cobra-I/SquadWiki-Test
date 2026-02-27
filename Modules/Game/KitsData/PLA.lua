@@ -6,21 +6,22 @@ return {
     ["specifics"] = "Use your bandage to stabilise your bleeding ({Key0}) or patch other players ({Key1})",
     ["uiIcon"] = "T_role_recruit",
     ["uiWeapon"] = "T_QBZ191",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_IronSights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_SL_01"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -28,61 +29,62 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_QBZ191_Grippod",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_IronSights_Grippod"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_SL_02"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -90,61 +92,62 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_QBZ191_Grippod_Holo",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_Holo_Grippod"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_SL_03"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -152,61 +155,62 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_QBZ191_Grippod_QMK171A",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_Optic_QMK171A_Grippod"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_SL_06"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -214,56 +218,57 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_QBZ192_Grippod_QMK171A_Suppressor",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ192_Optic_QMK171A_Grippod_Suppressor"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_SLCrewman_01"] = {
     ["displayName"] = "LEAD CREWMAN",
@@ -271,51 +276,52 @@ return {
     ["specifics"] = "Crewmen are equipped with a repair kit to do hasty in-field repairs.",
     ["uiIcon"] = "T_role_crewman_squadleader",
     ["uiWeapon"] = "T_QBZ192_Grippod",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Heavy",
     ["items"] = {
       ["BP_QBZ192_IronSights_Grippod"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_SLPilot_01"] = {
     ["displayName"] = "LEAD PILOT",
@@ -323,51 +329,52 @@ return {
     ["specifics"] = "Pilot are equipped with smoke grenades to aid in signalling.",
     ["uiIcon"] = "T_role_pilot_squadleader",
     ["uiWeapon"] = "QCW05_Holo",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Helicopter",
     ["items"] = {
       ["BP_QCW05_Holo"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_DSF161Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Medic_01"] = {
     ["displayName"] = "MEDIC",
@@ -375,61 +382,62 @@ return {
     ["specifics"] = "Use your Medic Bag ({Key0}) to heal others, and Field Dressings to revive and stop their bleeding.",
     ["uiIcon"] = "T_role_medic",
     ["uiWeapon"] = "T_QBZ191",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_IronSights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing_Medic"] = {
-        ["maxAllowed"] = 9,
-        ["minOnSpawn"] = 3,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_MedicalKit_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Medic_02"] = {
     ["displayName"] = "MEDIC",
@@ -437,56 +445,57 @@ return {
     ["specifics"] = "Use your Medic Bag ({Key0}) to heal others, and Field Dressings to revive and stop their bleeding.",
     ["uiIcon"] = "T_role_medic",
     ["uiWeapon"] = "T_QBZ191_Holo",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_Holo"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing_Medic"] = {
-        ["maxAllowed"] = 9,
-        ["minOnSpawn"] = 3,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_MedicalKit_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Medic_03"] = {
     ["displayName"] = "MEDIC",
@@ -494,56 +503,57 @@ return {
     ["specifics"] = "Use your Medic Bag ({Key0}) to heal others, and Field Dressings to revive and stop their bleeding.",
     ["uiIcon"] = "T_role_medic",
     ["uiWeapon"] = "T_QBZ191_QMK171A",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_Optic_QMK171A"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing_Medic"] = {
-        ["maxAllowed"] = 9,
-        ["minOnSpawn"] = 3,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_MedicalKit_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Rifleman_01"] = {
     ["displayName"] = "RIFLEMAN",
@@ -551,51 +561,52 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_QBZ191",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_IronSights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Rifleman_02"] = {
     ["displayName"] = "RIFLEMAN",
@@ -603,51 +614,52 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_QBZ191_Holo",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_Holo"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Rifleman_03"] = {
     ["displayName"] = "RIFLEMAN",
@@ -655,46 +667,47 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman_scoped",
     ["uiWeapon"] = "T_QBZ191_QMK171A",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_Optic_QMK171A"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Rifleman_04"] = {
     ["displayName"] = "RIFLEMAN",
@@ -702,46 +715,47 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman_scoped",
     ["uiWeapon"] = "T_QBZ192_Grippod",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ192_IronSights_Grippod"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Rifleman_05"] = {
     ["displayName"] = "RIFLEMAN",
@@ -749,46 +763,47 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman_scoped",
     ["uiWeapon"] = "T_QBZ192_Grippod_Holo",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ192_Holo_Grippod"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Rifleman_06"] = {
     ["displayName"] = "RIFLEMAN",
@@ -796,46 +811,47 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman_scoped",
     ["uiWeapon"] = "T_QBZ192_Grippod_QMK171A",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ192_Optic_QMK171A_Grippod"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Raider_01"] = {
     ["displayName"] = "RAIDER",
@@ -843,51 +859,52 @@ return {
     ["specifics"] = "Use your bandage to stabilise your bleeding ({Key0}) or patch other players ({Key1})",
     ["uiIcon"] = "T_role_raider",
     ["uiWeapon"] = "QCW05_Suppressed",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QCW05_IronSights_Suppressor"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Raider_02"] = {
     ["displayName"] = "RAIDER",
@@ -895,51 +912,52 @@ return {
     ["specifics"] = "Use your bandage to stabilise your bleeding ({Key0}) or patch other players ({Key1})",
     ["uiIcon"] = "T_role_raider",
     ["uiWeapon"] = "QCW05_Holo_Suppressed",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QCW05_Holo_Suppressor"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_AR_01"] = {
     ["displayName"] = "AUTOMATIC RIFLEMAN",
@@ -947,51 +965,52 @@ return {
     ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
     ["uiIcon"] = "T_role_automaticrifleman",
     ["uiWeapon"] = "QJB201_Box",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QJB201_IronSights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_AR_02"] = {
     ["displayName"] = "AUTOMATIC RIFLEMAN",
@@ -999,46 +1018,47 @@ return {
     ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
     ["uiIcon"] = "T_role_automaticrifleman_optic",
     ["uiWeapon"] = "QJB201_Box_Optic",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QJB201_Optic"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_LAT_01"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
@@ -1046,51 +1066,52 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_lightantitank",
     ["uiWeapon"] = "T_QBZ191",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_IronSights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_DZJ-08"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_LAT_02"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
@@ -1098,46 +1119,47 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_lightantitank",
     ["uiWeapon"] = "T_QBZ191_Holo",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_Holo"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_DZJ-08"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_LAT_03"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
@@ -1145,46 +1167,47 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_lightantitank",
     ["uiWeapon"] = "T_QBZ191_QMK171A",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_Optic_QMK171A"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_DZJ-08"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Marksman_01"] = {
     ["displayName"] = "MARKSMAN",
@@ -1192,51 +1215,52 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_designatedmarksman",
     ["uiWeapon"] = "T_QBU191_QMK191",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBU-191_DMR_Optic_QMK-191"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Marksman_02"] = {
     ["displayName"] = "MARKSMAN",
@@ -1244,46 +1268,47 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_designatedmarksman",
     ["uiWeapon"] = "T_QBU191_QMK191_Suppressor",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBU-191_DMR_Optic_QMK-191_Suppressor"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Grenadier_01"] = {
     ["displayName"] = "GRENADIER",
@@ -1291,46 +1316,47 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_grenadier",
     ["uiWeapon"] = "T_QLZ87_HE",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_Holo_Grippod"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_QLZ87_AGL_HEDP_IronSights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Grenadier_02"] = {
     ["displayName"] = "GRENADIER",
@@ -1338,41 +1364,42 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_grenadier",
     ["uiWeapon"] = "T_QLZ87_Optic_HE",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ191_Optic_QMK171A"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_QLZ87_AGL_HEDP_Optic"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_MachineGunner_01"] = {
     ["displayName"] = "MACHINE GUNNER",
@@ -1380,51 +1407,52 @@ return {
     ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
     ["uiIcon"] = "T_role_machinegunner",
     ["uiWeapon"] = "QJY201",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QJY-201_IronSights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_MachineGunner_02"] = {
     ["displayName"] = "MACHINE GUNNER",
@@ -1432,46 +1460,47 @@ return {
     ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
     ["uiIcon"] = "T_role_machinegunner",
     ["uiWeapon"] = "QJY201_Optic",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QJY-201_Optics"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_HAT_01"] = {
     ["displayName"] = "HEAVY ANTI-TANK",
@@ -1479,51 +1508,52 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_heavyantitank",
     ["uiWeapon"] = "pf98_heat",
-    ["baseTeamAvailability"] = 1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ192_IronSights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PF-98_Tandem_2mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PF-98_HE_2mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_HAT_02"] = {
     ["displayName"] = "HEAVY ANTI-TANK",
@@ -1531,51 +1561,52 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_heavyantitank",
     ["uiWeapon"] = "pf98_heat",
-    ["baseTeamAvailability"] = 1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ192_Holo"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PF-98_Tandem"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PF-98_HE"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Engineer_01"] = {
     ["displayName"] = "COMBAT ENGINEER",
@@ -1583,71 +1614,72 @@ return {
     ["specifics"] = "You can deploy up to a maximum of 10 Demolition Charges, 10 Sandbags, 10 Razor Wire and 10 Anti-Tank Mines in the World at the same time.",
     ["uiIcon"] = "T_role_engineer",
     ["uiWeapon"] = "T_QBZ192_Grippod_Holo",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ192_Holo_Grippod"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_TNT_Explosive_Timed"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Type72_Antitank_Mine"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel_Engineer"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Sandbag_PLA"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Infantry_Razorwire"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Crewman_01"] = {
     ["displayName"] = "CREWMAN",
@@ -1655,51 +1687,52 @@ return {
     ["specifics"] = "Crewmen are equipped with a repair kit to do hasty in-field repairs.",
     ["uiIcon"] = "T_role_crewman",
     ["uiWeapon"] = "T_QBZ192",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Heavy",
     ["items"] = {
       ["BP_QBZ192_IronSights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Pilot_01"] = {
     ["displayName"] = "PILOT",
@@ -1707,46 +1740,47 @@ return {
     ["specifics"] = "Pilot are equipped with smoke grenades to aid in signalling.",
     ["uiIcon"] = "T_role_pilot",
     ["uiWeapon"] = "QCW05",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Helicopter",
     ["items"] = {
       ["BP_QCW05_IronSights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_DSF161Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   },
   ["PLA_Scout_01"] = {
     ["displayName"] = "SCOUT",
@@ -1754,50 +1788,51 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_scout",
     ["uiWeapon"] = "T_QBZ192_Grippod_QMK171A_Suppressor",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_QBZ192_Optic_QMK171A_Grippod_Suppressor"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QSZ-92"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_QNL-95_Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Type86p_Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_DSF161Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_PLA_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_WJQ308_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "PLA" }
+    ["factions"] = { "PLA" },
+    ["group"] = "Specialist"
   }
 }

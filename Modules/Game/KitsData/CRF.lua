@@ -6,21 +6,22 @@ return {
     ["specifics"] = "Use your bandage to stabilise your bleeding ({Key0}) or patch other players ({Key1})",
     ["uiIcon"] = "T_role_recruit",
     ["uiWeapon"] = "mosin_carbine",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_Mosin_M38Carbine_1Mag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_SL_01"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -28,61 +29,62 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_leeenfieldno4",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_LeeEnfieldNo4"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G18_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EquippableRallyPoint_WPMC_Cheap"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_SL_02"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -90,61 +92,62 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_m14_m68",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M14_M68_M1A"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G18_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EquippableRallyPoint_WPMC_Cheap"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_SL_03"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -152,51 +155,52 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_M16A2_M203",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M16A2M203_Rifle"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9A1"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M16A2M203_UGL_HE_3mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M16A2M203_UGL_Smoke"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EquippableRallyPoint_WPMC_Cheap"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_SL_04"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -204,61 +208,62 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_M1Carbine",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M1Carbine_Ironsights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G18_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EquippableRallyPoint_WPMC_Cheap"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_SL_05"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -266,61 +271,62 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_M4_Wormpool_T800",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M4_Wormpool_T800_Semi"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EquippableRallyPoint_WPMC_Cheap"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_SL_06"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -328,61 +334,62 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_SKSTazco_M150",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_SKSTazco_M150"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G18_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EquippableRallyPoint_WPMC_Cheap"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_SL_07"] = {
     ["displayName"] = "SQUAD LEADER",
@@ -390,61 +397,62 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "c7a2_c79a2_foregrip",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_C7A2_C79A2_Foregrip"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Blue"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EquippableRallyPoint_WPMC_Cheap"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Crewman_01"] = {
     ["displayName"] = "CREWMAN",
@@ -452,46 +460,47 @@ return {
     ["specifics"] = "Crewmen are equipped with a repair kit to do hasty in-field repairs.",
     ["uiIcon"] = "T_role_crewman",
     ["uiWeapon"] = "T_G17_ExtendedMag",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Heavy",
     ["items"] = {
       ["BP_G17_ExtendedMag_33rd_4Mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_SLCrewman_01"] = {
     ["displayName"] = "LEAD CREWMAN",
@@ -499,51 +508,52 @@ return {
     ["specifics"] = "Crewmen are equipped with a repair kit to do hasty in-field repairs.",
     ["uiIcon"] = "T_role_crewman_squadleader",
     ["uiWeapon"] = "M4_Classic",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Heavy",
     ["items"] = {
       ["BP_M4_Classic_Semi"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_WPMC_Cheap"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Medic_01"] = {
     ["displayName"] = "MEDIC",
@@ -551,61 +561,62 @@ return {
     ["specifics"] = "Use your Medic Bag ({Key0}) to heal others, and Field Dressings to revive and stop their bleeding.",
     ["uiIcon"] = "T_role_medic",
     ["uiWeapon"] = "T_SKSTazco_T800",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_SKSTazco_T800"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9A1"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing_Medic"] = {
-        ["maxAllowed"] = 9,
-        ["minOnSpawn"] = 3,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_MedicalKit"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Medic_02"] = {
     ["displayName"] = "MEDIC",
@@ -613,61 +624,62 @@ return {
     ["specifics"] = "Use your Medic Bag ({Key0}) to heal others, and Field Dressings to revive and stop their bleeding.",
     ["uiIcon"] = "T_role_medic",
     ["uiWeapon"] = "T_M4_SimonOffense_EXPS_Foregrip",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M4_SimonOffense_EXPS"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Red"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing_Medic"] = {
-        ["maxAllowed"] = 9,
-        ["minOnSpawn"] = 3,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_MedicalKit"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Rifleman_01"] = {
     ["displayName"] = "RIFLEMAN",
@@ -675,56 +687,57 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_leeenfieldno4",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_LeeEnfieldNo4"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AKMBayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_WPMC"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Rifleman_02"] = {
     ["displayName"] = "RIFLEMAN",
@@ -732,56 +745,57 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "mosin_carbine",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_Mosin_M38Carbine"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_WPMC"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Rifleman_03"] = {
     ["displayName"] = "RIFLEMAN",
@@ -789,56 +803,57 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_m14",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M14_M1A"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9A1"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_WPMC"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Rifleman_04"] = {
     ["displayName"] = "RIFLEMAN",
@@ -846,56 +861,57 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_SKSTazco_Ironsight",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_SKSTazco_Ironsight"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_WPMC"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Rifleman_05"] = {
     ["displayName"] = "RIFLEMAN",
@@ -903,56 +919,57 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_M1Carbine",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M1Carbine_Ironsights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_WPMC"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Rifleman_06"] = {
     ["displayName"] = "RIFLEMAN",
@@ -960,56 +977,57 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_M4_Wormpool_T800",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M4_Wormpool_T800_Semi"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9A1"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_WPMC"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Rifleman_07"] = {
     ["displayName"] = "RIFLEMAN",
@@ -1017,51 +1035,52 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_M16_Wormpool_M150_Foregrip",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M16_Wormpool_M150_Semi"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_WPMC"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Rifleman_08"] = {
     ["displayName"] = "RIFLEMAN",
@@ -1069,51 +1088,52 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_SKSTazco_M150",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_SKSTazco_M150"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_BrowningHP"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_WPMC"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Sapper_01"] = {
     ["displayName"] = "SAPPER",
@@ -1121,56 +1141,57 @@ return {
     ["specifics"] = "You can deploy up to a maximum of 5 IEDs, 10 TNT and 10 Anti-Tank Mines in the World at the same time.",
     ["uiIcon"] = "T_role_sapper",
     ["uiWeapon"] = "T_M1Carbine",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M1Carbine_Ironsights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_BrowningHP"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_GenericEquippableItem_Deployable_Bangerite"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M15_Antitank_Mine"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool_Engineer"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Sapper_02"] = {
     ["displayName"] = "SAPPER",
@@ -1178,56 +1199,57 @@ return {
     ["specifics"] = "You can deploy up to a maximum of 5 IEDs, 10 TNT and 10 Anti-Tank Mines in the World at the same time.",
     ["uiIcon"] = "T_role_sapper",
     ["uiWeapon"] = "M16A4",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M16A4_Semi"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_BrowningHP"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_GenericEquippableItem_Deployable_Bangerite"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M15_Antitank_Mine"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool_Engineer"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Sniper_01"] = {
     ["displayName"] = "SNIPER",
@@ -1235,51 +1257,52 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_sniper",
     ["uiWeapon"] = "C14",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_TW_338_SWS"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17_5Mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Raider_01"] = {
     ["displayName"] = "RAIDER",
@@ -1287,51 +1310,52 @@ return {
     ["specifics"] = "",
     ["uiIcon"] = "T_role_raider",
     ["uiWeapon"] = "T_M4_SimonOffense_EXPS_Foregrip",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M4_SimonOffense_EXPS"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G18_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Raider_02"] = {
     ["displayName"] = "RAIDER",
@@ -1339,51 +1363,52 @@ return {
     ["specifics"] = "",
     ["uiIcon"] = "T_role_raider",
     ["uiWeapon"] = "C8A3_Eotech_Foregrip",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_C8A3_ET552_Foregrip"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G18_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Scout_01"] = {
     ["displayName"] = "SCOUT",
@@ -1391,61 +1416,62 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_scout",
     ["uiWeapon"] = "T_M16A1_3x20",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M16A2_Optic_Semi"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Deployable_DroneItem_Recoverable"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Smartphone_FPV"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_AR_02"] = {
     ["displayName"] = "AUTOMATIC RIFLEMAN",
@@ -1453,51 +1479,52 @@ return {
     ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
     ["uiIcon"] = "T_role_automaticrifleman",
     ["uiWeapon"] = "T_C9A2_Irons",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_C9A2"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9A1"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Grenadier_01"] = {
     ["displayName"] = "GRENADIER",
@@ -1505,51 +1532,52 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_grenadier",
     ["uiWeapon"] = "C8A3M203EoTech",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_C8A3_ET552_M203"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9A1"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_C8A3_M203_ET_UGL_HE"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_C8A3_M203_ET_UGL_Smoke"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Grenadier_02"] = {
     ["displayName"] = "GRENADIER",
@@ -1557,51 +1585,52 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_grenadier",
     ["uiWeapon"] = "T_M16A2_M203",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M16A2M203_Rifle"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M16A2M203_UGL_HE"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M16A2M203_UGL_Smoke"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_LAT_01"] = {
     ["displayName"] = "RIFLEMAN ANTI-TANK",
@@ -1609,56 +1638,57 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_lightantitank",
     ["uiWeapon"] = "T_M1Carbine",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M1Carbine_Ironsights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M72A7_2Rounds"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_LAT_02"] = {
     ["displayName"] = "RIFLEMAN ANTI-TANK",
@@ -1666,51 +1696,52 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_lightantitank",
     ["uiWeapon"] = "T_M16_Wormpool_M150_Foregrip",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M16_Wormpool_M150_Semi"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9A1"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M72A7"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Marksman_01"] = {
     ["displayName"] = "MARKSMAN",
@@ -1718,51 +1749,52 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_designatedmarksman",
     ["uiWeapon"] = "T_leeenfieldno4_sniper",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_LeeEnfieldNo4_Sniper"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G18_ExtendedMag_33rd"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Marksman_02"] = {
     ["displayName"] = "MARKSMAN",
@@ -1770,51 +1802,52 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_designatedmarksman",
     ["uiWeapon"] = "T_M16_Wormpool_Meupold_Bipod",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M16_Wormpool_Meupold_Semi"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17_ExtendedMag_33rd_4Mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_Marksman_03"] = {
     ["displayName"] = "MARKSMAN",
@@ -1822,51 +1855,52 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_designatedmarksman",
     ["uiWeapon"] = "T_m21_scope",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M21_Meupold"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_G17"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_MachineGunner_01"] = {
     ["displayName"] = "MACHINE GUNNER",
@@ -1874,51 +1908,52 @@ return {
     ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
     ["uiIcon"] = "T_role_machinegunner",
     ["uiWeapon"] = "mag58",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_C6"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M1Carbine_Ironsights"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M67Frag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_HAT_01"] = {
     ["displayName"] = "HEAVY ANTI-TANK",
@@ -1926,56 +1961,57 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_heavyantitank",
     ["uiWeapon"] = "T_SKSTazco_Ironsight",
-    ["baseTeamAvailability"] = 1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_SKSTazco_Ironsight"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_TT33"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_CarlGustavM2_FFV751_No78Mk1"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_CarlGustavM2_FFV551_No78Mk1"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   },
   ["CRF_HAT_02"] = {
     ["displayName"] = "HEAVY ANTI-TANK",
@@ -1983,50 +2019,51 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_heavyantitank",
     ["uiWeapon"] = "M4_Classic_M68",
-    ["baseTeamAvailability"] = 1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_M4_Classic_M68_Semi"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9A1"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M9Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_M3MAAWS_Heat_3mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_M18Smoke_Parent"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_EntrenchingTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_US_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "CRF" }
+    ["factions"] = { "CRF" },
+    ["group"] = "Specialist"
   }
 }

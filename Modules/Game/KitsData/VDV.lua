@@ -6,21 +6,22 @@ return {
     ["specifics"] = "Use your bandage to stabilise your bleeding ({Key0}) or patch other players ({Key1})",
     ["uiIcon"] = "T_role_recruit",
     ["uiWeapon"] = "T_ak12",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12_1mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_SL_01"] = {
     ["displayName"] = "SENIOR RIFLEMAN",
@@ -28,56 +29,57 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_ak12gp25",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12GP25_Rifle"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_AK12GP25_UGL_HE_2rnds"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK12GP25_UGL_Smoke"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_RGF"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_SL_02"] = {
     ["displayName"] = "SENIOR RIFLEMAN",
@@ -85,56 +87,57 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_ak12gp25_reddot",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12GP25_Rifle_Reddot"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_AK12GP25_UGL_Reddot_HE_2rnds"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK12GP25_UGL_Reddot_Smoke"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_RGF"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_SL_03"] = {
     ["displayName"] = "SENIOR RIFLEMAN",
@@ -142,56 +145,57 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_ak12gp25_1p78",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12GP25_Rifle_1P78Picatinny"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_AK12GP25_UGL_1P78Picatinny_HE_2rnds"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK12GP25_UGL_1P78Picatinny_Smoke"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_RGF"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_SL_04"] = {
     ["displayName"] = "SENIOR RIFLEMAN",
@@ -199,51 +203,52 @@ return {
     ["specifics"] = "Use the Squad Leader Menu ({Key0}) to place a Rally Points or FOB Deployables",
     ["uiIcon"] = "T_role_squadleader",
     ["uiWeapon"] = "T_asval_okp7",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_ASVAL_OKP-7"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_RGF"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_SLCrewman_01"] = {
     ["displayName"] = "LEAD CREWMAN",
@@ -251,51 +256,52 @@ return {
     ["specifics"] = "Crewmen are equipped with a repair kit to do hasty in-field repairs.",
     ["uiIcon"] = "T_role_crewman_squadleader",
     ["uiWeapon"] = "T_ak12",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Heavy",
     ["items"] = {
       ["BP_AK12_4mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_RGF"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_SLPilot_01"] = {
     ["displayName"] = "LEAD PILOT",
@@ -303,51 +309,52 @@ return {
     ["specifics"] = "Pilot are equipped with smoke grenades to aid in signalling.",
     ["uiIcon"] = "T_role_pilot_squadleader",
     ["uiWeapon"] = "T_ak12",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Helicopter",
     ["items"] = {
       ["BP_AKS74U_RUS_4mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke_Orange"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_EquippableRallyPoint_RGF"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Medic_01"] = {
     ["displayName"] = "MEDIC",
@@ -355,61 +362,62 @@ return {
     ["specifics"] = "Use your Medic Bag ({Key0}) to heal others, and Field Dressings to revive and stop their bleeding.",
     ["uiIcon"] = "T_role_medic",
     ["uiWeapon"] = "T_ak12_reddot",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12_Reddot"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke_Orange"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing_Medic"] = {
-        ["maxAllowed"] = 9,
-        ["minOnSpawn"] = 3,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_MedicalKit_Russia"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Medic_02"] = {
     ["displayName"] = "MEDIC",
@@ -417,51 +425,52 @@ return {
     ["specifics"] = "Use your Medic Bag ({Key0}) to heal others, and Field Dressings to revive and stop their bleeding.",
     ["uiIcon"] = "T_role_medic",
     ["uiWeapon"] = "T_ak12_1p78",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12_1P78Picatinny"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke_Orange"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing_Medic"] = {
-        ["maxAllowed"] = 9,
-        ["minOnSpawn"] = 3,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_MedicalKit_Russia"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Rifleman_01"] = {
     ["displayName"] = "RIFLEMAN",
@@ -469,51 +478,52 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "ak74",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AKS74_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_RGF"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Rifleman_02"] = {
     ["displayName"] = "RIFLEMAN",
@@ -521,51 +531,52 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_ak12_foregrip",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12_Foregrip"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_RGF"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Rifleman_03"] = {
     ["displayName"] = "RIFLEMAN",
@@ -573,51 +584,52 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_ak12_foregrip_reddot",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12_Foregrip_Reddot"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_RGF"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Rifleman_04"] = {
     ["displayName"] = "RIFLEMAN",
@@ -625,46 +637,47 @@ return {
     ["specifics"] = "Riflemen have ammo bags which can be used to resupply your team.",
     ["uiIcon"] = "T_role_rifleman",
     ["uiWeapon"] = "T_ak12_foregrip_1p78",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12_Foregrip_1P78Picatinny"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Ammobag_RGF"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Raider_01"] = {
     ["displayName"] = "RAIDER",
@@ -672,56 +685,57 @@ return {
     ["specifics"] = "Use your bandage to stabilise your bleeding ({Key0}) or patch other players ({Key1})",
     ["uiIcon"] = "T_role_raider",
     ["uiWeapon"] = "T_asval_okp7",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_ASVAL_OKP-7"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443_5Mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RGD5Frag"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_AR_01"] = {
     ["displayName"] = "AUTOMATIC RIFLEMAN",
@@ -729,51 +743,52 @@ return {
     ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
     ["uiIcon"] = "T_role_automaticrifleman",
     ["uiWeapon"] = "rpk74",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_RPK74"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_AR_02"] = {
     ["displayName"] = "AUTOMATIC RIFLEMAN",
@@ -781,46 +796,47 @@ return {
     ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
     ["uiIcon"] = "T_role_automaticrifleman",
     ["uiWeapon"] = "rpk74m_1p78",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_RPK74M_1P78"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Grenadier_01"] = {
     ["displayName"] = "GRENADIER",
@@ -828,46 +844,47 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_grenadier",
     ["uiWeapon"] = "T_ak12gp25_reddot",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12GP25_Rifle_Reddot"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_AK12GP25_UGL_Reddot_HE"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK12GP25_UGL_Reddot_Smoke"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Grenadier_02"] = {
     ["displayName"] = "GRENADIER",
@@ -875,41 +892,42 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_grenadier",
     ["uiWeapon"] = "T_ak12gp25_1p78",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12GP25_Rifle_1P78Picatinny"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_AK12GP25_UGL_1P78Picatinny_HE"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK12GP25_UGL_1P78Picatinny_Smoke"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_LAT_01"] = {
     ["displayName"] = "RIFLEMAN ANTI-TANK",
@@ -917,56 +935,57 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_lightantitank",
     ["uiWeapon"] = "T_ak12_reddot",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12_Reddot"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RPG7V1_Heat_2Mag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RPG7V1_Frag_2Mag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_LAT_02"] = {
     ["displayName"] = "RIFLEMAN ANTI-TANK",
@@ -974,51 +993,52 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_lightantitank",
     ["uiWeapon"] = "T_ak12_1p78",
-    ["baseTeamAvailability"] = 8,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12_1P78Picatinny"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RPG7_Heat"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RPG7_Frag_2Mag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Marksman_01"] = {
     ["displayName"] = "MARKSMAN",
@@ -1026,51 +1046,52 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_designatedmarksman",
     ["uiWeapon"] = "svd",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_SVD_Optic"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Marksman_02"] = {
     ["displayName"] = "MARKSMAN",
@@ -1078,51 +1099,52 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_designatedmarksman",
     ["uiWeapon"] = "T_asval_optic",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_ASVAL_Optic"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Marksman_03"] = {
     ["displayName"] = "MARKSMAN",
@@ -1130,51 +1152,52 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_designatedmarksman",
     ["uiWeapon"] = "T_VSS_Optic",
-    ["baseTeamAvailability"] = 4,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_VSS_Optic"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Scout_01"] = {
     ["displayName"] = "SCOUT",
@@ -1182,61 +1205,62 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_scout",
     ["uiWeapon"] = "T_asval_okp7",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_ASVAL_OKP-7"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Deployable_DroneItem_Recoverable"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Smartphone_FPV"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_MachineGunner_01"] = {
     ["displayName"] = "MACHINE GUNNER",
@@ -1244,51 +1268,52 @@ return {
     ["specifics"] = "Your machine gun comes equipped with a bipod. Deploying it with (Default C) will greatly improve your accuracy.",
     ["uiIcon"] = "T_role_machinegunner",
     ["uiWeapon"] = "pkp",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_PKP"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_HAT_01"] = {
     ["displayName"] = "HEAVY ANTI-TANK",
@@ -1296,56 +1321,57 @@ return {
     ["specifics"] = "",
     ["uiIcon"] = "T_role_heavyantitank",
     ["uiWeapon"] = "rpg7v2tandem",
-    ["baseTeamAvailability"] = 1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RPG7V1_Tandem_2Mag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RPG7V1_Frag_2Mag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_HAT_02"] = {
     ["displayName"] = "HEAVY ANTI-TANK",
@@ -1353,56 +1379,57 @@ return {
     ["specifics"] = "You can adjust your sights with (Default) X, to aid shooting at range.",
     ["uiIcon"] = "T_role_heavyantitank",
     ["uiWeapon"] = "rpg7tandem",
-    ["baseTeamAvailability"] = 1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12_Reddot"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RPG7_Tandem"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RPG7_Heat"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Engineer_01"] = {
     ["displayName"] = "COMBAT ENGINEER",
@@ -1410,71 +1437,72 @@ return {
     ["specifics"] = "You can deploy up to a maximum of 10 Demolition Charges, 10 Sandbags, 10 Razor Wire and 10 Anti-Tank Mines in the World at the same time.",
     ["uiIcon"] = "T_role_engineer",
     ["uiWeapon"] = "T_ak12",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_AK12"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_SZ1_Explosive_Timed"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_TM62_Antitank_Mine"] = {
-        ["maxAllowed"] = 3,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Engineer_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Infantry_Sandbag"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Infantry_Razorwire"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Sniper_01"] = {
     ["displayName"] = "SNIPER",
@@ -1482,51 +1510,52 @@ return {
     ["specifics"] = "Knowing how your bullets drop at range is key to mastering this role. Use your adjustable sights (Default X), or the scope's reticle to help make your shots count.",
     ["uiIcon"] = "T_role_sniper",
     ["uiWeapon"] = "T_sv98m",
-    ["baseTeamAvailability"] = 2,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Light",
     ["items"] = {
       ["BP_SV98"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 2,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RGOFrag_Brown"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Crewman_01"] = {
     ["displayName"] = "CREWMAN",
@@ -1534,51 +1563,52 @@ return {
     ["specifics"] = "Crewmen are equipped with a repair kit to do hasty in-field repairs.",
     ["uiIcon"] = "T_role_crewman",
     ["uiWeapon"] = "T_ak12",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Heavy",
     ["items"] = {
       ["BP_AK12_4mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RDG2Smoke"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MPL50_Shovel_Rus"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   },
   ["VDV_Pilot_01"] = {
     ["displayName"] = "PILOT",
@@ -1586,45 +1616,46 @@ return {
     ["specifics"] = "Pilot are equipped with smoke grenades to aid in signalling.",
     ["uiIcon"] = "T_role_pilot",
     ["uiWeapon"] = "T_ak12",
-    ["baseTeamAvailability"] = -1,
+    ["baseTeamAvailability"] = nil,
     ["capability"] = "Helicopter",
     ["items"] = {
       ["BP_AK12_4mags"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_MP443"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_AK74Bayonet"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_RDG2Smoke_Orange"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 0,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_Generic_FieldDressing"] = {
-        ["maxAllowed"] = 2,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = true
       },
       ["BP_RepairTool"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       },
       ["BP_Russian_Baigish_Binoculars"] = {
-        ["maxAllowed"] = 1,
-        ["minOnSpawn"] = 1,
+        ["maxAllowed"] = nil,
+        ["minOnSpawn"] = nil,
         ["canRearm"] = false
       }
     },
-    ["factions"] = { "VDV" }
+    ["factions"] = { "VDV" },
+    ["group"] = "Specialist"
   }
 }
