@@ -7,23 +7,45 @@ import re
 from collections import OrderedDict, defaultdict
 
 # --- KONFIGURATION ---
-# Die Pfade basieren auf deiner GitHub-Struktur
 DATA_FILE = os.path.join("Data", "roles.json")
 OUTPUT_DIR = os.path.join("Modules", "Game", "KitsData")
-# Pfad-Präfix für das Wiki (wird im Index-Loader verwendet)
 WIKI_MODULE_PREFIX = "Module:Game/KitsData/"
 
+# Deine expliziten Zuordnungen für Grenzfälle
+KIT_GROUP_OVERRIDES = {
+    'ADF_AR_01': 'Direct Combat', 'ADF_AR_02': 'Fire Support',
+    'AFU_AR_01': 'Direct Combat', 'AFU_AR_02': 'Fire Support',
+    'AFU_AR_03': 'Direct Combat', 'AFU_AR_04': 'Fire Support',
+    'BAF_AR_01': 'Direct Combat', 'BAF_AR_02': 'Fire Support',
+    'CAF_AR_01': 'Direct Combat', 'CAF_AR_02': 'Direct Combat', 'CAF_AR_03': 'Fire Support',
+    'USA_AR_01': 'Direct Combat', 'USA_AR_02': 'Fire Support',
+    'USMC_AR_01': 'Direct Combat', 'USMC_AR_02': 'Fire Support',
+    'USMC_AR_03': 'Direct Combat', 'USMC_AR_04': 'Fire Support',
+}
+
+ROLE_GROUPS = {
+    'Command and Support': ['SQUAD LEADER','CELL LEADER','SECTION LEADER','SENIOR RIFLEMAN','LEAD CREWMAN','LEAD PILOT','MEDIC','CORPSMAN','CREWMAN','PILOT'],
+    'Direct Combat': ['RIFLEMAN','FIGHTER','RAIDER','AMBUSHER','PATHFINDER','AUTOMATIC RIFLEMAN','RECRUIT'],
+    'Fire Support': ['AUTOMATIC RIFLEMAN','GRENADIER','LIGHT ANTI-TANK','MARKSMAN','SCOUT','INFILTRATOR'],
+    'Specialist': ['SNIPER','MACHINE GUNNER','HEAVY ANTI-TANK','COMBAT ENGINEER','SAPPER','SABOTEUR','HEAVY GRENADIER']
+}
+
+def get_kit_group(kit_key, role_name):
+    if kit_key in KIT_GROUP_OVERRIDES:
+        return KIT_GROUP_OVERRIDES[kit_key]
+    role_upper = role_name.upper()
+    for group_name, roles in ROLE_GROUPS.items():
+        if role_upper in roles:
+            return group_name
+    return "Specialist"
+
 def load_json_ordered(path):
-    """Lädt die JSON und behält die Reihenfolge der Keys bei."""
     with open(path, "rb") as f:
         raw = f.read()
-    # Entferne UTF-8 BOM falls vorhanden
-    if raw.startswith(b"\xef\xbb\xbf"):
-        raw = raw[3:]
+    if raw.startswith(b"\xef\xbb\xbf"): raw = raw[3:]
     return json.loads(raw.decode("utf-8"), object_pairs_hook=OrderedDict)
 
 def to_lua(o, ind=0):
-    """Konvertiert Python-Objekte in sauberen Lua-Code."""
     sp = "  " * ind
     if isinstance(o, dict):
         parts = []
@@ -37,79 +59,42 @@ def to_lua(o, ind=0):
         return '"' + o.replace("\\", "\\\\").replace('"', '\\"') + '"'
     if o is True: return "true"
     if o is False: return "false"
-    if o is None: return "nil"
-    return str(o)
+    return "nil"
 
 def generate_index_loader(factions):
-    """Erstellt die KitsData_index.lua für das Wiki."""
     faction_map = "\n".join([f'  ["{f}"] = "{WIKI_MODULE_PREFIX}{f}",' for f in sorted(factions)])
-    
-    return f"""-- auto-generated – DO NOT EDIT
--- Zentraler Loader für Fraktions-Kits
+    return f"""-- auto-generated
 local M = {{}}
-local _cache = {{}}
-
-local BUCKET = {{
-{faction_map}
-}}
-
+local BUCKET = {{\n{faction_map}\n}}
 function M.getFaction(faction)
     local F = tostring(faction or ''):upper()
     if not BUCKET[F] then return nil end
-    if _cache[F] then return _cache[F] end
-    
-    local ok, data = pcall(require, BUCKET[F])
-    if ok then
-        _cache[F] = data
-        return data
-    end
-    return nil
+    return require(BUCKET[F])
 end
-
--- Hilfsfunktion für den KitScanner
-function M.getAllFactionNames()
-    local names = {{}}
-    for name, _ in pairs(BUCKET) do
-        table.insert(names, name)
-    end
-    return names
-end
-
-return M
-"""
+return M"""
 
 def main():
-    if not os.path.exists(DATA_FILE):
-        print(f"[ERROR] Datei nicht gefunden: {DATA_FILE}")
-        return
-
+    if not os.path.exists(DATA_FILE): return
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     top_data = load_json_ordered(DATA_FILE)
-    
-    # Gruppierung nach Fraktion (Präfix vor dem ersten _)
     factions_data = defaultdict(OrderedDict)
+
     for kit_key, kit_val in top_data.items():
         match = re.match(r"^([^_]+)_", kit_key)
         if match:
             fac = match.group(1).upper()
-            factions_data[fac][kit_key] = kit_val
+            processed_val = kit_val.copy()
+            # Gruppe hinzufügen
+            processed_val["group"] = get_kit_group(kit_key, kit_val.get("roleName", ""))
+            factions_data[fac][kit_key] = processed_val
 
-    # 1. Einzelne Fraktions-Module schreiben (z.B. USA.lua)
     for fac, data in factions_data.items():
-        filename = f"{fac}.lua"
-        filepath = os.path.join(OUTPUT_DIR, filename)
-        
-        lua_content = f"-- auto-generated KitsData for {fac}\nreturn " + to_lua(data)
-        
-        with open(filepath, "w", encoding="utf-8", newline="\n") as f:
-            f.write(lua_content)
-        print(f"[OK] {filename} generiert.")
-
-    # 2. Index-Loader schreiben
-    index_path = os.path.join(OUTPUT_DIR, "..", "KitsData_index.lua")
-    with open(index_path, "w", encoding="utf-8", newline="\n") as f:
+        filepath = os.path.join(OUTPUT_DIR, f"{fac}.lua")
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(f"-- auto-generated KitsData for {fac}\nreturn " + to_lua(data))
+    
+    with open(os.path.join(OUTPUT_DIR, "..", "KitsData_index.lua"), "w", encoding="utf-8") as f:
         f.write(generate_index_loader(factions_data.keys()))
-    print(f"[OK] KitsData_index.lua generiert.")
 
 if __name__ == "__main__":
     main()
