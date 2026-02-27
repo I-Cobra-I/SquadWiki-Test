@@ -14,32 +14,20 @@ BUCKETS = [
     ("V_Z", set("VWXYZ")), ("misc", set())
 ]
 
-# --- VOLLSTÄNDIGES MAPPING BASIEREND AUF DEINEM DUMP ---
 HUD_MAP = {
-    # Spalte 1: Primary
     "inventory_category_rifle": "Primary",
     "inventory_category_machinegun": "Primary",
     "inventory_category_dmr": "Primary",
-    
-    # Spalte 2: Secondary
     "inventory_category_pistol": "Secondary",
-    "inventory_category_knife": "Secondary", # Meistens Slot 1/2
-
-    # Spalte 3: Explosive (Grenades & AT)
+    "inventory_category_knife": "Secondary",
     "inventory_category_fraggrenade": "Explosive",
     "inventory_category_grenadelauncher": "Explosive",
     "inventory_category_lat": "Explosive",
     "inventory_category_explosives": "Explosive",
     "inventory_category_detonator": "Explosive",
-
-    # Spalte 4: Smoke
     "inventory_category_smokegrenade": "Smoke",
-
-    # Spalte 5: Medical
     "inventory_category_fielddressing": "Medical",
     "inventory_category_medkit": "Medical",
-
-    # Spalte 6: Equipment
     "inventory_category_binoculars": "Equipment",
     "inventory_category_shovel": "Equipment",
     "inventory_category_repair": "Equipment",
@@ -47,43 +35,51 @@ HUD_MAP = {
     "inventory_category_rally": "Equipment"
 }
 
+def get_ammo_info(item_data, cat, hud_str):
+    w_info = item_data.get("weaponInfo", {})
+    if not w_info and "inventoryInfo" in item_data:
+        w_info = item_data.get("inventoryInfo", {}).get("weaponInfo", {})
+    
+    if not isinstance(w_info, dict): w_info = {}
+
+    # Logik A: Waffen & Werfer (Magazine x Kapazität)
+    if cat in ["Primary", "Secondary"] or "grenadelauncher" in hud_str:
+        mags = w_info.get("numberOfMags", 0)
+        size = w_info.get("magSize", 0)
+    # Logik B: Wurfgegenstände & Equipment (Reine Stückzahl)
+    else:
+        # Hier ist 1 der sicherere Default, wenn das Feld fehlt
+        mags = w_info.get("numberOfMags", 1)
+        size = w_info.get("magSize", 1)
+
+    return mags, size, (mags * size)
+
 def assign_wiki_data(item_key, item_data):
     d_name = item_data.get("displayName", item_key)
     name_upper = d_name.upper()
     
-    # HUD-String suchen (wie gehabt)
-    hud = None
-    if "HUDTexture" in item_data:
-        hud = item_data["HUDTexture"]
-    elif "inventoryInfo" in item_data and isinstance(item_data["inventoryInfo"], dict):
+    hud = item_data.get("HUDTexture")
+    if not hud and "inventoryInfo" in item_data:
         hud = item_data["inventoryInfo"].get("HUDTexture")
-    elif "UIInfo" in item_data and isinstance(item_data["UIInfo"], dict):
-        hud = item_data["UIInfo"].get("HUDTexture")
-        
-    hud_str = str(hud).strip() if hud else ""
+    hud_str = str(hud).strip().lower()
 
-    # 1. Wiki-Seite (Link) extrahieren
-    wiki_page = re.split(r'\s*[\+\(\[/]', d_name)[0].strip()
-
-    # 2. Kategorie-Logik mit Priorität für Rauch
-    # Zuerst prüfen wir auf Rauch - egal was der HUD-String sagt
-    if "SMOKE" in hud_str or "SMOKE" in name_upper:
+    if "smoke" in hud_str or "smoke" in name_upper:
         cat = "Smoke"
-    
-    # Danach das normale Mapping für den Rest
     else:
         cat = HUD_MAP.get(hud_str, "Equipment")
-        
-        # Zusätzlicher Check für Spezialfälle, falls das Mapping nicht greift
-        if cat == "Equipment":
-            if "BANDAGE" in name_upper or "FIELD DRESSING" in name_upper:
-                cat = "Medical"
-            elif "PISTOL" in name_upper:
-                cat = "Secondary"
-            elif "EXPLOSIVE" in name_upper or "GRENADE" in name_upper:
-                cat = "Explosive"
 
-    return cat, wiki_page
+    mags, size, total = get_ammo_info(item_data, cat, hud_str)
+    wiki_page = re.split(r'\s*[\+\(\[/]', d_name)[0].strip()
+
+    return {
+        "displayName": d_name,
+        "wikiCategory": cat,
+        "wikiPage": wiki_page,
+        "mags": mags,
+        "magSize": size,
+        "totalAmmo": total
+    }
+
 def to_lua(o, ind=0):
     sp = "  " * ind
     if isinstance(o, dict):
@@ -92,6 +88,7 @@ def to_lua(o, ind=0):
             parts.append(f'{sp}  ["{k}"] = {to_lua(v, ind+1)}')
         return "{\n" + ",\n".join(parts) + "\n" + sp + "}"
     if isinstance(o, str): return f'"{o}"'
+    if o is None: return "nil"
     return str(o)
 
 def get_bucket(key):
@@ -110,45 +107,25 @@ def main():
         if raw.startswith(b"\xef\xbb\xbf"): raw = raw[3:]
         raw_data = json.loads(raw.decode("utf-8"))
 
-       # --- DEEP SEARCH DUMP ---
-    found_keys = set()
+    # Optionaler Deep Search zur Kontrolle in den Logs
     sample_values = set()
-
-    # Wir schauen uns das erste Item mal ganz genau an, um die Struktur zu verstehen
-    first_key = list(raw_data.keys())[0]
-    print(f"[DEBUG] Struktur von {first_key}: {json.dumps(raw_data[first_key], indent=2)[:500]}...")
-
     def find_category_strings(d):
         if isinstance(d, dict):
             for k, v in d.items():
-                # Wir suchen nach Schlüsseln, die 'texture' oder 'category' enthalten
                 if any(x in k.lower() for x in ["texture", "category", "hud", "slot"]):
                     if isinstance(v, str) and "category" in v.lower():
                         sample_values.add(f"{k} -> {v}")
                 find_category_strings(v)
         elif isinstance(d, list):
-            for item in d:
-                find_category_strings(item)
+            for item in d: find_category_strings(item)
 
     find_category_strings(raw_data)
-    
-    print("\n" + "="*50)
-    print("DEEP SEARCH RESULTS:")
-    for val in sorted(sample_values):
-        print(f"FOUND: {val}")
-    print("="*50 + "\n")
-    # --- ENDE DEEP SEARCH ---
+    print("\nDEEP SEARCH RESULTS:\n" + "\n".join(sorted(sample_values)) + "\n")
 
     buckets_content = defaultdict(dict)
-    
     for k, v in raw_data.items():
         if k.startswith("BP_"):
-            cat, page = assign_wiki_data(k, v)
-            buckets_content[get_bucket(k)][k] = {
-                "displayName": v.get("displayName", k),
-                "wikiCategory": cat,
-                "wikiPage": page
-            }
+            buckets_content[get_bucket(k)][k] = assign_wiki_data(k, v)
 
     for name, _ in BUCKETS + [("misc", set())]:
         filepath = os.path.join(OUTPUT_DIR, f"{name}.lua")
