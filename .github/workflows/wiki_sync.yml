@@ -35,4 +35,4 @@ jobs:
           WIKI_USER: ${{ secrets.WIKI_USER }}
           WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
           SUMMARY: ${{ github.event.inputs.reason }}
-        run: python wiki_uploader.py
+        run: python Scripts/wiki_uploader.py
