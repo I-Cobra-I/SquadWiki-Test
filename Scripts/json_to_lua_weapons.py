@@ -99,37 +99,72 @@ def assign_wiki_data(item_key, item_data):
 def to_lua(o, ind=0):
     sp = "  " * ind
     if isinstance(o, dict):
-        parts = [f'{sp}  ["{k}"] = {to_lua(v, ind+1)}' for k, v in sorted(o.items())]
+        # Wir nutzen eine List-Comprehension für die Keys
+        parts = []
+        for k, v in sorted(o.items()):
+            parts.append(f'{sp}  ["{k}"] = {to_lua(v, ind+1)}')
         return "{\n" + ",\n".join(parts) + "\n" + sp + "}"
-    if isinstance(o, str): return f'"{o}"'
-    if o is None: return "nil"
+    
+    if isinstance(o, str):
+        # DAS IST DER FIX: Maskiert existierende " im String mit \"
+        safe_str = o.replace('"', '\\"')
+        return f'"{safe_str}"'
+    
+    if o is None:
+        return "nil"
+    
+    # Booleans in Lua sind kleingeschrieben (true/false)
+    if isinstance(o, bool):
+        return str(o).lower()
+        
     return str(o)
 
 def get_bucket(key):
+    # Extrahiert den ersten Buchstaben nach BP_
     match = re.match(r"^BP_([A-Za-z])", key)
-    char = match.group(1).upper() if match else ""
-    for name, letters in BUCKETS:
-        if char in letters: return name
+    if match:
+        char = match.group(1).upper()
+        for name, letters in BUCKETS:
+            if char in letters:
+                return name
     return "misc"
 
 def main():
-    if not os.path.exists(DATA_FILE): return
+    if not os.path.exists(DATA_FILE):
+        print(f"Error: {DATA_FILE} not found.")
+        return
+        
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+    
     with open(DATA_FILE, "rb") as f:
         raw = f.read()
-        if raw.startswith(b"\xef\xbb\xbf"): raw = raw[3:]
+        if raw.startswith(b"\xef\xbb\xbf"):
+            raw = raw[3:]
         raw_data = json.loads(raw.decode("utf-8"))
 
     buckets_content = defaultdict(dict)
+    
+    # Daten verarbeiten und Buckets füllen
     for k, v in raw_data.items():
         if k.startswith("BP_"):
-            buckets_content[get_bucket(k)][k] = assign_wiki_data(k, v)
+            target_bucket = get_bucket(k)
+            buckets_content[target_bucket][k] = assign_wiki_data(k, v)
 
-    for name, _ in BUCKETS + [("misc", set())]:
+    # Alle definierten Buckets erstellen (auch leere)
+    # Nutze nur BUCKETS, da "misc" dort schon drin ist oder separat behandelt wird
+    unique_buckets = [b[0] for b in BUCKETS]
+    if "misc" not in unique_buckets:
+        unique_buckets.append("misc")
+
+    for name in unique_buckets:
         filepath = os.path.join(OUTPUT_DIR, f"{name}.lua")
-        content = "-- auto-generated\nreturn " + to_lua(buckets_content[name])
+        # Falls ein Bucket leer ist, wird ein leeres Table {} zurückgegeben
+        data = buckets_content.get(name, {})
+        content = "-- auto-generated\nreturn " + to_lua(data)
+        
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(content)
+        print(f"Generated: {filepath}")
 
 if __name__ == "__main__":
     main()

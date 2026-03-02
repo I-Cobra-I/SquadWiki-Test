@@ -20,8 +20,14 @@ DIRECTORIES = [
 # Einzelne Dateien (Pfad, Wiki-Titel)
 SINGLE_FILES = [
     ("Modules/Game/Kits/Config.lua", "Module:Game/Kits/Config"),
-    ("Modules/KitsTable.lua", "Module:KitsTable"),
-    ("Modules/KitsData_index.lua", "Module:Game/KitsData_index")
+    ("Modules/Game/KitsTable.lua", "Module:Game/KitsTable"),
+    ("Modules/Game/KitsData_index.lua", "Module:Game/KitsData")
+]
+
+# Und die DIRECTORIES:
+DIRECTORIES = [
+    ("Modules/Game/WeaponInfo", "Module:Game/WeaponInfo/"),
+    ("Modules/Game/KitsData", "Module:Game/KitsData/")
 ]
 
 if not (API and USER and PASS):
