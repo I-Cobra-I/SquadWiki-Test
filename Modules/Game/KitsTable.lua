@@ -3,12 +3,15 @@ local p = {}
 -- Load external configurations and data
 local Config = require('Module:Game/Kits/Config')
 
--- Helper: Load all weapon buckets into a single lookup table
+-- Helper: Load all weapon buckets into a single lookup table safely
 local function getWeaponData(key)
     local buckets = {'A_C', 'D_F', 'G_K', 'L_N', 'O_R', 'S_U', 'V_Z', 'misc'}
     for _, b in ipairs(buckets) do
-        local data = require('Module:Game/WeaponInfo/' .. b)
-        if data[key] then return data[key] end
+        -- pcall verhindert Absturz, falls ein Bucket leer/nicht vorhanden ist
+        local success, data = pcall(require, 'Module:Game/WeaponInfo/' .. b)
+        if success and type(data) == "table" and data[key] then 
+            return data[key] 
+        end
     end
     return nil
 end
@@ -17,7 +20,7 @@ local function normalize(str)
     return tostring(str or ''):gsub('[^%w]', ''):upper()
 end
 
--- Link & Label Logic (uses your Config)
+-- Link & Label Logic
 local function formatLink(itemKey, displayName)
     local normKey = "#" .. normalize(itemKey)
     local override = Config.LABEL_OVERRIDES[itemKey] or Config.LABEL_OVERRIDES[normKey] or Config.LABEL_OVERRIDES[displayName]
@@ -56,25 +59,35 @@ local function formatEntry(weapon, kitCount)
     return (total > 1) and (link .. " (" .. total .. suffix .. ")") or link
 end
 
-function p.renderFaction(frame)
+-- HAUPTFUNKTION (Umbenannt von renderFaction zu render)
+function p.render(frame)
     local factionName = frame.args[1] or "USA"
-    local KitsData = require('Module:Game/KitsData/' .. factionName)
+    -- Wir nutzen dein neues Index-Modul als Quelle
+    local KitsDataIndex = require('Module:Game/KitsData')
+    local KitsData = KitsDataIndex.getFaction(factionName)
+    
+    if not KitsData then
+        return "Fehler: Daten für Fraktion '" .. factionName .. "' nicht gefunden."
+    end
     
     local html = mw.html.create('table')
         :addClass('wikitable squad-kit-table')
         :css('width', '100%')
         :css('border-collapse', 'collapse')
 
-    -- Header (Only the categories, since Role has its own row)
+    -- Header
     local header = html:tag('tr')
     local cats = {"Primary", "Secondary", "Explosives", "Smoke", "Medical", "Equipment"}
     for _, c in ipairs(cats) do
         header:tag('th'):setLabel(c):css('width', '16.6%'):css('background', '#f2f2f2')
     end
 
-    -- Sort Logic (By Group, then by Kit Key)
+    -- Sortierung
     local sortedKits = {}
-    for k, v in pairs(KitsData) do v.id = k table.insert(sortedKits, v) end
+    for k, v in pairs(KitsData) do 
+        v.id = k 
+        table.insert(sortedKits, v) 
+    end
     table.sort(sortedKits, function(a, b) 
         if a.group ~= b.group then return (a.group or "") < (b.group or "") end
         return a.id < b.id 
@@ -82,7 +95,7 @@ function p.renderFaction(frame)
 
     local currentGroup = ""
     for _, kit in ipairs(sortedKits) do
-        -- 1. GROUP ROW (Dunkel)
+        -- Group Row
         if kit.group ~= currentGroup then
             currentGroup = kit.group
             local groupIcon = Config.GROUP_ICON[currentGroup] or ""
@@ -92,7 +105,7 @@ function p.renderFaction(frame)
                 :wikitext('[[File:' .. groupIcon .. '|20px|link=]] ' .. currentGroup:upper())
         end
 
-        -- 2. ROLE ROW (Hellblau/Grau, volle Breite)
+        -- Role Row
         local roleName = kit.displayName:upper()
         local roleIcon = Config.ROLE_ICON[roleName] or "Role recruit.png"
         html:tag('tr'):tag('td')
@@ -100,7 +113,7 @@ function p.renderFaction(frame)
             :css('background', '#ebf3f9'):css('font-weight', 'bold'):css('border-top', '2px solid #bdc3c7')
             :wikitext('[[File:' .. roleIcon .. '|24px|link=]] ' .. kit.displayName)
 
-        -- 3. DATA ROW (Die 6 Spalten mit Items)
+        -- Data Row
         local itemRow = html:tag('tr')
         local cols = { {}, {}, {}, {}, {}, {} }
         
@@ -110,7 +123,6 @@ function p.renderFaction(frame)
                 weapon.itemKey = itemKey
                 local entry = formatEntry(weapon, count)
                 
-                -- Column Logic + Banned Tokens
                 local targetCol = 6
                 local normItem = normalize(itemKey .. weapon.displayName)
                 local isBannedPrimary = false
