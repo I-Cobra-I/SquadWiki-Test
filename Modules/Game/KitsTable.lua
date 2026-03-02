@@ -79,7 +79,10 @@ function p.render(frame)
     local header = html:tag('tr')
     local cats = {"Primary", "Secondary", "Explosives", "Smoke", "Medical", "Equipment"}
     for _, c in ipairs(cats) do
-        header:tag('th'):setLabel(c):css('width', '16.6%'):css('background', '#f2f2f2')
+    header:tag('th')
+        :wikitext(c) -- Hier lag der Fehler, wikitext() ist die richtige Methode
+        :css('width', '16.6%')
+        :css('background', '#f2f2f2')
     end
 
     -- Sortierung
