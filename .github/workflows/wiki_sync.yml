@@ -1,0 +1,38 @@
+name: Manual Squad Wiki Sync
+
+on:
+  # Ermöglicht den manuellen Start über den "Actions"-Tab in GitHub
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Grund für den Sync (erscheint in der Wiki-History)'
+        required: false
+        default: 'Automated Sync from GitHub'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate Lua Files
+        # Führt deine lokalen Generatoren im Runner aus
+        run: |
+          python json_to_lua_weapons.py
+          python json_to_lua_roles.py
+
+      - name: Upload to Wiki
+        env:
+          WIKI_API: "https://squad.fandom.com/api.php" # Prüfe diesen Link!
+          WIKI_USER: ${{ secrets.WIKI_USER }}
+          WIKI_PASSWORD: ${{ secrets.WIKI_PASSWORD }}
+          SUMMARY: ${{ github.event.inputs.reason }}
+        run: python wiki_uploader.py

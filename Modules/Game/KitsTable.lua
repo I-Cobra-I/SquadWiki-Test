@@ -1,160 +1,140 @@
 local p = {}
-local FactionLoader = require('Module:FactionLoader') -- Hier die neue Brücke nutzen
 
-local GROUPS = {
-    { id = "Command and Support", icon = "Icon_Command.png" },
-    { id = "Direct Combat",       icon = "Icon_DirectCombat.png" },
-    { id = "Fire Support",        icon = "Icon_FireSupport.png" },
-    { id = "Specialist",          icon = "Icon_Specialist.png" }
-}
+-- Load external configurations and data
+local Config = require('Module:Game/Kits/Config')
 
-local SUFFIX_MAP = {
-    ["inventory_category_rifle"] = "mags",
-    ["inventory_category_machinegun"] = "mags",
-    ["inventory_category_dmr"] = "mags",
-    ["inventory_category_pistol"] = "mags",
-    ["inventory_category_fraggrenade"] = "grenade",
-    ["inventory_category_smokegrenade"] = "grenades",
-    ["inventory_category_explosives"] = "blocks",
-    ["inventory_category_at_rocket"] = "rounds",
-    ["inventory_category_grenadelauncher"] = "rounds",
-    ["inventory_category_fielddressing"] = "packages"
-}
-
-local function getWeaponData(itemKey)
-    local char = itemKey:match("^BP_([%a])")
-    if not char then return nil end
-    char = char:upper()
-    local bucket = "misc"
-    if char:find("[ABC]") then bucket = "A_C"
-    elseif char:find("[DEF]") then bucket = "D_F"
-    elseif char:find("[GHIJK]") then bucket = "G_K"
-    elseif char:find("[LMN]") then bucket = "L_N"
-    elseif char:find("[OPQR]") then bucket = "O_R"
-    elseif char:find("[STU]") then bucket = "S_U"
-    elseif char:find("[VWXYZ]") then bucket = "V_Z" end
-    
-    local success, data = pcall(mw.loadData, "Module:Game/WeaponInfo/" .. bucket)
-    return success and data[itemKey] or nil
+-- Helper: Load all weapon buckets into a single lookup table
+local function getWeaponData(key)
+    local buckets = {'A_C', 'D_F', 'G_K', 'L_N', 'O_R', 'S_U', 'V_Z', 'misc'}
+    for _, b in ipairs(buckets) do
+        local data = require('Module:Game/WeaponInfo/' .. b)
+        if data[key] then return data[key] end
+    end
+    return nil
 end
 
-local function formatEntry(weapon, kitCount)
-    local link = string.format('[[%s|%s]]', weapon.wikiPage, weapon.displayName)
+local function normalize(str)
+    return tostring(str or ''):gsub('[^%w]', ''):upper()
+end
+
+-- Link & Label Logic (uses your Config)
+local function formatLink(itemKey, displayName)
+    local normKey = "#" .. normalize(itemKey)
+    local override = Config.LABEL_OVERRIDES[itemKey] or Config.LABEL_OVERRIDES[normKey] or Config.LABEL_OVERRIDES[displayName]
     
-    if not weapon.totalAmmo then 
-        return string.format('<div>%s</div>', link) 
-    end
-    
-    local total = weapon.totalAmmo * kitCount
-    local suffix = SUFFIX_MAP[weapon.hudTag] or ""
-    
-    -- Dynamische Plural-Logik:
-    -- Wenn die Anzahl > 1 ist und das Suffix nicht schon auf 's' endet, füge ein 's' an.
-    -- (Spezialfall 'packages' bleibt 'packages', 'mags' bleibt 'mags')
-    if total > 1 then
-        if suffix == "grenade" then 
-            suffix = "grenades"
-        elseif suffix == "round" then
-            suffix = "rounds"
-        elseif suffix == "block" then
-            suffix = "blocks"
-        elseif suffix == "package" then
-            suffix = "packages"
+    if override then
+        if override:find('^TEXT:') then return override:sub(6) end
+        if override:find('^URL:') then 
+            local url, label = override:match('^URL:([^|]+)|?(.+)$')
+            return '[' .. url .. ' ' .. (label or 'Link') .. ']'
         end
+        if override:find('|') then return '[[' .. override .. ']]' end
+        return '[[' .. override .. '|' .. override .. ']]'
     end
+
+    local linkTarget = Config.WEAPON_LINKS[displayName] or Config.ITEM_LINKS[displayName]
+    if linkTarget then return '[[' .. linkTarget .. '|' .. displayName .. ']]' end
+
+    return '[[' .. displayName .. '|' .. displayName .. ']]'
+end
+
+-- Ammo & Plural Logic
+local function formatEntry(weapon, kitCount)
+    local total = (weapon.totalAmmo or 1) * kitCount
+    local label = weapon.displayName
+    local link = formatLink(weapon.itemKey or "", label)
     
-    local ammoStr = ""
-    if weapon.mags and weapon.mags > 0 then
-        -- Bei Waffen (mags) ist es meistens Plural, außer bei sehr wenig Munition
-        local currentMags = weapon.mags * kitCount
-        local magSuffix = (currentMags == 1) and "mag" or "mags"
-        ammoStr = string.format('%d %s', currentMags, magSuffix)
-    else
-        -- Bei Granaten, Bandagen etc.
-        ammoStr = string.format('%d %s', total, suffix)
+    local suffix = ""
+    if weapon.wikiCategory == "Primary" or weapon.wikiCategory == "Secondary" then
+        suffix = (total > 1) and " mags" or " mag"
+    elseif weapon.wikiCategory == "Medical" then
+        suffix = (total > 1) and " packages" or " package"
+    elseif weapon.wikiCategory == "Explosive" or weapon.wikiCategory == "Smoke" then
+        suffix = (total > 1) and " units" or " unit"
     end
-    
-    return string.format('<div>%s, <span style="color:#ffffff;">%s</span></div>', link, ammoStr)
+
+    return (total > 1) and (link .. " (" .. total .. suffix .. ")") or link
 end
 
 function p.renderFaction(frame)
-    local args = require('Module:Arguments').getArgs(frame)
-    local factionName = args[1] or mw.title.getCurrentTitle().text
-    local FactionLoader = require('Module:FactionLoader')
-    local data = FactionLoader.getFaction(factionName)
-    if not data then return '<span class="error">Error: The data file "Module:Game/KitsData/' .. factionName .. '" could not be found.</span>' end
+    local factionName = frame.args[1] or "USA"
+    local KitsData = require('Module:Game/KitsData/' .. factionName)
+    
+    local html = mw.html.create('table')
+        :addClass('wikitable squad-kit-table')
+        :css('width', '100%')
+        :css('border-collapse', 'collapse')
 
-    local fullHtml = ""
+    -- Header (Only the categories, since Role has its own row)
+    local header = html:tag('tr')
+    local cats = {"Primary", "Secondary", "Explosives", "Smoke", "Medical", "Equipment"}
+    for _, c in ipairs(cats) do
+        header:tag('th'):setLabel(c):css('width', '16.6%'):css('background', '#f2f2f2')
+    end
 
-    for _, group in ipairs(GROUPS) do
-        local roles = {}
-        for id, kit in pairs(data) do
-            if kit.group == group.id then
-                if not roles[kit.role] then roles[kit.role] = { kits = {} } end
-                table.insert(roles[kit.role].kits, kit)
+    -- Sort Logic (By Group, then by Kit Key)
+    local sortedKits = {}
+    for k, v in pairs(KitsData) do v.id = k table.insert(sortedKits, v) end
+    table.sort(sortedKits, function(a, b) 
+        if a.group ~= b.group then return (a.group or "") < (b.group or "") end
+        return a.id < b.id 
+    end)
+
+    local currentGroup = ""
+    for _, kit in ipairs(sortedKits) do
+        -- 1. GROUP ROW (Dunkel)
+        if kit.group ~= currentGroup then
+            currentGroup = kit.group
+            local groupIcon = Config.GROUP_ICON[currentGroup] or ""
+            html:tag('tr'):tag('td')
+                :attr('colspan', '6')
+                :css('background', '#2c3e50'):css('color', 'white'):css('font-weight', 'bold'):css('padding', '8px')
+                :wikitext('[[File:' .. groupIcon .. '|20px|link=]] ' .. currentGroup:upper())
+        end
+
+        -- 2. ROLE ROW (Hellblau/Grau, volle Breite)
+        local roleName = kit.displayName:upper()
+        local roleIcon = Config.ROLE_ICON[roleName] or "Role recruit.png"
+        html:tag('tr'):tag('td')
+            :attr('colspan', '6')
+            :css('background', '#ebf3f9'):css('font-weight', 'bold'):css('border-top', '2px solid #bdc3c7')
+            :wikitext('[[File:' .. roleIcon .. '|24px|link=]] ' .. kit.displayName)
+
+        -- 3. DATA ROW (Die 6 Spalten mit Items)
+        local itemRow = html:tag('tr')
+        local cols = { {}, {}, {}, {}, {}, {} }
+        
+        for itemKey, count in pairs(kit.items or {}) do
+            local weapon = getWeaponData(itemKey)
+            if weapon then
+                weapon.itemKey = itemKey
+                local entry = formatEntry(weapon, count)
+                
+                -- Column Logic + Banned Tokens
+                local targetCol = 6
+                local normItem = normalize(itemKey .. weapon.displayName)
+                local isBannedPrimary = false
+                for _, t in ipairs(Config.PRIMARY_BANNED_TOKENS) do
+                    if normItem:find(t) then isBannedPrimary = true break end
+                end
+
+                if weapon.wikiCategory == "Primary" and not isBannedPrimary then targetCol = 1
+                elseif weapon.wikiCategory == "Secondary" then targetCol = 2
+                elseif weapon.wikiCategory == "Explosive" then targetCol = 3
+                elseif weapon.wikiCategory == "Smoke" then targetCol = 4
+                elseif weapon.wikiCategory == "Medical" then targetCol = 5 end
+                
+                table.insert(cols[targetCol], entry)
             end
         end
 
-        local sortedRoleNames = {}
-        for name in pairs(roles) do table.insert(sortedRoleNames, name) end
-        table.sort(sortedRoleNames)
-
-        if #sortedRoleNames > 0 then
-            -- Gruppen-Header mit Icon
-            fullHtml = fullHtml .. string.format('\n<div style="text-align:center; padding:1em 0; font-weight:bold; color:#ffcc00; text-transform:uppercase;">%s [[File:%s|20px|link=]]</div>\n', group.id, group.icon)
-            
-            -- Start der articleTable
-            local tbl = mw.html.create('table'):addClass('articleTable'):css('width', '100%'):css('font-size', '11px')
-            
-            local head = tbl:tag('tr')
-            head:tag('th'):css('width', '10%'):wikitext('Role')
-            head:tag('th'):wikitext('Primary Weapon')
-            head:tag('th'):wikitext('Secondary Weapon')
-            head:tag('th'):wikitext('Explosives')
-            head:tag('th'):wikitext('Smoke Grenades')
-            head:tag('th'):wikitext('Medical Supplies')
-            head:tag('th'):wikitext('Addtl. Equipment')
-
-            for _, roleName in ipairs(sortedRoleNames) do
-                local kits = roles[roleName].kits
-                table.sort(kits, function(a, b) return (a.id or "") < (b.id or "") end)
-
-                for i, kit in ipairs(kits) do
-                    local row = tbl:tag('tr')
-                    
-                    if i == 1 then
-                        row:tag('td')
-                            :attr('rowspan', #kits)
-                            :css('vertical-align', 'top')
-                            :css('font-weight', 'bold')
-                            :wikitext(roleName)
-                    end
-
-                    local colsData = { {}, {}, {}, {}, {}, {} }
-                    for itemKey, count in pairs(kit.items or {}) do
-                        local weapon = getWeaponData(itemKey)
-                        if weapon then
-                            local entry = formatEntry(weapon, count)
-                            local idx = 6
-                            if weapon.wikiCategory == "Primary" then idx = 1
-                            elseif weapon.wikiCategory == "Secondary" then idx = 2
-                            elseif weapon.wikiCategory == "Explosive" then idx = 3
-                            elseif weapon.wikiCategory == "Smoke" then idx = 4
-                            elseif weapon.wikiCategory == "Medical" then idx = 5 end
-                            table.insert(colsData[idx], entry)
-                        end
-                    end
-
-                    for j=1, 6 do
-                        row:tag('td'):css('vertical-align', 'top')
-                           :wikitext(table.concat(colsData[j], ""))
-                    end
-                end
-            end
-            fullHtml = fullHtml .. tostring(tbl)
+        for i=1, 6 do
+            itemRow:tag('td'):css('vertical-align', 'top'):css('font-size', '0.9em')
+                :wikitext(table.concat(cols[i], '<br/>'))
         end
     end
-    return fullHtml
+
+    return tostring(html)
 end
 
 return p
