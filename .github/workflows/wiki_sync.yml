@@ -26,8 +26,8 @@ jobs:
       - name: Generate Lua Files
         # Führt deine lokalen Generatoren im Runner aus
         run: |
-          python json_to_lua_weapons.py
-          python json_to_lua_roles.py
+          python Scripts/json_to_lua_weapons.py
+          python Scripts/json_to_lua_roles.py
 
       - name: Upload to Wiki
         env:
