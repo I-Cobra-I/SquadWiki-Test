@@ -10,13 +10,13 @@ return {
     ["wikiPage"] = "VOG-17 Khattabka Fragmentation"
   },
   ["BP_VSS_Optic"] = {
-    ["displayName"] = "VSS "Vintorez" + PSO-1-1",
+    ["displayName"] = "VSS \"Vintorez\" + PSO-1-1",
     ["hudTag"] = "inventory_category_rifle",
     ["magSize"] = 20,
     ["mags"] = 7,
     ["totalAmmo"] = 140,
     ["wikiCategory"] = "Primary",
-    ["wikiPage"] = "VSS "Vintorez""
+    ["wikiPage"] = "VSS \"Vintorez\""
   },
   ["BP_Vz61"] = {
     ["displayName"] = "Vz. 61 Škorpion",

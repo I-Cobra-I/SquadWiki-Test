@@ -217,7 +217,7 @@ return {
   ["TLF_Raider_01"] = {
     ["displayName"] = "JANDARMA",
     ["role"] = "JANDARMA",
-    ["group"] = "Specialist",
+    ["group"] = "Direct Combat",
     ["items"] = {
       ["BP_SOR109T_HNA"] = 1,
       ["BP_SOR9"] = 1,

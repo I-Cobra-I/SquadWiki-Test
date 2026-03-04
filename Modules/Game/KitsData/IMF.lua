@@ -428,7 +428,7 @@ return {
   ["IMF_LAT_01"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_AKS74U"] = 1,
       ["BP_AK74Bayonet"] = 1,
@@ -443,7 +443,7 @@ return {
   ["IMF_LAT_02"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_AKS74_1P63"] = 1,
       ["BP_AK74Bayonet"] = 1,
@@ -457,7 +457,7 @@ return {
   ["IMF_LAT_03"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_AKS74_1P29"] = 1,
       ["BP_AK74Bayonet"] = 1,

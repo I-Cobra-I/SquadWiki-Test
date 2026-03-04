@@ -304,7 +304,7 @@ return {
   ["PLANMC_LAT_01"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_QBZ191_IronSights"] = 1,
       ["BP_QNL-95_Bayonet"] = 1,
@@ -319,7 +319,7 @@ return {
   ["PLANMC_LAT_02"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_QBZ191_Holo"] = 1,
       ["BP_QNL-95_Bayonet"] = 1,
@@ -333,7 +333,7 @@ return {
   ["PLANMC_LAT_03"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_QBZ191_Optic_QMK171A"] = 1,
       ["BP_QNL-95_Bayonet"] = 1,
@@ -813,7 +813,7 @@ return {
   ["PLANMC_95_LAT_01"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_QBZ95-1"] = 1,
       ["BP_QNL-95_Bayonet"] = 1,
@@ -827,7 +827,7 @@ return {
   ["PLANMC_95_LAT_02"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_QBZ95-1_Holo"] = 1,
       ["BP_QNL-95_Bayonet"] = 1,
@@ -841,7 +841,7 @@ return {
   ["PLANMC_95_LAT_03"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_QBZ95-1_Optic"] = 1,
       ["BP_QNL-95_Bayonet"] = 1,

@@ -303,7 +303,7 @@ return {
   ["PLA_LAT_01"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_QBZ191_IronSights"] = 1,
       ["BP_QNL-95_Bayonet"] = 1,
@@ -318,7 +318,7 @@ return {
   ["PLA_LAT_02"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_QBZ191_Holo"] = 1,
       ["BP_QNL-95_Bayonet"] = 1,
@@ -332,7 +332,7 @@ return {
   ["PLA_LAT_03"] = {
     ["displayName"] = "LIGHT ANTI-TANK",
     ["role"] = "LIGHT ANTI-TANK",
-    ["group"] = "Fire Support",
+    ["group"] = "Specialist",
     ["items"] = {
       ["BP_QBZ191_Optic_QMK171A"] = 1,
       ["BP_QNL-95_Bayonet"] = 1,
