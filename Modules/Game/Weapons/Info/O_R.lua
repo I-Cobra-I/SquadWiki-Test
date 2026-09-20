@@ -121,12 +121,12 @@ return {
   },
   ["BP_RGOFrag_Brown"] = {
     ["displayName"] = "BP_RGOFrag_Brown",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_RGOFrag_Brown",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   },
   ["BP_RDG2Smoke_Orange"] = {
     ["displayName"] = "RDG-2 Smoke (Orange)",
@@ -251,12 +251,12 @@ return {
   },
   ["BP_RGD5Frag"] = {
     ["displayName"] = "BP_RGD5Frag",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_RGD5Frag",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   },
   ["BP_PMT76"] = {
     ["displayName"] = "PMT-76",
@@ -381,12 +381,12 @@ return {
   },
   ["BP_RGOFrag_Green"] = {
     ["displayName"] = "BP_RGOFrag_Green",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_RGOFrag_Green",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   },
   ["BP_QBZ191_IronSights"] = {
     ["displayName"] = "QBZ-191",
@@ -1326,12 +1326,12 @@ return {
   },
   ["BP_RGD5Frag_Brown"] = {
     ["displayName"] = "BP_RGD5Frag_Brown",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_RGD5Frag_Brown",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   },
   ["BP_RPK74_1P29"] = {
     ["displayName"] = "RPK-74 + 1P29",

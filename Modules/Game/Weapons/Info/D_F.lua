@@ -47,12 +47,12 @@ return {
   },
   ["BP_F1Frag"] = {
     ["displayName"] = "BP_F1Frag",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_F1Frag",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   },
   ["BP_FNFAL_GL_HEAT_Rifle"] = {
     ["displayName"] = "FN FAL",
@@ -272,12 +272,12 @@ return {
   },
   ["BP_F1Frag_au"] = {
     ["displayName"] = "BP_F1Frag_au",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_F1Frag_au",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   },
   ["BP_EF88_Specter_Grippod"] = {
     ["displayName"] = "EF88 + Specter + Grippod",

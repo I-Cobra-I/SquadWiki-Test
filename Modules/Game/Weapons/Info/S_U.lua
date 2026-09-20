@@ -253,12 +253,12 @@ return {
   },
   ["BP_Type86p_Frag"] = {
     ["displayName"] = "BP_Type86p_Frag",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_Type86p_Frag",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   },
   ["BP_Type72_Antitank_Mine"] = {
     ["displayName"] = "Type 72 Anti-Tank Mine",

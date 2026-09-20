@@ -62,11 +62,11 @@ return {
   },
   ["BP_VOG17_UZRGM_Frag01"] = {
     ["displayName"] = "BP_VOG17_UZRGM_Frag01",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_VOG17_UZRGM_Frag01",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   }
 }

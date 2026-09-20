@@ -1533,12 +1533,12 @@ return {
   },
   ["BP_C13Frag"] = {
     ["displayName"] = "BP_C13Frag",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_C13Frag",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   },
   ["BP_C8A3_ET552_Foregrip"] = {
     ["displayName"] = "C8A3 + ET552 + Foregrip",

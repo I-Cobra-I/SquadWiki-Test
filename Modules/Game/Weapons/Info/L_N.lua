@@ -80,12 +80,12 @@ return {
   },
   ["BP_M67Frag"] = {
     ["displayName"] = "BP_M67Frag",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_M67Frag",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   },
   ["BP_M18Smoke_Red"] = {
     ["displayName"] = "M18 Smoke (Red)",
@@ -838,11 +838,11 @@ return {
   },
   ["BP_Mosin_M1891_Sniper"] = {
     ["displayName"] = "Mosin Nagant M1891/30 + PU-1",
-    ["wikiCategory"] = "Primary",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "inventory_category_rifle",
     ["wikiPage"] = "Mosin Nagant M1891",
-    ["mags"] = 12,
-    ["magSize"] = 5,
+    ["mags"] = nil,
+    ["magSize"] = nil,
     ["totalAmmo"] = 60,
     ["damage"] = 130,
     ["muzzleVelocity"] = 865.0,
@@ -982,11 +982,11 @@ return {
   },
   ["BP_M18"] = {
     ["displayName"] = "M18",
-    ["wikiCategory"] = "Secondary",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "inventory_category_pistol",
     ["wikiPage"] = "M18",
-    ["mags"] = 4,
-    ["magSize"] = 17,
+    ["mags"] = nil,
+    ["magSize"] = nil,
     ["totalAmmo"] = 68,
     ["damage"] = 45,
     ["muzzleVelocity"] = 381.0,
@@ -1611,11 +1611,11 @@ return {
   },
   ["BP_Mosin_M1891"] = {
     ["displayName"] = "Mosin Nagant M1891/30",
-    ["wikiCategory"] = "Primary",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "inventory_category_rifle",
     ["wikiPage"] = "Mosin Nagant M1891",
-    ["mags"] = 12,
-    ["magSize"] = 5,
+    ["mags"] = nil,
+    ["magSize"] = nil,
     ["totalAmmo"] = 60,
     ["damage"] = 130,
     ["muzzleVelocity"] = 865.0,
@@ -2095,12 +2095,12 @@ return {
   },
   ["BP_L109A1Frag"] = {
     ["displayName"] = "BP_L109A1Frag",
-    ["wikiCategory"] = "Equipment",
+    ["wikiCategory"] = "Explosive",
     ["hudTag"] = "",
     ["wikiPage"] = "BP_L109A1Frag",
     ["mags"] = nil,
     ["magSize"] = nil,
-    ["totalAmmo"] = nil
+    ["totalAmmo"] = 1
   },
   ["BP_L85A2_LDS_Grippod"] = {
     ["displayName"] = "L85A2 + LDS + Grippod",
