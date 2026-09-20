@@ -12,15 +12,11 @@ USER    = os.getenv("WIKI_USER")
 PASS    = os.getenv("WIKI_PASSWORD")
 SUMMARY = os.getenv("SUMMARY", "Automated Sync from GitHub")
 
-# Standard-Verzeichnisse für den automatischen Sync (GitHub Workflow)
-# Format: (Lokaler Ordner, Wiki-Präfix)
 DIRECTORIES = [
     ("Modules/Game/Weapons/Info", "Module:Game/Weapons/Info/"),
     ("Modules/Game/Kits/Data", "Module:Game/Kits/Data/")
 ]
 
-# Einzelne Dateien für den automatischen Sync
-# Format: (Lokaler Pfad, Wiki-Titel)
 SINGLE_FILES = [
     ("Modules/Game/Kits/Config.lua", "Module:Game/Kits/Config"),
     ("Modules/Game/Kits/Table.lua", "Module:Game/Kits/Table"),
@@ -35,6 +31,7 @@ if not (API and USER and PASS):
     sys.exit(1)
 
 S = requests.Session()
+CSRF_TOKEN = None
 
 def get_token(token_type):
     params = {"action": "query", "meta": "tokens", "type": token_type, "format": "json"}
@@ -43,6 +40,7 @@ def get_token(token_type):
     return r.json()["query"]["tokens"].get(f"{token_type}token")
 
 def login():
+    global CSRF_TOKEN
     lg_token = get_token("login")
     data = {
         "action": "login",
@@ -56,9 +54,12 @@ def login():
     if r.json().get("login", {}).get("result") != "Success":
         sys.exit(f"Login failed: {r.json()}")
     print(f"Logged in as {USER}")
+    
+    # CSRF Token direkt nach dem Login einmalig für die gesamte Session holen
+    CSRF_TOKEN = get_token("csrf")
 
 def edit(title, text):
-    csrf = get_token("csrf")
+    global CSRF_TOKEN
     max_retries = int(os.getenv("RETRIES", "6"))
     backoff = int(os.getenv("BACKOFF_SECONDS", "5"))
     attempt = 0
@@ -72,18 +73,31 @@ def edit(title, text):
                 "text": text,
                 "summary": SUMMARY,
                 "bot": 1,
-                "token": csrf,
+                "token": CSRF_TOKEN,
                 "assert": "user",
                 "maxlag": "5",
                 "format": "json"
             }
             r = S.post(API, data=payload)
+            
+            # Bei Rate-Limit (HTTP 429) automatisch warten und noch einmal versuchen
+            if r.status_code == 429:
+                if attempt <= max_retries:
+                    print(f"Rate limited (429). Waiting {backoff}s before retry...")
+                    time.sleep(backoff)
+                    backoff *= 2
+                    continue
+                else:
+                    r.raise_for_status()
+
             r.raise_for_status()
             j = r.json()
             
             if "error" in j:
                 code = str(j["error"].get("code", ""))
-                if code in ("ratelimited", "maxlag") and attempt <= max_retries:
+                if code in ("ratelimited", "maxlag", "badtoken") and attempt <= max_retries:
+                    if code == "badtoken":
+                        CSRF_TOKEN = get_token("csrf") # Token erneuern, falls abgelaufen
                     print(f"Waiting for {backoff}s ({code})...")
                     time.sleep(backoff)
                     backoff *= 2
@@ -92,19 +106,22 @@ def edit(title, text):
             
             res = j.get("edit", {}).get("result", "No Change")
             print(f"Synced {title}: {res}")
+            
+            # Kurze Pause einlegen, um Rate Limits vorzubeugen
+            time.sleep(0.5)
             return
+
         except requests.HTTPError as e:
             if e.response is not None and e.response.status_code == 429 and attempt <= max_retries:
+                print(f"Rate limited (429). Waiting {backoff}s before retry...")
                 time.sleep(backoff)
                 backoff *= 2
                 continue
             raise
 
 def sync_full_repository():
-    """Modus 1: Spiegelt alle definierten Verzeichnisse und Einzeldateien ins Wiki (GitHub Workflow)."""
     print("Starte vollständigen Repository-Sync...")
     
-    # 1. Einzelne Dateien hochladen
     for local_path, wiki_title in SINGLE_FILES:
         if os.path.exists(local_path):
             with open(local_path, "r", encoding="utf-8") as f:
@@ -112,7 +129,6 @@ def sync_full_repository():
         else:
             print(f"Warning: File {local_path} not found.")
 
-    # 2. Ganze Verzeichnisse spiegeln
     for local_dir, wiki_prefix in DIRECTORIES:
         if not os.path.exists(local_dir):
             print(f"Warning: Directory {local_dir} not found.")
@@ -127,7 +143,6 @@ def sync_full_repository():
                     edit(wiki_title, f.read())
 
 def sync_custom_pairs(args):
-    """Modus 2: Lädt gezielt übergebene Dateipaare hoch (CLI-Aufruf)."""
     if len(args) % 2 != 0:
         print("Usage: python wiki_sync.py [<localfile> <WikiTitle> ...]", file=sys.stderr)
         sys.exit(2)
@@ -142,9 +157,6 @@ def sync_custom_pairs(args):
 
 def main():
     login()
-    
-    # Wenn Argumente übergeben wurden -> CLI-Modus
-    # Wenn keine Argumente da sind -> GitHub Workflow Modus
     if len(sys.argv) > 1:
         sync_custom_pairs(sys.argv[1:])
     else:
