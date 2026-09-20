@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
 import json
 import re
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 
 # --- KONFIGURATION ---
-DATA_FILE = os.path.join("Data", "weaponInfo.json")
-OUTPUT_DIR = os.path.join("Modules", "Game", "WeaponInfo")
+DATA_FILE = os.path.join("Data", "Game_weapons.json")
+OUTPUT_DIR = os.path.join("Modules", "Game", "Weapons", "Info")
 
 BUCKETS = [
     ("A_C", set("ABC")), ("D_F", set("DEF")), ("G_K", set("GHIJK")),
@@ -36,27 +38,17 @@ HUD_MAP = {
 }
 
 def get_ammo_info(item_data, cat, hud_str):
-    # 1. Sofort-Ausnahmen für Dinge ohne Zahlenwert
     no_count_huds = [
         "inventory_category_knife", "inventory_category_binoculars", 
         "inventory_category_shovel", "inventory_category_detonator",
         "inventory_category_rally", "inventory_category_repair",
         "inventory_category_map", "inventory_category_medkit"
     ]
-    
     if hud_str in no_count_huds or cat == "Equipment":
         return None, None, None
 
-    # 2. Versuche Munitionsdaten zu finden
     w_info = item_data.get("weaponInfo", {})
-    if not w_info and "inventoryInfo" in item_data:
-        # Manche Daten liegen direkt in inventoryInfo, manche in einem Unterobjekt
-        w_info = item_data.get("inventoryInfo", {}).get("weaponInfo", {})
-    
-    # 3. Fallback-Logik
-    if not w_info or not isinstance(w_info, dict):
-        # Wenn keine weaponInfo da ist (wie beim Field Dressing), 
-        # setzen wir totalAmmo auf 1 als Marker für "zählbares Item"
+    if not isinstance(w_info, dict) or not w_info:
         return None, None, 1
 
     mags = w_info.get("numberOfMags", 1)
@@ -71,13 +63,11 @@ def assign_wiki_data(item_key, item_data):
     d_name = item_data.get("displayName", item_key)
     name_upper = d_name.upper()
     
-    # HUD Texture Pfad finden
-    hud = item_data.get("HUDTexture")
-    if not hud and "inventoryInfo" in item_data:
-        hud = item_data["inventoryInfo"].get("HUDTexture")
+    inv_info = item_data.get("inventoryInfo", {})
+    w_info = item_data.get("weaponInfo", {})
+    hud = inv_info.get("HUDTexture", item_data.get("HUDTexture", ""))
     hud_str = str(hud).strip().lower()
 
-    # Rauch-Priorität
     if "smoke" in hud_str or "smoke" in name_upper or "smoke" in item_key.lower():
         cat = "Smoke"
     else:
@@ -86,44 +76,53 @@ def assign_wiki_data(item_key, item_data):
     mags, size, total = get_ammo_info(item_data, cat, hud_str)
     wiki_page = re.split(r'\s*[\+\(\[/]', d_name)[0].strip()
 
-    return {
-        "displayName": d_name,
-        "wikiCategory": cat,
-        "hudTag": hud_str,
-        "wikiPage": wiki_page,
-        "mags": mags,
-        "magSize": size,
-        "totalAmmo": total
-    }
+    wiki_dict = OrderedDict([
+        ("displayName", d_name),
+        ("wikiCategory", cat),
+        ("hudTag", hud_str),
+        ("wikiPage", wiki_page),
+        ("mags", mags),
+        ("magSize", size),
+        ("totalAmmo", total)
+    ])
+
+    if w_info and isinstance(w_info, dict):
+        if "maxDamageToApply" in w_info:
+            wiki_dict["damage"] = w_info["maxDamageToApply"]
+        if "muzzleVelocity" in w_info and w_info["muzzleVelocity"] > 1:
+            wiki_dict["muzzleVelocity"] = round(w_info["muzzleVelocity"] / 100, 1)
+        if "timeBetweenShots" in w_info and w_info["timeBetweenShots"] > 0:
+            wiki_dict["rpm"] = round(60 / w_info["timeBetweenShots"])
+        if "tacticalReloadDuration" in w_info:
+            wiki_dict["reloadTactical"] = round(w_info["tacticalReloadDuration"], 2)
+        if "dryReloadDuration" in w_info:
+            wiki_dict["dryReload"] = round(w_info["dryReloadDuration"], 2)
+
+    return wiki_dict
 
 def to_lua(o, ind=0):
     sp = "  " * ind
     if isinstance(o, dict):
-        # Wir nutzen eine List-Comprehension für die Keys
         parts = []
-        for k, v in sorted(o.items()):
-            parts.append(f'{sp}  ["{k}"] = {to_lua(v, ind+1)}')
-        return "{\n" + ",\n".join(parts) + "\n" + sp + "}"
-    
+        for k, v in o.items():
+            key_escaped = str(k).replace("\\", "\\\\").replace('"', '\\"')
+            parts.append(f'{sp}  ["{key_escaped}"] = {to_lua(v, ind+1)}')
+        return "{\n" + (",\n".join(parts)) + ("\n" + sp if parts else "") + "}"
+    if isinstance(o, list):
+        return "{ " + ", ".join(to_lua(x, ind+1) for x in o) + " }"
     if isinstance(o, str):
-        # DAS IST DER FIX: Maskiert existierende " im String mit \"
-        safe_str = o.replace('"', '\\"')
+        safe_str = o.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n")
         return f'"{safe_str}"'
-    
-    if o is None:
-        return "nil"
-    
-    # Booleans in Lua sind kleingeschrieben (true/false)
-    if isinstance(o, bool):
-        return str(o).lower()
-        
-    return str(o)
+    if isinstance(o, (int, float)):
+        return str(o)
+    if o is True: return "true"
+    if o is False: return "false"
+    return "nil"
 
 def get_bucket(key):
-    # Extrahiert den ersten Buchstaben nach BP_
-    match = re.match(r"^BP_([A-Za-z])", key)
-    if match:
-        char = match.group(1).upper()
+    clean_key = re.sub(r"^BP_", "", key, flags=re.IGNORECASE)
+    if clean_key:
+        char = clean_key[0].upper()
         for name, letters in BUCKETS:
             if char in letters:
                 return name
@@ -138,33 +137,28 @@ def main():
     
     with open(DATA_FILE, "rb") as f:
         raw = f.read()
-        if raw.startswith(b"\xef\xbb\xbf"):
-            raw = raw[3:]
-        raw_data = json.loads(raw.decode("utf-8"))
+        if raw.startswith(b"\xef\xbb\xbf"): raw = raw[3:]
+        raw_data = json.loads(raw.decode("utf-8"), object_pairs_hook=OrderedDict)
 
-    buckets_content = defaultdict(dict)
-    
-    # Daten verarbeiten und Buckets füllen
+    buckets_content = defaultdict(OrderedDict)
     for k, v in raw_data.items():
-        if k.startswith("BP_"):
-            target_bucket = get_bucket(k)
-            buckets_content[target_bucket][k] = assign_wiki_data(k, v)
+        target_bucket = get_bucket(k)
+        buckets_content[target_bucket][k] = assign_wiki_data(k, v)
 
-    # Alle definierten Buckets erstellen (auch leere)
-    # Nutze nur BUCKETS, da "misc" dort schon drin ist oder separat behandelt wird
     unique_buckets = [b[0] for b in BUCKETS]
     if "misc" not in unique_buckets:
         unique_buckets.append("misc")
 
     for name in unique_buckets:
         filepath = os.path.join(OUTPUT_DIR, f"{name}.lua")
-        # Falls ein Bucket leer ist, wird ein leeres Table {} zurückgegeben
-        data = buckets_content.get(name, {})
-        content = "-- auto-generated\nreturn " + to_lua(data)
+        data = buckets_content.get(name, OrderedDict())
+        content = "-- auto-generated WeaponInfo\nreturn " + to_lua(data)
         
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(content)
         print(f"Generated: {filepath}")
+
+    print("Waffen-Export erfolgreich abgeschlossen!")
 
 if __name__ == "__main__":
     main()
