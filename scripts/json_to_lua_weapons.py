@@ -37,6 +37,9 @@ HUD_MAP = {
     "inventory_category_rally": "Equipment"
 }
 
+# Bekannte Frag-Grenaden Keys/Keywords als Fallback
+FRAG_KEYWORDS = ["frag", "f1", "rgd5", "m67", "m18", "type59", "l109a1", "grenade"]
+
 def get_ammo_info(item_data, cat, hud_str):
     no_count_huds = [
         "inventory_category_knife", "inventory_category_binoculars", 
@@ -61,15 +64,19 @@ def get_ammo_info(item_data, cat, hud_str):
 
 def assign_wiki_data(item_key, item_data):
     d_name = item_data.get("displayName", item_key)
-    name_upper = d_name.upper()
+    name_lower = d_name.lower()
+    key_lower = item_key.lower()
     
     inv_info = item_data.get("inventoryInfo", {})
     w_info = item_data.get("weaponInfo", {})
     hud = inv_info.get("HUDTexture", item_data.get("HUDTexture", ""))
     hud_str = str(hud).strip().lower()
 
-    if "smoke" in hud_str or "smoke" in name_upper or "smoke" in item_key.lower():
+    # Smart-Kategorisierung mit Fallbacks
+    if "smoke" in hud_str or "smoke" in name_lower or "smoke" in key_lower:
         cat = "Smoke"
+    elif any(kw in key_lower or kw in name_lower for kw in FRAG_KEYWORDS) or "frag" in hud_str:
+        cat = "Explosive"
     else:
         cat = HUD_MAP.get(hud_str, "Equipment")
 

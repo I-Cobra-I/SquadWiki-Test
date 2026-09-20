@@ -69,6 +69,7 @@ local function renderSmartLink(displayName, itemKey, category, hudTag)
 
     local linkTarget, label, suffix = "", "", ""
 
+    -- CASE A: GRENADE LAUNCHER SMOKES
     if lowerHud == "inventory_category_grenadelauncher" and category == "Smoke" then
         local baseName = displayName:gsub("%s*[S|s]moke.*", "")
         for _, color in ipairs(knownColors) do
@@ -84,13 +85,15 @@ local function renderSmartLink(displayName, itemKey, category, hudTag)
         linkTarget = wl[baseName] or il[baseName] or baseName
         return "[[" .. linkTarget .. "|" .. baseName .. "]] <span style='color:#94a3b8; font-size:0.9em;'>Smoke (" .. foundColor .. ")</span>"
 
-    elseif lowerHud == "inventory_category_lat" and category == "Smoke" then
+    -- CASE B: AT-LAUNCHER SMOKES / ROCKETS
+    elseif (lowerHud == "inventory_category_lat" or lowerHud == "inventory_category_hat") and category == "Smoke" then
         local base, sub = displayName:match("^(.+)%s*%((.+)%)$")
         if base and sub then
             linkTarget = wl[base] or il[base] or base
             return "[[" .. linkTarget .. "|" .. base .. "]] <span style='color:#94a3b8; font-size:0.9em;'>" .. sub .. "</span>"
         end
 
+    -- CASE C: HAND SMOKE GRENADES
     elseif lowerHud == "inventory_category_smokegrenade" then
         if bp:find("M18") then
             linkTarget = "M18 Smoke"
@@ -106,15 +109,26 @@ local function renderSmartLink(displayName, itemKey, category, hudTag)
         end
         return "[[" .. linkTarget .. "|" .. label .. "]] <span style='color:#94a3b8; font-size:0.9em;'>Smoke (" .. foundColor .. ")</span>"
 
+    -- CASE D: GENERAL SMART SPLIT (Munitions/Attachments)
     else
         local basePart = displayName
         local suffixPart = ""
         
-        local expTerms = {"High Explosive Dual Purpose", "High Explosive", "Fragmentation", "Frag", "HEDP", "HEAT", "Tandem"}
-        for _, term in ipairs(expTerms) do
-            local s, e = basePart:find(term)
+        -- Begriffe vereinheitlichen (Frag -> Fragmentation)
+        local expTerms = {
+            ["High Explosive Dual Purpose"] = "HEDP",
+            ["High Explosive"] = "High Explosive",
+            ["Fragmentation"] = "Fragmentation",
+            ["Frag"] = "Fragmentation",
+            ["HEDP"] = "HEDP",
+            ["HEAT"] = "HEAT",
+            ["Tandem"] = "Tandem"
+        }
+        
+        for term, replacement in pairs(expTerms) do
+            local s, e = basePart:find("%f[%a]" .. term .. "%f[%A]")
             if s and s > 1 then
-                suffixPart = basePart:sub(s)
+                suffixPart = replacement
                 basePart = basePart:sub(1, s - 1):gsub("%s+$", "")
                 break
             end
@@ -177,6 +191,7 @@ local function formatEntry(weapon, kitCount)
     local cat = weapon.wikiCategory or ""
     local hudTag = weapon.hudTag or ""
     local lowerLabel = label:lower()
+    local lowerKey = (weapon.itemKey or ""):lower()
     
     local linkStr = renderSmartLink(label, weapon.itemKey, cat, hudTag)
     local count, suffix = 0, ""
@@ -187,13 +202,13 @@ local function formatEntry(weapon, kitCount)
             count = kitCount
             suffix = (count > 1) and " packages" or " package"
         end
-    elseif hudTag:find("lat") or hudTag:find("launcher") or cat == "Launcher" then
+    elseif hudTag:find("lat") or hudTag:find("hat") or hudTag:find("launcher") or cat == "Launcher" then
         count = weapon.totalAmmo or kitCount
         suffix = (count > 1) and " rounds" or " round"
     elseif cat == "Smoke" or hudTag:find("smoke") then 
         count = kitCount 
         suffix = (count > 1) and " grenades" or " grenade"
-    elseif cat == "Explosive" or lowerLabel:find("frag") or lowerLabel:find("grenade") then
+    elseif cat == "Explosive" or lowerLabel:find("frag") or lowerLabel:find("grenade") or lowerKey:find("f1") or lowerKey:find("rgd5") or lowerKey:find("m67") then
         count = weapon.totalAmmo or kitCount
         suffix = (count > 1) and " grenades" or " grenade"
     elseif cat == "Primary" or cat == "Secondary" then 
@@ -253,7 +268,7 @@ function p.render(frame)
                 container:tag('div'):css('background', style.groupBg):css('color', "#fff"):css('padding', '10px 16px'):css('font-weight', 'bold'):css('border-radius', '4px 4px 0 0'):css('font-size', '0.9em')
                     :wikitext((Config.GROUP_ICON[gName] and ('[[File:' .. Config.GROUP_ICON[gName] .. '|20px|link=]] ') or "") .. gName:upper())
                 
-                local tableEl = container:tag('table'):addClass('wikitable'):css('width', '100%'):css('margin', '0 0 25px 0'):css('border-collapse', 'collapse'):css('background', style.cellBg):css('table-layout', 'fixed')
+                local tableEl = container:tag('table'):addClass('wikitable mw-collapsible'):css('width', '100%'):css('margin', '0 0 25px 0'):css('border-collapse', 'collapse'):css('background', style.cellBg):css('table-layout', 'fixed')
                 
                 local hRow = tableEl:tag('tr')
                 hRow:tag('th'):css('width', colWidths.ROLE):css('background', style.headerBg):css('color', style.textMuted):css('font-size', '0.7em'):wikitext("ROLE")
@@ -272,11 +287,12 @@ function p.render(frame)
                                     local t = 6
                                     local c = w.wikiCategory
                                     local h = w.hudTag:lower()
+                                    local kLower = itemKey:lower()
                                     
                                     if h:find("smokegrenade") then t = 4
                                     elseif c == "Primary" then t = 1 
                                     elseif c == "Secondary" then t = 2 
-                                    elseif c == "Explosive" or c == "Launcher" then t = 3 
+                                    elseif c == "Explosive" or c == "Launcher" or h:find("lat") or h:find("hat") or kLower:find("f1") or kLower:find("rgd5") or kLower:find("m67") or kLower:find("frag") then t = 3 
                                     elseif c == "Smoke" then t = 4 
                                     elseif c == "Medical" then t = 5 end
                                     
